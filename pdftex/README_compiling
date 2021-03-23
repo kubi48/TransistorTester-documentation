@@ -1,0 +1,6 @@
+There is a Makefile available within the german / english subfolders.
+You should run this Makefile with a call of "make Makefile" within the previously selected subfolder.
+
+The makefile uses a conversion tool for eps files in the FIG directory.
+fig2ps has to be installed if it is not shipped with your latex installation.
+Furthermore, it uses epstopdf and the pdflatex command, which should be built in and perhaps need symlinks to be accessible.
