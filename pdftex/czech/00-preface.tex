@@ -3,34 +3,52 @@ Upozornění k tomuto vydání:
 \\Změny oproti originálu:
 \\Při překladu byly také přeloženy popisy na obrázcích a diagramech, které jsou v originálu anglicky,
 \\čímž byly nutné změny i v originálu. 
-\\- Dále byla v podkapitole 2.10 přidána (čínská replika od Firmy Hiland).
-\\- A nakonec byla upravena podkapitola 4.2.1 ((programování v systému Linux) tak,
-\\aby i Linux ,,nováčci'' zažili svůj úspěch.
+\\- Dále byla v podkapitole \ref{hiland} přidána (čínská replika od Firmy Hiland).
+\\- V Podkapitole ~\ref{PROGRAMMER} bylo téma programirer doplněno.
+\\- A nakonec byla upravena podkapitola \ref{linux} (programování v systému Linux) tak,
+\\aby i Linux \inquotes{nováčci} zažili svůj úspěch.
 \vspace*{0.3cm}
-\\Autor byl o těchto opatřeních informován, ale pokud vím,
-\\originál aktualizován nebyl a já zatím nedostal souhlas k vydání.
-\\ - Protože věřím, že jsou tyto změny pro ,,začátečníky Linuxu'' důležité , je toto vydání,
+\\Autor byl o těchto opatřeních informován, ale pokud vím, originál aktualizován nebyl a já zatím nedostal souhlas k vydání.
+\\ - Protože věřím, že jsou tyto změny pro \inquotes{začátečníky Linuxu} důležité , je toto vydání,
 \\i bez souhlasu autora, odůvodněné.
-\vspace*{0.3cm}
-\\Pod \cite{khk} je pochopitelně možné, dosáhnout originál.
+\\Na autorově stránce \cite{khk} je pochopitelně možné, dosáhnout originál.
 \vspace*{0.2cm}
 \\Jako další bod bych rád uvedl, že již přes 50 let žiji mimo CZ.
 \\- Před 50 lety byl právě objevený tranzistor, a elektronika prakticky neexistovala.
-\\- Všechny odborné výrazy jsem se nikdy česky neslyšel. K překladu jsem použil ,,Google'',
+\\- Všechny odborné výrazy jsem se nikdy česky neslyšel. K překladu jsem použil \inquotes{Google},
 \\který překládal hodně nesmyslů.
-\\- Oba dobrovolníci, jmenované na titulní stránce, kteří slíbili kontrolu odborných výrazů, předčasně vzdali.
 \\- Takže... každé konstruktivní zlepšení je vždy vítáno.
 \\Nejlépe na \cite{Svetelektro}... 
 \vspace*{0.2cm}
-\\20.02.2020
-\\ bm-magic 
-
+\\20.02.2020\
+\vspace*{0.2cm}
+\\bm-magic
+\vspace*{0.3cm}
+\\Bylo přijato mnoho změn, ale vytvoření grafiky pomocí gnuplot ze surových dat měření
+byl zachován s odpovídajícím Makefile, který dokumentuje takové závislosti. \\
+Čas od času se některé série měření opakují na konci verze softwaru a
+aktualizoval data. To znamená, že se grafika při kompilaci automaticky změní. \\
+Tento postup by měl být zachován a měl by fungovat pro všechny jazyky. \\
+Aby bylo snazší přizpůsobit se papírovým formátům, místo toho jsem zadal relativní specifikace velikosti
+pevné rozměry, jako jsou cm a pt. 
+\vspace*{0.2cm}
+\\6.3.2021
+\\K.-H. Kübbeler
+\vspace*{0.2cm}
+\\ Jak je víše viditelné, autor nyní dokument aktualizoval a přidal např. do podkapitoly \ref{linux}
+\\mnoho \dots mě dosud neznámých tipů\dots díky autorovi.
+\\Důvod pro toto vydání je změna adresy zdrojů archivu \lname{\textasciitilde/transistortester}
+\\od svn://www.mikrocontroller.net/transistortester 
+\\na https://github.com/Mikrocontroller-net/transistortester ~\cite{tt}
+\vspace*{0.3cm}
+\\24.03.2021\
+\vspace*{0.2cm}
+\\bm-magic 
 \newpage
 \section*{Úvod}
 
 \subsection*{Hlavní motivy}
-Každý z nás zná tento problém: vymontuje transistor nebo ho najde mezi svými poklady,
-když je jeho označení čitelné a technické údaje nebo náhrada dostupné, je všechno v pořádku.
+Každý z nás zná tento problém: vymontuje transistor nebo ho najde mezi svými poklady, když je jeho označení čitelné a technické údaje nebo náhrada dostupné, je všechno v pořádku.
 pokud ale ne, nastává otázka, co je to za součástku.
 S konvenčními měřícími metodami je těžké a zdlouhavé typ součástky a její parametry zjistit.
 Může se jednat o NPN, PNP, N- nebo P-Kanal-MOSFET atd. 
@@ -42,6 +60,8 @@ Testerem v orinálu Transistor Tester od Markuse F. \cite{Frejek} jsem se začal
 \\schopen naprogramovat EPROM mcu ATmega8 bez chybových hlášení s driverem systému Windows.
 \\K vyřešení toho problému jsem v softwaru od Markuse F. změnil všechny zápisy do EEPROM paměti
 \\za zápisy do Flash.
+\\Při té příležitosti jsem v jiné části programu, z důvodu úspory místa v programové paměti, dostal nápad, změnit výsledek ReadADC funkce z jednotek DC  na rozlišení v milivoltech (mV).
+\\Rozlišení mV je nutné k výstupu hodnot napětí. Pokud funkce ReadADC poskytuje rozlišení přímo mV, můžete uložit transformaci při každém měření.
 Tyto mV hodnoty lze získat, když budou výsledky od 22 ADC čtení nejprve sečteny.
 Součet musí být vynásoben dvěma a potom dělen devíti.
 Tím získáte přesnou hodnotu od \begin{math}\frac{1023\cdot22\cdot2}{9} = 5001\end{math},
@@ -52,12 +72,9 @@ Původní verze aplikace ReadADC přidala výsledky 20 hodnot ADC a poté je roz
 takže výsledek je zpět k původnímu rozlišení ADC. Proto by se kvůli převzorkování
 nemohlo nikdy zvýšit rozlišení ADC.
 Tím jsem neměl žádnou práci na změně funkce ReadADC, ale to vyžadovalo analýzu celého programu
-a úpravu všech ,,if'' dotazů v programu, kde byly kontrolovány hodnoty napětí.
+a úpravu všech \inquotes{if} dotazů v programu, kde byly kontrolovány hodnoty napětí.
 To byl ale jen začátek mé práce!\\
-Realizoval jsem spoustu nápadů, kvůli rychlejšímu a přesnějšímu měření.
-Kromě toho byl rozšířen také rozsah měření odporu a kondenzátoru.
-Výstupní formát LC displeje byl změněn tak, že symboly byly použity jako diody, rezistory a kondenzátory.
-Další podrobnosti naleznete v kapitole o aktuálních vlastnostech Kapitola \ref{sec:features}. 
+Realizoval jsem spoustu nápadů, kvůli rychlejšímu a přesnějšímu měření. Kromě toho byl rozšířen také rozsah měření odporu a kondenzátoru. Výstupní formát LC displeje byl změněn tak, že symboly byly použity jako diody, rezistory a kondenzátory. Další podrobnosti naleznete v kapitole o aktuálních vlastnostech Kapitola \ref{sec:features}. 
 Plánované práce a nové nápady byly shromážděny v kapitole \ref{sec:todo}.
 Mezitím mohu dokonale popsat EEPROM ATmega8 pod operačním systémem Linux.
 
@@ -71,9 +88,6 @@ Děkuji mu za opravu verze softwaru 1.10k a jeho integraci do aktuální vývojo
 Chtěl bych také poděkovat Asco B., který vytvořil tabulku pro lidi ochotné kopírovat a Dirk W.,
 který se postaral o hromadné objednávky pro tuto radu.
 Nebyl bych schopen strávit tolik času s vývojem softwaru, který by nebyl tak daleko.
-Chtěl bych také poděkovat členům místního sdružení města Lennestadt z německého radioamatérského 
-klubu (DARC) za řadu návrhů na zlepšení.
-Rád bych poděkoval radioamatérovi a operátorovi Pieter-Tjerkovi (PA3FWM) za integraci metody vzorkování S ADC,
-která značně zlepšila měření malých kapacitních hodnot a malých indukčností.
-V neposlední řadě bych rád poděkoval Nicku L. z Ukrajiny, který mě podpořil prototypovými
-tištěnými spoji a navrhl nějaké hardwarové vylepšení a poskytl ruský překlad tohoto popisu.
+Chtěl bych také poděkovat členům místního sdružení města Lennestadt z německého radioamatérského  klubu (DARC) za řadu návrhů na zlepšení.
+Rád bych poděkoval radioamatérovi a operátorovi Pieter-Tjerkovi (PA3FWM) za integraci metody vzorkování S ADC, která značně zlepšila měření malých kapacitních hodnot a malých indukčností.
+V neposlední řadě bych rád poděkoval Nicku L. z Ukrajiny, který mě podpořil prototypovými tištěnými spoji a navrhl nějaké hardwarové vylepšení a poskytl ruský překlad tohoto popisu.

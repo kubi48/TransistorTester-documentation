@@ -1,11 +1,11 @@
-\documentclass[pdftex,12pt,a4paper,oneside,english]{report}
-%\documentclass[pdftex,12pt,a4paper,oneside,english]{scrreprt}
-%\special{papersize=210mm,297mm}
+\documentclass[pdftex,12pt,a4paper,oneside,czech]{report}
+\special{papersize=210mm,297mm}
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}		%umlaute!
 \usepackage[utf8x]{inputenc}
 \usepackage[cm]{fullpage}
-\usepackage[english,ngerman,czech]{babel}
+%\usepackage[english]{babel}
+\usepackage[czech]{babel}
 \usepackage{textcomp}           % Wegen Fehler,perthousand,micro
 \usepackage[pdftex]{graphicx}
 \usepackage[labelsep=period]{caption}
@@ -47,7 +47,25 @@
 \setlength{\abovecaptionskip}{0.5em}
 \setlength{\belowcaptionskip}{-0.5em}
 
-\sloppy                 % Blocksatz
+\usepackage[os=win]{menukeys}		% Zur Darstellung der Menue-Keys
+%\tw@make@key@box{backspace}{%
+%   \begin{tikzpicture}[yshift=0.65ex,menukeys key symbol]
+%      \draw [<-,menukeys thick] (0,0) -- (1.35em,0);
+%   \end{tikzpicture}%
+%}
+
+\newcommand{\LMB}{{\fbox{\(\bullet \circ \circ\)}} } % Left Mouse Button
+\newcommand{\RMB}{{\fbox{\(\circ \circ \bullet\)}} } % Right Mouse Button
+\newcommand{\MMB}{{\fbox{\(\circ \bullet \circ\)}} } % Middle Mouse Button
+\newcommand{\LRMB}{{\fbox{\(\bullet ~~ \bullet\)}} } % Middle Mouse Button
+\newcommand{\lsusb}{\colorbox{green!30}{{\textls[200]{lsusb}}}} 
+
+%\newcommand{\lcmd}[1]{{\colorbox{green!15}{\textls[150]{#1}}}} % Linux command green stretched
+\newcommand{\lcmd}[1]{\mbox{{\colorbox{green!15}{#1}}}} % Linux command green normal
+%\newcommand{\lcmd}[1]{{\textls[150]{ #1}}} % Linux command only streched
+\newcommand{\lname}[1]{\mbox{{\colorbox{blue!15}{#1}}}} % Linux key word blue normal
+\newcommand{\inquotes}[1]{\glqq{#1}\grqq}  % set in quotes "text"
+%\sloppy			% Blocksatz 
 
 \begin{document}
 \begin{figure}[t]
@@ -109,11 +127,11 @@ Version 1.13k \\
 \copyright~\\
 ~\\
 \vspace{-0.3cm}
-{\scriptsize Kontrola odborné češtiny:}\\
-{\scriptsize Ing. František Procházka \hspace*{0.2cm}fandapro@seznam.cz}\\
-\vspace{-0.3cm}
-{\scriptsize \&}\\
-{\scriptsize Milan Petko \hspace*{0.2cm} avrtester.tode@seznam.cz}
+%{\scriptsize Kontrola odborné češtiny:}\\
+%{\scriptsize Ing. František Procházka \hspace*{0.2cm}fandapro@seznam.cz}\\
+%\vspace{-0.3cm}
+%{\scriptsize \&}\\
+%{\scriptsize Milan Petko \hspace*{0.2cm} avrtester.tode@seznam.cz}
 }
 \date{\today}
 \maketitle
@@ -145,6 +163,11 @@ Version 1.13k \\
 
 \begin{thebibliography}{99}
 
+\bibitem{tt}
+https://github.com/mikrocontroller-net/transistortester/
+\emph{Zdroj}.
+\\od 02-2021
+
 \bibitem{Frejek}
 Markus Frejek
 \emph{AVR-Transistortester,}.
@@ -153,8 +176,8 @@ Embedded Projects Journal,
 2011
 
 \bibitem{khk}
-https://github.com/mikrocontroller-net/transistortester/Doku/
-trunk/pdftex/german/ttester.pdf
+https://github.com/kubi48/
+\emph{Zdroje a práce autora}.
 
 \bibitem{ATmega8}
 Atmel Corporation

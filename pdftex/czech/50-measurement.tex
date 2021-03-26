@@ -1,12 +1,12 @@
 \chapter{Popis metody měření}
 \label{sec:measurement}
 Zjednodušená schéma vstupu / výstupu ATmega je zobrazeno na obrázku~\ref{fig:port}.
-Přepínač PUD vypne napájení pro všechny ,,Pull Up'' odpory ATmega.
+Přepínač PUD vypne napájení pro všechny \inquotes{Pull Up} odpory ATmega.
 Pomocí přepínače DD lze výstup vypnout, vstup pracuje bud jako výstup, tak i jako vstup.
-Ve vstupním režimu je výstupní hodnota (PORT) použita k přepnutí,,Pull Up'' odporu vstupu.
+Ve vstupním režimu je výstupní hodnota (PORT) použita k přepnutí \inquotes{Pull Up} odporu vstupu.
 Ty dva přepínače PORT a DD nelze přepínat současně, ale pouze jeden po druhém.
-Protože přepnutí ,,Pull Up'' odporu může rušit měření, dávám přednost úplnému
-odpojení všech  ,,Pull Up'' odporů pomocí spínače PUD.
+Protože přepnutí \inquotes{Pull Up} odporu může rušit měření, dávám přednost úplnému
+odpojení všech  \inquotes{Pull Up} odporů pomocí spínače PUD.
 Samozřejmě, že jsou přepínače elektronické a odpory \(19\Omega\) a \(22\Omega\) jsou jen přibližné hodnoty.
 
 \begin{figure}[H]
@@ -59,7 +59,7 @@ nebo pin může být připojen k VCC nebo GND přes \(680\Omega\)-odpor.
 Jakmile je nakonfigurováno měření kondenzátoru testerem,  pokusí se přístroj nejprve
 k vybíjení kondenzátorů na všech připojovacích kolících.
 Pokud to nefunguje, to znamená zbytkové napětí je příliš vysoké, bude vybíjení
-po cca 12 sekundách přerušeno se zprávou ,,Cell!''.
+po cca 12 sekundách přerušeno se zprávou \inquotes{Cell!}.
 
 To se může stát i v případě když není žádný kondenzátor připojen.
 

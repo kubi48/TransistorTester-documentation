@@ -589,8 +589,7 @@ Die Benutzung dieses Schlafzustandes mit dem Wiederaufwachen spart zwar Batterie
 stellt eine zusätzliche Anforderung für den Spannungsregler dar.\\
 Beispiel: DINHIBIT\_SLEEP\_MODE = 1
 
-\label{sec:config-Prog}
-  \item[PROGRAMMER] stellt den Programmer-Typ für das \lcmd{avrdude} Schnittstellenprogramm ein.\\
+  \item[PROGRAMMER] \label{sec:config-Prog} stellt den Programmer-Typ für das \lcmd{avrdude} Schnittstellenprogramm ein.\\
 Eine richtige Einstellung des Programmer-Typs (und Ports) ist notwendig.\\
 In \lname{Makefile} ist standardmäßig Programmer der Firma Diamex eingestellt.\\
 Vorbereitet sind aber auch USBasp von Fischler und Arduino Mega.\\
@@ -605,7 +604,7 @@ und ein weiterer Beispiel:\\
 \#~setting for Pololu programmer\\
 \#~PROGRAMMER=stk500v2\\
 \#~BitClock=1.0\\
-\#~Port = /dev/ttyACM0\\
+\#~PORT = /dev/ttyACM0\\
 , wenn Sie den \lcmd{make upload}- oder
 \lcmd{make fuses}-Aufruf dieser \lname{Makefile} benutzen.
 Beispiel: PROGRAMMER=avrisp2
@@ -633,7 +632,7 @@ und wird gesteuert mit einer \lname{Makefile}.
 
 Die \lname{Makefile} stellt sicher, dass die Software entsprechend der vorher in der \lname{Makefile} 
 eingestellten Optionen übersetzt wird. Schauen Sie bitte in die Datei LiesMich.txt
-im Verzeichnis trunk/default und in das Konfigurations-Kapitel~\ref{sec:config} ab Seite~\pageref{sec:config}.
+im Verzeichnis default und in das Konfigurations-Kapitel~\ref{sec:config} ab Seite~\pageref{sec:config}.
 
 Das Ergebnis der Übersetzung hat die Dateierweiterung \lname{.hex} und \lname{.eep}.
 Die \lname{.hex}-Datei enthält die Daten für den Programmspeicher (Flash) des ATmega-Prozessors.
@@ -663,11 +662,12 @@ das \lcmd{avrdude} Programm maskiert die unbenutzten Bits, so daß es eine \inqu
 Normalerweise sollte die efuse auf 0xfc gesetzt werden, aber \lcmd{avrdude} liest eine 0x04 mit der Maske zurück.
 Man kann die Datei avrdude.conf ändern, um das Verhalten von \lcmd{avrdude} zu ändern oder
 die efuse auf 0x04 setzen. 
-Alle efuse-Werte können mit dem Bezeichner EFUSE\_VAL am Anfang der Datei setup.mk im Verzeichnis trunk
+Alle efuse-Werte können mit dem Bezeichner EFUSE\_VAL am Anfang der Datei setup.mk im Quellcode-Verzeichnis
 gesetzt werden. Wahrscheinlich sind die Fuses aber auch mit der Fehlermeldung richtig gesetzt.
 
 \newpage
 \subsection{Benutzung von Linux}
+\label{sec:linux}
 
 Um meine Erfahrung mit Verzweiflung und \inquotes{schlaflose Nächten} anderen Kollegen zu ersparen,
 wurde dieses Unterkapitel geschrieben.
@@ -681,7 +681,7 @@ Karl-Heinz Kübbeler siehe \cite{karlheinz1} zu danken für sein Engagement und 
 denn die folgenden Seiten wären ohne seine Hilfe nie entstanden.
      
 Damit das Übersetzen der Firmware und Brennen ins MCU gelingt und gleichzeitig \dots
-\inquotes{das Rad nicht neu erfunden werden muß}, wurde ein Teil der folgenden Seiten aus dem
+\inquotes{das Rad nicht neu erfunden werden muss}, wurde ein Teil der folgenden Seiten aus dem
 ursprünglichen Original übernommen.
 
 Also noch einmal \dots \LARGE{EINEN RIESEN DANK}
@@ -806,7 +806,7 @@ git clone https://github.com/Mikrocontroller-net/transistortester
 wird das komplette transistortester Archiv heruntergeladen.
 Die Dateien sind nun in dem Linux [Persönlicher Ordner] , üblicherweise \lname{/home/} gefolgt
 von Ihrem Benutzerkürzel, mit dem  Verzeichnisnamen \lname{transistortester}.
-Mit der Terminaleingabe  \lcmd{ls} \(\mbox{\keys{L} \keys{S} \keys{\return}}\) kann man
+Mit der Terminaleingabe  \lcmd{ls} \(\mbox{\keys{l} \keys{s} \keys{\return}}\) kann man
 das Vorhandensein überprüfen.
 Mehr Informationen über Dateien und Verzeichnisse erhält man mit
 dem Kommando \lcmd{ls -lh}. Hier wurden jetzt zwei Optionen für das Kommando \lcmd{ls} zusammengefasst,
@@ -1003,6 +1003,7 @@ ATTRS {idVendor}=="1781", ATTRS {idProduct}=="0c9f", GROUP="plugdev", MODE="0660
 SUBSYSTEM=="usb", ENV {DEVTYPE}=="usb_device", SYSFS {idVendor}=="16c0", SYSFS {idProduct} == "05dc", MODE="0660",
 \end{verbatim}
 \end{tiny}
+\vspace*{-.8em}
 Nach dem die Datei erstellt wurde, kann die Erstellung und Inhalt kontrollieren mit:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
 less /etc/udev/rules.d/90-atmel.rules 
@@ -1057,29 +1058,33 @@ rsync -auv ~/transistortester/Software/trunk/ ./Mytester
 Wegen der \lcmd{-v} Option protokolliert \lcmd{rsync} alle Kopiervorgänge.
 Wenn Sie statt der \lcmd{-auv} Optionen also \lcmd{-au} als Optionen angeben,
 bleibt der Kopiervorgang stumm.
-Sie können sich aber vom gefüllten Unterverzeichnis trunk mit folgendem Befehl
+Sie können sich aber vom gefüllten Unterverzeichnis mit folgendem Befehl
 überzeugen:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-ls -lh ~/Mytester/trunk
+ls -lh ~/Mytester
 \end{verbatim} \end{large}
 Eine übersichtliche Darstellung der Verzeichnisstruktur und der Dateien ist mit
 dem Kommando \lcmd{tree \textasciitilde/Mytester} möglich. Das Kommando ist aber nicht als
 Standard installiert, was sie aber mit \lcmd{sudo apt-get install tree} leicht nachholen können.\\
-
 Wenn Sie jetzt wissen, welches Unterverzeichnis für Ihren Tester paßt,
 können Sie in dieses Unterverzeichnis wechseln.
 Nehmen wir mal an, Sie besäßen einen chinesischen Bausatz mit SW-Display, 
 dann wäre das Unterverzeichnis \lname{mega328\_st7565\_kit} richtig.
 Der Befehl dazu wäre dann:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-cd ~/Mytester/trunk/mega328_st7565_kit
+cd ~/Mytester/mega328_st7565_kit
 \end{verbatim} \end{large}
+\vspace{-1em} 
+Mit einem simplen \lcmd{make} Aufruf würde der Quellcode mit
+den voreingestellen Einstellungen in der \lname{Makefile} neu übersetzt.
 
-Sie können die Dateien in \lname{\textasciitilde/Mytester/trunk/} auch mit dem Dateien Fenster ansehen
-\menu[,]{Menü, Zubehör, Dateien}, dabei muß das Verzeichnis \lname{Mytester} und danach
-\lname{trunk} durch \LMB Doppelclick ausgewählt werden.
-Hier erscheinen jetzt viele Unterverzeichnisse, darunter auch das
-gewünschte \lname{mega328\_st7565\_kit}.
+\subsubsection{Methode mit grafische Oberfläche}
+Wenn das MyTester Verzeichnis schon angelegt ist, können Sie auch mit
+dem Dateien Fenster in das gewünschte Verueichnis wechseln.
+Sie können die Dateien in \lname{\textasciitilde/Mytester/} auch mit dem Dateien Fenster ansehen
+\menu[,]{Menü, Zubehör, Dateien}, dabei muß das Verzeichnis \lname{Mytester} durch \LMB Doppelclick ausgewählt werden.
+Hier erscheinen jetzt viele Unterverzeichnisse, darunter auch beispielsweise
+\lname{mega328\_st7565\_kit}.
 Wenn Sie dieses jetzt auch dieses Verzeichnis mit \LMB Doppelclick auswählen,
 sehen Sie unter den Files auch die \lname{Makefile}.
 Wenn Sie das geschafft haben, können sie jetzt mit der \RMB Taste die Funktion \menu{Im Terminal öffnen}
@@ -1088,6 +1093,8 @@ welches auch direkt aktiv ist. Jetzt brauchen sie nur noch \lcmd{make} einzutipp
 das Transistortester Programm neu übersetzt.
 Sie haben jetzt zwei Fenster, die schon auf dem richtigen Arbeitsverzeichnis stehen.
 Das Dateien-Fenster und das Terminal-Fenster für die Befehls-Eingabe \lcmd{make}.
+
+\subsubsection{Bearbeitung von Makefile}
 Durch \LMB Doppelclick auf die \lname{Makefile} Datei im Dateien-Fenster öffnet sich ein weiteres Fenster
 mit dem voreingestellten Editor. Wenn Sie hier einen anderen Editor bevorzugen, können Sie
 diesen Editor entweder direkt über \RMB \menu[,]{{Öffnen mit}} auswählen.
@@ -1100,29 +1107,42 @@ der \lname{Makefile}. Hier können Sie durch \LMB anklicken eine andere Anwendun
 Durch \LMB Anklicken können sie jetzt auswählen, ob sie diese Anwendung \menu[,]{{Zur Liste hinzufügen}}
 oder \menu[,]{{Als Vorgabe festlegen}} möchten.
 Sie können die Einstellung aber auch wieder \menu[,]{{Auf Systemvorgabe zurücksetzen}}.
-
 Für den nächsten Schritt ist es wichtig, daß die Einstellungen für
 \textbf{ihren ISP-Programmer} in der \lname{Makefile} richtig eingestellt sind.
 Siehe dazu im Unterkapitel \ref{sec:config}, auf der Seite \pageref{sec:config-Prog},
 Thema \textbf{PROGRAMMER} und \textbf{PORT}.
-Wenn sie diese Einstellungen überprüft haben,
-können sie durch \LMB Anklicken des Terminal Fensters dieses wieder aktivieren.
-Beim aktivierten Fenster hat die Kopfzeile einen höheren Kontrast!
-Wenn jetzt ihr ISP-Programmer komplett angeschlossen ist, also eine Verbinduung
+Nach dem sie diese Einstellungen überprüft haben, speichern sie die Makefile.
+Vor dem Eintippen eines Kommandos muß das Terminal-Fenster durch einen \LMB Klick
+aktiviert werden. Ein aktiviertes Fenster wird durch einen höheren Kontrast in der
+Kopfzeile angezeigt.
+Sie haben jetzt zwei Fenster, die schon auf dem richtigen Arbeitsverzeichnis stehen.
+Das Dateien-Fenster und das Terminal-Fenster für die Befehls-Eingabe \lcmd{make}.
+Natürlich läßt sich ein Editor zum Bearbeiten der \lname{Makefile} auch direkt
+aus dem Terminal-Fenster aufrufen. Dann wäre das Dateienfenster nicht erforderlich.
+
+
+Endlich ist es so weit:
+\subsubsection{Tester programmieren}
+Wenn Sie das geschafft haben, und ihr ISP-Programmer komplett angeschlossen ist, also eine Verbindung
 zum Rechner und zum ATmega hat, brauchen sie nur das Kommando eingeben:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
 make upload
 \end{verbatim} \end{large}
 Das Transistortester Programm wird jetzt noch einmal neu übersetzt und dann sofort
 mit dem Programm \lcmd{avrdude} in den ATmega geladen.
-Sie brauchen den Befehl nicht jedesmal neu eintippen.
-Bereits abgegebene Befehle in dem Terminal Fenster lassen sich mit der \keys{arrowkeyup} Taste
-wieder anzeigen.
-Den angezeigten Befehl können sie durch drücken der \keys{\enter} oder \keys{\return}
-taste wiederholen.
-Sie können aber auch der angezeigten Befehl vor dem Abschicken editieren,
-oder mit der \keys{arrowkeydown} wieder zu neueren Befehlen wechseln.\\
+Falls der Erfolg nicht so aussieht, wie soll, können sie nun sofort zum \lname{Makefile} Editor wechseln,
+nötige Änderungen machen und den Prozess wiederholen.
 
+\subsubsection{Tipps zum Terminal} 
+Sie brauchen die Befehle nicht jedes mal neu eintippen.
+Bereits abgegebene Befehle in dem Terminal Fenster lassen sich mit der \keys{$\uparrow$} Taste
+wieder anzeigen.
+Den angezeigten Befehl können sie durch Drücken der \keys{\enter} oder \keys{\return}
+Taste wiederholen.
+Sie können aber auch der angezeigten Befehl vor dem Abschicken editieren,
+oder mit der \keys{$\downarrow$} wieder zu neueren Befehlen wechseln.\\
+
+\subsubsection{Mögliche Makefile Aufrufe} 
 Zum Schluß sind hier noch einmal die wichtigsten \lname{Makefile} Aufrufe aufgelistet:
 
 \begin{table}[H]
@@ -1150,7 +1170,7 @@ auf dem aktuellen Stand gehalten werden.
 Wenn man wie hier empfohlen in einer Kopie unter \lname{\textasciitilde/Mytester} arbeitet,
 werden die Änderungen erst übertragen, wenn man auch das Kommando
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-rsync -auv ~/transistortester/Software/trunk ~/Mytester
+rsync -auv ~/transistortester/Software/trunk/ ~/Mytester
 \end{verbatim} \end{large}
 ausführt.
 Dabei kann es passieren, daß die \lname{Makefile} auf dem github Server ein neueres Datum 
@@ -1179,13 +1199,13 @@ Die Abbildungen \ref{fig:WinAVR1} zeigen das File-Menü der Bedienoberfläche vo
 \begin{figure}[H]
   \begin{subfigure}[b]{.5\textwidth}
     \centering
-    \includegraphics[width=.95\textwidth]{../PNG/Notepad_open.png}
+    \includegraphics[width=.85\textwidth]{../PNG/Notepad_open.png}
     \caption{open Makefile}
   \end{subfigure}
   ~
   \begin{subfigure}[b]{.5\textwidth}
     \centering
-    \includegraphics[width=.95\textwidth]{../PNG/Notepad_save.png}
+    \includegraphics[width=.85\textwidth]{../PNG/Notepad_save.png}
     \caption{save Makefile}
   \end{subfigure}
   \caption{Bedienung der WinAVR-Oberfläche Programmer's Notepad}
@@ -1197,13 +1217,13 @@ zum Übersetzen des Programms (Make All) und zum Programmieren des ATmega (Progr
 \begin{figure}[H]
   \begin{subfigure}[b]{.5\textwidth}
     \centering
-    \includegraphics[width=.95\textwidth]{../PNG/Notepad_make.png}
+    \includegraphics[width=.85\textwidth]{../PNG/Notepad_make.png}
     \caption{Erzeuge Programmdaten (.hex/.eep)}
   \end{subfigure}
   ~
   \begin{subfigure}[b]{.5\textwidth}
     \centering
-    \includegraphics[width=.95\textwidth]{../PNG/Notepad_program.png}
+    \includegraphics[width=.85\textwidth]{../PNG/Notepad_program.png}
     \caption{Programmiere ATmega}
   \end{subfigure}
   \caption{Bedienung der WinAVR-Oberfläche Programmer's Notepad}

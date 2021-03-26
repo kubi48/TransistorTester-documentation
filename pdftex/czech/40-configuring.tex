@@ -3,33 +3,33 @@
 \label{sec:config}
 \section{Konfigurace testeru}
 Veškerý software testeru je k dispozici ve zdrojovém kódu.
-Překlad modulů je řízen pomocí Makefile. Vývoj byl proveden
+Překlad modulů je řízen pomocí \lname{Makefile}. Vývoj byl proveden
 na Ubuntu Linux s nástroji GNU (GNU toolchain, gcc verze 4.5.3).
 
 Je jistě lehce možné, používat jiné operační verse Linuxu.
 Načtení přeložených dat do paměti flash nebo do paměti EEPROM
-je provedeno programem 'avrdude' \cite{avrdude} (Version 5.11svn) při použití Makefile volbou ,,make upload''.\\
- Program 'avrdude' je k dispozici pro Linux a Windows.
+je provedeno programem '\lcmd{avrdude}' \cite{avrdude} (Version 5.11svn) při použití \lname{Makefile} volbou \lcmd{make upload}.\\
+ Program '\lcmd{avrdude}' je k dispozici pro Linux a Windows.
 Kompilátor GNU C je také používán softwarem AVR studio v systému Windows pomocí softwaru WinAVR \cite{winavr1},\cite{winavr2}.
 
 Můžete také načíst programová data (.hex a .eep) s jinými programy do ATmega,
-ale pouze moje Makefile  verze zajišťuje, že se dostanou správná data do zvoleného procesoru.
+ale pouze moje \lname{Makefile}  verze zajišťuje, že se dostanou správná data do zvoleného procesoru.
 
-'Avrdude' načítá data do ATmega pouze tehdy, pokud jsou bajty podpisu připojené ATmegy stejné jako vybrané.
-Pokud změníte Makefile, bude software kompletně přeložen, pokud zvolíte ,,make'' nebo
-,,make upload''.
+'\lcmd{avrdude}' načítá data do ATmega pouze tehdy, pokud jsou bajty podpisu připojené ATmegy stejné jako vybrané.
+Pokud změníte \lname{Makefile}, bude software kompletně přeložen, pokud zvolíte \lcmd{make} nebo
+\lcmd{make upload}.
 
 Software, který byl přeložen pro ATmega8, nefunguje na ATmega168 a
 software, který byl přeložen pro ATmega328, nefunguje na ATmega168.
 
 Výjimkou je software, který byl přeložen pro ATmega168. Tyto soubory programu
 jsou také užitečné pro ATmega328.
-Dávejte pozor, při použití jiné, než s testerem dodané makefile.
+Dávejte pozor, při použití jiné, než s testerem dodané \lname{Makefile}.
 S příslušnými možnostmi je software také založen na nezměněném návrhu hardwaru
 Markus F. spustitelný (PARTNO=m8 , {\textbf ne} NO\_AREF\_CAP a {\textbf ne} možnost PULLUP\_DISABLE).
 Taktová frekvence může být také nastavena pojistkami (fuses) na \(8MHz\), pak není nutný krystal!
 
-K konfiguraci softwaru pro tester jsou k dispozici následující volby v makefile:
+K konfiguraci softwaru pro tester jsou k dispozici následující volby v \lname{Makefile}:
 
 \begin{description} \setlength{\itemsep}{0em}
   \item[PARTNO] popisuje cílový Procesor:\\
@@ -131,16 +131,16 @@ uvedeny v tabulce~\ref{tab:cod-display}.
 \end{table}
 
 Hodnoty v závorkách jsou interně používány pouze softwarem a jsou zde uvedeny pouze pro informaci.
-Hodnoty v závorce byste neměli zadávat v makefile.\\
+Hodnoty v závorce byste neměli zadávat v \lname{Makefile}.\\
 Příklad: CFLAGS += -DLCD\_INTERFACE\_MODE=2
 \item[LCD\_SPI\_OPEN\_COL] Pomocí volby LCD\_SPI\_OPEN\_COL se datové signály SPI rozhraní nepřepínají na VCC.
-Signály se přepínají pouze na GND, pro ,,high'' signály se přepínají na ,,Pull-Up'' odpory od ATmega.
-Pro ,,Reset'' signál je však vyžadován externí odpor, pokud je volba PULLUP\_DISABLE nastavena.
-Pro ostatní signály SPI jsou dočasně použity interní ,,Pull-Up'' odpory v mcu,
+	Signály se přepínají pouze na GND, pro \inquotes{high} signály se přepínají na \inquotes{Pull-Up} odpory od ATmega.
+Pro \inquotes{Reset} signál je však vyžadován externí odpor, pokud je volba PULLUP\_DISABLE nastavena.
+Pro ostatní signály SPI jsou dočasně použity interní \inquotes{Pull-Up} odpory v mcu,
 pokud je nastavena volba PULLUP\_DISABLE.\\
 Příklad: CFLAG += -DLCD\_SPI\_OPEN\_COL
 \item[LCD\_I2C\_ADDR] Die I\textsuperscript{2}C-adresa ovladače SSD1306 lze nastavit přednastavením adresy
-LCD\_I2C\_ADDR na předem zvolenou adresu nastavit.\\
+LCD\_\discretionary{}{}{}I2C\_\discretionary{}{}{}ADDR na předem zvolenou adresu nastavit.\\
 Příklad: CFLAGS += -DLCD\_I2C\_ADDR=0x3d
 \item[LCD\_ST7565\_RESISTOR\_RATIO] Tato volba nastaví poměr děliče odporu pro
 Regulátor napětí regulátoru ST7565. Užitečné hodnoty jsou obecně mezi 4 a 7.
@@ -192,7 +192,7 @@ Příklad: CFLAGS += INVERSE\_TP
 portu~D pro (experimentální) desky plošných spojů.
 Podrobnosti naleznete v hardwarové kapitole \ref{sec:hardware} na stránce~\pageref{sec:hardware}.
 Pomocí této volby jsou také vybrány alternativní přiřazení pinů ATmega pro grafické zobrazení.
-Pro desku čínské ,,T5'' musí být volba  STRIP\_GRID\_BOARD nastavena na 5.\\
+Pro desku čínské \inquotes{T5} musí být volba  STRIP\_GRID\_BOARD nastavena na 5.\\
 Při alternativách grafických zobrazení zůstává přiřazení signálu tlačítka nezměněno.\\
 Příklad: CFLAGS += -DSTRIP\_GRID\_BOARD
   \item[WITH\_MENU] aktivuje funkci menu pro ATmega328. Můžete provést některé další funkce 
@@ -243,7 +243,7 @@ Tyto testy jsou užitečné pro chyby v obvodu, jako je nesprávné hodnoty mě�
 izolační problémy najít.
 Pokud je váš obvod bez chyb, můžete vynechat T1 T7 self-test dílů nastavení tímto
 parametrem k dosažení rychlejší kalibrace.
-Je-li tato funkce zapnutá, provádí se samo-test dílů T1 až T7 pouze při volání funkce ,,Autotest'' v menu.
+Je-li tato funkce zapnutá, provádí se samo-test dílů T1 až T7 pouze při volání funkce \inquotes{Autotest} v menu.
 ATmega168 procesor nepoužívá self-test díly T1 T7, kdy se používají oba způsoby měření pro stanovení hFE.\\
 Příklad: CFLAGS += -DNO\_TEST\_T1\_T7
   \item[AUTO\_CAL] nulování pro měření kondenzátorů je při auto-testu zapsáno do paměti EEPROM,
@@ -263,7 +263,7 @@ kteří stejně vědí jak kalibrovat.\\
 Příklad: CFLAGS += -DSHORT\_UNCAL\_MSG
  \item[NO\_ICONS\_DEMO]
 Tato volba vypíná další zobrazení symbolů a výstup znakové sady v nabídce
-,,Zobrazit data''.
+\inquotes{Zobrazit data}.
 To šetří místo ve flash paměti a také výstupní čas pro uživatele.\\
 Příklad: CFLAGS += -DNO\_ICONS\_DEMO
  \item[WITH\_ROTARY\_CHECK]
@@ -311,7 +311,7 @@ Ale i bez funkce SamplingADCC bude komponenta správně rozpoznána.
 Bez volby WITH\_UJT budou UJT tranzistory rozpoznány jako dvojitá dioda.\\
 Příklad: CFLAGS += -DWITH\_UJT
   \item[WITH\_PUT]
-Tato volba umožňuje další testy pro tranzistory unijunction ,,Programírbáre unijunction transistor''.
+	  Tato volba umožňuje další testy pro tranzistory unijunction \inquotes{Programírbáre unijunction transistor}.
 Bez tohoto testu jsou PUTs normálně poznané jako bipolární tranzistory (Bipolar Junction Transistor).\\
 Příklad: CFLAGS += -DWITH\_PUT
  \item[FET\_Idss]
@@ -324,14 +324,14 @@ Tato možnost by měla být použita pouze ve výjimečných případech.\\
 Příklad: CFLAGS += -DFREQUENCY\_50HZ
   \item[CAP\_EMPTY\_LEVEL] Tato volba nastavuje napětí (mV) pro vybitý kondenzátor.
 Hodnota může být nastavena na hodnotu vyšší než \(3mV\) pokud se vybíjení nedokončí.
-V tomto případě tester hlásí po dlouhé době ,,Cell!''.\\
+V tomto případě tester hlásí po dlouhé době \inquotes{Cell!}.\\
 Příklad: CFLAGS += -DCAP\_EMPTY\_LEVEL=3
   \item[WITH\_AUTO\_REF] Tato volba měří referenční napětí na aktuální faktor pro měření kapacity
 menších kapacit (pod \(40\mu F\)).\\
 Příklad: CFLAGS += -DWITH\_AUTO\_REF
   \item[REF\_C\_KORR] určuje posun pro čtené referenční napětí v jednotkách mV.
 To lze použít pro nastavení kapacitního měření malých kondenzátorů.
-Navíc, pokud je vybrána možnost AUTO\_CAL je to jen další offset pro
+Navíc, pokud je vybrána možnost AUTO\_\discretionary{}{}{}CAL je to jen další offset pro
 nalezený ofset komparátoru.
 Hodnota 10 dává zhruba o 1 procent menší čtení.\\
 Příklad: CFLAGS += -DREF\_C\_KORR=14
@@ -367,7 +367,7 @@ Oba piny by pak měly být připojeny k děliči napětí 10:1.\\
 Příklad: CFLAGS += -DTQFP\_ADC7
   \item[WITH\_VEXT]  umožňuje měřit externí napětí přes dělič napětí 10:1.
 Pro ATmega168 nebo ATmega328 se běžně používá pin PC3,
-pokud není zvolená možnost TQFP\_ADC6 nebo TQFP\_ADC7.
+pokud není zvolená možnost TQFP\_\discretionary{}{}{}ADC6 nebo TQFP\_\discretionary{}{}{}ADC7.
 Tuto možnost lze použít pouze tehdy, pokud není nastavena možnost WITH\_UART.\\
 Příklad: CFLAGS += -DWITH\_VEXT 
   \item[RMETER\_WITH\_L] volí funkci měření odporu, která, spuštěna odporem na TP1 a TP3,
@@ -435,25 +435,25 @@ V opačném případě se používá programová paměť (Flash).
 Doporučuje se používat paměť EEPROM (možnost zvolená).\\
 Příklad: CFLAGS += -DUSE\_EEPROM
   \item[EBC\_STYLE] označuje, že výstup přiřazení tranzistorových pinů by měl být ve
-formátu  ,,EBC=...'' eventuálně. ,,GDS=...''.
+formátu  \inquotes{EBC=...} eventuálně. \inquotes{GDS=\dots}.
 Tato prezentace šetří programový prostor.
-Bez této volby bude přiřazení zobrazeno ve formátu ,,123=...'' kde každý bod může být E (emitor),
+Bez této volby bude přiřazení zobrazeno ve formátu \inquotes{123=\dots} kde každý bod může být E (emitor),
 B (báze) nebo K (kolektor).
 U FETs může být každý bod G (gate), D (drain) nebo S (source).
 Pokud pořadí zkušebních čepů není v pořadí čtení 1,2 a 3,lze pomocí volby EBC\_STYLE=321 pořadí otočit.
-Pak  bude přiřazení pinů ve tvaru ,,321=...'', což je obvyklý směr čtení zleva doprava, což je vhodné,
+Pak  bude přiřazení pinů ve tvaru \inquotes{321=\dots}, což je obvyklý směr čtení zleva doprava, což je vhodné,
  když mají zkušební kolíky pořadí 3,2,1.\\
 Příklad: CFLAGS += EBC\_STYLE
   \item[NO\_NANO] označuje, že desetinná předpona Nano by neměla být použita k zobrazení výsledků měření.
 Kapacitní hodnoty jsou uvedeny v \(\mu F\) místo \(nF\).\\
 Příklad: CFLAGS += NO\_NANO
   \item[NO\_LONG\_PINLAYOUT] lze nastavit, aby se zabránilo dlouhé podobě pinout na grafických displejích
-jako ,, Pin  1=E 2=B 3=C''.
-Je-li volba nastavena, použije se krátká forma jako ,, Pin  123=EBC''.\\
+jako \inquotes{ Pin  1=E 2=B 3=C}.
+Je-li volba nastavena, použije se krátká forma jako \inquotes{ Pin  123=EBC}.\\
 Example: CFLAGS += NO\_LONG\_PINLAYOUT
-  \item[PULLUP\_DISABLE] znamená, že nepotřebujete vnitřní ,,Pull-Up'' odpory.
- Musíte mít externí ,,Pull-Up'' odpor pro Pin 13 (PD7) a VCC zapojený, k použití této volby.
-Tato možnost zabraňuje možnému ovlivnění ,,Pull-Up'' odporů na měřících portů (Port B a Port C).\\
+  \item[PULLUP\_DISABLE] znamená, že nepotřebujete vnitřní \inquotes{Pull-Up} odpory.
+Musíte mít externí \inquotes{Pull-Up} odpor pro Pin 13 (PD7) a VCC zapojený, k použití této volby.
+Tato možnost zabraňuje možnému ovlivnění \inquotes{Pull-Up} odporů na měřících portů (Port B a Port C).\\
 Příklad: CFLAGS += -DPULLUP\_DISABLE
   \item[ANZ\_MESS] Tato volba určuje, jak často má být hodnota ADC čtena a přidána.
 Můžete zvolit hodnotu mezi 5 a 200, abyste získali průměrnou hodnotu pro měření ADC.
@@ -499,15 +499,15 @@ pod \(3,25V\) dokonce pouze jedno \(0,2V\) vyšší výstražné napětí pod \(
 jedno \(0,1V\) vyšší výstražné napětí než specifikované prázdné napětí.
 Nastavování prázdného napětí na hodnoty jako \(5,4V\) se nedoporučuje u dobíjecích
 baterií \(9V\),protože zvyšuje riziko poškození baterie v důsledku hlubokého vybití!
-Používáte-li dobíjecí baterie \(9V\) doporučují se typy ,,Ready to Use'' z důvodu nižšího samovybíjení.\\
+Používáte-li dobíjecí baterie \(9V\) doporučují se typy \inquotes{Ready to Use} z důvodu nižšího samovybíjení.\\
 Příklad ovládacího prvku low-drop (\(5,4V\)): CFLAGS += -DBAT\_POOR=5400 \\
 Příklad regulátoru 7805 (\(6,4V\)): CFLAGS += -DBAT\_POOR=6400
   \item[DC\_PWR] Tato úroveň napětí v jednotkách mV určuje výše uvedený limit napětí baterie
-který se změní na ,,DC\_Pwr\_Mode''.
+který se změní na \inquotes{DC\_Pwr\_Mode}.
 Tester obvykle běží v režimu baterie, kde všechny další funkce běží po omezenou dobu.
-Pomocí funkce ,,DC\_Pwr\_Mode'' se doplňkové funkce provádějí neomezeně.
+Pomocí funkce \inquotes{DC\_Pwr\_Mode} se doplňkové funkce provádějí neomezeně.
 Protože neexistuje měnič DC-DC se vstupním napětím \(0.9V\),
-,,DC\_Pwr\_Mode'' se také spustí, pokud je detekováno napětí baterie pod  \(0.9V\).\\
+\inquotes{DC\_Pwr\_Mode} se také spustí, pokud je detekováno napětí baterie pod  \(0.9V\).\\
 Příklad: CFLAGS += -DDC\_PWR=9500
  \item[BAT\_NUMERATOR] Definuje čitatel zlomku, se kterým musí být vyhodnoceno vnější napětí,
 abyste získali správné napětí.
@@ -528,8 +528,8 @@ Normálně software používá spánkový stav procesoru pro delší pauzy, aby 
 Použití tohoto stavu spánku s probuzením šetří kapacitu baterie,
 představuje další požadavek pro regulátor napětí.\\
 Příklad: DINHIBIT\_SLEEP\_MODE=1
-  \item[PROGRAMMER] \label{PROGRAMMER} nastavuje typ programátoru pro program rozhraní 'avrdude'.
-Bez správného nastavení použitého programátoru 'avrdude' nefunguje.
+  \item[PROGRAMMER] \label{PROGRAMMER} nastavuje typ programátoru pro program rozhraní '\lcmd{avrdude}'.
+Bez správného nastavení použitého programátoru '\lcmd{avrdude}' nefunguje.
 Standardně je připravený programátor firmy Diamex.
 Připraveny jsou, USBasp firmy Fischler a Arduino mega.
 Používáte-li jiný programátor, musíte ho přidat, a ten připravený pomocí \#~odhlásit.
@@ -544,16 +544,16 @@ Další příklad přidání, Programátor od firmy Pololu:
 #~setting for Pololu programmer
 #~PROGRAMMER=stk500v2
 #~BitClock=1.0
-#~Port = /dev/ttyACM0
+#~PORT = /dev/ttyACM0
 \end{verbatim}
 Příklad: PROGRAMMER=avrisp2
   \item[BitClock] nastavuje dobu taktové periody pro programátora. Viz popis parametru -B avrdudu.\\
 Příklad: BitClock=5.0
-  \item[PORT] nastavuje použité rozhraní, kde může avrdude dosáhnout mikrokontroléru (ATmega).\\
+  \item[PORT] nastavuje použité rozhraní, kde může \lcmd{avrdude} dosáhnout mikrokontroléru (ATmega).\\
 Příklad: PORT=usb
 \end{description}
 
-Další informace naleznete v příručce pro avrdude nebo v online dokumentaci~\cite{avrdude}.
+Další informace naleznete v příručce pro \lcmd{avrdude} nebo v online dokumentaci~\cite{avrdude}.
 Další parametry lze nastavit v souborech Transistortester.h a config.h.
 Soubor config.h obsahuje globální proměnné a tabulky, definuje souhvězdí port / pin,
 frekvenci hodin ADC a hodnoty odporu použité pro měření.
@@ -561,21 +561,24 @@ Soubor Transistortester.h obsahuje globální proměnné a tabulky, jakož i tex
 Obvykle se tyto hodnoty nemusejí bez důvodu změnit.
 \section{Programování mikrokontroléru}
 Vydávám software pro mikrokontrolér ve zdrojovém kódu.
-Vývoj byl proveden s operačním systémem Linux (Ubuntu přesněji Mint) a je ovládán přes Makefile.
-Makefile zajišťuje, že software je stejný jako v souboru Makefile předem zvolené možnosti.
+Vývoj byl proveden s operačním systémem Linux (Ubuntu přesněji Mint) a je ovládán přes \lname{Makefile}.
+
+\lname{Makefile} zajišťuje, že software je stejný jako v souboru \lname{Makefile} předem zvolené možnosti.
 Podívejte se prosím do souboru Readme.txt
 v adresáři trunk/default a v kapitole~\ref{sec:config} od strany~\pageref{sec:config}.
+
 Výsledkem překladu jsou soubory s příponou .hex a .eep.
 Obvykle se soubory nazývají TransistorTester.hex a TransistorTester.eep.\\
 Soubor .hex obsahuje data pro programovou paměť (Flash) procesoru ATmega.
 Soubor .eep obsahuje údaje pro EEPROM ATmega.
 Oba soubory musí být načteny do správné paměti.
+
 Navíc ATmega musí být správně nakonfigurována s pojistkami (fuses).
-Pokud používáte makefile spolu s programem avrdude \cite{avrdude}, nepotřebujete mít
+Pokud používáte \lname{Makefile} spolu s programem \lcmd{avrdude} \cite{avrdude}, nepotřebujete mít
 žádné přesné znalosti o detailech pojistek.
-Musíte volat pouze ,,make fuses'', pokud nepoužíváte krystal nebo,
-pokud máte na desce nainstalovaný  \(8MHz\) krystal, musíte zvolit ,,make fuses-crystal''.
-S řadou mikrokontrolérů ATmega168 můžete alternativně zvolit ,,make fuses-crystal-lp'' pro
+Musíte volat pouze \lcmd{make fuses}, pokud nepoužíváte krystal nebo,
+pokud máte na desce nainstalovaný  \(8MHz\) krystal, musíte zvolit \lcmd{make fuses-crystal}.
+S řadou mikrokontrolérů ATmega168 můžete alternativně zvolit \lcmd{make fuses-crystal-lp} pro
 provoz s nízkou spotřebou krystalu.
 Nikdy nepoužívejte verzi pro krystal, pokud nemáte v použití \(8MHz\) krystal.
 Pokud si nejste jisti, nechte nejdříve tovární nastavení v  a spusťte testovací přístroj v tomto stavu.
@@ -583,167 +586,455 @@ Je možné, že program běží příliš pomalu, ale to můžete později oprav
 Když ale použijete programovou versi pro \(8MHz\) krystal, 
 tak nesprávné nastavení pojistky může zabránit pozdějšímu ISP programování.
 
-\subsection{Použití Makefile pod Linuxem}
+\subsubsection{Poznámka překladatele}
+\label{linux}
+aby zůstalo všem ostatním kolegům zoufalství a "`bezesné nocí"' ušetřeno, kterými trpěl autor této kapitoly, poté co získal klone testeru a bez jakékoli zkušenosti s AVR se rozhodl, ho "`naučit česky"', vznikla tato kapitola. Získané zkušenosti by měly pomoci všem ostatním naivním,\\ "`ochotným \dots lehkomyslným a nezkušeným"'\dots, ÚSPĚŠNĚ naprogramovat jejich tester.
+\\
+Tato příležitost je zároveň využita, poděkovat autorovi a vývojáři tranzistorového testeru
+Karlovi-Heinzy Kübbelerovi viz \cite{karlheinz1} za jeho obětavost a trpělivost, protože bez jeho pomoci, by následující stránky nebyly napsány.
+     
+Aby překlad firmwaru a vypálení do MCU uspělo a současně \dots
+"`nemuselo být "`kolo"' znovu objeveno"', je část následujících stránek převzatá z originálu.
 
+Tak ještě jednou \dots \huge{MOC VELKÝ VDĚK}.
+\normalsize
+\subsection{Operační system Linux}
+Programování pod Linuxem přináší mnoho výhod, protože tento OS byl vyvinut odborníky, kteří se orientují  přáním uživatelů.\\
+Prostředí je navíc k dispozici zdarma a je dokonale udržováno.
+Další výhodou je zabezpečení samotného operačního systému, hlavně při používání internetu.
+Jak používání, tak i instalace dnešních vydání je mnohem jednodušší než u konkurenčních operačních systémů.\\
+Existují také velmi výkonné editory, jako jsou "`vim"' nebo "`emacs"', které ale vyžadují trochu času k zapracování. Zejména "`Vim"' má tu výhodu, že
+je předinstalován v každém systému a je také dostupný i u ostatních OS včetně Windows. Ale právě u tohoto editoru vyžaduje přepínání, mezi režimem zadávání a režimem příkazů, zvyk a tréning. 
+
+Tento tutoriál je tak navržen, aby povzbudil všechny "`ne"' uživatele Linuxu, aby se o tom, naprogramováním svého testeru v Linuxu, přesvědčili.
+Jako příklad, je zde použitý Linux Mint cinnemon v aktuální verzi, která je bezplatně k dispozici na internetu.  
+Instalace je možná na různé způsoby, Linux přinese svého spouštěcího asistenta, který se samostatně předchozí OS respektuje a nakonfiguruje
+Linux k paralelnímu použití.
+\vspace*{-0.3cm} 
+\subsubsection{Rady k použití s Linuxem}
 Pro ty, kteří neradi píší, nabízí Linux snadný způsob, jak si to ulehčit.
-Zkopíruj tuto příručku na USB klíčenku a otevři ji v tvém Linuxu. 
-Poté přesuň myš na název dokumentu, stiskni levé myší tlačítko a táhni dokument k levému okraji obrazovky, až se zobrazí možný rámeček. Nyní  myš uvolni.
-Příručka nyní zabere levou polovinu obrazovky.\\
-V dalším kroku současně stiskni [Ctrl] + [Alt] + [t] k otevření příkazového okna, které již známým 
-způsobem přesuneš, nyní na pravou polovinu obrazovky.
+Zkopíruj tuto příručku na USB klíčenku a otevři ji dvojitým zmáčknutím levým tlačítkem myši \LMB na tvém desktopu.
+Alternativně k dvojitému zmáčknutí můžeš pravým tlačítkem \RMB zvolit jiný, než předvolený prohlížeč PDF.   
+Poté přesuň myš na název dokumentu, stiskni levé \LMB myší tlačítko a táhni dokument k levému okraji obrazovky, až se zobrazí možný rámeček. Nyní  myš uvolni.
+Příručka nyní zabere levou polovinu obrazovky.
+ 
+Jak je pro Linux typické, existuje další řada možností ke změně velikosti dokumentu. S levým tlačítkem \LMB na okrajích nebo rozích okna, 
+nebo pravým tlačítkem \RMB na hlavové liště pomocí funkce \menu[,] {{změnit velikost}}.
+Operace je jinak stejná jako při posunu.
 
-\subsection{Instalace programových balíčků}
+Grafická rozhraní v systému Linux mají zpravidla více než jednu pracovní plochu,
+s kombinací kláves \keys{{Ctrl} + \ Alt + \arrowkeyright}
+nebo \keys{{Ctrl} + \ Alt + \arrowkeyleft} je lze přepnout.
+Pomocí pravého tlačítka \RMB můžeš zadat a vybrat pracovní prostor, na kterém je okno zobrazeno.
 
+Okna, která potřebuješ pro aktuální práci, můžeš mít tedy na pracovní ploše shromážděné a nedusíš se ve všech oknech pro různé pracovní oblasti.
+Mimochodem, se všemi položkami příkazů a identifikátory souborů je důležité vědět, že Linux konsekventně rozlišuje velká a malá písmena.
+\vspace*{-0.3em}  
+\subsubsection{Instalace programových balíčků}
+\label{paket}
 K naprogramování testeru, musíš nejprve stáhnout s internetu a nainstalovat programové balíčky:
 
- 'binutils-avr', 'avrdude', 'avr-libc' a 'gcc-avr'.\\
-Toho dosáhneš jednoduše, když přejdeš na této stránce k následujícímu textu:
+ binutils-avr, avrdude, avr-libc, gcc-avr a git.
+ To docílíš následovně. Naviguj ve tvé příručce k na tuto stránku~\pageref{paket} k následujícímu textu:
 
-\verb"sudo apt-get install avrdude avr-libc binutils-avr gcc-avr"\\
-Označ levým myším tlačítkem ten výše jmenovaný text v levém okně,
-Přesuň myš na kurzor v pravém příkazovém okně a stiskni prostřední tlačítko myši (kolečko) \textbf{dále zkráceně [ST]}. Tím kopíruješ text mezi okny.
-Po potvrzení pomocí [Enter], vyžaduje 'sudo' tvé uživatelské heslo. Na rozdíl od Windows se zde heslo zadává \textbf{po slepu} a potvrzuje se klávesou [Enter].
-Tím se automaticky nainstalují všechny potřebné softwarové balíčky.
-Eventuálně musíš  mezitím potvrdit možnou otázku pomocí [J].
-\\*Zapamatuj si, že Linux vždy rozlišuje mezi malými a velkými písmeny.
-\\ Takže neodpovídej s [j], ale s [J]!
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+sudo apt-get install avrdude avr-libc binutils-avr gcc-avr git
+\end{verbatim} \end{large}
+ 
+Nyní současně stiskni \keys{{Strg} + \Alt + t} k otevření příkazového okna, které již známým způsobem přesuneš, nyní na pravou polovinu obrazovky. 
+Příručka nyní zabere levou polovinu obrazovky.\\
+V dalším kroku označ levým myším tlačítkem \LMB ten výše jmenovaný text v levém okně. Při dosáhnutí posledního písmene, povol tlačítko k ukončení označení.
+Je-li text ve vlastním řádku, jako v tomto případě, je možné ho označit trojitým zmáčknutím levého tlačítka \LMB v jeho řádku.
 
-\subsection{Stáhnutí zdrojů}
+Přesuň nyní myš na kurzor v pravém příkazovém okně a vlož tento text stisknutím prostředního tlačítka myši, \textbf{dále zkráceně \MMB} do okna terminálu.
+U většiny myší je rolovací kolečko také prostředním tlačítkem.
+U myší bez prostředního tlačítka je možné napodobit prostřední tlačítko myši současným stisknutím tlačítek \LRMB.
+Bez ohledu na to, jak se text příkazu dostal do příkazového řádku, by jsi měl tento text zkontrolovat, než odešleš tento příkaz stisknutím klávesy
+ \keys{\enter}.
+S instalací balíčků si obvykle nemusíš dělat starosti, že se, kvůli nesprávné operaci, stane něco špatného.
+Program \lcmd{apt-get} zkontroluje, zda některý z uvedených balíčků není již nainstalovány a zda jsou nutné závislosti splněny.
+V případě potřeby bude, již dříve nainstalovaný balíček, nahrazen novějším.
+Poté vás program \lcmd {sudo} nejprve požádá o uživatelské heslo, než to udělá zbytek příkazového řádku.
+Heslo byste měli vyplnit a potvrdit stisknutím klávesy \keys{\enter} nebo \keys {\return}.
+Nyní budou všechny softwarové balíčky staženy a nainstalovány programem \lcmd{apt-get}.
 
-K stáhnutí zdrojů a dokumentace z archivu Github, si musíš nejprve nainstalovat github pomocí:
+Je možné, že se \lcmd{apt-get} při instalaci balíčků ptá na detaily, na které lze obvykle potvrdit.   
+\\ \textbf{*Pozor,} Linux rozlišuje mezi malými a velkými písmeny. Takže odpovídej s \keys{J} a ne s \keys{j}~!
 
-\verb"sudo apt-get install git"\\
-Úspěch můžeš vidět s:
-
-\verb"git version"\\
-Pokud složka transistortester již existuje, měla by být přejmenována nebo odstraněna. \\
+Samozřejmě existují i ​​jiné způsoby instalace balíčků, které používají grafické uživatelské rozhraní
+jako \lcmd{synaptic} nebo \lcmd{dpkg}. Ale není jednodušší způsob instalace smíšených skupin balíčků. 
+\vspace*{-0.3em} 
+\subsubsection{Stáhnutí zdrojů}
+Zda byla instalace správce zdrojů Github úspěšná, lze kontrolovat s:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+git version
+\end{verbatim} \end{large}
+Jako odpověď se ukáže číslo instalované verse.\\ 
+Pokud složka transistortester již existuje, měla by být nyní přejmenována nebo odstraněna. \\
 Příkazem:
 
-\verb"git clone https: //github.com/Mikrocontroller-net/transistortester"\\
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+git clone https://github.com/Mikrocontroller-net/transistortester
+\end{verbatim} \end{large}
 stáhneš celý archiv. \\
-Soubory jsou nyní v Linuxu [osobní složka] na (/home/"`uživatel"') pod názvem "`transistortester"'.\\
-Kontrolu přítomnosti docílíš, když v okně terminálu, zadáš „ls“ a potvrdíš. \\
+Soubory jsou nyní v Linuxu [osobní složka] na \lname{/home/"`uživatel"'} pod názvem \inquotes{transistortester}.\\
+Kontrolu přítomnosti docílíš, když v okně terminálu, zadáš \lcmd{ls} to je \(\mbox{\keys{l} \keys{s} \keys{\return}}\)~.\\
+Více informací o souborech a adresářích získáš pomocí
+příkazu \lcmd{ls -lh}. Zde byly kombinovány dvě možnosti příkazu \lcmd{ls}
+a k tomu možnosti \lcmd{{-l}} a \lcmd{{-h}}. Tento vstupní formulář je tedy krátký formulář pro
+příkaz \lcmd{ls -l -h} nebo \lcmd{ls -l --lidsky čitelný}.
+Některé možnosti přicházejí ve dvou verzích, krátká s - (\lcmd{{-h}})
+a dlouhý formulář se dvěma - (\lcmd{{--human-readable}}).
+Mimochodem, na pořadí možností nezáleží,
+stejně jako počet oddělovacích mezer \keys{\space}.
+S téměř všemi příkazy se můžete dozvědět více o operaci a možnostech
+přidáním možnosti \lcmd{{--help}}.
+To samozřejmě platí i pro příkaz \lcmd{git}. \\ 
 Chceš-li v budoucnu stáhnout nové aktualizace, postačí z této složky zadat:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+git pull
+\end{verbatim} \end{large}
+v okně terminálu a v pracovním adresáři \lname{"`transistortester"'}~,
+nebo z jakéhokoliv adresáře s:
 
-\verb"git status"\\
-Na tomto místě můžeš, volitelně vytvořit a nakonfigurovat svůj vlastní účet na GitHub. \\
-Místo ,,Linux Mind'' zadej své vlastní jméno a e-mailovou adresu:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+(cd ~/transistortester ; git pull)
+\end{verbatim} \end{large}
 
-\verb|git config --global user.name "Linux Mind" |\\
-\verb|git config --global user.email "Linux @ Mind" |\\
+K zajištění správné funkce výzvy \lcmd{git pull} , se doporučuje, neměnit adresářový strom. 
 
-\subsection{Používání rozhraní}
+\subsubsection{Používání USB rozhraní}
+Všechny moderní ISP nástroje k programování se sériovým rozhraním používají USB,
+protože toto rozhraní také zajišťuje napájení.
+U těchto zařízení by jsi měl jako prvé zkontrolovat, jaké označení je přiřazené k tomuto zařízení.
+Při vložení nástroje do USB zásuvky v systému Linux je vytvořen záznam do systémového protokolu.
+Protože je systémový protokol textový soubor, nechá se jednoduše zobrazit na obrazovce.
+Chceš-li to provést, můžeš použít příkaz \lcmd{dmesg} v okně terminálu.
+A proto, že nás, po zastrčení nástroje zajímají pouze na poslední řádky protokolu, použij:
 
-\dots připravit uživatele (user). \\
-USB zařízení lze zjistit zadáním 'lsusb' v příkazovém okně.
-Zadej 'lsusb' nejprve bez a potom s připojeným USB programátorem. 
-Porovnáním výsledků najdeš tvůj USB programátor.
-Výsledek lsusb může vypadat takto:
-\begin{verbatim}
+\verb"dmesg|tail"\\
+Program \lcmd{dmesg} zobrazuje celý systémový protokol a příkaz
+\lcmd{tail} zobrazuje pouze posledních 10 řádků výstupu.
+U programátoru \lname{Pololu} vypadá výsledek takto:
+\vspace*{-.5em}
+\begin{footnotesize} \begin{verbatim}
+usb 1-3: new full-speed USB device number 3 using xhci_hcd
+usb 1-3: New USB device found, idVendor=1ffb, idProduct=00bb, bcdDevice= 1.02
+usb 1-3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 1-3: Product: Pololu USB AVR Programmer v2.1
+usb 1-3: Manufacturer: Pololu Corporation
+usb 1-3: SerialNumber: 00227484
+cdc_aem 1-3:1.1: ttyACM0: USB ACM device
+cdc_aem 1-3:1.3: ttyACM1: USB ACM device
+usbcore: registered new interface driver cdc_acm
+cdc_aem: USB Abstract Control Model driver for USB modems and ISDN adapters
+\end{verbatim} \end{footnotesize}
+\vspace*{-.5em}
+Zde jsou důležité řádky 7 a 8 se vstupy ttyACM0 a ttyACM1.
+Jedná se o přiřazené názvy zařízení pro dvě sériová rozhraní.
+V Linuxu jsou všechna zařízení také součástí stromu souborů a jsou v
+souboru \lname{/dev/} registrované. Přiřazené Jméno nástroje \lname{Pololu} se skládá
+z dvou sériových rozhraní, a to \lname{/dev/ttyACM0} a \lname{/dev/ttyACM1}.
+U programátora  \lname{Pololu} musíš vědět, že první sériové rozhraní
+se používá pro ISP programátor a druhé sériové rozhraní
+lze volně použít pro jiné účely.\\
+Existenci položek zařízení můžeš potvrdit pomocí příkazu:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+ls -l /dev/ttyACM*
+\end{verbatim} \end{large}
+Výsledek by měl vypadat takto: 
+\begin{footnotesize} \begin{verbatim}
+crw-rw---- 1 root dialout 166, 0 Mär 11 09:57 /dev/ttyACM0
+crw-rw---- 1 root dialout 166, 1 Mär 11 09:57 /dev/ttyACM1
+\end{verbatim} \end{footnotesize}
+V tomto výstupu se dozvíš, že pro toto zařízení může ovládat uživatel \lname{root}
+a je použití je povoleno pro skupinu uživatelů \lname{dialout} .
+Tvé členství v této skupině můžeš zkontrolovat pomocí příkazu:
+
+\verb"id"\\
+V odpovědi by se v seznamu měla objevit skupina \lname{dialout} .
+Přístup ke členství do skupiny je popsán níže v dalším pracovním bodě.
+Předtím ale další příklad systémového protokolu pro nástroj jiného
+ISP-programátora  \lname{Diamex ISP-PRog NG} si můžeš prohlédnout zde: 
+\vspace*{-.5em}
+\begin{footnotesize} \begin{verbatim}
+usb 1-6: new full-speed USB device number 8 using xhci_hcd
+usb 1-6: New USB device found, idVendor=16c0, idProduct=2a9b, bcdDevice=43.40
+usb 1-6: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 1-6: Product: AVR-ISP2
+usb 1-6: Manufacturer: ERFOS
+usb 1-6: SerialNumber: 19377-43111-757
+cdc_aem 1-6:1.0: ttyACM0: USB ACM device
+\end{verbatim} \end{footnotesize}
+\vspace*{-.5em}
+Přehled připojených sériových převodníků USB jze vidět v adresáři \lname{/dev/serial/by-id/},
+které lze dotazovat příkazem:
+
+\verb"ls -og /dev/serial/by-id/* | cut -d' ' -f 7-"\\ 
+Výstup může například vypadat takto:
+\vspace*{-.2em} 
+\begin{footnotesize} \begin{verbatim}
+/dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_954323131383519062F0-if00 -> ../../ttyACM2
+/dev/serial/by-id/usb-Pololu_Corporation_Pololu_USB_AVR_Programmer_v2.1_00227484-if01 -> ../../ttyACM0
+/dev/serial/by-id/usb-Pololu_Corporation_Pololu_USB_AVR_Programmer_v2.1_00227484-if03 -> ../../ttyACM1
+\end{verbatim} \end{footnotesize}
+\vspace*{-.2em}
+Pokud je popis dostatečně podrobný, můžete tímto způsobem přiřadit rozhraní.
+
+Pokud je, až k tomuto bodu vše v pořádku, je třeba změnit v \lname{Makefile} pouze položku PORT 
+za \inquotes{PORT=/dev/ttyACM0},
+aby měl program \lcmd{avrdude} přístup k programátorovi.
+Pokud se ve tvém systému používají jiná USB sériová rozhraní, mohou se v označení zařízení poslední číslice lišit.
+Chtěl bych také zmínit o další skupině USB-serial rozhraní která používá místo \lname{ttyACM} název \lname{ttyUSB}.
+
+Pokud tvůj programátor používá speciální USB rozhraní ale
+žádný sériový typ USB, je pravděpodobně nutná další práce. V \lname{Makefile} můžeš nastavit PORT pevně na \lname{USB}. 
+Ale je pravděpodobné, že stejně budeš mít přístup k zařízení.
+Všechna připojená USB zařízení lze zobrazit zadáním \lcmd{lsusb} do příkazového okna. Zadej:
+
+\verb"lsusb"\\
+před a po připojení tvého USB programátora.
+Porovnáním výsledků tento nástroj lokalizuješ. Výsledek může vypadat takto:
+\vspace*{-.6em}
+\begin{footnotesize} \begin{verbatim}
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 Bus 002 Device 003: ID 046d:c050 Logitech, Inc. RX 250 Optical Mouse
 Bus 002 Device 058: ID 03eb:2104 Atmel Corp. AVR ISP mkII
-Bus 002 Device 059: ID 2341:0042 Arduino SA Mega 2560 R3 (CDC ACM)
-Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
-\end{verbatim}
-Zde bylo detekováno zařízení AVR ISP mkII jako zařízení 58 (DIAMEX ALL-AVR).
-ID 03eb je jeden ID výrobce a ID 2104 identifikátor produktu.
+Bus 002 Device 059: ID 2341:0042 Arduino SA Mega 2560 R3 (CDC Aem)
+Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub}
+\end{verbatim} \end{footnotesize}
+\vspace*{-.6em}
+Zde bylo detekováno zařízení AVR ISP mkII jako zařízení 58 \lname{DIAMEX ALL-AVR}.\\
+ID 03eb je jeden ID výrobce a ID 2104 identifikátor produktu.\\
 Tyto dva identifikátory je nutné zapsat do souboru /etc/udev/rules.d/90-atmel.rules pomocí:
 
 \verb"sudo xed /etc/udev/rules.d/90-atmel.rules"\\
+Pochopitelně je možné,použít také jiný editor než \lname{xed}. 
 V tomto příkladu obsahuje soubor 90-atmel.rules pouze jeden řádek:
-\begin{verbatim}
-SUBSYSTEM=="usb", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2104", MODE="0660",
-GROUP="plugdev"
-\end{verbatim}
-Tato položka umožňuje přístup k zařízení pro členy skupiny ,,plugdev''.
-Pro použití většiny programátorů se doporučuje napsat do 90-atmel.rules následující text,
+\vspace*{-0.6em}
+\begin{footnotesize}\begin{verbatim}
+SUBSYSTEM=="usb", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2104", MODE="0660", GROUP="plugdev"
+\end{verbatim} \end{footnotesize}
+\vspace*{-0.6em}
+Záznam je v Linuxu také možné vytvořit i bez editoru pomocí příkazu:
+\begin{footnotesize} \vspace{-0.4em} \begin{verbatim}
+sudo echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2104"
+, MODE="0660", GROUP="plugdev"' >> /etc/udev/rules.d/90-atmel.rules
+\end{verbatim} \end{footnotesize}
+Zde viditelné dva řádky je nutné zapsat v terminálu jako JEDEN řádek!\\
+ Pro použití většiny programátorů se doporučuje napsat do 90-atmel.rules následující text,
 který je nutné tak upravit, aby stál celý příkaz vždy v jednom řádku
 (jako je to již u \#~Pololu programátoru):
-\begin{verbatim}
+\vspace*{-1em}
+\begin{footnotesize} \begin{verbatim}
 # Copy this file to /etc/udev/rules.d/90-atmel.rules
 # AVR ISP mkII- DIAMEX ALL-AVR
 SUBSYSTEM=="usb", ATTRS{idVendor}=="03eb", ATTS{idProduct}=="2104", GROUP="plugdev",
  MODE="0660"
+# Atmel AVR Dragon
+ATTRS {idVendor}=="03eb", ATTRS {idProduct}=="2107", GROUP="plugdev", MODE="0660"
+# Atmel-ICE
+SUBSYSTEM=="usb", ATTRS {idVendor}=="03eb", ATTRS {idProduct}=="2141", GROUP = "plugdev",
+ MODE="0660",
+# xplained-mini
+SUBSYSTEM=="usb", ATTRS {idVendor}=="03eb", ATTRS {idProduct}=="2145", GROUP = "plugdev",
+ MODE="0660",
+# avrftdi
+#SUBSYSTEM=="usb", ATTRS {idVendor}=="0403, ATTRS {idProduct}=="6010", GROUP = "plugdev",
+ MODE="0660",
+# UM232H
+#SUBSYSTEM=="usb", ATTRS {idVendor}=="0403, ATTRS {idProduct}=="6014", GROUP = "plugdev",
+ MODE="0660",
 # USBasp programmer for Atmel AVR controllers FISCHL
 ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="05dc", GROUP="plugdev", MODE="0660"
+# USB NIBObee-Programmer
+ATTRS {idVendor}=="16c0", ATTRS {idProduct}=="092f", GROUP="plugdev", MODE="0660"
 # USBtiny ISP programmer
 ATTRS{idVendor}=="1781", ATTRS{idProduct}=="0c9f", GROUP="plugdev", MODE="0660"
-# Pololu programmer
-SUBSYSTEM=="usb", ATTRS{idVendor}=="1ffb", ATTRS{idProduct}=="00b0", MODE="0666"
-\end{verbatim}
+# USB ISP-programmer für Atmel AVR
+SUBSYSTEM=="usb", ENV {DEVTYPE}=="usb_device", SYSFS {idVendor}=="16c0", SYSFS {idProduct}
+ == "05dc", MODE="0660",
+\end{verbatim} \end{footnotesize}
 Po zapsání lze svůj úspěch kontrolovat s:
-
-\verb"less /etc/udev/rules.d/90-atmel.rules"\\
+\begin{footnotesize} \vspace{-0.4em} \begin{verbatim}
+less /etc/udev/rules.d/90-atmel.rules
+\end{verbatim} \end{footnotesize}
+Pak bys měl systém pžimět k tomu, aby znovu načetl pravidla udev pomocí: 
+\begin{footnotesize} \vspace{-0.4em} \begin{verbatim}
+sudo udevadm control --reload-rules
+\end{verbatim} \end{footnotesize}
+a kromě toho, ještě svůj ISP programátor odpojit a znovu ho připojit. 
+To umožňuje přístup k zařízení pro členy skupiny \lname{plugdev}.
 K dispozici bylo také rozpoznáno zařízení 59 USB Arduino Mega 2560 SA systém, které vytváří přístup
-k sériovému zařízení ,,/dev/ttyACM0'' pro členy skupiny ,,dialout''.
-Proto by měl být vlastní ID uživatel členem skupiny 'plugdev' i skupiny 'dialout'. Přikazem:
+k sériovému zařízení \inquotes{/dev/ttyACM0} pro členy skupiny \lname{dialout}.
+\vspace*{-0.3em} 
+\subsubsection{Skupinové členství}
+pro tvé vlastní uživatelské jméno, ve skupinách \lname{plugdev} i \lname{dialout} dosáhneš přikazem:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+sudo usermod -a -G dialout,plugdev $USER
+\end{verbatim} \end{large}
+Nyní by měl být možný přístup s \lcmd{avrdude}m k oběma zařízení.
+Kontrola je možná zadáním:
+\lcmd{id}\\
+Pokud by se vyskytly problémy, můžeš také přistoupit k členství prostřednictvím: \\
+~ \menu[,]{Nabídka menu,{Správa systému},{Uživatelé a skupiny},{?heslo}}. Zobrazí se okno se dvěma záložkami. \\
+Pokud nyní klikneš na své jméno na kartě uživatelé, uvidíš svůj profil a skupinové přidružení na pravé straně. Pomocí tlačítka \menu[,]{ADD} je nyní možné, přidat nové skupiny.\\
+Nabídku menu lze lehce dosáhnout s \keys{\winmenu} to je tlačítko mezi \keys{{Strg}} a \keys{\AltGr} na pravé straně klávesnice.
+\vspace*{-0.3em} 
+\subsubsection{Příprava pracovního prostředí} 
+Terminálové okno se otvírá normálně v domovském adresáři \lname{../home/user}.
+Název tvého domovského adresáře je uložen v systémové proměnné \lname{\$HOME}.
+Do tohoto adresáře se dostaneš v terminálu z jakéhokoli adresáře také krátkým povelem:
 
-\verb"sudo usermod -a -G dialout,plugdev \$USER"\\
-Nyní by měl být možný přístup s avrdudem k oběma zařízení.
-Kontrola je možná zadáním 'id'.\\
-Aby zůstal originál čistý a terminálové okno se otvíralo v ../home/,,user'' se doporučuje vytvořit pracovní adresář se jménem {\textbf Mytester}.
-To je možné docílit následujícími povely:
+\verb"~/"\\
+Nezapomeň zadat po zadání \lname{\textasciitilde} zadat také znamení \lname{/} , jinak hledá tlumočník příkazů uživatele s následujícím jménem!\\   
+Aby zůstal originál čistý je výhodné vytvořit duplikát svého testeru v pracovním adresáři se jménem například \lname{\textbf{Mytester}}.\\
+Nejprve vytvoříš nový Adresář s povelem:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+mkdir ~/Mytester
+\end{verbatim} \end{large}
 
-\verb"cd transistortester/Software/trunk/"\\
-a poté zase zadáním 'ls'   ~ najít podadresář ,,vlastního testeru''.
-U dalších dvou povelů, tyto nejdříve JEN vložit a {\textbf !nemačkat!} ihned [Enter]:\\
-Zadáním příkazu: ('rk' znamená zde napsat písmena rk)
+Pokud jsi stáhl z \lname{Github} archivu všechny zdrojové soubory do adresáře \lname{\textasciitilde/transistortester},\\
+získáš následujícím příkazem kopii tvých souborů a jejich podadresářů do adresáře \lname{\textbf{Mytester}}: 
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+rsync -auv ~/transistortester/Software/trunk/ ./Mytester
+\end{verbatim} \end{large}
 
-\verb"cp -r 'rk' Mytester/"\\
-Nyní ,,vlastní tester'' myší markýrovat. Kurzor postavit pomocí tlačítka s [šipkou vlevo] za 'rk' a tyto znaky vymazat. Potom zmáčknout [rk] a teprve nyní [Enter]. Tím je pracovní adresář vytvořen\\
-Kontrola jeho existence a obsahu je možná s povelem:
+Kvůli přítomnosti \lcmd{-v} protokoluje \lcmd{rsync} všechny procesy kopírování.
+Pokud místo možností \lcmd {-auv} zadáš jen \lcmd{-au}, proces kopírování nezaznamenává.
+K naplněnému kufru podadresáře však můžete přistupovat pomocí následujícího příkazu
+přesvědčit: 
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+ls -lh ~/Mytester
+\end{verbatim} \end{large}
 
-\verb"diff -s 'rk' Mytester"\\
-při čemž musí být 'rk', jako již předem, vyměněn za podadresář ,,vlastního testeru''.\\
-Posledním příkazem:
+K dispozici je také jasná reprezentace adresářové struktury a souborů příkazem:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+tree ~/Mytester
+\end{verbatim} \end{large}
 
-\verb"ln -s ~/transistortester/Software/trunk/Mytester ~/Mytester"\\
-lze vytvořit propojení k tomuto adresáři.\\
-V budoucnosti bude stačit zadáním:
+Tento příkaz \lcmd{tree}není ale standardně instalovaný. Pomocí:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+sudo apt-get install tree
+\end{verbatim} \end{large}
 
-\verb"[Strg]+[Alt]+[t]cd My[Tab][Enter]"\\
-k jeho dosažení. Pozor na rozdíl mezi velkými a malými písmeny!\\   
-A dále, již také známý povel, k nastavení Makefile :
+ho můžeš ale lehce doinstalovat.
 
-\verb"xed Ma[Tab][Enter]"\\
-\textbf {V souboru Makefile je nejdůležitější správně} zvolit použitý USB programátor.
-Více o tom v Kapitole \ref{PROGRAMMER} na stránce \pageref{PROGRAMMER}, bod PROGRAMMER.
+Pokud nyní víš, který podadresář je pro tvůj tester vhodný, můžeš přejít do tohoto podadresáře.\\
+Příklad: máš čínskou sadu s černobílým displejem, pak je podadresář \lname{mega328\_st7565\_kit} správný
+a zadáním:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+cd ~/Mytester/mega328\_st7565\_kit
+\end{verbatim} \end{large}
 
-\begin{tabbing}
-Do\=poručují se následo\=vé výzvy:\\
-\> make clean \> pro vyčištění prostředí\\
-\> make       \> k zkompilování programu\\
-\> make fuses \> k nastavení  ATmega ,,fuses'' bez krystalu\\
-\> make fuses-crystal \> k nastavení  ATmega ,,fuses'' JEN s versi s \(8MHz\) krystalem!\\
-\> make upload \>k načtení přeloženého programu do ATmega prostřednictvím ISP rozhraní.
-\end{tabbing}\vspace{-0,3 cm}
+Nyní nech okno terminálu otevřené a zkus otevřít tento Soubor následujícím způsobem:
+\vspace*{-0.3em}   
+\subsubsection{Příprava svého testeru pomocí grafické cesty}
+\lname{\textbf{Mytester}} můžeš také dosáhnout dalšími způsoby.
+Posuň myš na zelenou ikonou \lname{pořadač (Nemo)}  na systémové liště s nápisem \lname{Soubory}, nebo otevři \menu[,]{Nabídka} a napiš do výběrového okna začáteční písmena tvého účelu. V tomto případě stačí \menu[,]{so}, abys viděl \lname{Soubory} napravo. Kromě toho lze použít  také \menu[,]{Nabídka, Příslušenství, Soubory}. Dvojitým stiskem \LMB tvojí volbu otevři. Otevře se okno se všemi možnými testery a mezi nyní i vybraná složka \lname{mega328\_st7565\_kit} a v ní soubor \lname{Makefile}.
+\vspace*{-0.3em} 
+\subsubsection{Úprava Makefile}
+Postav myš na tento soubor a dvojitým stiskem \LMB se otevře tento dokument s předvoleným editorem. Druhá možnost je stisknutí \RMB kdy se otevře menu
+s různými možnostmi spravování. A pro ty, kterým se práce s terminálem zalíbila stačí zadat v terminálu:
+\verb"xed Ma" dále \keys{{Tab}} a na konec \keys{\return}\\
 
-Možná, že program avrdude hlásí chybu při nastavení prodloužené pojistky (extendet Fuse).
+Je jedno jakou cestou jsi se sem dostal, \textbf {v souboru \lname{Makefile} je nejdůležitější správně} zvolit tvůj USB programátor.
+Více o tom v Kapitole \ref{PROGRAMMER} na stránce \pageref{PROGRAMMER}, bod PROGRAMMER.\\
+Dále zde můžeš nastavit další možnosti jako řeč, písmo atd.
+\vspace*{-0.3em} 
+\subsubsection{Programování testeru}
+A je čas se dostat k programování. Propoj svůj programátor s testerem a přes USB s počítačem.
+Po té, co jsi tvé změny v \lname{Makefile} provedl, zkontroloval a dokument uložil, přejdi myší na okno terminálu a aktivuj ho stiskem na \LMB.
+Aktivní okno poznáš tím, že má záhlaví vyšší kontrast!\\
+Nyní stačí zadat příkaz:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+make upload
+\end{verbatim} \end{large}
+
+Tester program bud nyní znovu sestaven a poté okamžitě načten do ATmega \lcmd{avrdude} programem.
+Nyní můžeš okamžitě tvůj úspěch zkontrolovat a oslavit.\\
+V případě nespokojenosti, je možné změnit okno k editoru \lname{Makefile}, provést potřebné změny a proces opakovat.
+\vspace*{-0.3em}
+\subsubsection{Tips k terminálu}
+již zadané příkazy  nemusíš stále znova psát. Ty lze otevřít klávesou,\keys{$\uparrow$} a stisknutím kláves \keys{\enter} nebo \keys{\return}
+příkaz opakovat. Zobrazený příkaz můžeš jeětě před odesláním upravit, nebo přejít na novější příkazy pomocí \keys{$\downarrow$}.
+\vspace*{-0.3em}
+\subsubsection{Možné výzvy v Makefile}
+\begin{table}[H]
+\begin{tabular}{ l | l}
+poručují se následo & vé výzvy:\\
+\hline
+\lcmd{make clean} & pro vyčištění prostředí\\
+\lcmd{make}       & k zkompilování programu\\
+\lcmd{make fuses} & k nastavení  ATmega \inquotes{fuses} bez krystalu\\
+\lcmd{make fuses-crystal} & k nastavení  ATmega \inquotes{fuses} JEN s versi s \(8MHz\) krystalem!\\
+\lcmd{make upload} & k načtení přeloženého programu do ATmega prostřednictvím ISP rozhraní.\\
+%  \caption{}
+%  \label{}
+\end{tabular}
+\end{table}
+
+Možná, že program \lcmd{avrdude} hlásí chybu při nastavení prodloužené pojistky (extendet Fuse).
 Čtení nevyužitých pojistkových bitů je uvedeno v ATmega jako "1", ale
-program 'avrdude' maskuje nepoužité bitové kódy tak, že očekává "0" pro všechny nepoužité bity.
-Za normálních okolností by měl efuse být nastaven na hodnotu 0xfc, ale avrdude přečte 0x04 maskou.
-Ke změně chování 'avrdude' je možné soubor avrdude.conf změnit nebo nastavit efuse na 0x04.
+program '\lcmd{avrdude}' maskuje nepoužité bitové kódy tak, že očekává "0" pro všechny nepoužité bity.
+Za normálních okolností by měl efuse být nastaven na hodnotu 0xfc, ale \lcmd{avrdude} přečte 0x04 maskou.
+Ke změně chování '\lcmd{avrdude}' je možné soubor avrdude.conf změnit nebo nastavit efuse na 0x04.
 Všechny hodnoty efuse lze zadat pomocí identifikátoru EFUSE\_VAL na začátku souboru setup.mk v adresáři
-trunk nastavit. Pravděpodobně jsou ale ,,fuses'' i s chybovou zprávou správně nastaveny.
+trunk nastavit. Pravděpodobně jsou ale \inquotes{fuses} i s chybovou zprávou správně nastaveny.
+\vspace*{-0.3em}
+\subsubsection{Poznámky k aktualizaci zdrojů testeru}
+Kopii zdrojů testeru lze pomocí příkazu:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+cd ~/transistortester ; git pull
+\end{verbatim} \end{large}
+
+držet aktuální.
+Pokud pracuješ s kopii pod \lname{\textasciitilde/Mytester}, jak je zde doporučeno,
+změny se přenesou, pouze když zadáš opětovně příkaz:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+rsync -auv ~/transistortester/Software/trunk/ ./Mytester
+\end{verbatim} \end{large}
+
+Je pravděpodobné, že \lname{Makefile} na serveru github bude mýt někdy novější datum, než tvá lokálně upravená kopie. Po aktualizaci by byly i ve složce\lname{Mytester} veškeré provedené  změny v možnostech v tvém \lname{Makefile} ztraceny.
+Proto je důležité úspěšně změněný \lname{Makefile} zabezpečit. Toho lze dosáhnout například příkazem:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+cp Makefile Makefile.bak
+\end{verbatim} \end{large}
+
+Později je možné příkazem:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+diff Makefile Makefile.bak
+\end{verbatim} \end{large}
+
+porovnat změny v souborech po aktualizaci. Pro lepší přehled změn je k dispozici také možný s:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+kdiff3 Makefile Makefile.bak
+\end{verbatim} \end{large}
+
+Tento Program musíš ale pravděpodobně předem instalovat pomocí:
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+sudo apt-get install kdiff3
+\end{verbatim} \end{large}
+
+protože byl vyvinut pro desktopové prostředí KDE.
 
 \newpage
 \subsection{Používání balíčku WinAVR pod Windows}
-Pokud pracujete v operačním systému Windows, je k správně naprogramovanému ATmega nejjednodušší,
+Pokud pracuje3 v operačním systému Windows, je k správně naprogramovanému ATmega nejjednodušší,
 použití balíků WinAVR \cite{winavr1},\cite{winavr2}.
-S mým Patchem \cite{winavr3} můžete také nastavit pojistky (Fuses) s Makefile. Samozřejmě musí 'avrdude' programátor podporovat a konfigurace musí být v Makefile správně nastavena.
-Obrázky \ref{fig:WinAVR1} zobrazují obsluhu souborů uživatelského rozhraní WinAVR k otevření souboru Makefile a uložení souboru Makefile po změnách (save).
+S mým Patchem \cite{winavr3} může3 také nastavit pojistky (Fuses) s \lname{Makefile}. Samozřejmě musí '\lcmd{avrdude}' programátor podporovat a konfigurace musí být v \lname{Makefile} správně nastavena.
+Obrázky \ref{fig:WinAVR1} zobrazují obsluhu souborů uživatelského rozhraní WinAVR k otevření souboru \lname{Makefile} a uložení souboru \lname{Makefile} po změnách (save).
 \begin{figure}[H]
   \begin{subfigure}[b]{.5\textwidth}
     \centering
-    \includegraphics[width=.95\textwidth]{../PNG/Notepad_open.png}
-    \caption{Otevření Makefile}
+    \includegraphics[width=.85\textwidth]{../PNG/Notepad_open.png}
+    \caption{Otevření \lname{Makefile}}
   \end{subfigure}
   ~
   \begin{subfigure}[b]{.5\textwidth}
     \centering
-    \includegraphics[width=.95\textwidth]{../PNG/Notepad_save.png}
-    \caption{Uložení Makefile}
+    \includegraphics[width=.85\textwidth]{../PNG/Notepad_save.png}
+    \caption{Uložení \lname{Makefile}}
   \end{subfigure}
   \caption{Použití programu WinAVR}
   \label{fig:WinAVR1}
@@ -755,13 +1046,13 @@ programu přeložení programu (Make All) a k naprogramování ATmega pomocí 'a
 \begin{figure}[H]
   \begin{subfigure}[b]{.5\textwidth}
     \centering
-    \includegraphics[width=.95\textwidth]{../PNG/Notepad_make.png}
+    \includegraphics[width=.85\textwidth]{../PNG/Notepad_make.png}
     \caption{Vytvořit data programu (.hex/.eep)}
   \end{subfigure}
   ~
   \begin{subfigure}[b]{.5\textwidth}
     \centering
-    \includegraphics[width=.95\textwidth]{../PNG/Notepad_program.png}
+    \includegraphics[width=.85\textwidth]{../PNG/Notepad_program.png}
     \caption{Naprogramovat ATmega}
   \end{subfigure}
   \caption{Obsluha WinAVR s Notepadem}
@@ -807,7 +1098,7 @@ Důvodem pro to může být, že řídicí jednotka displeje LCD je pomalejší 
 Mohlo by se také stát, že ATmega je v chodu na nesprávné frekvenci.
 Zkontrolujte pro jakou taktovací frekvenci je software přeložena a zda jsou ATmega fuse pro
 tuto rychlost správně nastaveny.
-Nastavenou frekvenci najdete v příslušném makefile.
+Nastavenou frekvenci najdete v příslušném \lname{Makefile}.
 Pokud je tester vyroben bez vypínací automatiky, můžete zapojit zkušební LED diody přímo na
 zkoušené piny, abyste zjistili, zda program funguje.
 Pokud LED bliká, program běží. V tomto případě musí být chyba v připojení LCD displeje.
@@ -819,7 +1110,7 @@ nabídky menu. Pokud to nefunguje, můžete přepsat program EEprom ATmega s pro
 
 \item[Něco, ale ne vše, je na LCD displeji čitelné] 
 Zkontrolujte, zda byla data EEPROM vložena do Eepromu ATmega.
-Po správném zavedení všech dat programu byste měli zkontrolovat nastavení frekvence v (Makefile)
+Po správném zavedení všech dat programu byste měli zkontrolovat nastavení frekvence v (\lname{Makefile})
 a nastavení ATmega (fuses).
 
 \item[Měření je příliš pomalé a kapacity jsou měřeny faktorem 8 příliš malým.] 

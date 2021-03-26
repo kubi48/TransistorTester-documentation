@@ -148,7 +148,7 @@ entladen werden.
    \begin{overpic}[width=.78\textwidth]{../FIG/relay_addon.pdf}	% width=7cm
     \color{black}
     \put(78,36){\makebox(0,0)[lb]{\footnotesize {VCC oder Ubat}}}  
-    \put(78,32){\makebox(0,0)[lb]{\footnotesize {abhängig von Relaisspannung}}}  
+    \put(78,31){\makebox(0,0)[lb]{\footnotesize {abhängig von Relaisspannung}}}  
    \end{overpic}
   \caption{mit Relais}
   \end{subfigure}
@@ -192,7 +192,7 @@ Ungefähr \(40mA\) mehr Batteriestrom wird für diese Erweiterung bei gedrückte
  \centering
  \begin{overpic}[width=.90\textwidth]{../FIG/zener_exp.pdf}	% width=15.5cm
   \color{black}
- % \put(42,25){\makebox(0,0)[cb]{Taster}}
+% \put(42,25){\makebox(0,0)[cb]{Taster}}       % Button ist Signalname in der Basis-Zeichnung!
   \put(5,20){\makebox(0,0)[rb]{\textcolor{red}{externe}}}  
   \put(5,17){\makebox(0,0)[rb]{\textcolor{red}{Spannung}}}  
   \put(33,24){\makebox(0,0)[rb]{Hat Platz auf der Platine!}} 
@@ -221,7 +221,6 @@ aber keine hohe kapazitive Last für den ATmega-Ausgang darstellen.
 
 \subsection{Frequenzzähler}
 \label{sec:frequency_counter}
-
 Für die ebenfalls über die Dialogfunktion wählbare Frequenz-Messung ist eine kleine Erweiterung
 der Schaltung erforderlich. Als Eingang für die Frequenzmessung wird der PD4-Pin (T0/PCINT20) des
 ATmega benutzt. Der gleiche Pin wird auch zum Anschluss des LCD benutzt. Bei dem normalen Layout
@@ -242,18 +241,17 @@ weil dessen Pull-Up Widerstände die Spannung verändern.
 \end{figure}
 
 \subsection{Impulsdrehgeber}
-
-\begin{wrapfigure}{r}{0.5\textwidth}
-\vspace{-0.5\baselineskip}
+\begin{wrapfigure}{r}{0.3\textwidth}
+\vspace{-4\baselineskip}
 \begin{center}
-\includegraphics[width=0.30\textwidth]{../FIG/rotary_extension.pdf}
+\includegraphics[width=0.2\textwidth]{../FIG/rotary_extension.pdf}
+\put(-40,33){\makebox(0,0)[lb]{Taster}} 
 \end{center}
-\vspace{-0.5\baselineskip}
+\vspace{-0.7\baselineskip}
  \caption{\\Impulsdrehgeber-Erweiterung}
-\vspace{-0.5\baselineskip}
+\vspace{-2\baselineskip}
 \label{fig:RotExt}
 \end{wrapfigure}
-
 Zur leichteren Bedienung der Menüfunktion für den ATmega328 kann die Schaltung um einen
 Impulsdrehgeber mit Taster erweitert werden.
 Die Schaltung~\ref{fig:RotExt} gibt die Standard-Belegung
@@ -261,18 +259,11 @@ für ein normales LCD an. Alle Anschlüsse für den Impulsdrehgeber sind an der 
 verfügbar. 
 Deswegen kann der Impulsdrehgeber in vielen Fällen leicht nachgerüstet werden. 
 Vielfach ist das graphische Display auch mit einem Adapter-Board an die Steckerleiste des LCD angeschlossen. 
-Deswegen ist auch hier die Nachrüstung des Impulsdrehgebers nicht sehr schwierig.
-
-Die Abbildung~\ref{fig:RotEnc} zeigt zwei Versionen von Drehgebern.
-Die Version 1 hat doppelt so viele Raststellungen (detent) pro Umdrehung
-wie Pulse pro Umdrehung.
-Die Version 2 hat gleich viele Pulse pro Umdrehung wie Raststellungen.
-Manchmal liegt bei einigen Drehgebern die Schaltflanke eines der beiden Schalter genau an der
-Raststellung.
-
-\begin{figure}[htb]
+Deswegen ist auch hier die Nachrüstung des Impulsdrehgebers nicht sehr schwierig.\\
+\clearpage
+\begin{figure}[t]
  \centering
- \begin{overpic}[width=.87\textwidth]{../FIG/rotary_encoder.pdf}	% width=15cm
+ \begin{overpic}[width=.8\textwidth]{../FIG/rotary_encoder.pdf}	% width=15cm
   \color{black}
   \put(90,71.7){\makebox(0,0)[lb]{Schalter A}}
   \put(90,62){\makebox(0,0)[lb]{Schalter B}}
@@ -287,6 +278,25 @@ Raststellung.
  \end{overpic}
  \caption{Zwei unterschiedliche Versionen eines Impulsdrehgeber}
 \label{fig:RotEnc}
+\end{figure}
+
+Die Abbildung~\ref{fig:RotEnc} zeigt zwei Versionen von Drehgebern. Die Version 1 hat doppelt so viele Raststellungen (detent) pro Umdrehung wie Pulse pro Umdrehung.
+Die Version 2 hat gleich viele Pulse pro Umdrehung wie Raststellungen.
+Manchmal liegt bei einigen Drehgebern die Schaltflanke eines der beiden Schalter genau an der
+Raststellung.
+
+\begin{figure}[H]
+ \centering
+ \begin{overpic}[width=.87\textwidth]{../FIG/rotary_bouncing.pdf}	% width=17cm
+  \color{black}
+  \put(90,39){\makebox(0,0)[lb]{Schalter A}}
+  \put(90,30){\makebox(0,0)[lb]{Schalter B}}
+  \multiput(11,23) (28,0){3}{\footnotesize {Rastung}}
+  \put(7,20){\makebox(0,0)[rb]{Zustand}}
+  \put(5,12){\makebox(0,0)[lb]{Mögliche Zustände von links nach rechts:}}
+ \end{overpic}
+ \caption{Ein Impulsdrehgeber mit prellenden Kontakten}
+\label{fig:RotBounce}
 \end{figure}
 
 Die Abbildung~\ref{fig:RotBounce} zeigt einen Impulsdrehgeber, der nicht nur
@@ -305,19 +315,7 @@ die höchste Empfindlichkeit gesetzt werden.
 Ein Pendeln der Einstellung (Zähler rauf, Zähler runter) wird durch die Art der Abfrage vermieden, bei
 ungünstiger Lage der Schaltflanken kann aber ein Zählpuls für eine Raststellung ausbleiben.
 
-\begin{figure}[H]
- \centering
- \begin{overpic}[width=.87\textwidth]{../FIG/rotary_bouncing.pdf}	% width=17cm
-  \color{black}
-  \put(90,39){\makebox(0,0)[lb]{Schalter A}}
-  \put(90,30){\makebox(0,0)[lb]{Schalter B}}
-  \multiput(11,23) (28,0){3}{\footnotesize {Rastung}}
-  \put(7,20){\makebox(0,0)[rb]{Zustand}}
-  \put(5,12){\makebox(0,0)[lb]{Mögliche Zustände von links nach rechts:}}
- \end{overpic}
- \caption{Ein Impulsdrehgeber mit prellenden Kontakten}
-\label{fig:RotBounce}
-\end{figure}
+
 
 Anstelle der beiden Kontakte für den Impulsdrehgeber können auch zwei Taster für Rauf (Up) und Runter (Down)
 eingebaut werden, wenn kein Impulsdrehgeber vorhanden oder gewünscht ist.
@@ -436,8 +434,8 @@ speziellen Seriellschnittstelle angeschlossen werden, wie die Abbildung~\ref{fig
 \end{figure}
 
 Für beide Anschlußarten muß die Software speziell konfiguriert werden. 
-Die Makefile Option \inquotes{WITH\_LCD\_ST7565 = 7920} muß dazu auf jeden Fall gesetzt werden, für die serielle
-Anschlußart muß außerdem die Option \inquotes{CFLAGS += -DLCD\_INTERFACE\_MODE=5} gesetzt sein.
+Die Makefile Option \inquotes{WITH\_""LCD\_""ST7565 = 7920} muß dazu auf jeden Fall gesetzt werden, für die serielle
+Anschlußart muß außerdem die Option \inquotes{CFLAGS += -DLCD\_""INTERFACE\_""MODE=5} gesetzt sein.
 Die Tabelle~\ref{tab:ser-processor} zeigt die Belegung der seriellen Anschlußsignale bei 
 dem Anschlußtyp 5 (ST7920) und 7 (SSD1803) für verschiedene Prozessoren.
 
@@ -1224,12 +1222,12 @@ Auf der Display-Platine der ST7565 Variante ist keine Anpassung der Signalpegel 
 Wahrscheinlich toleriert die gewählte Controller-Variante die 5V Signalpegel des ATmega328.
 Es ist jedenfalls keine Schutzdiode gegen die 3.3V Versorgung bei diesem Controller feststellbar.
 
-section{Und noch ein Clone von Hiland M644}
+\section{Und noch ein Clone von Hiland M644}
+\label{sec:hiland}
 Dieses Nachbau basiert auf dem Schaltplan von Nick L. aus der Ukraine siehe Abbildung~\ref{fig:t644tester}
 auf der Seite~\pageref{fig:t644tester}.\\
 Bedient wird der Tester mit einem Knopf, der sowohl \textbf {Taster} als auch \textbf {Drehgeber} ist.
 
-\vspace{0.5cm}
 Er bietet folgende Zusätze:
 \vspace{-0.5\baselineskip}
 \begin{itemize} \setlength{\itemsep}{-0.5\baselineskip}
@@ -1248,7 +1246,7 @@ steckbaren Display-Modul herausgeführt die folgend belegt ist:\\
 \textbf {von links nach rechts}: 1~-Reset; 2~-SCK; 3~-MISO; 4~-MOSI; 5~-+5V; 6~-GND.\\
 Um den Tester, aktualisieren zu können, benötigt man ein angepasstes Kabel, der man relativ einfach
 selbst erstellen kann.
-Bei der Auslieferung ist der Nullkraft-Testsockel über Buchsenleisten mit der Platine verbunden.\\
+Bei der Auslieferung ist der Nullkraft-Testsockel über Buchsenleisten mit der Platine verbunden.
 
 Bei dem unten abgebildeten Tester wurde der Sockel direkt angelötet und die hiermit gesparte Buchsenleiste
 auf ein vorhandenes Flachbandkabel mit Pfostenstecker angelötet und mit Schrumpfschlauch fixiert.

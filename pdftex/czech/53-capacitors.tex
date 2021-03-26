@@ -238,7 +238,7 @@ a \(ESL\) ekvivalentní sériovou indukčnost.
 V datových listech je běžné, udávat ESR při frekvenci \(100kHz\) a teplotě \(20\textdegree C\).
 Obrázky \ref{fig:Cap_FC_data} a \ref{fig:Cap_FR_data} ukazují výrobcem Panasonic
 specifikované  \(ESR\) hodnoty pro elektrolytické kondenzátory při různých provozních napětí pro FC 
-a ,,low ESR'' série. 
+a \inquotes{low ESR} série. 
 Obě série jsou určeny pro maximální teplotu \(105\textdegree C\).
 Obrázek \ref{fig:Cap_FC_FR_data} představuje předepsaná data obou sérií při přípustném provozním napětí \(25V\). Pokud jsou v sérii k dispozici různé modely se stejnou kapacitou a napětím,
 jsou zobrazena data s nejnižším \(ESR\).
@@ -734,11 +734,11 @@ na druhé straně, hraje  roli, špatná kvalita elektrolytických kondenzátor�
 
 Jak je obtížné najít správnou referenční hodnotu pro měření kondenzátoru,
 je znázorněno na obrázku~\ref{fig:capcompare}.\\
-Jako reference se zde nejlépe odhaduje. Křivka ,,Multimeter'' zobrazuje odchylky,
+Jako reference se zde nejlépe odhaduje. Křivka \inquotes{Multimeter} zobrazuje odchylky,
 které mají a Peaktech ~ 3315 multimetru.
-Další křivka ,,LCR'' zobrazuje odchylky naměřené měřičem Peaktech ~ 2170 LCR v nejpříznivějším
+Další křivka \inquotes{LCR} zobrazuje odchylky naměřené měřičem Peaktech ~ 2170 LCR v nejpříznivějším
 kmitočtovém rozsahu.
-Pro srovnání, křivka ,,ATmega168as'' také ukazuje odchylky měření testeru vybaveného ATmega168.
+Pro srovnání, křivka \inquotes{ATmega168as} také ukazuje odchylky měření testeru vybaveného ATmega168.
 Zda jsou zobrazeny chyby, ale skutečné chyby měření příslušného zařízení, musíme pochybovat, stejně jako
 odhad velikosti kapacity neodpovídá skutečné kapacitě.
 
@@ -759,7 +759,7 @@ V úvahu byla vzata pouze nulová hodnota měření kapacity \(39pF\), všechny 
 nepoužívají.
 Tato nulová hodnota již obsahuje \(2-3pF\), který je způsoben přibližně \(12cm\) dlouhými připojovacími kabely s krokosvorkami.
 Návrh desky plošných spojů DPS také ovlivňuje tuto nulovou hodnotu.
-Tuto nulovou hodnotu jsem zjistil při použití verze desky ,,DG2BRS V 5.2.1''.
+Tuto nulovou hodnotu jsem zjistil při použití verze desky \inquotes{DG2BRS V 5.2.1}.
 
 \begin{figure}[H]
   \begin{subfigure}[b]{.5\textwidth}
@@ -835,16 +835,16 @@ Složitější je eliminace rozptylu vzorku při měření kondenzátorů na př
 jak bylo zobrazeno na obrázcích \ref{fig:mega168all}, \ref{fig:mega168Aall} a \ref{fig:mega168PAall}.
 Hlavní příčinou bylo zjištěno odlišné chování (offset napětí) analogového komparátoru.
 Na obrázku \ref{fig:CompAdjust} jsou zobrazena data z devíti zkoumaných procesorů.
-Body ,,diff2ref'' ukazují rozdíl napětí, který vznikne po nabíjení kondenzátoru s \(660nF\) na
+Body \inquotes{diff2ref} ukazují rozdíl napětí, který vznikne po nabíjení kondenzátoru s \(660nF\) na
 příslušném vnitřním referenčním napětí.
 V ideálním případě by toto napětí bylo vždy nulové, pokud by analogový komparátor dal
 včasný signál k ukončení nabíjecího procesu.
 Krátký čas  ATmega administrace by neměl vést, při relativně velké kapacitě, k měřitelnému zvýšení napětí.
-Z obrázků \ref{fig:mega168all}, \ref{fig:mega168Aall} a \ref{fig:mega168PAall} ukazují body ,,CapErr'' 
+Z obrázků \ref{fig:mega168all}, \ref{fig:mega168Aall} a \ref{fig:mega168PAall} ukazují body \inquotes{CapErr} 
 odhadované chyby měření jednotlivých vzorků ATmega v promile.
-Je nápadné, jak se body ,,CapErr'' řídí body ,,diff2ref''.
-Proto body ,,diff''  ukazují rozdíl mezi příslušnými body ,,CapErr'' a ,,diff2ref''.
-Při střední hodnotě pro ,,diff'' lze tedy udělat dobrý odhad korekce měření kondenzátoru z rozdílu
+Je nápadné, jak se body \inquotes{CapErr} řídí body \inquotes{diff2ref}.
+Proto body \inquotes{diff}  ukazují rozdíl mezi příslušnými body \inquotes{CapErr} a \inquotes{diff2ref}.
+Při střední hodnotě pro \inquotes{diff} lze tedy udělat dobrý odhad korekce měření kondenzátoru z rozdílu
 napětí kondenzátoru po nabití k vnitřnímu referenčnímu napětí vypočítat.
 Takže v druhé části kalibračního postupu musí být mezi pinem 1 a 3 připojen vysoce kvalitní
 kondenzátor s kapacitou mezi \(100nF\) und \(20\mu F\).
@@ -863,8 +863,8 @@ Grafy \ref{fig:mega168cal}, \ref{fig:mega168Acal}, \ref{fig:mega168PAcal},  \ref
 \ref{fig:mega328Pcal} zobrazují výsledky měření stejnými procesory ve standardní konfiguraci
 softwaru po automatické kalibraci.
 Všechny procesory byly naprogramovány se stejným softwarem, pouze volba
-Makefile ,,PARTNO = '' musela být, vzhledem k AVRDUDE programu,
-upravena na jiný typ procesoru (,,m168'', ,,m168p'', ,,m328'' nebo ,,m328p'') upravena.
+Makefile \inquotes{PARTNO = } musela být, vzhledem k AVRDUDE programu,
+upravena na jiný typ procesoru (\inquotes{m168}, \inquotes{m168p}, \inquotes{m328} nebo \inquotes{m328p}) upravena.
 Po programování byl s každým ATmega spuštěn Autotest a při Test~10, připojen na piny~1 a~3 \(330nF\) kondenzátor.
 
 \begin{figure}[H]
@@ -911,8 +911,8 @@ Po programování byl s každým ATmega spuštěn Autotest a při Test~10, přip
 Ke konci chci vyjasnit efekt možnosti AUTO\_CAL v autotestu.
 Následující diagram \ref{fig:MegaAuto} ukazuje, ještě jednou, výsledky tří ATmega procesorů
 s největší měřící odchylkou před a po kalibraci.
-Body s koncovým znakem ,,unc'' zobrazují odchylky bez kalibrace.
-Řádky končící na ,,cal'' ukazují odchylky stejných procesorů
+Body s koncovým znakem \inquotes{unc} zobrazují odchylky bez kalibrace.
+Řádky končící na \inquotes{cal} ukazují odchylky stejných procesorů
 se stejným softwarem po kalibraci v režimu automatického testování.
 Příčina odchylek měření u velkých kondenzátorů (\textgreater\(40\mu F\))  je
 zatím neznámá.\\ Všechny kondenzátory používané pro tuto řadu měření byly

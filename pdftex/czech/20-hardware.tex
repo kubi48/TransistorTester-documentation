@@ -6,31 +6,36 @@ Schéma universálního testeru na obrázku~\ref{fig:ttester} je založen na sch
 Markuse F., které publikoval na obr. 1 AVR-Transistortester Reports \cite{Frejek}.
 Změněné nebo přesunuté komponenty jsou označeny \textcolor{green}{zeleně}, volitelné díly jsou
 značené \textcolor{red}{červeně}.
+
 Některé změny byly provedeny, protože zapínání - vypínání působilo u některých klonů problémy.
 Proto je odpor R7 snížen na \(3,3k\Omega\). 
 Kondenzátor C2 je snížen na \(10nF\) a odpor R8 je posunut tak, že
 Výstup PD6 se nesnaží přímo nabíjet kondenzátor C2.
 Byly přidány další blokovací kondenzátory, které by měly být umístěny v blízkosti napájecích pinů
 a pinů referenčního napětí ATmega.
+
 Vzhledem k tomu, že vstupy PD7 a konektoru PC6 (RESET) jsou jediné vstupy u kterých
-jsou  ,,pull-up'' odpory potřebné, byl dodán další \(27k\Omega\)  odpor na PD7 (Pin 13).
-Díky této změně lze vnitřní  ,,Pull-Up'' odpory od ATmega vypnout.
+jsou  \inquotes{pull-up} odpory potřebné, byl dodán další \(27k\Omega\)  odpor na PD7 (Pin 13).
+Díky této změně lze vnitřní  \inquotes{Pull-Up} odpory od ATmega vypnout.
 Rovněž byl přidán krystal s \(22pF\)-kondenzátory.
 To má výhody pro měření kapacity i kvůli přesnějšímu měření času.
+
 Nový software umí přepnout rozsah napětí ADC. Rychlost přepínání je ale kondenzátorem C1
 na AREF-Pin (21) des ATmega snížena.
 Aby měření nebylo zbytečně pomalejší než je nutné, hodnotu kondenzátoru je potřeba snížit na \(1nF\) . 
 Je možné také jeho vypuštění.
 Chcete-li software přizpůsobit příslušnému obvodu, podívejte se do kapitoly
-konfigurace~\ref{sec:config} od stránky~\pageref{sec:config} . 
+konfigurace~\ref{sec:config} od stránky~\pageref{sec:config}.
+ 
 Na internetu jsou v oběhu několik různých kombinací R11/R12.
 Já jsem software přizpůsobil původnímu návrhu od Markuse F.~\cite{Frejek} s \(10k\Omega\) a \(3,3k\Omega\) .
 Poměr napětí lze ale nastavit v Makefile.
+
 Přídavné precizní referenční napětí \(2,5V\) zapojené na Pin PC4 (ADC4),
 se používá pro kontrolu a kalibraci napájecího napětí VCC, není ale nutné.
 Lze použít LM4040-AIZ2.5 (0,1\%), LT1004CZ-2.5 (0,8\%) nebo LM336-Z2.5 (0,8\%) .
 Pokud nepoužíváte precizní referenci ani pro ochranu vstupů přídavné relé,
-měli byste instalovat nejméně jeden  ,,Pull Up''-odpor R16 na PC4 s hodnotou (\(47k\Omega\)).
+měli byste instalovat nejméně jeden \inquotes{Pull Up}-odpor R16 na PC4 s hodnotou (\(47k\Omega\)).
 To pomáhá softwaru zjistit chybějící referenci napětí.
 Byl přidán další konektor ISP k snadnějšímu nahrání nové verze softwaru.
 
@@ -76,10 +81,7 @@ Vstup CE (Chip Enable) řídicí jednotky může být také připojen k GND nam�
   \label{tab:displayCon}
 \end{table}
 
-Aby bylo dosaženo jednoduššího propojení displeje s ATmega na DPS, je možné softwarově přiřadit portu D jiné funkce.
-Následující tabulka 2.2 zobrazuje změny přiřazení pinů pro textové displeje a alternativní
-připojení grafických displejů pomocí mikrokontroléru ATmega328.
-Kromě toho je zobrazeno přiřazení Portových vstupů pro přídavné funkce.
+Aby bylo dosaženo jednoduššího propojení displeje s ATmega na DPS, je možné softwarově přiřadit portu D jiné funkce. Následující tabulka 2.2 zobrazuje změny přiřazení pinů pro textové displeje a alternativní připojení grafických displejů pomocí mikrokontroléru ATmega328. Kromě toho je zobrazeno přiřazení Portových vstupů pro přídavné funkce.
 Pokud používáte grafický displej s možností mřížky(STRIP\_GRID\_BOARD=1)
 není funkce čítače frekvence možná, protože displej používá port PD4 (T0).
 Přesto se o toto přiřazení jedna čínská verze s grafickým zobrazením pokouší.
@@ -159,8 +161,9 @@ Nesmíme zapomínat, že testovací přístroj zůstává přesto, během měře
 \caption{Vylepšená ochrana s relé}
 \label{fig:relay_um_addon}
 \end{figure}
-\subsection{Měření Zenerova napětí}
 
+\subsection{Měření Zenerova napětí}
+\vspace{-0.1cm}
 Není-li výstup sériových textů potřebný, může být  pin PC3 ATmega použít pro měření externího napětí.
 Napětí lze nastavit volitelným přepínačem odporu 10:1 až do \(50V\) a lze ho použit
 také k měření Zenerova napětí diody.
@@ -174,7 +177,7 @@ Pokud je tlačítko stisknuto stoupá spotřeba baterie asi na \(40mA\) .
 \centering
   \begin{overpic}[width=.90\textwidth]{../FIG/zener_exp.pdf}
   \color{black}
-   % \put(42,25.5){\makebox(0,0)[cb]{tlačítko}} 
+%  \put(42,25.5){\makebox(0,0)[cb]{tlačítko}}       % Button is signal name in the basic circuit!
   \put(5,20){\makebox(0,0)[rb]{\textcolor{red}{externí}}}  
   \put(5,17){\makebox(0,0)[rb]{\textcolor{red}{napětí}}}  
   \put(33,24){\makebox(0,0)[rb]{Má místo na desce!}} 
@@ -188,9 +191,7 @@ Bez stisknutého tlačítka měnič napětí není v provozu,
 čímž je možné měřit externí napětí (např. Napětí baterie) na portu pro měření Zenerových diod.
 Lze měřit pouze kladná stejnosměrná napětí až do \(50V\) .
 Takže musíte věnovat pozornost správné polaritě.
-
 \subsection{Frekvenční generátor}
-
 Pomocí sekce menu ATmega lze také přidat frekvenční generátor
 s frekvencí od \(1Hz\) do \(2MHz\) .
 Výstupní \(5V\) signál je vyveden přes \(680\Omega\)-odpor na TP2.
@@ -199,14 +200,23 @@ pin TP1 testeru.
 TP3 je také připojen na kostru přes \(680\Omega\) odpor.
 Samozřejmě, lze ATmega port PB2 použít také jako obvod pro zesilování externího výstupního signálu.
 V tomto případě by měl vstup tohoto okruhu nepředstavovat žádnou kapacitní zátěž pro ATmega výstup.
-
 \subsection{Frekvenční čítač}
 \label{sec:frequency_counter}
-
+ \begin{wrapfigure}{r}{0.5\textwidth}
+\vspace{-1\baselineskip}
+\begin{center}
+\includegraphics[width=0.3\textwidth]{../FIG/Frequency_addon.pdf}
+\end{center}
+\vspace{-0.6\baselineskip}
+\caption{Rozšíření pro měření frekvence}
+\vspace{-0.5\baselineskip}
+\label{fig:FreqMes}
+\end{wrapfigure}
 Pro tuto volbu čtení kmitočtu je nutné malé rozšíření.
 Vstup pro měření kmitočtu je použit pin PD4 (T0 / PCINT20) ATmega. Tento pin je zároveň použitý
 pro LCD připojení.
 V normálním uspořádání se jedná o LCD-RS, při displejem s rozvržením mřížky je to LCD-D4.
+
 Pro oba signály je pin PD4 přepnout na vstup a použít pro měření,
 pokud není potřeba zobrazení na LCD displeji.
 LCD displej se zajímá  o tento signál pouze při přepnutí LCD-E na GND.
@@ -215,43 +225,30 @@ Lepší je použít schéma podle obrázku~\ref{fig:FreqMes}.
 Napětí na kontaktu PD4 (LCD-RS nebo LCD-D4) by měla být nastavena na hodnotu asi \(2,4V\),
 bez připojeného ATmega nebo režimu měření frekvence,
 aby byla dosažena nejvyšší citlivost pro vstupní signál.
-Displej by ale měl být zapojený,protože jeho ,,Pull-Up'' odpory mění napětí.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=.4\textwidth]{../FIG/Frequency_addon.pdf}
-\
-\caption{Rozšíření pro měření frekvence}
-\label{fig:FreqMes}
-\end{figure}
- 
-\subsection{Rotační pulzní enkodér}
- 
-\begin{wrapfigure}{r}{0.4\textwidth}
-\vspace{-1.5\baselineskip}
+Displej by ale měl být zapojený,protože jeho \inquotes{Pull-Up} odpory mění napětí.
+
+
+ \subsection{Rotační pulzní enkodér}
+ \begin{wrapfigure}{r}{0.5\textwidth}
+\vspace{-3\baselineskip}
 \begin{center}
-\includegraphics[width=0.30\textwidth]{../FIG/rotary_extension.pdf}
- % \put(47,6){\makebox(0,0)[lb]{tlačítko}}    
+\includegraphics[width=0.2\textwidth]{../FIG/rotary_extension.pdf}
+\put(-30,20){\makebox(0,0)[lb]{tlačítko}}    
 \end{center}
-\vspace{-0.5\baselineskip}
+\vspace{-0.6\baselineskip}
 \caption{Rozšíření o rotační pulzní snímač}
-\vspace{-0.5\baselineskip}
+\vspace{-0.8\baselineskip}
 \label{fig:RotExt}
 \end{wrapfigure}
-
-
-Pro snadnější ovládání funkce menu pro ATmega328 může být obvod rozšířen o rotační snímač
-s tlačítkem.
+Pro snadnější ovládání funkce menu může být obvod rozšířen o rotační snímač s tlačítkem.
 Schéma~\ref{fig:RotExt} udává výchozí přiřazení pro běžný LCD displej.
-Všechny vývody pro snímač impulzů jsou k dispozici na konektoru LCD displeje. 
+Všechny vývody pro snímač impulzů jsou k dispozici na konektoru LCD displeje.
+ 
 Rotační enkodér lze proto většinou snadno doplnit.
 V mnoha případech je grafický displej spojen s deskou s adaptérem na napájecí liště LCD.
 To je důvod, proč dodatečné vybavení pulzního snímače není ani v tomto případě obtížné.
-Obrázek~\ref{fig:RotEnc} zobrazuje dvě verze snímačů.
-První verze má dvakrát tolik krokových poloh (detent) pro otáčku než impulsů pro otáčku.
-Druhá verze má stejný počet impulzů na otáčku jako krokových poloh.
-Některé snímače mají spínací hranu jednoho ze dvou spínačů přesně v zarážkové poloze.
-
+\vspace*{1cm}
 \begin{figure}[H]
 \centering
  \begin{overpic}[width=.87\textwidth]{../FIG/rotary_encoder.pdf}
@@ -270,7 +267,24 @@ Některé snímače mají spínací hranu jednoho ze dvou spínačů přesně v 
 \caption{Dvě různé verze snímačů impulzu}
 \label{fig:RotEnc}
 \end{figure}
+Obrázek~\ref{fig:RotEnc} zobrazuje dvě verze snímačů.
+První verze má dvakrát tolik krokových poloh (detent) pro otáčku než impulsů pro otáčku.
+Druhá verze má stejný počet impulzů na otáčku jako krokových poloh.
+Některé snímače mají spínací hranu jednoho ze dvou spínačů přesně v zarážkové poloze.
  
+\begin{figure}[H]
+\centering
+  \begin{overpic}[width=.87\textwidth]{../FIG/rotary_bouncing.pdf}
+  \color{black}
+  \put(90,39){\makebox(0,0)[lb]{kontakt A}}
+  \put(90,30){\makebox(0,0)[lb]{kontakt B}}
+  \multiput(11,23)(28,0){3}{\footnotesize {zarážka}}
+  \put(7,20){\makebox(0,0)[rb]{krok:}}
+  \put(5,12){\makebox(0,0)[lb]{Možné polohy z zleva do prava:}}      
+  \end{overpic}
+  \caption{Impulzní snímač s kmitavými kontakty}
+  \label{fig:RotBounce}
+\end{figure}
 Obrázek~\ref{fig:RotBounce} zobrazuje pulzní snímač, který nejenže
 má kontakty které po pohybu kmitají,\\ ale u kterého jeden z nich stojí
 v aretovaném stavu (detent) v nejisté poloze.\\ Program monitoruje každou změnu stavu spínače
@@ -285,19 +299,6 @@ U impulsních snímačů bez zarážek lze nastavit parametr WITH\_ROTARY\_SWITC
 2 nebo 3 pro nejnižší citlivost, na 1 pro střední citlivost a na 5 pro nejvyšší citlivost.
 Tímto způsobem dotazu se lze vyhnout výkyvu nastavení(počítadlo nahoru a dolů) ale umožní že
 bude v nevýhodné pozici spínací polohy, v aretovaném stavu, jeden impuls vynechán.
-\begin{figure}[H]
-\centering
-  \begin{overpic}[width=.87\textwidth]{../FIG/rotary_bouncing.pdf}
-  \color{black}
-  \put(90,39){\makebox(0,0)[lb]{kontakt A}}
-  \put(90,30){\makebox(0,0)[lb]{kontakt B}}
-  \multiput(11,23)(28,0){3}{\footnotesize {zarážka}}
-  \put(7,20){\makebox(0,0)[rb]{krok:}}
-  \put(5,12){\makebox(0,0)[lb]{Možné polohy z zleva do prava:}}      
-  \end{overpic}
-  \caption{Impulzní snímač s kmitavými kontakty}
-  \label{fig:RotBounce}
-\end{figure}
 Pokud není impulsní otoční spínač dostupný nebo požadován, je možné, pro obsluhu funkci nahoru a dolů,
 použít také dvě tlačítka.
 V tomto případě musí být volba WITH\_ROTARY\_SWITCH nastavena na 4, aby mohl program
@@ -331,14 +332,13 @@ případě lepší řešení.
 \caption{Připojení grafického displeje s ovladačem  ST7565}
 \label{fig:ST7565lcd}
 \end{figure}
-
 Tabulka \ref{tab:spi-processor} zobrazuje další možnosti připojení
-pro ATmega328 a další procesory s SPI (LCD\_INTERFACE\_MODE=4)
-nebo 3LINE (LCD \_INTERFACE \_MODE = 3)  rozhraním. Různé zadání pro
+pro ATmega328 a další procesory s SPI (LCD\_\discretionary{}{}{}INTERFACE\_\discretionary{}{}{}MODE=4)
+nebo 3LINE (LCD \_\discretionary{}{}{}INTERFACE \_\discretionary{}{}{}MODE = 3)  rozhraním. Různé zadání pro
 procesor je s volbou STRIP\_GRID\_BOARD možné.
 Přiřazení jsou definována v souboru config.h. 
 Pokud je vyžadováno více variant obsazenosti, měly by tyto být
-určeny dalšími kódovými čísly možností v STRIP \_GRID\_BOARD
+určeny dalšími kódovými čísly možností v STRIP\_\discretionary{}{}{}GRID\_\discretionary{}{}{}BOARD
 a pak přidány do config.h.
 
 \begin{table}[H]
@@ -349,7 +349,6 @@ a pak přidány do config.h.
 STRIP\_GRID\_BOARD &       &   -   &   1    &  -   &  1   &  2   &  5   \\
     \hline
     \hline
-Signal:     &       &       &        &      &      &      &      \\
   RES       &  PB4  & PA0   &  PA4   & PD0  & PD4  & PD0  & PD2 \\
     \hline
   EN, CLK   &  PB6  & PA2   &  PA2   & PD2  & PD2  & PD2  & PD3 \\
@@ -368,9 +367,9 @@ Signal:     &       &       &        &      &      &      &      \\
 
 Normálně je řídicí jednotka ST7565 nebo SSD1306 připojena k rozhraní 4-Wire SPI.
 Řídicí jednotka SSD1306 může také používat I\textsuperscript{2}C- rozhraní s PD2 jako SDA- a PD5 jako SCL-signál.
-SDA- a SCL-signály musí mít ,,Pull-up'' odpor s hodnotou asi \(4,7k\Omega\) k \(3,3V\) .
+SDA- a SCL-signály musí mít \inquotes{Pull-up} odpor s hodnotou asi \(4,7k\Omega\) k \(3,3V\) .
 Možnost připojení je zobrazena na obrázku \ref{fig:ssd1306i2c}.
-Před použitím ,,Pull-up'' odporů na \(5V\) je nutné zkontrolovat, zda vstupy toto napětí tolerují.
+Před použitím \inquotes{Pull-up} odporů na \(5V\) je nutné zkontrolovat, zda vstupy toto napětí tolerují.
 Obvykle jsou vstupy regulátoru diodami na \(3.3V\) chráněny.
 ATmega výstupy ATmega jsou při použití I\textsuperscript{2}C-rozhraní jen na  \(0V\) přepnuty.
 Před připojením displeje je však třeba zajistit, že byl načten do ATmega program
@@ -411,8 +410,8 @@ pomocí speciálního sériového rozhraní jak ukazuje obrázek \ref{fig:ST7920
 \end{figure}
 
 Pro oba typy připojení musí být software speciálně nakonfigurován.
-Makefile volba ,,WITH\_LCD\_ST7565 = 7920'' musí být v každém případě nastavena.
-Pro sériový Typ připojení musí být také volba "CFLAGS + = -DLCD \_INTERFACE \_MODE=5" zvolená.
+Makefile volba \inquotes{WITH\_\discretionary{}{}{}LCD\_\discretionary{}{}{}ST7565 = 7920} musí být v každém případě nastavena.
+Pro sériový Typ připojení musí být také volba \inquotes{CFLAGS + = -DLCD\_\discretionary{}{}{}INTERFACE\_\discretionary{}{}{}MODE=5} zvolená.
 Tabulka~\ref{tab:ser-processor} ukazuje přiřazení signálů sériového portu
 připojení typu 5 (ST7920) a 7 (SSD1803) pro různé procesory.
 
@@ -424,7 +423,6 @@ připojení typu 5 (ST7920) a 7 (SSD1803) pro různé procesory.
 STRIP\_GRID\_BOARD &       &   1   &        &     \\
     \hline
     \hline
-Signal:     &       &       &        &         \\
   EN        &  PB3  & PB6   &  PA5   & PD5     \\
     \hline
   B0, R/W   &  PB4  & PB7   &  PA4   & PD2      \\
@@ -438,7 +436,7 @@ Signal:     &       &       &        &         \\
 \end{table}
 
 Orientaci displeje může být, stejně jako u všech grafických displejů, nastavena
-možností LCD\_ST7565\-\_H\_FLIP a LCD\_ST7565\-\_V\_FLIP.
+možností LCD\_\discretionary{}{}{}ST7565\_\discretionary{}{}{}H\_FLIP a LCD\_\discretionary{}{}{}ST7565\_\discretionary{}{}{}V\_FLIP.
 Zvláštním případem jsou displeje s řadiči NT7108 nebo KS0108 (S6B0108). Jelikož jsou ovládané
 pouze s 8bitovým paralelním rozhraním. U nich je třeba použít externí sériově paralelní převodník.
 Nejjednodušší řešení se mi zdá použít čip 74HCT164 nebo 74HCT595.
@@ -467,7 +465,6 @@ Několik různých přiřazení pinů z datových listů řady ABG128064 zobrazu
     \begin{tabular}{| c || c | c | c | c |}
     \hline
            & 128064H  &  128064G  & 128064C  & 128064B \\
-    Signal &         &          &         &         \\
     \hline
     \hline
   VDD (5V) &   1     &  2       &   4     & 2       \\
@@ -538,8 +535,8 @@ Tranzistory nelze s tímto regulátorem použít. Zobrazení je tedy podobné ja
 Stejně jako u většiny grafických displejů je provozní napětí \(3,3V\) .
 Proto je úprava signálu na \(5V\) ATmega výstupy nutná.
 Pro SPI a 3 řádkové rozhraní je možné ATmega výstupy pomocí volby LCD\_SPI\_OPEN\_COL jako
- ,,Open Collector'' výstupy použít.
-Vyžadují se však ,,Pull-Up'' odpory nebo se nesmí volba PULLUP\_DISABLE v Makefile použít.
+\inquotes{Open Collector} výstupy použít.
+Vyžadují se však \inquotes{Pull-Up} odpory nebo se nesmí volba PULLUP\_DISABLE v Makefile použít.
 V současné době je vyzkoušeno pouze 3-řádkové rozhraní.
 \begin{table}[H]
   \begin{center}
@@ -683,14 +680,9 @@ na kvalitu výsledků měření jsem nezjistil. Dokonce i odstranění kondenzá
 Ten kdo si přeje tento \(100nF\) kondenzátor nutně zachovat, může v Makefile volbu NO\_AREF\_CAP odstranit,
  a tím čekací dobu v programu aktivovat.
 
-\item[Dovybavení \(8MHz\) krystalu] S trochou dovednosti lze na pájecí straně desky na vchody PB6 Pin9 a PB7
-Pin10  \(8MHz\) krystal přímo naletovat.
-V mé versi jsem si oba \(22pF\) kondenzátory odpustil.
-U všech zkoušených procesorů, toto řešení fungovalo.
-Tento dodatek ale není nezbytný.
+\item[Dovybavení \(8MHz\) krystalu] S trochou dovednosti lze na pájecí straně desky na vchody PB6 Pin9 a PB7 Pin10  \(8MHz\) krystal přímo naletovat. V mé versi jsem si oba \(22pF\) kondenzátory odpustil. U všech zkoušených procesorů, toto řešení fungovalo. Tento dodatek ale není nezbytný.
 Taktovací frekvence, ale z důvodu lepší časové konstanty pro měření kondenzátorů v každém případě
-hodnotu \(8MHz\).
-Tuto hodnotu lze také v RC-oscilátorovém provozu nastavit pojistkou.
+hodnotu \(8MHz\). Tuto hodnotu lze také v RC-oscilátorovém provozu nastavit pojistkou.
 
 \item[Odblokování provozního napětí]
 V původním schématu zapojení od Markuse F. je pouze jeden blokovací \(100nF\)-kondenzátor
@@ -740,7 +732,7 @@ použíty analogové spínače 74HC4052.
 Tabulka \ref{tab:mega644-display} zobrazuje přiřazení pinů pro mikrokontrolér
 ATmega324 / 624/1284 s různými displeji.
 To I\textsuperscript{2}C-rozhraní je možné pouze s řadičem SSD1306.
-Signály I\textsuperscript{2}C-rozhraní vyžadují ,,Pull-Up''-odpor asi \(4,7k\Omega\) na \(3,3V\).
+Signály I\textsuperscript{2}C-rozhraní vyžadují \inquotes{Pull-Up}-odpor asi \(4,7k\Omega\) na \(3,3V\).
 ATmega výstupy jsou při I\textsuperscript{2}C-rozhraní jen k \(0V\) propojeny.
 \begin{table}[H]
   \begin{center}
@@ -827,8 +819,7 @@ Při tom nastane jen zpoždění spuštění programu.
 \label{fig:t1280tester}
 \end{figure}
 
-Samozřejmě že všechny podporované displeje lze také připojit k ATmega1280 nebo ATmega2560,
-jak je uvedeno v tabulce~\ref{tab:display1280}.
+Samozřejmě že všechny podporované displeje lze také připojit k ATmega1280 nebo ATmega2560, jak je uvedeno v tabulce~\ref{tab:display1280}.
 
 \begin{table}[H]
   \begin{center}
@@ -873,7 +864,7 @@ nebo musí být programovací základna vybavena krystalem.
 Druhá varianta je z velké části postavena v SMD technologii. Také použitý ATmega168 nebo ATmega328
 je typu 32TQFP a pevně naletován.
 Pro programování na desce je k dispozici 10 pólový ISP konektor.
-Já  jsem analyzoval verzi ,,2.1 2012/11/06'' .Zde je chyba v součástce ,,D1'',
+Já  jsem analyzoval verzi \inquotes{2.1 2012/11/06} .Zde je chyba v součástce \inquotes{D1},
 což mělo být referenční \(2,5V\) napětí. Ve skutečnosti je vybaven Zenerovou diodou.
 Tato součástka by měla být odstraněna. Použít jze přesnou referenci jako LM4040AIZ2.5 nebo
 LT1004CZ-2.5. Chybějící přesná reference je softwarem ale detekována, tak že ta výměna
@@ -953,8 +944,8 @@ K připojení displeje s adaptérem k Fish8840 testeru je nezbytné prodloužen�
 Namísto této úpravy je nyní možné v Makefile volbou LCD\_SPI\_OPEN\_COL použít také se speciálním nastavením
 ATmega výstupů při použíti 4-SPI signálů.
 V tomto případě nejsou výstupy připojeny k VCC, ale při vydání vysoké úrovně, pouze přes
-interní ,,Pull-Up'' odpory.
-Je-li nastavena volba PULLUP\_DISABLE, je pro resetovací signál (PD0) externí ,,Pull-Up'' odpor vyžadován.
+interní \inquotes{Pull-Up} odpory.
+Je-li nastavena volba PULLUP\_DISABLE, je pro resetovací signál (PD0) externí \inquotes{Pull-Up} odpor vyžadován.
 Vzhledem k tomu, datové signály nejsou nyní nikdy přepnuty přímo k VCC, nebude to  \(3.3V\)
 napětí řídící jednotky LCD zvýšeno.
 Můj exemplář Fish8840 Testeru má všechny signály pro připojení textového displeje k disposici. 
@@ -1004,7 +995,7 @@ ATmega \(5V\) úrovni napětí výstupního signálu.
 
 Při upgradu softwaru na versi 1.12k jsem se setkal s některými obtížemi.
 Pokud je ATmega pojistka nastavena podle doporučení na 0x04 (nebo 0xfc), došlo při určitých měření
-k ,,brown out'' resetu procesoru.
+k \inquotes{brown out} resetu procesoru.
 Příčinou tohoto chování jsou krátkodobé poklesy napětí VCC napájení.
 Přidal jsem proto  \(4.7\mu F\) keramický kondenzátor na vstup regulátoru napětí
 a další \(10\mu F\) keramický kondenzátor na vstup (VCC) zdroje.
@@ -1032,7 +1023,7 @@ Pro programování jsem zástrčku nenaletoval, ale pouze nastrčil a pevným bo
 programování zajistil.
 To umožňuje snadno vyjmout konektoru po programování a vrácení displeje na původní místo.
 Mimochodem, software 1.12k lze snadno načíst.
-Také aktivace ,,Brown-Out'' detekce procesoru s ATmega pojistkou nepřinesla žádné překvapení.
+Také aktivace \inquotes{Brown-Out} detekce procesoru s ATmega pojistkou nepřinesla žádné překvapení.
 
 \begin{figure}[H]
   \begin{subfigure}[b]{.5\textwidth}
@@ -1054,7 +1045,7 @@ Na fotografiích zadní strany na obrázku \ref{fig:T4_back} vidíte dodatečné
 závitové \(5mm\) šrouby a napájené kabely s měřícími svorkami.
 Protože pro datové signály grafického LCD kontroléru žádné nastavení
 signálu (\(5V~-\textgreater ~3.3V\)) neexistuje, doporučuji volbu LCD\_SPI\_OPEN\_COL.
-Protože zde dodatečně instalace ,,pull-up'' odporu k "vytažení" signálu SPI reset
+Protože zde dodatečně instalace \inquotes{pull-up} odporu k "vytažení" signálu SPI reset
 není lehce proveditelná, zůstává jen volba DISABLE\_PULLUP . 
 Pro následné expanze je tato verze testeru méně vhodná, protože i výměna displeje je zde obtížná.
 
@@ -1151,6 +1142,7 @@ Pravděpodobně vybraná verze regulátoru toleruje úrovně signálu 5V ATmega3
 V žádném případě není žádná ochranná dioda proti napájení 3,3 V v tomto regulátoru viditelná.
 
 \section{Ještě tester od firmy Hiland s M644}
+\label{hiland}
 Tento  klone je postaven podle plánu \ref{fig:t644tester} na straně \pageref{T644}. od Nika Lanchaka s Ukrajiny.
 Tester je ovládán \textbf {tlačítkem}, které je zároveň \textbf {rotační} snímač.
 \vspace{0,5cm}
@@ -1170,8 +1162,7 @@ Na desce je pod displejem připravena 6ti pólová řada pro ISP rozhraní s ná
 Aby bylo možné tester aktualizovat je třeba mít modifikovaný kabel, který lze relativně lehce vyrobit.
 Při dodání jsou na desce dvě řady zdířek a testovací sokl je volně přiložen.
 
-U toho níže zobrazeného testeru, byl sokl přímo naletován a tím ušetřená zdířková řada naletována
-na přestřižený vlastní kabel a zajištěna smršťovací bužírkou.  
+U toho níže zobrazeného testeru, byl sokl přímo naletován a tím ušetřená zdířková řada naletována na přestřižený vlastní kabel a zajištěna smršťovací bužírkou.  
 \begin{figure}[H]
  \centering
  \begin{overpic}[width=.64\textwidth]{../FIG/Kabel_Hiland.pdf}
@@ -1201,12 +1192,11 @@ na přestřižený vlastní kabel a zajištěna smršťovací bužírkou.
   \label{fig:Hiland}
 \end{figure}
 
-{\textbf {Die Testovací piny TP1, TP2 und TP3}} lsou určeny pro automatické zjištění a měření
-součástek a jsou popsány čísly {\textbf {1~~1~~1~~2~~3~~3~~3}}.
+{\textbf {Die Testovací piny TP1, TP2 und TP3}} lsou určeny pro automatické zjištění a měření součástek a jsou popsány čísly {\textbf {1~~1~~1~~2~~3~~3~~3}}.
 
 Stejná čísla jsou také SMD poli a kromě toho je možné, naletovat vlastní kabely.
 
-Der \textbf {Testovací pin TP2} má kromě toho funkci výstupu v menu ,,f-Generator''.
+Der \textbf {Testovací pin TP2} má kromě toho funkci výstupu v menu \inquotes{f-Generator}.
 \\S \textbf{ LF} označené piny jsou určeny k měření krystalu s nízkou rezonanční frekvencí,
 \\a \textbf{ HF} označené piny, jsou pro měření krystalu s vysokou rezonanční frekvencí.
 \\

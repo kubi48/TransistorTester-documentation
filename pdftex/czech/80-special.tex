@@ -1,7 +1,7 @@
 \chapter{Speciální součásti softwaru}
 Bylo provedeno mnoho změn ukládání do paměti flash.
-Výstup LCD testovacích čísel portů byl proveden formou ,,lcd\_data('1'+Pin)''.
-\\K ušetření místa pro další požadavky při každé výzvě, byla funkce ,,lcd\_testpin(uint8\_t pin)'' vložena do souboru lcd\_routines.c.
+Výstup LCD testovacích čísel portů byl proveden formou \inquotes{lcd\_data('1'+Pin)}.
+\\K ušetření místa pro další požadavky při každé výzvě, byla funkce \inquotes{lcd\_testpin(uint8\_t pin)} vložena do souboru lcd\_routines.c.
 
 Pseudo funkce v podobě \_delay\_ms(200) nejsou funkce knihovny,
 místo toho jsou v programu pro každý bod spojení vestavěny čekací smyčky.
@@ -11,7 +11,7 @@ Všechny tyto výzvy byly vyměněny za speciální výzvu v assembleru napsanou
 která spotřebuje pouze 74 ~ bajtů paměti flash (u \(8MHz\)),  ale
 dává k disposici výzvy od wait1us() do wait5s() v úrovních 1,2,3,4,5,10,20\dots.
 
-Pro všechny výzvy přes \(50ms\) obsahují rutiny příkaz ''Watch Dog Reset''.
+Pro všechny výzvy přes \(50ms\) obsahují rutiny příkaz \inquotes{Watch Dog Reset}.
 \\Každá výzva vyžaduje pouze jednu instrukci (2~Byte). Čekající výzvy s přechodnými hodnotami
 jako 8 ms potřebují dvě výzvy (wait5ms() a wait3ms() nebo dva wait4ms() výzvy).
 
@@ -36,10 +36,10 @@ V neposlední řadě dodržují tyto výzvy přesný čas, když to dělá nejni
 Watch Dog resetu.
 
 
-Kromě toho byla často používá sekvence ,,wait5ms(); ReadADC(\dots);'' nahrazena jedinou výzvou ,,W5msReadADC(\dots);''.
+Kromě toho byla často používá sekvence \inquotes{wait5ms(); ReadADC(\dots);} nahrazena jedinou výzvou \inquotes{W5msReadADC(\dots);}.
 
-Totéž platí pro sekvenci ,,wait20ms(); ReadADC(\dots);'' provedené výzvou
-,,W20msReadADC(\dots);''.
+Totéž platí pro sekvenci \inquotes{wait20ms(); ReadADC(\dots);} provedené výzvou
+\inquotes{W20msReadADC(\dots);}.
 Funkce ReadADC byla dodatečně přenesena do assembleru, takže toto rozšíření
 může být velmi účinně integrováno.
 

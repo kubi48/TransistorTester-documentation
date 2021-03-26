@@ -1,10 +1,10 @@
 Bemerkung zu dieser Ausgabe:
 \vspace*{0.3cm}
-\\Beim Übersetzen ins andere Sprache, wurden auch die Texte in den Bildern und Diagrammen,
-\\die im Original Englisch sind, auch übersetzt.
-\\- Es wurde Unterkapitel 2.10 (Clone von der Firma Hiland M644) hinzugefügt.
-\\- In Unterkapitel 4.1 wurde das thema Programmer ergänzt.
-\\- Und zum Schluss wurde Unterkapitel 4.2.1 (Programmierung unter Linux) ergänzt,
+Beim Übersetzen ins andere Sprache, wurden auch die Texte in den Bildern und Diagrammen,
+die im Original Englisch sind, auch übersetzt.
+\\- Es wurde Unterkapitel~\ref{sec:hiland} (Clone von der Firma Hiland M644) hinzugefügt.
+\\- In Unterkapitel~\ref{sec:config-Prog} wurde das Thema Programmer ergänzt.
+\\- Und zum Schluss wurde Unterkapitel~\ref{sec:linux} (Programmierung unter Linux) ergänzt,
 \\damit auch Linux \inquotes{Neulinge} einen Erfolg erfahren.
 \vspace*{0.3cm}
 \\Über diese Maßnahmen wurde Autor informiert.
@@ -12,12 +12,13 @@ Bemerkung zu dieser Ausgabe:
 \\- Ich selbst bekam keine positive Antwort.
 \\- Da ich der Meinung bin, das die Ergänzungen für \inquotes{Linux Anfänger} wichtig sind, hat diese Ausgabe seine Berechtigung.
 \vspace*{0.3cm}
-\\Das Original ist natürlich unter~\cite{khk} zu erreichen.
+\\Das Original ist natürlich unten \cite{khk} zu erreichen.
 \vspace*{0.2cm}
-\\20.02.20
-\\ bm-magic \\
-
-Viele Änderungen wurden übernommen, aber die Entstehung der Graphiken mit gnuplot aus Roh-Messdaten
+\\20.02.2020
+\vspace*{0.2cm}
+\\ bm-magic
+\vspace*{0.2cm}
+\\Viele Änderungen wurden übernommen, aber die Entstehung der Graphiken mit \lcmd{gnuplot} aus Roh-Messdaten
 wurde beibehalten mit entsprechender Makefile, die solche Abhängigkeiten dokumentiert.\\
 Von Zeit zu Zeit werden einige Meßreihen beim Abschluß einer Softwareversion wiederholt und
 die Daten aktualisiert. Dadurch ändern sich die Graphiken automatisch beim Neukompilieren.\\
@@ -25,10 +26,18 @@ Dieses Verfahren sollte beibehalten werden und für alle Sprachen funktionieren.
 Zur leichteren Anpassung an Papierformate habe ich die Größenangaben relativ gemacht statt
 fester Größenangaben wie cm und pt.
 \vspace*{0.2cm}
-6.3.2021
-K.-H. Kübbeler
-
-
+\\6.3.2021
+\\K.-H. Kübbeler
+\vspace*{0.2cm}
+\\Wie man oben sehen kann, wurde das Dokument nun durch Autor aktualisiert und z.B. Unterkapitel ~\ref{sec:linux} mit
+vielen\dots mir bis her unbekannten, Tips ergänzt\dots dank an den Autor.
+\\Diese Ausgabe wurde notwendig, weil die Adresse des  des \lname{\textasciitilde/transistortester} Archivs
+\\von svn://www.mikrocontroller.net/transistortester
+\\ zum https://github.com/Mikrocontroller-net/transistortester ~\cite{tt}
+\\ umgezogen wurde.
+\vspace*{0.2cm}
+\\24.03.2021 
+\\ bm-magic
 
 
 \newpage
@@ -39,7 +48,7 @@ Jeder Bastler kennt das folgende Problem: Man baut einen Transistor aus oder man
 Wenn man die Typenbezeichnung erkennen kann und man bereits ein Datenblatt hat oder eins bekommen kann, ist alles in Ordnung.
 Aber wenn man keine Datenblätter findet, hat man keine Idee, was das für ein Bauteil sein kann.
 Mit den konventionellen Messmethoden ist es schwierig und zeitaufwändig den Typ des Bauteils und dessen Parameter herauszufinden.
-Es könnte ein NPN, PNP, N- oder P-Kanal-MOSFET usw.\ sein. 
+Es könnte ein NPN, PNP, N- oder P-Kanal-MOSFET usw. sein. 
 Es war die Idee von Markus F., diese Arbeit von einem AVR-Mikrocontroller erledigen zu lassen.
 
 \subsection*{Wie meine Arbeit begann}

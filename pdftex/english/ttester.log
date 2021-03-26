@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  20 MAR 2021 12:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  26 MAR 2021 21:52
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -958,8 +958,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 ...or P-Channel-MOSFET}{71}{subsection.5.1.1}
-                                                   [1
+l.54 ...or P-Channel-MOSFET}{70}{subsection.5.1.1}
+                                                  % [1
 
 ])
 \tf@toc=\write5
@@ -1061,40 +1061,33 @@ File: ../FIG/Frequency_addon.pdf Graphic file (type pdf)
 <use ../FIG/Frequency_addon.pdf>
 Package pdftex.def Info: ../FIG/Frequency_addon.pdf  used on input line 231.
 (pdftex.def)             Requested size: 204.85672pt x 153.3626pt.
-
-
-pdfTeX warning: pdflatex (file ../FIG/rotary_extension.pdf): PDF inclusion: fou
-nd PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/rotary_extension.pdf, id=588, 126.4725pt x 195.73125pt>
 File: ../FIG/rotary_extension.pdf Graphic file (type pdf)
 <use ../FIG/rotary_extension.pdf>
 Package pdftex.def Info: ../FIG/rotary_extension.pdf  used on input line 241.
-(pdftex.def)             Requested size: 153.64644pt x 237.79124pt.
-
+(pdftex.def)             Requested size: 102.42836pt x 158.52351pt.
+[13 <../FIG/Frequency_addon.pdf> <../FIG/rotary_extension.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/rotary_encoder.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/rotary_encoder.pdf, id=591, 466.74374pt x 364.36125pt>
+<../FIG/rotary_encoder.pdf, id=612, 466.74374pt x 364.36125pt>
 File: ../FIG/rotary_encoder.pdf Graphic file (type pdf)
 <use ../FIG/rotary_encoder.pdf>
-Package pdftex.def Info: ../FIG/rotary_encoder.pdf  used on input line 267.
+Package pdftex.def Info: ../FIG/rotary_encoder.pdf  used on input line 259.
 (pdftex.def)             Requested size: 445.56767pt x 347.84248pt.
-[13 <../FIG/Frequency_addon.pdf> <../FIG/rotary_extension.pdf>]
+
 
 pdfTeX warning: pdflatex (file ../FIG/rotary_bouncing.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/rotary_bouncing.pdf, id=617, 506.89375pt x 230.8625pt>
+<../FIG/rotary_bouncing.pdf, id=614, 506.89375pt x 230.8625pt>
 File: ../FIG/rotary_bouncing.pdf Graphic file (type pdf)
 <use ../FIG/rotary_bouncing.pdf>
-Package pdftex.def Info: ../FIG/rotary_bouncing.pdf  used on input line 302.
+Package pdftex.def Info: ../FIG/rotary_bouncing.pdf  used on input line 282.
 (pdftex.def)             Requested size: 445.56767pt x 202.93768pt.
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-1.def
-File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
-)
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
-File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [14 <../FIG/rotary_encoder.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 321--336
+[14
+
+ <../FIG/rotary_encoder.pdf> <../FIG/rotary_bouncing.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 315--330
 
  []
 
@@ -1102,25 +1095,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--336
 
 pdfTeX warning: pdflatex (file ../FIG/ST7565lcd.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<../FIG/ST7565lcd.pdf, id=630, 485.815pt x 394.47375pt>
+<../FIG/ST7565lcd.pdf, id=636, 485.815pt x 394.47375pt>
 File: ../FIG/ST7565lcd.pdf Graphic file (type pdf)
 <use ../FIG/ST7565lcd.pdf>
-Package pdftex.def Info: ../FIG/ST7565lcd.pdf  used on input line 339.
+Package pdftex.def Info: ../FIG/ST7565lcd.pdf  used on input line 333.
 (pdftex.def)             Requested size: 416.88742pt x 338.50647pt.
-[15 <../FIG/rotary_bouncing.pdf>]
-Overfull \hbox (21.67711pt too wide) in paragraph at lines 348--356
-\OT1/cmr/m/n/12 ent con-nec-tor lists for one pro-ces-sor type can be se-lected
- with the Make-file Op-tion STRIP[]GRID[]BOARD.
- []
-
-[16 <../FIG/ST7565lcd.pdf>]
+[15] [16 <../FIG/ST7565lcd.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/SSD1306_I2C.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <../FIG/SSD1306_I2C.pdf, id=659, 632.3625pt x 188.705pt>
 File: ../FIG/SSD1306_I2C.pdf Graphic file (type pdf)
 <use ../FIG/SSD1306_I2C.pdf>
-Package pdftex.def Info: ../FIG/SSD1306_I2C.pdf  used on input line 401.
+Package pdftex.def Info: ../FIG/SSD1306_I2C.pdf  used on input line 395.
 (pdftex.def)             Requested size: 416.88742pt x 124.40746pt.
 
 
@@ -1129,10 +1116,10 @@ d PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/ST7920interface.pdf, id=661, 537.00626pt x 367.3725pt>
 File: ../FIG/ST7920interface.pdf Graphic file (type pdf)
 <use ../FIG/ST7920interface.pdf>
-Package pdftex.def Info: ../FIG/ST7920interface.pdf  used on input line 420.
+Package pdftex.def Info: ../FIG/ST7920interface.pdf  used on input line 414.
 (pdftex.def)             Requested size: 357.47943pt x 244.5575pt.
 [17 <../FIG/SSD1306_I2C.pdf> <../FIG/ST7920interface.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 456--458
+Underfull \hbox (badness 10000) in paragraph at lines 450--452
 
  []
 
@@ -1143,7 +1130,7 @@ d PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/ST7108serial164.pdf, id=682, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial164.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial164.pdf>
-Package pdftex.def Info: ../FIG/ST7108serial164.pdf  used on input line 467.
+Package pdftex.def Info: ../FIG/ST7108serial164.pdf  used on input line 461.
 (pdftex.def)             Requested size: 230.46576pt x 175.13551pt.
 
 
@@ -1152,10 +1139,10 @@ d PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/ST7108serial595.pdf, id=683, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial595.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial595.pdf>
-Package pdftex.def Info: ../FIG/ST7108serial595.pdf  used on input line 473.
+Package pdftex.def Info: ../FIG/ST7108serial595.pdf  used on input line 467.
 (pdftex.def)             Requested size: 230.46576pt x 175.13551pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 465--476
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 459--470
 [][]   [] 
  []
 
@@ -1164,54 +1151,59 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 465--476
 File: ../PNG/Color_ILI9163_ST7735.jpg Graphic file (type jpg)
 <use ../PNG/Color_ILI9163_ST7735.jpg>
 Package pdftex.def Info: ../PNG/Color_ILI9163_ST7735.jpg  used on input line 60
-6.
+0.
 (pdftex.def)             Requested size: 235.59225pt x 286.53033pt.
 <../PNG/Color_PNP_ILI9163.jpg, id=718, 154.176pt x 158.994pt>
 File: ../PNG/Color_PNP_ILI9163.jpg Graphic file (type jpg)
 <use ../PNG/Color_PNP_ILI9163.jpg>
-Package pdftex.def Info: ../PNG/Color_PNP_ILI9163.jpg  used on input line 626.
+Package pdftex.def Info: ../PNG/Color_PNP_ILI9163.jpg  used on input line 620.
 (pdftex.def)             Requested size: 235.59225pt x 242.95918pt.
  [20 <../PNG/Color_ILI9163_ST7735.jpg>] [21 <../PNG/Color_PNP_ILI9163.jpg>]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 6
-89.
+83.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 689.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 683.
  [22]
+Underfull \hbox (badness 10000) in paragraph at lines 737--738
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 738--739
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--740
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--741
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--742
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--743
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 743--744
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 744--745
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 745--746
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 746--747
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 747--748
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 748--749
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 761--769
+Underfull \hbox (badness 10000) in paragraph at lines 755--763
 
  []
 
@@ -1222,7 +1214,7 @@ found PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/ST7108serial164_644.pdf, id=749, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial164_644.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial164_644.pdf>
-Package pdftex.def Info: ../FIG/ST7108serial164_644.pdf  used on input line 818
+Package pdftex.def Info: ../FIG/ST7108serial164_644.pdf  used on input line 812
 .
 (pdftex.def)             Requested size: 230.46576pt x 175.13551pt.
 
@@ -1232,11 +1224,11 @@ found PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/ST7108serial595_644.pdf, id=750, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial595_644.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial595_644.pdf>
-Package pdftex.def Info: ../FIG/ST7108serial595_644.pdf  used on input line 824
+Package pdftex.def Info: ../FIG/ST7108serial595_644.pdf  used on input line 818
 .
 (pdftex.def)             Requested size: 230.46576pt x 175.13551pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 816--827
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 810--821
 [][]   [] 
  []
 
@@ -1247,7 +1239,7 @@ pdfTeX warning: pdflatex (file ../FIG/t644tester.pdf): PDF inclusion: found PDF
 <../FIG/t644tester.pdf, id=751, 827.09pt x 964.60374pt>
 File: ../FIG/t644tester.pdf Graphic file (type pdf)
 <use ../FIG/t644tester.pdf>
-Package pdftex.def Info: ../FIG/t644tester.pdf  used on input line 834.
+Package pdftex.def Info: ../FIG/t644tester.pdf  used on input line 828.
 (pdftex.def)             Requested size: 512.14963pt x 597.31221pt.
 [24 <../FIG/ST7108serial164_644.pdf> <../FIG/ST7108serial595_644.pdf>] [25 <../
 FIG/t644tester.pdf>]
@@ -1257,10 +1249,10 @@ F version <1.7>, but at most version <1.5> allowed
 <../FIG/t1280tester.pdf, id=790, 571.13374pt x 489.83pt>
 File: ../FIG/t1280tester.pdf Graphic file (type pdf)
 <use ../FIG/t1280tester.pdf>
-Package pdftex.def Info: ../FIG/t1280tester.pdf  used on input line 864.
+Package pdftex.def Info: ../FIG/t1280tester.pdf  used on input line 858.
 (pdftex.def)             Requested size: 512.14963pt x 439.24344pt.
 [26 <../FIG/t1280tester.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 903--913
+Underfull \hbox (badness 10000) in paragraph at lines 897--907
 
  []
 
@@ -1271,78 +1263,78 @@ ersion <1.7>, but at most version <1.5> allowed
 <../FIG/Fish8840.pdf, id=812, 397.485pt x 202.7575pt>
 File: ../FIG/Fish8840.pdf Graphic file (type pdf)
 <use ../FIG/Fish8840.pdf>
-Package pdftex.def Info: ../FIG/Fish8840.pdf  used on input line 950.
+Package pdftex.def Info: ../FIG/Fish8840.pdf  used on input line 944.
 (pdftex.def)             Requested size: 357.47943pt x 182.35631pt.
 <../PNG/Fish8840patch.jpg, id=814, 143.81488pt x 107.80074pt>
 File: ../PNG/Fish8840patch.jpg Graphic file (type jpg)
 <use ../PNG/Fish8840patch.jpg>
-Package pdftex.def Info: ../PNG/Fish8840patch.jpg  used on input line 966.
+Package pdftex.def Info: ../PNG/Fish8840patch.jpg  used on input line 960.
 (pdftex.def)             Requested size: 357.47943pt x 267.96152pt.
 [28 <../FIG/Fish8840.pdf> <../PNG/Fish8840patch.jpg>]
 <../PNG/Fish8840Adapt1.jpg, id=830, 185.62996pt x 139.22247pt>
 File: ../PNG/Fish8840Adapt1.jpg Graphic file (type jpg)
 <use ../PNG/Fish8840Adapt1.jpg>
-Package pdftex.def Info: ../PNG/Fish8840Adapt1.jpg  used on input line 986.
+Package pdftex.def Info: ../PNG/Fish8840Adapt1.jpg  used on input line 980.
 (pdftex.def)             Requested size: 256.07481pt x 192.05922pt.
 <../PNG/Fish8840Adapt2.jpg, id=831, 185.62996pt x 139.22247pt>
 File: ../PNG/Fish8840Adapt2.jpg Graphic file (type jpg)
 <use ../PNG/Fish8840Adapt2.jpg>
-Package pdftex.def Info: ../PNG/Fish8840Adapt2.jpg  used on input line 992.
+Package pdftex.def Info: ../PNG/Fish8840Adapt2.jpg  used on input line 986.
 (pdftex.def)             Requested size: 256.07481pt x 192.05922pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 984--995
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 978--989
 [][]   [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 999--1016
+Underfull \hbox (badness 10000) in paragraph at lines 993--1010
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1017--1021
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1015
 
  []
 
 <../PNG/WEI_M8.JPG, id=833, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8.JPG>
-Package pdftex.def Info: ../PNG/WEI_M8.JPG  used on input line 1029.
+Package pdftex.def Info: ../PNG/WEI_M8.JPG  used on input line 1023.
 (pdftex.def)             Requested size: 357.47943pt x 268.12386pt.
 [29 <../PNG/Fish8840Adapt1.jpg> <../PNG/Fish8840Adapt2.jpg>]
 <../PNG/WEI_M8_D.JPG, id=841, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8_D.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8_D.JPG>
-Package pdftex.def Info: ../PNG/WEI_M8_D.JPG  used on input line 1042.
+Package pdftex.def Info: ../PNG/WEI_M8_D.JPG  used on input line 1036.
 (pdftex.def)             Requested size: 256.07481pt x 192.06693pt.
 <../PNG/WEI_M8_L.JPG, id=842, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8_L.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8_L.JPG>
-Package pdftex.def Info: ../PNG/WEI_M8_L.JPG  used on input line 1048.
+Package pdftex.def Info: ../PNG/WEI_M8_L.JPG  used on input line 1042.
 (pdftex.def)             Requested size: 256.07481pt x 192.06693pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1040--1051
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1034--1045
 [][]   [] 
  []
 
 <../PNG/WEI_M8_modified.JPG, id=844, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8_modified.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8_modified.JPG>
-Package pdftex.def Info: ../PNG/WEI_M8_modified.JPG  used on input line 1072.
+Package pdftex.def Info: ../PNG/WEI_M8_modified.JPG  used on input line 1066.
 (pdftex.def)             Requested size: 357.47943pt x 268.12386pt.
 [30 <../PNG/WEI_M8.JPG> <../PNG/WEI_M8_D.JPG> <../PNG/WEI_M8_L.JPG>]
 <../PNG/T4_front.JPG, id=853, 770.88pt x 578.16pt>
 File: ../PNG/T4_front.JPG Graphic file (type jpg)
 <use ../PNG/T4_front.JPG>
-Package pdftex.def Info: ../PNG/T4_front.JPG  used on input line 1093.
+Package pdftex.def Info: ../PNG/T4_front.JPG  used on input line 1087.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 <../PNG/T4_front_noLCD.JPG, id=854, 770.88pt x 578.16pt>
 File: ../PNG/T4_front_noLCD.JPG Graphic file (type jpg)
 <use ../PNG/T4_front_noLCD.JPG>
-Package pdftex.def Info: ../PNG/T4_front_noLCD.JPG  used on input line 1099.
+Package pdftex.def Info: ../PNG/T4_front_noLCD.JPG  used on input line 1093.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1091--1102
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1085--1096
 [][]   [] 
  []
 
@@ -1351,30 +1343,30 @@ PG>]
 <../PNG/T4_back.JPG, id=862, 770.88pt x 578.16pt>
 File: ../PNG/T4_back.JPG Graphic file (type jpg)
 <use ../PNG/T4_back.JPG>
-Package pdftex.def Info: ../PNG/T4_back.JPG  used on input line 1118.
+Package pdftex.def Info: ../PNG/T4_back.JPG  used on input line 1112.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 <../PNG/T4_back_clips.JPG, id=863, 770.88pt x 578.16pt>
 File: ../PNG/T4_back_clips.JPG Graphic file (type jpg)
 <use ../PNG/T4_back_clips.JPG>
-Package pdftex.def Info: ../PNG/T4_back_clips.JPG  used on input line 1124.
+Package pdftex.def Info: ../PNG/T4_back_clips.JPG  used on input line 1118.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1116--1127
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1110--1121
 [][]   [] 
  []
 
 <../PNG/Kit_ST7565a.jpg, id=865, 770.88pt x 578.16pt>
 File: ../PNG/Kit_ST7565a.jpg Graphic file (type jpg)
 <use ../PNG/Kit_ST7565a.jpg>
-Package pdftex.def Info: ../PNG/Kit_ST7565a.jpg  used on input line 1157.
+Package pdftex.def Info: ../PNG/Kit_ST7565a.jpg  used on input line 1151.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 <../PNG/Kit_ST7565b.jpg, id=866, 770.88pt x 578.16pt>
 File: ../PNG/Kit_ST7565b.jpg Graphic file (type jpg)
 <use ../PNG/Kit_ST7565b.jpg>
-Package pdftex.def Info: ../PNG/Kit_ST7565b.jpg  used on input line 1163.
+Package pdftex.def Info: ../PNG/Kit_ST7565b.jpg  used on input line 1157.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1155--1166
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1149--1160
 [][]   [] 
  []
 
@@ -1382,61 +1374,54 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 1155--1166
 <../PNG/Kit_Color_a.jpg, id=873, 770.88pt x 578.16pt>
 File: ../PNG/Kit_Color_a.jpg Graphic file (type jpg)
 <use ../PNG/Kit_Color_a.jpg>
-Package pdftex.def Info: ../PNG/Kit_Color_a.jpg  used on input line 1182.
+Package pdftex.def Info: ../PNG/Kit_Color_a.jpg  used on input line 1176.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 <../PNG/Kit_Color_b.jpg, id=874, 770.88pt x 578.16pt>
 File: ../PNG/Kit_Color_b.jpg Graphic file (type jpg)
 <use ../PNG/Kit_Color_b.jpg>
-Package pdftex.def Info: ../PNG/Kit_Color_b.jpg  used on input line 1188.
+Package pdftex.def Info: ../PNG/Kit_Color_b.jpg  used on input line 1182.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1180--1191
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1174--1185
 [][]   [] 
  []
 
 [33 <../PNG/Kit_ST7565a.jpg> <../PNG/Kit_ST7565b.jpg> <../PNG/Kit_Color_a.jpg> 
 <../PNG/Kit_Color_b.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1230--1235
-
- []
-
-
 
 pdfTeX warning: pdflatex (file ../FIG/Kabel_Hiland.pdf): PDF inclusion: found P
 DF version <1.6>, but at most version <1.5> allowed
 <../FIG/Kabel_Hiland.pdf, id=883, 361.80069pt x 369.99632pt>
 File: ../FIG/Kabel_Hiland.pdf Graphic file (type pdf)
 <use ../FIG/Kabel_Hiland.pdf>
-Package pdftex.def Info: ../FIG/Kabel_Hiland.pdf  used on input line 1245.
-(pdftex.def)             Requested size: 357.47943pt x 365.59177pt.
-[34]
-<../PNG/Hi_u.jpg, id=890, 1453.43pt x 1680.2775pt>
+Package pdftex.def Info: ../FIG/Kabel_Hiland.pdf  used on input line 1240.
+(pdftex.def)             Requested size: 307.2929pt x 314.26688pt.
+<../PNG/Hi_u.jpg, id=884, 1453.43pt x 1680.2775pt>
 File: ../PNG/Hi_u.jpg Graphic file (type jpg)
 <use ../PNG/Hi_u.jpg>
-Package pdftex.def Info: ../PNG/Hi_u.jpg  used on input line 1261.
+Package pdftex.def Info: ../PNG/Hi_u.jpg  used on input line 1257.
 (pdftex.def)             Requested size: 224.06546pt x 259.03018pt.
-<../PNG/Hi_o.jpg, id=891, 1236.62pt x 1481.535pt>
+<../PNG/Hi_o.jpg, id=885, 1236.62pt x 1481.535pt>
 File: ../PNG/Hi_o.jpg Graphic file (type jpg)
 <use ../PNG/Hi_o.jpg>
-Package pdftex.def Info: ../PNG/Hi_o.jpg  used on input line 1267.
+Package pdftex.def Info: ../PNG/Hi_o.jpg  used on input line 1263.
 (pdftex.def)             Requested size: 193.5917pt x 231.9188pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1259--1271
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1255--1267
 [][]   []
  []
 
-[35 <../FIG/Kabel_Hiland.pdf, page is rotated 90 degrees> <../PNG/Hi_u.jpg> <..
-/PNG/Hi_o.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1278--1280
+[34 <../FIG/Kabel_Hiland.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 1274--1276
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1286--1289
+Underfull \hbox (badness 10000) in paragraph at lines 1282--1285
 
  []
 
-) [36]
+) [35 <../PNG/Hi_u.jpg> <../PNG/Hi_o.jpg>]
 \openout2 = `30-manual.aux'.
 
  (./30-manual.tex
@@ -1447,7 +1432,7 @@ Overfull \hbox (2.6197pt too wide) in paragraph at lines 23--30
 (POWER[]OFF
  []
 
-[37
+[36
 
 
 
@@ -1466,7 +1451,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--106
 
  []
 
-[38]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 108--116
 
  []
@@ -1476,24 +1461,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--165
 
  []
 
-[39]
+[38]
 Underfull \hbox (badness 10000) in paragraph at lines 180--183
 
  []
 
-
-Overfull \hbox (52.7816pt too wide) in paragraph at lines 201--205
-[]\OT1/cmr/m/n/12 For color dis-plays this menu item can be en-abled with the M
-ake-file op-tion LCD[]CHANGE[]COLOR
- []
-
-
-Overfull \hbox (55.87189pt too wide) in paragraph at lines 207--211
-[]\OT1/cmr/m/n/12 For color dis-plays this menu item can be en-abled with the M
-ake-file op-tion LCD[]CHANGE[]COLOR
- []
-
-[40]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
@@ -1510,7 +1483,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--271
 
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <14.4> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 274.
-[41] [42]
+[40] [41]
 Underfull \hbox (badness 10000) in paragraph at lines 356--361
 
  []
@@ -1520,12 +1493,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 361--364
 
  []
 
-[43] [44]) [45]
+[42] [43]) [44]
 \openout2 = `40-configuring.aux'.
 
  (./40-configuring.tex
 Chapter 4.
-[46
+[45
 
 
 
@@ -1534,12 +1507,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--86
 
  []
 
-[47]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
 
-[48] [49] [50]
+[47] [48] [49]
 Overfull \hbox (11.17856pt too wide) in paragraph at lines 296--301
 \OT1/cmr/m/n/12 use a ro-tary en-coder for ease in op-er-a-tion of the tester w
 ith the op-tion WITH[]ROTARY[]SWITCH. 
@@ -1551,98 +1524,104 @@ Overfull \hbox (6.706pt too wide) in paragraph at lines 311--316
 caler
  []
 
-[51] [52]
-<../PNG/AREF2_1V.png, id=994, 321.2pt x 234.8775pt>
+[50] [51]
+<../PNG/AREF2_1V.png, id=990, 321.2pt x 234.8775pt>
 File: ../PNG/AREF2_1V.png Graphic file (type png)
 <use ../PNG/AREF2_1V.png>
-Package pdftex.def Info: ../PNG/AREF2_1V.png  used on input line 445.
+Package pdftex.def Info: ../PNG/AREF2_1V.png  used on input line 443.
 (pdftex.def)             Requested size: 243.27028pt x 177.89589pt.
-<../PNG/AREF2VCC.png, id=995, 321.2pt x 234.8775pt>
+<../PNG/AREF2VCC.png, id=991, 321.2pt x 234.8775pt>
 File: ../PNG/AREF2VCC.png Graphic file (type png)
 <use ../PNG/AREF2VCC.png>
-Package pdftex.def Info: ../PNG/AREF2VCC.png  used on input line 452.
+Package pdftex.def Info: ../PNG/AREF2VCC.png  used on input line 450.
 (pdftex.def)             Requested size: 243.27028pt x 177.89589pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 443--456
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 441--454
 [][]   [] 
  []
 
-[53] [54 <../PNG/AREF2_1V.png> <../PNG/AREF2VCC.png>] [55] [56] [57] [58]
-Underfull \hbox (badness 10000) in paragraph at lines 735--759
-
- []
-
-[59] [60]
-Underfull \hbox (badness 10000) in paragraph at lines 887--888
-
+[52] [53 <../PNG/AREF2_1V.png> <../PNG/AREF2VCC.png>] [54]
+Overfull \hbox (10.85744pt too wide) in paragraph at lines 594--596
+[]\OT1/cmr/m/n/12 select the port where [] can reach your mi-cro-con-troller (a
+t-mega). Ex-am-ple: PORT=usb 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 889--896
+Underfull \hbox (badness 10000) in paragraph at lines 594--596
 
  []
 
-[61]
-Underfull \hbox (badness 10000) in paragraph at lines 942--948
+[55] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+) [56]
+Underfull \hbox (badness 10000) in paragraph at lines 725--749
 
  []
 
-[62]
-Overfull \hbox (33.16014pt too wide) in paragraph at lines 994--998
+[57] [58]
+Underfull \hbox (badness 10000) in paragraph at lines 878--879
+
+ []
+
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 880--887
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 933--939
+
+ []
+
+[60]
+Overfull \hbox (33.16014pt too wide) in paragraph at lines 985--989
 \OT1/cmr/m/n/12 A clear rep-re-sen-ta-tion of the di-rec-tory struc-ture and th
 e files is pos-si-ble with the com-mand [].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 994--998
+Underfull \hbox (badness 10000) in paragraph at lines 985--989
 
  []
 
+[61]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1047.
+ [62]
+<../PNG/Notepad_open.png, id=1072, 757.83125pt x 813.0375pt>
+File: ../PNG/Notepad_open.png Graphic file (type png)
+<use ../PNG/Notepad_open.png>
+Package pdftex.def Info: ../PNG/Notepad_open.png  used on input line 1118.
+(pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
+<../PNG/Notepad_save.png, id=1073, 757.83125pt x 813.0375pt>
+File: ../PNG/Notepad_save.png Graphic file (type png)
+<use ../PNG/Notepad_save.png>
+Package pdftex.def Info: ../PNG/Notepad_save.png  used on input line 1124.
+(pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1007--1009
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1046--1070
-
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1116--1127
+[][]   [] 
  []
 
 [63]
-<../PNG/Notepad_open.png, id=1070, 757.83125pt x 813.0375pt>
-File: ../PNG/Notepad_open.png Graphic file (type png)
-<use ../PNG/Notepad_open.png>
-Package pdftex.def Info: ../PNG/Notepad_open.png  used on input line 1120.
-(pdftex.def)             Requested size: 256.07481pt x 274.72948pt.
-<../PNG/Notepad_save.png, id=1071, 757.83125pt x 813.0375pt>
-File: ../PNG/Notepad_save.png Graphic file (type png)
-<use ../PNG/Notepad_save.png>
-Package pdftex.def Info: ../PNG/Notepad_save.png  used on input line 1126.
-(pdftex.def)             Requested size: 256.07481pt x 274.72948pt.
-
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1118--1129
-[][]   [] 
- []
-
-[64]
-<../PNG/Notepad_make.png, id=1081, 757.83125pt x 813.0375pt>
+<../PNG/Notepad_make.png, id=1082, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_make.png Graphic file (type png)
 <use ../PNG/Notepad_make.png>
-Package pdftex.def Info: ../PNG/Notepad_make.png  used on input line 1139.
-(pdftex.def)             Requested size: 256.07481pt x 274.72948pt.
-<../PNG/Notepad_program.png, id=1082, 757.83125pt x 813.0375pt>
+Package pdftex.def Info: ../PNG/Notepad_make.png  used on input line 1137.
+(pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
+<../PNG/Notepad_program.png, id=1083, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_program.png Graphic file (type png)
 <use ../PNG/Notepad_program.png>
-Package pdftex.def Info: ../PNG/Notepad_program.png  used on input line 1145.
-(pdftex.def)             Requested size: 256.07481pt x 274.72948pt.
+Package pdftex.def Info: ../PNG/Notepad_program.png  used on input line 1143.
+(pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1137--1148
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1135--1146
 [][]   [] 
  []
 
-[65 <../PNG/Notepad_open.png (PNG copy)> <../PNG/Notepad_save.png (PNG copy)> <
+[64 <../PNG/Notepad_open.png (PNG copy)> <../PNG/Notepad_save.png (PNG copy)> <
 ../PNG/Notepad_make.png (PNG copy)> <../PNG/Notepad_program.png (PNG copy)>]
-[66]) [67]
+[65]) [66]
 \openout2 = `50-measurement.aux'.
 
  (./50-measurement.tex
@@ -1651,7 +1630,7 @@ Chapter 5.
 
 pdfTeX warning: pdflatex (file ../FIG/port.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.5> allowed
-<../FIG/port.pdf, id=1100, 224.84pt x 123.46124pt>
+<../FIG/port.pdf, id=1101, 224.84pt x 123.46124pt>
 File: ../FIG/port.pdf Graphic file (type pdf)
 <use ../FIG/port.pdf>
 Package pdftex.def Info: ../FIG/port.pdf  used on input line 14.
@@ -1660,46 +1639,46 @@ Package pdftex.def Info: ../FIG/port.pdf  used on input line 14.
 
 pdfTeX warning: pdflatex (file ../FIG/terminal.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<../FIG/terminal.pdf, id=1102, 224.84pt x 152.57pt>
+<../FIG/terminal.pdf, id=1103, 224.84pt x 152.57pt>
 File: ../FIG/terminal.pdf Graphic file (type pdf)
 <use ../FIG/terminal.pdf>
 Package pdftex.def Info: ../FIG/terminal.pdf  used on input line 24.
 (pdftex.def)             Requested size: 409.72125pt x 278.0573pt.
-[68
+[67
 
 
 
- <../FIG/port.pdf>]) [69 <../FIG/terminal.pdf>]
+ <../FIG/port.pdf>]) [68 <../FIG/terminal.pdf>]
 \openout2 = `51-semicon.aux'.
 
  (./51-semicon.tex
 
 pdfTeX warning: pdflatex (file ../FIG/JFETcd.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
-<../FIG/JFETcd.pdf, id=1132, 406.51875pt x 309.155pt>
+<../FIG/JFETcd.pdf, id=1134, 406.51875pt x 309.155pt>
 File: ../FIG/JFETcd.pdf Graphic file (type pdf)
 <use ../FIG/JFETcd.pdf>
 Package pdftex.def Info: ../FIG/JFETcd.pdf  used on input line 42.
 (pdftex.def)             Requested size: 409.72125pt x 311.60252pt.
-[70
+[69
 
 
  <../FIG/JFETcd.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/PNPcc.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/PNPcc.pdf, id=1153, 406.51875pt x 309.155pt>
+<../FIG/PNPcc.pdf, id=1154, 406.51875pt x 309.155pt>
 File: ../FIG/PNPcc.pdf Graphic file (type pdf)
 <use ../FIG/PNPcc.pdf>
 Package pdftex.def Info: ../FIG/PNPcc.pdf  used on input line 65.
 (pdftex.def)             Requested size: 512.14963pt x 389.4996pt.
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 68.
-[71 <../FIG/PNPcc.pdf>]
+[70 <../FIG/PNPcc.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/PNPce.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/PNPce.pdf, id=1173, 406.51875pt x 309.155pt>
+<../FIG/PNPce.pdf, id=1174, 406.51875pt x 309.155pt>
 File: ../FIG/PNPce.pdf Graphic file (type pdf)
 <use ../FIG/PNPce.pdf>
 Package pdftex.def Info: ../FIG/PNPce.pdf  used on input line 99.
@@ -1708,53 +1687,53 @@ Package pdftex.def Info: ../FIG/PNPce.pdf  used on input line 99.
 
 pdfTeX warning: pdflatex (file ../FIG/NPNce.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/NPNce.pdf, id=1175, 406.51875pt x 309.155pt>
+<../FIG/NPNce.pdf, id=1176, 406.51875pt x 309.155pt>
 File: ../FIG/NPNce.pdf Graphic file (type pdf)
 <use ../FIG/NPNce.pdf>
 Package pdftex.def Info: ../FIG/NPNce.pdf  used on input line 118.
 (pdftex.def)             Requested size: 512.14963pt x 389.4996pt.
-[72 <../FIG/PNPce.pdf>]
+[71 <../FIG/PNPce.pdf>]
 <../PNG/IRFU120gate.png, id=1194, 321.2pt x 234.8775pt>
 File: ../PNG/IRFU120gate.png Graphic file (type png)
 <use ../PNG/IRFU120gate.png>
 Package pdftex.def Info: ../PNG/IRFU120gate.png  used on input line 155.
 (pdftex.def)             Requested size: 409.72125pt x 299.61716pt.
- [73 <../FIG/NPNce.pdf>]
+ [72 <../FIG/NPNce.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/CheckSemi1.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/CheckSemi1.pdf, id=1211, 476.78125pt x 668.4975pt>
+<../FIG/CheckSemi1.pdf, id=1212, 476.78125pt x 668.4975pt>
 File: ../FIG/CheckSemi1.pdf Graphic file (type pdf)
 <use ../FIG/CheckSemi1.pdf>
 Package pdftex.def Info: ../FIG/CheckSemi1.pdf  used on input line 164.
 (pdftex.def)             Requested size: 409.72125pt x 574.49883pt.
-[74 <../PNG/IRFU120gate.png>]
+[73 <../PNG/IRFU120gate.png>]
 
 pdfTeX warning: pdflatex (file ../FIG/CheckSemi2.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/CheckSemi2.pdf, id=1217, 503.8825pt x 711.65875pt>
+<../FIG/CheckSemi2.pdf, id=1218, 503.8825pt x 711.65875pt>
 File: ../FIG/CheckSemi2.pdf Graphic file (type pdf)
 <use ../FIG/CheckSemi2.pdf>
 Package pdftex.def Info: ../FIG/CheckSemi2.pdf  used on input line 171.
 (pdftex.def)             Requested size: 409.72125pt x 578.66653pt.
-[75 <../FIG/CheckSemi1.pdf>]
+[74 <../FIG/CheckSemi1.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/CheckSemi3.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/CheckSemi3.pdf, id=1229, 348.30125pt x 419.5675pt>
+<../FIG/CheckSemi3.pdf, id=1230, 348.30125pt x 419.5675pt>
 File: ../FIG/CheckSemi3.pdf Graphic file (type pdf)
 <use ../FIG/CheckSemi3.pdf>
 Package pdftex.def Info: ../FIG/CheckSemi3.pdf  used on input line 178.
 (pdftex.def)             Requested size: 409.72125pt x 493.58086pt.
-[76 <../FIG/CheckSemi2.pdf>] [77 <../FIG/CheckSemi3.pdf>] [78] [79]) [80]
-[81]
+[75 <../FIG/CheckSemi2.pdf>] [76 <../FIG/CheckSemi3.pdf>] [77] [78]) [79]
+[80]
 \openout2 = `52-resistors.aux'.
 
  (./52-resistors.tex
 
 pdfTeX warning: pdflatex (file ../FIG/ResistormessL1.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ResistormessL1.pdf, id=1279, 406.51875pt x 159.59625pt>
+<../FIG/ResistormessL1.pdf, id=1280, 406.51875pt x 159.59625pt>
 File: ../FIG/ResistormessL1.pdf Graphic file (type pdf)
 <use ../FIG/ResistormessL1.pdf>
 Package pdftex.def Info: ../FIG/ResistormessL1.pdf  used on input line 15.
@@ -1763,26 +1742,26 @@ Package pdftex.def Info: ../FIG/ResistormessL1.pdf  used on input line 15.
 
 pdfTeX warning: pdflatex (file ../FIG/ResistormessL2.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ResistormessL2.pdf, id=1280, 406.51875pt x 159.59625pt>
+<../FIG/ResistormessL2.pdf, id=1281, 406.51875pt x 159.59625pt>
 File: ../FIG/ResistormessL2.pdf Graphic file (type pdf)
 <use ../FIG/ResistormessL2.pdf>
 Package pdftex.def Info: ../FIG/ResistormessL2.pdf  used on input line 22.
 (pdftex.def)             Requested size: 409.72125pt x 160.85973pt.
-<../GNU/RLvtotEN.pdf, id=1282, 361.35pt x 216.81pt>
+<../GNU/RLvtotEN.pdf, id=1283, 361.35pt x 216.81pt>
 File: ../GNU/RLvtotEN.pdf Graphic file (type pdf)
 <use ../GNU/RLvtotEN.pdf>
 Package pdftex.def Info: ../GNU/RLvtotEN.pdf  used on input line 43.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[82
+[81
 
 
  <../FIG/ResistormessL1.pdf> <../FIG/ResistormessL2.pdf>]
-<../GNU/RLvlowEN.pdf, id=1313, 361.35pt x 216.81pt>
+<../GNU/RLvlowEN.pdf, id=1314, 361.35pt x 216.81pt>
 File: ../GNU/RLvlowEN.pdf Graphic file (type pdf)
 <use ../GNU/RLvlowEN.pdf>
 Package pdftex.def Info: ../GNU/RLvlowEN.pdf  used on input line 74.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/RLvhighEN.pdf, id=1314, 361.35pt x 216.81pt>
+<../GNU/RLvhighEN.pdf, id=1315, 361.35pt x 216.81pt>
 File: ../GNU/RLvhighEN.pdf Graphic file (type pdf)
 <use ../GNU/RLvhighEN.pdf>
 Package pdftex.def Info: ../GNU/RLvhighEN.pdf  used on input line 81.
@@ -1792,11 +1771,11 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 72--85
 [][]   [] 
  []
 
-[83 <../GNU/RLvtotEN.pdf>]
+[82 <../GNU/RLvtotEN.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/ResistormessH1.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ResistormessH1.pdf, id=1339, 406.51875pt x 159.59625pt>
+<../FIG/ResistormessH1.pdf, id=1340, 406.51875pt x 159.59625pt>
 File: ../FIG/ResistormessH1.pdf Graphic file (type pdf)
 <use ../FIG/ResistormessH1.pdf>
 Package pdftex.def Info: ../FIG/ResistormessH1.pdf  used on input line 107.
@@ -1805,12 +1784,12 @@ Package pdftex.def Info: ../FIG/ResistormessH1.pdf  used on input line 107.
 
 pdfTeX warning: pdflatex (file ../FIG/ResistormessH2.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ResistormessH2.pdf, id=1340, 406.51875pt x 159.59625pt>
+<../FIG/ResistormessH2.pdf, id=1341, 406.51875pt x 159.59625pt>
 File: ../FIG/ResistormessH2.pdf Graphic file (type pdf)
 <use ../FIG/ResistormessH2.pdf>
 Package pdftex.def Info: ../FIG/ResistormessH2.pdf  used on input line 114.
 (pdftex.def)             Requested size: 409.72125pt x 160.85973pt.
-[84 <../GNU/RLvlowEN.pdf> <../GNU/RLvhighEN.pdf
+[83 <../GNU/RLvlowEN.pdf> <../GNU/RLvhighEN.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/RLvhighEN.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
@@ -1825,13 +1804,13 @@ File: ../GNU/Mega8resEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega8resEN.pdf>
 Package pdftex.def Info: ../GNU/Mega8resEN.pdf  used on input line 147.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
- [85 <../FIG/ResistormessH2.pdf> <../GNU/RHvEN.pdf>]
-<../GNU/Mega8AresEN.pdf, id=1426, 361.35pt x 216.81pt>
+ [84 <../FIG/ResistormessH2.pdf> <../GNU/RHvEN.pdf>]
+<../GNU/Mega8AresEN.pdf, id=1427, 361.35pt x 216.81pt>
 File: ../GNU/Mega8AresEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega8AresEN.pdf>
 Package pdftex.def Info: ../GNU/Mega8AresEN.pdf  used on input line 155.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega8LresEN.pdf, id=1427, 361.35pt x 216.81pt>
+<../GNU/Mega8LresEN.pdf, id=1428, 361.35pt x 216.81pt>
 File: ../GNU/Mega8LresEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega8LresEN.pdf>
 Package pdftex.def Info: ../GNU/Mega8LresEN.pdf  used on input line 162.
@@ -1841,12 +1820,12 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 153--166
 [][]   [] 
  []
 
-<../GNU/Mega168resEN.pdf, id=1428, 361.35pt x 216.81pt>
+<../GNU/Mega168resEN.pdf, id=1429, 361.35pt x 216.81pt>
 File: ../GNU/Mega168resEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega168resEN.pdf>
 Package pdftex.def Info: ../GNU/Mega168resEN.pdf  used on input line 172.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[86 <../GNU/Mega8resEN.pdf> <../GNU/Mega8AresEN.pdf
+[85 <../GNU/Mega8resEN.pdf> <../GNU/Mega8AresEN.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega8AresEN.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -1855,12 +1834,12 @@ pdfTeX warning: pdflatex (file ../GNU/Mega8AresEN.pdf): PDF inclusion: multiple
 pdfTeX warning: pdflatex (file ../GNU/Mega8LresEN.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-<../GNU/m168res_allEN.pdf, id=1481, 361.35pt x 216.81pt>
+<../GNU/m168res_allEN.pdf, id=1482, 361.35pt x 216.81pt>
 File: ../GNU/m168res_allEN.pdf Graphic file (type pdf)
 <use ../GNU/m168res_allEN.pdf>
 Package pdftex.def Info: ../GNU/m168res_allEN.pdf  used on input line 197.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/m168ares_allEN.pdf, id=1482, 361.35pt x 216.81pt>
+<../GNU/m168ares_allEN.pdf, id=1483, 361.35pt x 216.81pt>
 File: ../GNU/m168ares_allEN.pdf Graphic file (type pdf)
 <use ../GNU/m168ares_allEN.pdf>
 Package pdftex.def Info: ../GNU/m168ares_allEN.pdf  used on input line 204.
@@ -1870,18 +1849,18 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 195--208
 [][]   [] 
  []
 
-[87 <../GNU/Mega168resEN.pdf>]
-<../GNU/m168pres_allEN.pdf, id=1505, 361.35pt x 216.81pt>
+[86 <../GNU/Mega168resEN.pdf>]
+<../GNU/m168pres_allEN.pdf, id=1506, 361.35pt x 216.81pt>
 File: ../GNU/m168pres_allEN.pdf Graphic file (type pdf)
 <use ../GNU/m168pres_allEN.pdf>
 Package pdftex.def Info: ../GNU/m168pres_allEN.pdf  used on input line 213.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-<../GNU/m328res_allEN.pdf, id=1506, 361.35pt x 216.81pt>
+<../GNU/m328res_allEN.pdf, id=1507, 361.35pt x 216.81pt>
 File: ../GNU/m328res_allEN.pdf Graphic file (type pdf)
 <use ../GNU/m328res_allEN.pdf>
 Package pdftex.def Info: ../GNU/m328res_allEN.pdf  used on input line 221.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/m328pres_allEN.pdf, id=1507, 361.35pt x 216.81pt>
+<../GNU/m328pres_allEN.pdf, id=1508, 361.35pt x 216.81pt>
 File: ../GNU/m328pres_allEN.pdf Graphic file (type pdf)
 <use ../GNU/m328pres_allEN.pdf>
 Package pdftex.def Info: ../GNU/m328pres_allEN.pdf  used on input line 228.
@@ -1891,7 +1870,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 219--232
 [][]   [] 
  []
 
-) [88 <../GNU/m168res_allEN.pdf> <../GNU/m168ares_allEN.pdf
+) [87 <../GNU/m168res_allEN.pdf> <../GNU/m168ares_allEN.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/m168ares_allEN.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
@@ -1914,15 +1893,15 @@ ple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ../FIG/Bigcap.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
-<../FIG/Bigcap.pdf, id=1586, 406.51875pt x 527.9725pt>
+<../FIG/Bigcap.pdf, id=1587, 406.51875pt x 527.9725pt>
 File: ../FIG/Bigcap.pdf Graphic file (type pdf)
 <use ../FIG/Bigcap.pdf>
 Package pdftex.def Info: ../FIG/Bigcap.pdf  used on input line 41.
 (pdftex.def)             Requested size: 476.2954pt x 618.61958pt.
-[89
+[88
 
 
-] [90 <../FIG/Bigcap.pdf>]
+] [89 <../FIG/Bigcap.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/Cap_residV.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
@@ -1951,75 +1930,75 @@ File: ../PNG/charge_15mF.png Graphic file (type png)
 <use ../PNG/charge_15mF.png>
 Package pdftex.def Info: ../PNG/charge_15mF.png  used on input line 95.
 (pdftex.def)             Requested size: 409.72125pt x 299.61716pt.
-[91 <../FIG/Cap_residV.pdf> <../PNG/charge_229uF.png> <../PNG/charge_5mF.png>]
-[92 <../PNG/charge_15mF.png>]
+[90 <../FIG/Cap_residV.pdf> <../PNG/charge_229uF.png> <../PNG/charge_5mF.png>]
+[91 <../PNG/charge_15mF.png>]
 
 pdfTeX warning: pdflatex (file ../FIG/Comparat.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<../FIG/Comparat.pdf, id=1647, 375.4025pt x 188.705pt>
+<../FIG/Comparat.pdf, id=1648, 375.4025pt x 188.705pt>
 File: ../FIG/Comparat.pdf Graphic file (type pdf)
 <use ../FIG/Comparat.pdf>
 Package pdftex.def Info: ../FIG/Comparat.pdf  used on input line 151.
 (pdftex.def)             Requested size: 409.72125pt x 205.96942pt.
-<../PNG/charge_22uF.png, id=1648, 321.2pt x 234.8775pt>
+<../PNG/charge_22uF.png, id=1649, 321.2pt x 234.8775pt>
 File: ../PNG/charge_22uF.png Graphic file (type png)
 <use ../PNG/charge_22uF.png>
 Package pdftex.def Info: ../PNG/charge_22uF.png  used on input line 158.
 (pdftex.def)             Requested size: 409.72125pt x 299.61716pt.
-[93 <../FIG/Comparat.pdf> <../PNG/charge_22uF.png>]
+[92 <../FIG/Comparat.pdf> <../PNG/charge_22uF.png>]
 
 pdfTeX warning: pdflatex (file ../FIG/sampling.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<../FIG/sampling.pdf, id=1669, 595.22375pt x 72.27pt>
+<../FIG/sampling.pdf, id=1670, 595.22375pt x 72.27pt>
 File: ../FIG/sampling.pdf Graphic file (type pdf)
 <use ../FIG/sampling.pdf>
 Package pdftex.def Info: ../FIG/sampling.pdf  used on input line 197.
 (pdftex.def)             Requested size: 512.14963pt x 62.18625pt.
-[94 <../FIG/sampling.pdf>]
+[93 <../FIG/sampling.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/Cap_equiv.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<../FIG/Cap_equiv.pdf, id=1683, 94.3525pt x 58.2175pt>
+<../FIG/Cap_equiv.pdf, id=1684, 94.3525pt x 58.2175pt>
 File: ../FIG/Cap_equiv.pdf Graphic file (type pdf)
 <use ../FIG/Cap_equiv.pdf>
 Package pdftex.def Info: ../FIG/Cap_equiv.pdf  used on input line 244.
 (pdftex.def)             Requested size: 153.64644pt x 94.81105pt.
-<../GNU/Cap_FC_dataEN.pdf, id=1687, 361.35pt x 216.81pt>
+<../GNU/Cap_FC_dataEN.pdf, id=1688, 361.35pt x 216.81pt>
 File: ../GNU/Cap_FC_dataEN.pdf Graphic file (type pdf)
 <use ../GNU/Cap_FC_dataEN.pdf>
 Package pdftex.def Info: ../GNU/Cap_FC_dataEN.pdf  used on input line 261.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
-[95 <../FIG/Cap_equiv.pdf>]
-<../GNU/Cap_FR_dataEN.pdf, id=1702, 361.35pt x 216.81pt>
+[94 <../FIG/Cap_equiv.pdf>]
+<../GNU/Cap_FR_dataEN.pdf, id=1703, 361.35pt x 216.81pt>
 File: ../GNU/Cap_FR_dataEN.pdf Graphic file (type pdf)
 <use ../GNU/Cap_FR_dataEN.pdf>
 Package pdftex.def Info: ../GNU/Cap_FR_dataEN.pdf  used on input line 268.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
-<../GNU/Cap_FC_FR_dataEN.pdf, id=1703, 361.35pt x 216.81pt>
+<../GNU/Cap_FC_FR_dataEN.pdf, id=1704, 361.35pt x 216.81pt>
 File: ../GNU/Cap_FC_FR_dataEN.pdf Graphic file (type pdf)
 <use ../GNU/Cap_FC_FR_dataEN.pdf>
 Package pdftex.def Info: ../GNU/Cap_FC_FR_dataEN.pdf  used on input line 275.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
- [96 <../GNU/Cap_FC_dataEN.pdf> <../GNU/Cap_FR_dataEN.pdf
+ [95 <../GNU/Cap_FC_dataEN.pdf> <../GNU/Cap_FR_dataEN.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Cap_FR_dataEN.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
->] [97 <../GNU/Cap_FC_FR_dataEN.pdf>]
+>] [96 <../GNU/Cap_FC_FR_dataEN.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/Cap_esr.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<../FIG/Cap_esr.pdf, id=1761, 406.51875pt x 360.34625pt>
+<../FIG/Cap_esr.pdf, id=1762, 406.51875pt x 360.34625pt>
 File: ../FIG/Cap_esr.pdf Graphic file (type pdf)
 <use ../FIG/Cap_esr.pdf>
 Package pdftex.def Info: ../FIG/Cap_esr.pdf  used on input line 355.
 (pdftex.def)             Requested size: 425.08511pt x 376.81866pt.
-[98 <../FIG/Cap_esr.pdf>]
-<../PNG/ESR_4uF.png, id=1780, 321.2pt x 234.8775pt>
+[97 <../FIG/Cap_esr.pdf>]
+<../PNG/ESR_4uF.png, id=1781, 321.2pt x 234.8775pt>
 File: ../PNG/ESR_4uF.png Graphic file (type png)
 <use ../PNG/ESR_4uF.png>
 Package pdftex.def Info: ../PNG/ESR_4uF.png  used on input line 391.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/ESR4uF6R8.png, id=1781, 321.2pt x 234.8775pt>
+<../PNG/ESR4uF6R8.png, id=1782, 321.2pt x 234.8775pt>
 File: ../PNG/ESR4uF6R8.png Graphic file (type png)
 <use ../PNG/ESR4uF6R8.png>
 Package pdftex.def Info: ../PNG/ESR4uF6R8.png  used on input line 397.
@@ -2029,12 +2008,12 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 389--400
 [][]   [] 
  []
 
-<../PNG/ESR_2uF_pin2GND.png, id=1782, 321.2pt x 234.8775pt>
+<../PNG/ESR_2uF_pin2GND.png, id=1783, 321.2pt x 234.8775pt>
 File: ../PNG/ESR_2uF_pin2GND.png Graphic file (type png)
 <use ../PNG/ESR_2uF_pin2GND.png>
 Package pdftex.def Info: ../PNG/ESR_2uF_pin2GND.png  used on input line 408.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/ESR_2uF_pin2pin.png, id=1783, 321.2pt x 234.8775pt>
+<../PNG/ESR_2uF_pin2pin.png, id=1784, 321.2pt x 234.8775pt>
 File: ../PNG/ESR_2uF_pin2pin.png Graphic file (type png)
 <use ../PNG/ESR_2uF_pin2pin.png>
 Package pdftex.def Info: ../PNG/ESR_2uF_pin2pin.png  used on input line 414.
@@ -2044,18 +2023,18 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 406--417
 [][]   [] 
  []
 
-[99 <../PNG/ESR_4uF.png> <../PNG/ESR4uF6R8.png> <../PNG/ESR_2uF_pin2GND.png> <.
+[98 <../PNG/ESR_4uF.png> <../PNG/ESR4uF6R8.png> <../PNG/ESR_2uF_pin2GND.png> <.
 ./PNG/ESR_2uF_pin2pin.png>]
-<../GNU/CesrEN.pdf, id=1795, 361.35pt x 216.81pt>
+<../GNU/CesrEN.pdf, id=1796, 361.35pt x 216.81pt>
 File: ../GNU/CesrEN.pdf Graphic file (type pdf)
 <use ../GNU/CesrEN.pdf>
 Package pdftex.def Info: ../GNU/CesrEN.pdf  used on input line 455.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
- [100]
+ [99]
 
 pdfTeX warning: pdflatex (file ../FIG/Cap_esr2_timing.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/Cap_esr2_timing.pdf, id=1808, 683.55376pt x 142.5325pt>
+<../FIG/Cap_esr2_timing.pdf, id=1809, 683.55376pt x 142.5325pt>
 File: ../FIG/Cap_esr2_timing.pdf Graphic file (type pdf)
 <use ../FIG/Cap_esr2_timing.pdf>
 Package pdftex.def Info: ../FIG/Cap_esr2_timing.pdf  used on input line 479.
@@ -2064,12 +2043,12 @@ Package pdftex.def Info: ../FIG/Cap_esr2_timing.pdf  used on input line 479.
 
 pdfTeX warning: pdflatex (file ../FIG/Cap_esr2.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<../FIG/Cap_esr2.pdf, id=1809, 406.51875pt x 664.4825pt>
+<../FIG/Cap_esr2.pdf, id=1810, 406.51875pt x 664.4825pt>
 File: ../FIG/Cap_esr2.pdf Graphic file (type pdf)
 <use ../FIG/Cap_esr2.pdf>
 Package pdftex.def Info: ../FIG/Cap_esr2.pdf  used on input line 486.
 (pdftex.def)             Requested size: 425.08511pt x 694.85782pt.
-[101 <../GNU/CesrEN.pdf> <../FIG/Cap_esr2_timing.pdf>] [102 <../FIG/Cap_esr2.pd
+[100 <../GNU/CesrEN.pdf> <../FIG/Cap_esr2_timing.pdf>] [101 <../FIG/Cap_esr2.pd
 f>]
 <../PNG/NewEsr10uF0R0.png, id=1854, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr10uF0R0.png Graphic file (type png)
@@ -2101,14 +2080,14 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 537--548
 [][]   [] 
  []
 
-[103 <../PNG/NewEsr10uF0R0.png> <../PNG/NewEsr10uF2R7.png> <../PNG/NewEsr2u2F0R
+[102 <../PNG/NewEsr10uF0R0.png> <../PNG/NewEsr10uF2R7.png> <../PNG/NewEsr2u2F0R
 0.png> <../PNG/NewEsr2u2F2R7.png>]
-<../PNG/NewEsr2u2F0R0zoom.png, id=1871, 321.2pt x 234.8775pt>
+<../PNG/NewEsr2u2F0R0zoom.png, id=1872, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr2u2F0R0zoom.png Graphic file (type png)
 <use ../PNG/NewEsr2u2F0R0zoom.png>
 Package pdftex.def Info: ../PNG/NewEsr2u2F0R0zoom.png  used on input line 558.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/NewEsr2u2F2R7zoom.png, id=1872, 321.2pt x 234.8775pt>
+<../PNG/NewEsr2u2F2R7zoom.png, id=1873, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr2u2F2R7zoom.png Graphic file (type png)
 <use ../PNG/NewEsr2u2F2R7zoom.png>
 Package pdftex.def Info: ../PNG/NewEsr2u2F2R7zoom.png  used on input line 564.
@@ -2118,30 +2097,30 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 556--567
 [][]   [] 
  []
 
-<../GNU/Cesr2EN.pdf, id=1875, 361.35pt x 216.81pt>
+<../GNU/Cesr2EN.pdf, id=1876, 361.35pt x 216.81pt>
 File: ../GNU/Cesr2EN.pdf Graphic file (type pdf)
 <use ../GNU/Cesr2EN.pdf>
 Package pdftex.def Info: ../GNU/Cesr2EN.pdf  used on input line 579.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[104 <../PNG/NewEsr2u2F0R0zoom.png> <../PNG/NewEsr2u2F2R7zoom.png> <../GNU/Cesr
+[103 <../PNG/NewEsr2u2F0R0zoom.png> <../PNG/NewEsr2u2F2R7zoom.png> <../GNU/Cesr
 2EN.pdf>]
-<../GNU/Elco_esrEN.pdf, id=1901, 361.35pt x 216.81pt>
+<../GNU/Elco_esrEN.pdf, id=1902, 361.35pt x 216.81pt>
 File: ../GNU/Elco_esrEN.pdf Graphic file (type pdf)
 <use ../GNU/Elco_esrEN.pdf>
 Package pdftex.def Info: ../GNU/Elco_esrEN.pdf  used on input line 593.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
-<../GNU/res_esrEN.pdf, id=1903, 361.35pt x 216.81pt>
+<../GNU/res_esrEN.pdf, id=1904, 361.35pt x 216.81pt>
 File: ../GNU/res_esrEN.pdf Graphic file (type pdf)
 <use ../GNU/res_esrEN.pdf>
 Package pdftex.def Info: ../GNU/res_esrEN.pdf  used on input line 605.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
- [105 <../GNU/Elco_esrEN.pdf>]
-<../GNU/Cesr_22nEN.pdf, id=1925, 361.35pt x 216.81pt>
+ [104 <../GNU/Elco_esrEN.pdf>]
+<../GNU/Cesr_22nEN.pdf, id=1926, 361.35pt x 216.81pt>
 File: ../GNU/Cesr_22nEN.pdf Graphic file (type pdf)
 <use ../GNU/Cesr_22nEN.pdf>
 Package pdftex.def Info: ../GNU/Cesr_22nEN.pdf  used on input line 632.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Cesr_22n_lowEN.pdf, id=1926, 361.35pt x 216.81pt>
+<../GNU/Cesr_22n_lowEN.pdf, id=1927, 361.35pt x 216.81pt>
 File: ../GNU/Cesr_22n_lowEN.pdf Graphic file (type pdf)
 <use ../GNU/Cesr_22n_lowEN.pdf>
 Package pdftex.def Info: ../GNU/Cesr_22n_lowEN.pdf  used on input line 638.
@@ -2151,12 +2130,12 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 630--641
 [][]   [] 
  []
 
-[106 <../GNU/res_esrEN.pdf>] [107 <../GNU/Cesr_22nEN.pdf> <../GNU/Cesr_22n_lowE
+[105 <../GNU/res_esrEN.pdf>] [106 <../GNU/Cesr_22nEN.pdf> <../GNU/Cesr_22n_lowE
 N.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Cesr_22n_lowEN.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->] [108]
+>] [107]
 <../GNU/Mega8capEN.pdf, id=1991, 361.35pt x 216.81pt>
 File: ../GNU/Mega8capEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega8capEN.pdf>
@@ -2182,7 +2161,7 @@ File: ../GNU/Mega168capEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega168capEN.pdf>
 Package pdftex.def Info: ../GNU/Mega168capEN.pdf  used on input line 779.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
-[109 <../GNU/Mega8capEN.pdf> <../GNU/Mega8AcapEN.pdf
+[108 <../GNU/Mega8capEN.pdf> <../GNU/Mega8AcapEN.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega8AcapEN.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -2191,18 +2170,18 @@ pdfTeX warning: pdflatex (file ../GNU/Mega8AcapEN.pdf): PDF inclusion: multiple
 pdfTeX warning: pdflatex (file ../GNU/Mega8LcapEN.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-<../GNU/capcompareEN.pdf, id=2025, 361.35pt x 216.81pt>
+<../GNU/capcompareEN.pdf, id=2026, 361.35pt x 216.81pt>
 File: ../GNU/capcompareEN.pdf Graphic file (type pdf)
 <use ../GNU/capcompareEN.pdf>
 Package pdftex.def Info: ../GNU/capcompareEN.pdf  used on input line 794.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
- [110 <../GNU/Mega168capEN.pdf>]
-<../GNU/Mega168allEN.pdf, id=2044, 361.35pt x 216.81pt>
+ [109 <../GNU/Mega168capEN.pdf>]
+<../GNU/Mega168allEN.pdf, id=2045, 361.35pt x 216.81pt>
 File: ../GNU/Mega168allEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega168allEN.pdf>
 Package pdftex.def Info: ../GNU/Mega168allEN.pdf  used on input line 813.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega168AallEN.pdf, id=2045, 361.35pt x 216.81pt>
+<../GNU/Mega168AallEN.pdf, id=2046, 361.35pt x 216.81pt>
 File: ../GNU/Mega168AallEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega168AallEN.pdf>
 Package pdftex.def Info: ../GNU/Mega168AallEN.pdf  used on input line 820.
@@ -2212,12 +2191,12 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 811--824
 [][]   [] 
  []
 
-<../GNU/Mega168PAallEN.pdf, id=2046, 361.35pt x 216.81pt>
+<../GNU/Mega168PAallEN.pdf, id=2047, 361.35pt x 216.81pt>
 File: ../GNU/Mega168PAallEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega168PAallEN.pdf>
 Package pdftex.def Info: ../GNU/Mega168PAallEN.pdf  used on input line 829.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[111 <../GNU/capcompareEN.pdf> <../GNU/Mega168allEN.pdf
+[110 <../GNU/capcompareEN.pdf> <../GNU/Mega168allEN.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega168allEN.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -2226,12 +2205,12 @@ e pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../GNU/Mega168AallEN.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<../GNU/Mega328allEN.pdf, id=2076, 361.35pt x 216.81pt>
+<../GNU/Mega328allEN.pdf, id=2077, 361.35pt x 216.81pt>
 File: ../GNU/Mega328allEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega328allEN.pdf>
 Package pdftex.def Info: ../GNU/Mega328allEN.pdf  used on input line 837.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega328PallEN.pdf, id=2077, 361.35pt x 216.81pt>
+<../GNU/Mega328PallEN.pdf, id=2078, 361.35pt x 216.81pt>
 File: ../GNU/Mega328PallEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega328PallEN.pdf>
 Package pdftex.def Info: ../GNU/Mega328PallEN.pdf  used on input line 844.
@@ -2241,7 +2220,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 835--848
 [][]   [] 
  []
 
-[112 <../GNU/Mega168PAallEN.pdf> <../GNU/Mega328allEN.pdf
+[111 <../GNU/Mega168PAallEN.pdf> <../GNU/Mega328allEN.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega328allEN.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -2250,24 +2229,24 @@ e pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../GNU/Mega328PallEN.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<../GNU/Mega168cap_optEN.pdf, id=2106, 361.35pt x 216.81pt>
+<../GNU/Mega168cap_optEN.pdf, id=2108, 361.35pt x 216.81pt>
 File: ../GNU/Mega168cap_optEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega168cap_optEN.pdf>
 Package pdftex.def Info: ../GNU/Mega168cap_optEN.pdf  used on input line 869.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-<../GNU/ComparatorAdjustEN.pdf, id=2114, 361.35pt x 216.81pt>
+<../GNU/ComparatorAdjustEN.pdf, id=2116, 361.35pt x 216.81pt>
 File: ../GNU/ComparatorAdjustEN.pdf Graphic file (type pdf)
 <use ../GNU/ComparatorAdjustEN.pdf>
 Package pdftex.def Info: ../GNU/ComparatorAdjustEN.pdf  used on input line 904.
 
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
- [113 <../GNU/Mega168cap_optEN.pdf>]
-<../GNU/Mega168calEN.pdf, id=2134, 361.35pt x 216.81pt>
+ [112 <../GNU/Mega168cap_optEN.pdf>]
+<../GNU/Mega168calEN.pdf, id=2135, 361.35pt x 216.81pt>
 File: ../GNU/Mega168calEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega168calEN.pdf>
 Package pdftex.def Info: ../GNU/Mega168calEN.pdf  used on input line 920.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega168AcalEN.pdf, id=2135, 361.35pt x 216.81pt>
+<../GNU/Mega168AcalEN.pdf, id=2136, 361.35pt x 216.81pt>
 File: ../GNU/Mega168AcalEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega168AcalEN.pdf>
 Package pdftex.def Info: ../GNU/Mega168AcalEN.pdf  used on input line 927.
@@ -2277,12 +2256,12 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 918--931
 [][]   [] 
  []
 
-<../GNU/Mega168PAcalEN.pdf, id=2136, 361.35pt x 216.81pt>
+<../GNU/Mega168PAcalEN.pdf, id=2137, 361.35pt x 216.81pt>
 File: ../GNU/Mega168PAcalEN.pdf Graphic file (type pdf)
 <use ../GNU/Mega168PAcalEN.pdf>
 Package pdftex.def Info: ../GNU/Mega168PAcalEN.pdf  used on input line 936.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[114 <../GNU/ComparatorAdjustEN.pdf> <../GNU/Mega168calEN.pdf
+[113 <../GNU/ComparatorAdjustEN.pdf> <../GNU/Mega168calEN.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega168calEN.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -2311,7 +2290,7 @@ File: ../GNU/MegaAutoEN.pdf Graphic file (type pdf)
 <use ../GNU/MegaAutoEN.pdf>
 Package pdftex.def Info: ../GNU/MegaAutoEN.pdf  used on input line 971.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[115 <../GNU/Mega168PAcalEN.pdf> <../GNU/Mega328calEN.pdf
+[114 <../GNU/Mega168PAcalEN.pdf> <../GNU/Mega328calEN.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega328calEN.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -2320,12 +2299,12 @@ e pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../GNU/Mega328PcalEN.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<../GNU/Mega1284EN.pdf, id=2206, 361.35pt x 216.81pt>
+<../GNU/Mega1284EN.pdf, id=2207, 361.35pt x 216.81pt>
 File: ../GNU/Mega1284EN.pdf Graphic file (type pdf)
 <use ../GNU/Mega1284EN.pdf>
 Package pdftex.def Info: ../GNU/Mega1284EN.pdf  used on input line 983.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-) [116 <../GNU/MegaAutoEN.pdf> <../GNU/Mega1284EN.pdf
+) [115 <../GNU/MegaAutoEN.pdf> <../GNU/Mega1284EN.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega1284EN.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
@@ -2336,40 +2315,40 @@ pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ../FIG/Inductance.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/Inductance.pdf, id=2228, 375.4025pt x 222.8325pt>
+<../FIG/Inductance.pdf, id=2229, 375.4025pt x 222.8325pt>
 File: ../FIG/Inductance.pdf Graphic file (type pdf)
 <use ../FIG/Inductance.pdf>
 Package pdftex.def Info: ../FIG/Inductance.pdf  used on input line 26.
 (pdftex.def)             Requested size: 409.72125pt x 243.21922pt.
-[117
+[116
 
 
  <../FIG/Inductance.pdf>]
-<../GNU/induct328pEN.pdf, id=2244, 361.35pt x 216.81pt>
+<../GNU/induct328pEN.pdf, id=2246, 361.35pt x 216.81pt>
 File: ../GNU/induct328pEN.pdf Graphic file (type pdf)
 <use ../GNU/induct328pEN.pdf>
 Package pdftex.def Info: ../GNU/induct328pEN.pdf  used on input line 68.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
- [118 <../GNU/induct328pEN.pdf>] [119]
-<../GNU/W12compareEN.pdf, id=2266, 361.35pt x 216.81pt>
+ [117 <../GNU/induct328pEN.pdf>] [118]
+<../GNU/W12compareEN.pdf, id=2267, 361.35pt x 216.81pt>
 File: ../GNU/W12compareEN.pdf Graphic file (type pdf)
 <use ../GNU/W12compareEN.pdf>
 Package pdftex.def Info: ../GNU/W12compareEN.pdf  used on input line 199.
 (pdftex.def)             Requested size: 460.93153pt x 276.55975pt.
- [120])
-[121 <../GNU/W12compareEN.pdf>]
+ [119])
+[120 <../GNU/W12compareEN.pdf>]
 \openout2 = `55-selftest.aux'.
 
  (./55-selftest.tex
 
 pdfTeX warning: pdflatex (file ../FIG/Test2.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/Test2.pdf, id=2286, 611.28375pt x 149.55875pt>
+<../FIG/Test2.pdf, id=2287, 611.28375pt x 149.55875pt>
 File: ../FIG/Test2.pdf Graphic file (type pdf)
 <use ../FIG/Test2.pdf>
 Package pdftex.def Info: ../FIG/Test2.pdf  used on input line 57.
 (pdftex.def)             Requested size: 512.14963pt x 125.30899pt.
-[122
+[121
 
 
 ] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
@@ -2378,16 +2357,16 @@ File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 
 pdfTeX warning: pdflatex (file ../FIG/Test7.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/Test7.pdf, id=2295, 386.44376pt x 152.57pt>
+<../FIG/Test7.pdf, id=2296, 386.44376pt x 152.57pt>
 File: ../FIG/Test7.pdf Graphic file (type pdf)
 <use ../FIG/Test7.pdf>
 Package pdftex.def Info: ../FIG/Test7.pdf  used on input line 100.
 (pdftex.def)             Requested size: 460.93153pt x 181.9796pt.
-[123 <../FIG/Test2.pdf> <../FIG/Test7.pdf>]
+[122 <../FIG/Test2.pdf> <../FIG/Test7.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/Test8.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/Test8.pdf, id=2330, 384.43625pt x 152.57pt>
+<../FIG/Test8.pdf, id=2331, 384.43625pt x 152.57pt>
 File: ../FIG/Test8.pdf Graphic file (type pdf)
 <use ../FIG/Test8.pdf>
 Package pdftex.def Info: ../FIG/Test8.pdf  used on input line 123.
@@ -2398,24 +2377,24 @@ Overfull \hbox (27.25755pt too wide) in paragraph at lines 152--158
  3. \OT1/cmr/m/n/12 The mes-sage ``[]''
  []
 
-[124 <../FIG/Test8.pdf>]
-<../PNG/Frequency50.png, id=2352, 321.2pt x 234.8775pt>
+[123 <../FIG/Test8.pdf>]
+<../PNG/Frequency50.png, id=2353, 321.2pt x 234.8775pt>
 File: ../PNG/Frequency50.png Graphic file (type png)
 <use ../PNG/Frequency50.png>
 Package pdftex.def Info: ../PNG/Frequency50.png  used on input line 196.
 (pdftex.def)             Requested size: 321.19922pt x 234.87692pt.
- [125 <../PNG/Frequency50.png>]
-<../GNU/SelfTrefEN.pdf, id=2369, 361.35pt x 216.81pt>
+ [124 <../PNG/Frequency50.png>]
+<../GNU/SelfTrefEN.pdf, id=2370, 361.35pt x 216.81pt>
 File: ../GNU/SelfTrefEN.pdf Graphic file (type pdf)
 <use ../GNU/SelfTrefEN.pdf>
 Package pdftex.def Info: ../GNU/SelfTrefEN.pdf  used on input line 245.
 (pdftex.def)             Requested size: 460.93153pt x 276.55975pt.
-<../GNU/SelfTMitLEN.pdf, id=2370, 361.35pt x 216.81pt>
+<../GNU/SelfTMitLEN.pdf, id=2371, 361.35pt x 216.81pt>
 File: ../GNU/SelfTMitLEN.pdf Graphic file (type pdf)
 <use ../GNU/SelfTMitLEN.pdf>
 Package pdftex.def Info: ../GNU/SelfTMitLEN.pdf  used on input line 254.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/SelfTMitHEN.pdf, id=2371, 361.35pt x 216.81pt>
+<../GNU/SelfTMitHEN.pdf, id=2372, 361.35pt x 216.81pt>
 File: ../GNU/SelfTMitHEN.pdf Graphic file (type pdf)
 <use ../GNU/SelfTMitHEN.pdf>
 Package pdftex.def Info: ../GNU/SelfTMitHEN.pdf  used on input line 261.
@@ -2425,7 +2404,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 252--265
 [][]   [] 
  []
 
-[126 <../GNU/SelfTrefEN.pdf>]
+[125 <../GNU/SelfTrefEN.pdf>]
 <../GNU/SelfTbottomHEN.pdf, id=2393, 361.35pt x 216.81pt>
 File: ../GNU/SelfTbottomHEN.pdf Graphic file (type pdf)
 <use ../GNU/SelfTbottomHEN.pdf>
@@ -2461,7 +2440,7 @@ File: ../GNU/SelfTcap0EN.pdf Graphic file (type pdf)
 <use ../GNU/SelfTcap0EN.pdf>
 Package pdftex.def Info: ../GNU/SelfTcap0EN.pdf  used on input line 304.
 (pdftex.def)             Requested size: 460.93153pt x 276.55975pt.
-[127 <../GNU/SelfTMitLEN.pdf> <../GNU/SelfTMitHEN.pdf
+[126 <../GNU/SelfTMitLEN.pdf> <../GNU/SelfTMitHEN.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/SelfTMitHEN.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -2482,21 +2461,21 @@ pdfTeX warning: pdflatex (file ../GNU/SelfTRiLoEN.pdf): PDF inclusion: multiple
 pdfTeX warning: pdflatex (file ../GNU/SelfTRiHiEN.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-<../GNU/SelfTrefKorrEN.pdf, id=2459, 361.35pt x 216.81pt>
+<../GNU/SelfTrefKorrEN.pdf, id=2460, 361.35pt x 216.81pt>
 File: ../GNU/SelfTrefKorrEN.pdf Graphic file (type pdf)
 <use ../GNU/SelfTrefKorrEN.pdf>
 Package pdftex.def Info: ../GNU/SelfTrefKorrEN.pdf  used on input line 311.
 (pdftex.def)             Requested size: 460.93153pt x 276.55975pt.
-<../GNU/SelfTrefDiffEN.pdf, id=2461, 361.35pt x 216.81pt>
+<../GNU/SelfTrefDiffEN.pdf, id=2462, 361.35pt x 216.81pt>
 File: ../GNU/SelfTrefDiffEN.pdf Graphic file (type pdf)
 <use ../GNU/SelfTrefDiffEN.pdf>
 Package pdftex.def Info: ../GNU/SelfTrefDiffEN.pdf  used on input line 325.
 (pdftex.def)             Requested size: 460.93153pt x 276.55975pt.
- [128 <../GNU/SelfTcap0EN.pdf> <../GNU/SelfTrefKorrEN.pdf
+ [127 <../GNU/SelfTcap0EN.pdf> <../GNU/SelfTrefKorrEN.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/SelfTrefKorrEN.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->]) [129 <../GNU/SelfTrefDiffEN.pdf>]
+>]) [128 <../GNU/SelfTrefDiffEN.pdf>]
 \openout2 = `56-frequency.aux'.
 
  (./56-frequency.tex
@@ -2504,19 +2483,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--18
 
  []
 
-<../GNU/frequency-ppmEN.pdf, id=2502, 361.35pt x 216.81pt>
+<../GNU/frequency-ppmEN.pdf, id=2503, 361.35pt x 216.81pt>
 File: ../GNU/frequency-ppmEN.pdf Graphic file (type pdf)
 <use ../GNU/frequency-ppmEN.pdf>
 Package pdftex.def Info: ../GNU/frequency-ppmEN.pdf  used on input line 44.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
-[130
+[129
 
 
 ]
 
 pdfTeX warning: pdflatex (file ../FIG/GPS_UP501.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<../FIG/GPS_UP501.pdf, id=2509, 531.9875pt x 294.09875pt>
+<../FIG/GPS_UP501.pdf, id=2510, 531.9875pt x 294.09875pt>
 File: ../FIG/GPS_UP501.pdf Graphic file (type pdf)
 <use ../FIG/GPS_UP501.pdf>
 Package pdftex.def Info: ../FIG/GPS_UP501.pdf  used on input line 70.
@@ -2525,7 +2504,7 @@ Package pdftex.def Info: ../FIG/GPS_UP501.pdf  used on input line 70.
 
 pdfTeX warning: pdflatex (file ../FIG/GPS_GNS701.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/GPS_GNS701.pdf, id=2510, 500.87125pt x 294.09875pt>
+<../FIG/GPS_GNS701.pdf, id=2511, 500.87125pt x 294.09875pt>
 File: ../FIG/GPS_GNS701.pdf Graphic file (type pdf)
 <use ../FIG/GPS_GNS701.pdf>
 Package pdftex.def Info: ../FIG/GPS_GNS701.pdf  used on input line 76.
@@ -2535,19 +2514,19 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 68--79
 [][]   [] 
  []
 
-[131 <../GNU/frequency-ppmEN.pdf> <../FIG/GPS_UP501.pdf> <../FIG/GPS_GNS701.pdf
+[130 <../GNU/frequency-ppmEN.pdf> <../FIG/GPS_UP501.pdf> <../FIG/GPS_GNS701.pdf
 >]
-<../PNG/DS3231M.jpg, id=2538, 770.88pt x 578.16pt>
+<../PNG/DS3231M.jpg, id=2539, 770.88pt x 578.16pt>
 File: ../PNG/DS3231M.jpg Graphic file (type jpg)
 <use ../PNG/DS3231M.jpg>
 Package pdftex.def Info: ../PNG/DS3231M.jpg  used on input line 98.
 (pdftex.def)             Requested size: 307.2929pt x 230.46591pt.
-) [132 <../PNG/DS3231M.jpg>] [133]
+) [131 <../PNG/DS3231M.jpg>] [132]
 \openout2 = `60-generators.aux'.
 
  (./60-generators.tex
 Chapter 6.
-) [134
+) [133
 
 
 
@@ -2556,7 +2535,7 @@ Chapter 6.
 
  (./70-errors.tex
 Chapter 7.
-) [135
+) [134
 
 
 
@@ -2565,7 +2544,7 @@ Chapter 7.
 
  (./80-special.tex
 Chapter 8.
-) [136
+) [135
 
 
 
@@ -2574,40 +2553,40 @@ Chapter 8.
 
  (./90-todo.tex
 Chapter 9.
-) [137
+) [136
 
 
 
 ]
-Underfull \hbox (badness 5147) in paragraph at lines 197--202
+Underfull \hbox (badness 5147) in paragraph at lines 206--211
 []\OT1/cmr/m/n/12 Wikipedia []$\OT1/cmtt/m/n/12 http : / / de . wikipedia . org
  / wiki / Equivalent _ Series _ Resistance$[] \OT1/cmr/m/it/12 Ex-pla-na-tion
  []
 
-[138
+[137
 
 
-] [139]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 289.
+] [138]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
  (./ttester.aux (./00-preface.aux) (./10-features.aux)
 (./20-hardware.aux) (./30-manual.aux) (./40-configuring.aux)
 (./50-measurement.aux) (./51-semicon.aux) (./52-resistors.aux)
 (./53-capacitors.aux) (./54-inductors.aux) (./55-selftest.aux)
 (./56-frequency.aux) (./60-generators.aux) (./70-errors.aux) (./80-special.aux)
 (./90-todo.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 289.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 289.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 298.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
 Package rerunfilecheck Info: File `ttester.out' has not changed.
 (rerunfilecheck)             Checksum: B262D3F62A66B79757DF09948CB1BD32;6034.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 289.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
  ) 
 Here is how much of TeX's memory you used:
- 37179 strings out of 481239
- 823548 string characters out of 5920377
- 1351309 words of memory out of 5000000
- 51167 multiletter control sequences out of 15000+600000
- 543515 words of font info for 61 fonts, out of 8000000 for 9000
+ 36585 strings out of 481239
+ 817524 string characters out of 5920377
+ 1355228 words of memory out of 5000000
+ 50569 multiletter control sequences out of 15000+600000
+ 543854 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,87p,910b,1243s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
@@ -2628,10 +2607,10 @@ fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
 1200.pfb>
-Output written on ttester.pdf (140 pages, 4031309 bytes).
+Output written on ttester.pdf (139 pages, 4032325 bytes).
 PDF statistics:
- 2786 PDF objects out of 2984 (max. 8388607)
- 2166 compressed objects within 22 object streams
- 456 named destinations out of 1000 (max. 500000)
+ 2790 PDF objects out of 2984 (max. 8388607)
+ 2171 compressed objects within 22 object streams
+ 462 named destinations out of 1000 (max. 500000)
  1413 words of extra memory for PDF output out of 10000 (max. 10000000)
 

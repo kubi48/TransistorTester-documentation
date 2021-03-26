@@ -7,7 +7,7 @@ at the Ubuntu Linux operating system with the GNU toolchain (gcc version 4.5.3).
 It should be possible to use other Linux operating systems without problems.
 To load the compiled data to the flash memory or
 the EEprom memory, the tool \lcmd{avrdude} (version 6.3) was taken by the Makefile, if you call \inquotes{make upload}.
- The program \lcmd{avrdude} \cite{avrdude} is available for Linux and Windows operating system.
+The program \lcmd{avrdude} \cite{avrdude} is available for Linux and Windows operating system.
 The gnu C-compiler gcc is also taken by the AVR studio software and
 by the WinAVR \cite{winavr1},\cite{winavr2} software at the Windows operating system.
 You can load the program data (.hex and .eep) also with other tools to the ATmega,
@@ -22,7 +22,7 @@ for a ATmega328 without changes.
 Be careful, if you don't use my Makefile.
 
 With the correct options set, my software runs on the unchanged hardware of Markus F.
-You must set the option PARTNO=M8, \textbf {NOT} the option NO\_AREF\_CAP and \textbf {NOT} the  PULLUP\_DISABLE option.
+You must set the option PARTNO=M8, \textbf{NOT} the option NO\_AREF\_CAP and \textbf{NOT} the PULLUP\_DISABLE option.
 The clock rate can also be set to \(8MHz\) with fuses, no crystal is required!
 
 
@@ -192,7 +192,7 @@ You can select this option only for color displays (controller ST7735 or ILI9163
 Example: CFLAGS += -DLCD\_FG\_COLOR=0xffff
 
   \item[FONT\_8X16] You must select one font size for the ST7565 controller.
-  Selectable are different fonts with the name \inquotes{FONT\_} with appended size information (width X height).
+Selectable are different fonts with the name \inquotes{FONT\_} with appended size information (width X height).
 Currently the font sizes 6X8, 8X8, 7X12, 8X12, 8x12thin, 8X14, 8X15, 8X16, and 8X16thin are available.
 Font size 8X16 or 8x16thin is the most efficient use of graphics space for a 128x64 pixel LCD.\\
 Example: FONT\_8X16
@@ -341,7 +341,7 @@ Without the option WITH\_UJT the unijunction transistors are detectes as double 
 Example: CFLAGS += -DWITH\_UJT
 
   \item[WITH\_PUT]
-  This option enables a additional test for \inquotes{Programmable Unijunction Transistor}.
+This option enables a additional test for \inquotes{Programmable Unijunction Transistor}.
 Without this option PUTs are usually detected as Bipolar Junction Transistor.\\
 Example: CFLAGS += -DWITH\_PUT
 
@@ -432,13 +432,11 @@ Example: CFLAGS += -DESR\_ZERO=29
   \item[NO\_AREF\_CAP] tells your Software, that you have no capacitor (\(100nF\)) installed at pin AREF (pin 21).
 This enables a shorter wait-time for the AUTOSCALE\_ADC scale switching of the ADC.
 A \(1nF\) capacitor was tested in this mode without detected errors.
-Figure~\ref{pic:aref1} and~\ref{pic:aref5} show the switching time with a \(1nF\) capacitor.
+Figure~\ref{pic:aref1} and \ref{pic:aref5} show the switching time with a \(1nF\) capacitor.
 As you can see the switching from \(5V\) to \(1.1V\) is much slower than switching back to \(5V\). If you
 have still installed the \(100nF\), switching time will be about factor 100 longer!\\
 Example: CFLAGS += -DNO\_AREF\_CAP
-
 \end{description}
-
 \begin{figure}[H]
   \begin{subfigure}[b]{.5\textwidth}
     \centering
@@ -457,7 +455,6 @@ Example: CFLAGS += -DNO\_AREF\_CAP
 \end{figure}
 
 \begin{description} \setlength{\itemsep}{0em}
-
   \item[REF\_R\_KORR] specifies a offset for the internal ADC-reference voltage in mV units.
 With this offset a difference by switching from VCC based ADC reference to internal ADC reference for resistor measurement can be adjusted.
 If you select the AUTO\_CAL option of the selftest section, this value is only a additionally offset to the found voltage 
@@ -483,7 +480,7 @@ This way of output save program memory for the ATmega. Without this option the l
 format \inquotes{123=...}, where every point represent a E~(Emitter), B~(Base) or C~(Collector).
 For FET transistors every point can be a G~(Gate), D~(Drain) or S~(Source).
 If the sequence of the test pins is not 1, 2 and 3 in the reading direction, you can invert the sequence with the option
-EBC\_STYLE=321 . The pin assignment is then shown with style \inquotes{321=...}, which will better match the usual
+EBC\_STYLE=321 . The pin assignment is then shown with style \inquotes{321=\dots}, which will better match the usual
 reading direction, if the testpin sequence is 3,2,1 .\\
 Example: CFLAGS += EBC\_STYLE
 
@@ -492,7 +489,7 @@ So capacity values will be shown in \(\mu F\) instead of \(nF\).\\
 Example: CFLAGS += NO\_NANO
 
   \item[NO\_LONG\_PINLAYOUT] can be set to prevent the long style of pin layout for graphical displays 
-  like \inquotes{ Pin  1=E 2=B 3=C}.
+like \inquotes{ Pin  1=E 2=B 3=C}.
 If the option is set, the short style is used instead like \inquotes{ Pin  123=EBC}.\\
 Example: CFLAGS += NO\_LONG\_PINLAYOUT
 
@@ -552,7 +549,7 @@ Example for low drop regulator (\(5.4V\)): CFLAGS += -DBAT\_POOR=5400\\
 Example for 7805 type regulator (\(6.4V\)): CFLAGS += -DBAT\_POOR=6400
 
   \item[DC\_PWR] This voltage level in mV units specify the battery voltage above which the tester
-  changes to the \inquotes{DC\_Pwr\_Mode}. Normally the tester operates in a battery mode, where all additional
+changes to the \inquotes{DC\_Pwr\_Mode}. Normally the tester operates in a battery mode, where all additional
 functions are limited in time. With the \inquotes{DC\_Pwr\_Mode} the tester runs the additional functions with unlimited time.
 Because there is no DC-DC converter operating with \(0.9V\) input voltage,
 the \inquotes{DC\_Pwr\_Mode} is also entered, if the battery voltage is detected below \(0.9V\). \\
@@ -582,61 +579,55 @@ The usage of this sleep mode indeed spare battery capacity, but produce addition
 Example: INHIBIT\_SLEEP\_MODE = 1
 
 \label{sec:config-Prog}
-  \item[PROGRAMMER] select your programmer type for \lcmd{avrdude} interface program.
-  The correct selection of this option is needed, if you use the \lcmd{make upload} or \lcmd{make fuses} call
+  \item[PROGRAMMER] select your programmer type for \lcmd{avrdude} interface program.\\
+The correct selection of this option is needed, if you use the \lcmd{make upload} or \lcmd{make fuses} call
 of this Makefile.
-For further information please look to the manual pages of \lcmd{avrdude} and online documentation~\cite{avrdude}.
-Usually the Diamex ALL-AVR programmer is preselected in the Makefile and some
-other selections are included as comment.\\
+Usually the right setting for a Diamex ALL-AVR is preset to the \lname{Makefile}. You can get a full list
+of supported programmers with the command \lcmd{avrdude -c ?}. Some other selections like USBasp may be 
+predefined with comment character \# in row 1. You can only select another one by deselecting the
+preset one with the \# character in row 1 and enable another programmer with a new entry or by
+removing the \# charactor of a other one.\\
 Example: PROGRAMMER=avrisp2
 
   \item[BitClock] selects the Bit clock period for the Programmer. See the description of the -B parameter of \lcmd{avrdude}.\\
 Example: BitClock=5.0
-
   \item[PORT] select the port where \lcmd{avrdude} can reach your microcontroller (atmega).
-  For further information please look to the manual pages of \lcmd{avrdude}.
-Some programmers use a build-in USB-serial interface for the connection to the PC.
-For this programmers the PORT must be set to /dev/ttyUSBx or /dev/ttyACMx , where
-the last x is a assigned number between 0 and 9.\\
-Example: PORT=usb
-
-\end{description}
+Example: PORT=usb\\
 
 Additional parameters can be set in the files transistortester.h and config.h .
 The file config.h contains global settings, defines the port / pin constellation,
  the clock frequency of the ADC and the resistor values used for measurement.
 The file Transistortester.h contains the global variables and tables and also the text used for LCD output.
 Normally there is no reason to change these values.
-
-
+\end{description}
+For further information please look to the manual pages of \lcmd{avrdude} and online documentation~\cite{avrdude}.
 
 \section{Programming of the microcontroller}
+
 I release the software for the microcontroller with source code.
-The developement is done with Linux operationg system (Mint) and
-is controlled with a Makefile.
-The Makefile makes sure, that your software will be compiled with the prior selected Makefile options.
-Some constellations are precompiled with the source.
-Please take a look to the ReadMe.txt file
+The developement is done with Linux operationg system (Ubuntu) and
+is controlled with a Makefile. The Makefile makes sure, that your
+software will be compiled with the prior selected Makefile options. Some constellations
+are precompiled with the source. Please take a look to the ReadMe.txt file
 in the directory Software/default and to the chapter~\ref{sec:config} at page~\pageref{sec:config}.
 The result of compilation have the extensions .hex and .eep .
 The .hex file contains the data for the program memory (flash) of the ATmega processor.
-The .eep file contains the data for the EEprom memory of the ATmega.\\
-Both data files must be loaded to the correct memory.
+The .eep file contains the data for the EEprom memory of the ATmega. Both data files
+must be loaded to the correct memory.
 
-Additionally the operating state of the ATmega processor must be programmed with the \inquotes{fuses}.
+Additionally the operating state of the
+ATmega processor must be programmed with the \inquotes{fuses}.
 If you can use my Makefile and additionally the program \lcmd{avrdude} \cite{avrdude}, you need no exact
-knowledge of the details about the fuses.
-You have only to type \lcmd{make fuses} if you have no crystal or
-\lcmd{make fuses-crystal} if you have installed the \(8MHz\) crystal to your printed board.
-With the ATmega168 series of the microcontroller you can also use \lcmd{make fuses-crystal-lp}
-to use a crytal with the low power mode.\\
+knowledge of the details about the fuses. You have only to type \lcmd{make fuses} if you
+have no crystal or \lcmd{make fuses-crystal} if you have installed the \(8MHz\) crystal to your printed board.
+With the ATmega168 series of the microcontroller you can also use \lcmd{make fuses-crystal-lp} to use
+a crytal with the low power mode.
 Never choose the crystal mode of clock generation, if you don't have installed
-the \(8MHz\) or \(16MHz\) crystal.
-If you are not sure with the fuses, leave them as default
+the \(8MHz\) crystal. If you are not sure with the fuses, leave them as default
 set by manufactor and first bring the the tester to operation in this mode.
 Maybe your program runs too slow, if you use program data compiled for
-\(8MHz\) operation, but you can correct this later!
-But a wrong set of fuses may inhibit further ISP-programming.
+\(8MHz\) operation, but you can correct this later! But a wrong set of fuses may inhibit
+later ISP-programming.
 
 The program \lcmd{avrdude} probably reports a error for setting the extended fuse efuse.
 The reading of unused fuse bits is specified as \inquotes{1} for the ATmega, but the
@@ -645,10 +636,9 @@ Normally the efuse should be set to 0xfc, but \lcmd{avrdude} read back 0x04 with
 You can change the file \lname{avrdude.conf} to change the behaviour of \lcmd{avrdude} or
 you can set the efuse to 0x04. 
 The value for all efuses can be set with the identifier EFUSE\_VAL at the begin of file setup.mk
-in the trunk directory.
+in the source directory.
 Probably the fuses are also set correctly with the error message.
-
-\newpage
+\vspace{-0,3 cm}
 \subsection{Using of Linux}
 In order to spare other colleagues my experience of desperation and \inquotes{sleepless nights},
 this subchapter was written.
@@ -759,6 +749,7 @@ Now all specified software packages are downloaded and installed by \lcmd{apt-ge
 
 It may be that \lcmd{apt-get} asks questions when installing the packages,
 which can usually be answered with \keys{Y}.
+\textbf{Don't forget,} Linux is case sensitive. So don't answer with \keys{j}~!
 
 Of course there are other ways to install the packages, which use the graphical interface
 like \lcmd{synaptic} or \lcmd{dpkd}. But it is not easier to select a mixed group of packages.
@@ -987,9 +978,9 @@ Because the \lname{ -v} Option is given to the rsync program, all
 copies are logged at the screen.
 If you had specified the \lname{ -au} option instead of the \lname{ -auv},
 the \lcmd{rsync} would do the same copy without any log.
-You can take a look to the copied subdirectory trunk with:
+You can take a look to the copied subdirectory with:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-ls -lh ~/Mytester/trunk
+ls -lh ~/Mytester/
 \end{verbatim} \end{large}
 A clear representation of the directory structure and the files is possible with the
 command \lcmd{tree \textasciitilde/Mytester}.
@@ -1002,16 +993,15 @@ Let's assume you have a Chinese kit with a monochrome graphical display,s
 then the subdirectory \lname{mega328\_st7565\_kit} would be correct.
 The command to do this would then be:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-cd ~/Mytester/trunk/mega328_st7565_kit
+cd ~/Mytester/mega328_st7565_kit
 \end{verbatim} \end{large}
-After the working directory is selected, you can compile the
-transistor tester sources with \lcmd{make}.\\
-
-You can also view the files in \verb"~/Mytester/trunk/" with the Files window \menu[,]{Menu,Accessories, Files}, the directory \lname{Mytester} and then
-\lname{trunk} can be selected by double-clicking \LMB.
+ \subsubsection{method with graphical interface}
+You can also view the files in \verb"~/Mytester/" with the Files window \menu[,]{Menu,Accessories, Files}, the directory \lname{Mytester}
+can be selected by double-clicking \LMB.
 Many subdirectories now appear here, including that desired \lname{mega328\_st7565\_kit}.
 If you now select this directory with a double click on \LMB,
 you will also see that \lname{Makefile} is one of the files.
+\subsubsection{edit Makefile}
 If you have done that, you can now use the \RMB key to activate the \menu{open in terminal} action.
 A command window opens with the correct working directory, which is also directly active.
 Now all you have to do is type \lcmd{make} and 
@@ -1038,6 +1028,10 @@ See the subsection~\ref{sec:config}, on the page~\pageref{sec:config-Prog},
 topic \textbf{PROGRAMMER} and \textbf{PORT}.
 When you have checked these settings, you can reactivate the terminal window by clicking \LMB.
 When the window is activated, the header has a higher contrast!
+After the working directory is selected, you can compile the
+transistor tester sources with \lcmd{make}.\\
+Finally, the time has come:
+\subsubsection{programming testers}
 If your ISP programmer is now completely connected,
 i.e. has a connection to the computer and the ATmega, you only need to enter the command:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
@@ -1045,13 +1039,17 @@ make upload
 \end{verbatim} \end{large}
 The transistor tester program is now compiled again and then immediately loaded
 into the ATmega with the \lcmd{avrdude} program.
+If the result does not look as expected, you can now immediately switch to the \lname{Makefile} editor,
+make any necessary changes and repeat the process.
+\subsubsection{Tips to the terminal} 
 You do not need to type in the command every time.
 Commands already issued in the terminal window can be displayed again with
-the \keys{arrowkeyup} key.
+the \keys{$\uparrow$} key.
 You can repeat the displayed command by pressing the \keys{\enter} or \keys{\return} key.
 But you can also edit the displayed command before sending it,
-or switch to newer commands with the \keys{arrowkeydown}.\\
-\\
+or switch to newer commands with the \keys{$\downarrow$}.
+\subsubsection{Possible Makefile calls} 
+
 At last I would like to list the most important Makefile orders:
 \begin{table}[H]
 %  \begin{center}
@@ -1077,7 +1075,7 @@ The copy of the transistortester sources can be kept up to date with the command
 If you work in a copy under \lname{\textasciitilde/Mytester} as recommended here,
 the changes will only be transferred if you also execute the command:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-rsync -auv ~/transistortester/Software/trunk ~/Mytester
+rsync -auv ~/transistortester/Software/trunk/ ~/Mytester
 \end{verbatim} \end{large}
 It can happen that the Makefile on the github server has a newer date than
 the locally changed copy.
@@ -1112,18 +1110,18 @@ But the WinAVR package use a very old compiler version. You should better instal
 the Arduino package and overwrite the avr executables.
 
 The figures~\ref{fig:WinAVR1} show the File menu of the graphical user interface of WinAVR for
-open the file Makefile and for saving the changed Makefile (Save).
+open the file \lname{Makefile} and for saving the changed \lname{Makefile} (Save).
 
 \begin{figure}[H]
   \begin{subfigure}[b]{.5\textwidth}
     \centering
-    \includegraphics[width=1.\textwidth]{../PNG/Notepad_open.png}
+    \includegraphics[width=.85\textwidth]{../PNG/Notepad_open.png}
     \caption{open Makefile}
   \end{subfigure}
   ~
   \begin{subfigure}[b]{.5\textwidth}
     \centering
-    \includegraphics[width=1.\textwidth]{../PNG/Notepad_save.png}
+    \includegraphics[width=.85\textwidth]{../PNG/Notepad_save.png}
     \caption{save Makefile}
   \end{subfigure}
   \caption{Using of the WinAVR user interface Programmer's Notepad}
@@ -1136,13 +1134,13 @@ for compiling the program (Make All) and for programming the ATmega (Program) wi
 \begin{figure}[H]
   \begin{subfigure}[b]{.5\textwidth}
     \centering
-    \includegraphics[width=1.\textwidth]{../PNG/Notepad_make.png}
+    \includegraphics[width=.85\textwidth]{../PNG/Notepad_make.png}
     \caption{Build programming data (.hex/.eep)}
   \end{subfigure}
   ~
   \begin{subfigure}[b]{.5\textwidth}
     \centering
-    \includegraphics[width=1.\textwidth]{../PNG/Notepad_program.png}
+    \includegraphics[width=.85\textwidth]{../PNG/Notepad_program.png}
     \caption{Programming the ATmega}
   \end{subfigure}
   \caption{Using of the WinAVR user interface Programmer's Notepad}

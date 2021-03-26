@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  25 MAR 2021 10:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  27 MAR 2021 00:04
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -96,8 +96,8 @@ Package: babel 2020/02/14 3.40 The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2020/02/14 3.40 Babel switching mechanism
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-czech/czech.ldf
+Language: czech 2008/07/06 v3.1a Czech support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/02/14 3.40 Babel common definitions
@@ -108,24 +108,7 @@ File: babel.def 2020/02/14 3.40 Babel common definitions
 \bbl@readstream=\read2
 \bbl@dirlevel=\count178
 )
-Package babel Info: \l@canadian = using hyphenrules for english
-(babel)             (\language0) on input line 102.
-Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language59) on input line 105.
-Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language59) on input line 108.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
-Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
-phy)
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngermanb.ldf
-Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthogr
-aphy)
-Package babel Info: Making " an active character on input line 121.
-))
-(/usr/share/texlive/texmf-dist/tex/generic/babel-czech/czech.ldf
-Language: czech 2008/07/06 v3.1a Czech support from the babel system
+Package babel Info: Making " an active character on input line 172.
 \cs@wordlen=\count179
 Package babel Info: Making - an active character on input line 226.
 ))
@@ -807,55 +790,160 @@ Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 \WF@box=\box61
 \WF@everypar=\toks34
 Package: wrapfig 2003/01/31  v 3.6
-) (./ttester.aux
-(./00-preface.aux) (./10-features.aux) (./20-hardware.aux) (./30-manual.aux)
-(./40-configuring.aux) (./50-measurement.aux) (./51-semicon.aux)
-(./52-resistors.aux) (./53-capacitors.aux) (./54-inductors.aux)
-(./55-selftest.aux) (./56-frequency.aux) (./60-generators.aux) (./70-errors.aux
-) (./80-special.aux) (./90-todo.aux))
+)
+(/usr/share/texlive/texmf-dist/tex/latex/menukeys/menukeys.sty
+Package: menukeys 2016/08/08 v1.5 -- A package to format menus, paths and short
+cuts
+
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count322
+\decimalpart=\count323
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count324
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code
+.tex
+File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks35
+\XKV@tempa@toks=\toks36
+)
+\XKV@depth=\count325
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box62
+)
+\tc@llx=\dimen287
+\tc@lly=\dimen288
+\tc@urx=\dimen289
+\tc@ury=\dimen290
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen291
+\adjbox@Height=\dimen292
+\adjbox@Depth=\dimen293
+\adjbox@Totalheight=\dimen294
+\adjbox@pwidth=\dimen295
+\adjbox@pheight=\dimen296
+\adjbox@pdepth=\dimen297
+\adjbox@ptotalheight=\dimen298
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count326
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box63
+\sift@deathcycles=\count327
+\@vwid@loff=\dimen299
+\@vwid@roff=\dimen300
+))
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/catoptions/catoptions.sty
+\m@one=\count328
+\z@pt=\dimen301
+Package: catoptions 2014/08/29 v0.2.7h Securing catcodes and parsing options (A
+M)
+\cpt@csvdepth=\count329
+\cpt@optdepth=\count330
+\cpt@cnta=\count331
+\indrisdepth=\count332
+\cpt@foreachdepth=\count333
+\cpt@exprcnt=\count334
+)
+\c@tw@hyphen@char@num=\count335
+)
+(./ttester.aux (./00-preface.aux) (./10-features.aux) (./20-hardware.aux)
+(./30-manual.aux) (./40-configuring.aux) (./50-measurement.aux)
+(./51-semicon.aux) (./52-resistors.aux) (./53-capacitors.aux)
+(./54-inductors.aux) (./55-selftest.aux) (./56-frequency.aux)
+(./60-generators.aux) (./70-errors.aux) (./80-special.aux) (./90-todo.aux))
 \openout1 = `ttester.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count322
-\scratchdimen=\dimen287
-\scratchbox=\box62
-\nofMPsegments=\count323
-\nofMParguments=\count324
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count325
-\MPscratchDim=\dimen288
-\MPnumerator=\count326
-\makeMPintoPDFobject=\count327
-\everyMPtoPDFconversion=\toks36
+\scratchcounter=\count336
+\scratchdimen=\dimen302
+\scratchbox=\box64
+\nofMPsegments=\count337
+\nofMParguments=\count338
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count339
+\MPscratchDim=\dimen303
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
+\everyMPtoPDFconversion=\toks38
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box63
-Package hyperref Info: Link coloring OFF on input line 52.
+\AtBeginShipoutBox=\box65
+Package hyperref Info: Link coloring OFF on input line 70.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -865,11 +953,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count328
+\c@section@level=\count342
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 70.
+LaTeX Info: Redefining \pageref on input line 70.
+LaTeX Info: Redefining \nameref on input line 70.
 
 (./ttester.out) (./ttester.out)
 \@outlinefile=\write4
@@ -877,15 +965,15 @@ LaTeX Info: Redefining \nameref on input line 52.
 
 \symgns@font=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/lmr/m/n --> TS1/lmr/b/n on input line 52.
-Package gensymb Info: Math companion symbols declared on input line 52.
-LaTeX Info: Redefining \degree on input line 52.
-LaTeX Info: Redefining \celsius on input line 52.
+(Font)                  TS1/lmr/m/n --> TS1/lmr/b/n on input line 70.
+Package gensymb Info: Math companion symbols declared on input line 70.
+LaTeX Info: Redefining \degree on input line 70.
+LaTeX Info: Redefining \celsius on input line 70.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 52.
-LaTeX Info: Redefining \ohm on input line 52.
-Package gensymb Info: Using \textohm for \ohm on input line 52.
-Package gensymb Info: Using \textmu for \micro on input line 52.
+erthousand on input line 70.
+LaTeX Info: Redefining \ohm on input line 70.
+Package gensymb Info: Using \textohm for \ohm on input line 70.
+Package gensymb Info: Using \textmu for \micro on input line 70.
  ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
@@ -894,56 +982,59 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-20.
+38.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-20.
+38.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-120.
+138.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-120.
+138.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 120.
+(Font)              <14.4> on input line 138.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 120.
+(Font)              <10> on input line 138.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 120.
+(Font)              <7> on input line 138.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-20.
+38.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-20.
+38.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<../FIG/Wallpaper.pdf, id=312, 597.45204pt x 845.1575pt>
+<../FIG/Wallpaper.pdf, id=324, 597.45204pt x 845.1575pt>
 File: ../FIG/Wallpaper.pdf Graphic file (type pdf)
 <use ../FIG/Wallpaper.pdf>
-Package pdftex.def Info: ../FIG/Wallpaper.pdf  used on input line 120.
+Package pdftex.def Info: ../FIG/Wallpaper.pdf  used on input line 138.
 (pdftex.def)             Requested size: 597.51439pt x 845.06516pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../FIG/Wallpaper.pdf>] (./
-ttester.toc
+
+Non-PDF special ignored!
+<special> papersize=210mm,297mm
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../FIG/Wallpaper.pdf>]
+(./ttester.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 4.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -954,7 +1045,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 ... {\'a}n\IeC {\'\i } chyb}{59}{section.4.3}
+l.53 ...\IeC {\'a}lu MOSFET}{66}{subsection.5.1.1}
                                                   % [1
 
 ])
@@ -985,10 +1076,10 @@ Kapitola 2.
 
 pdfTeX warning: pdflatex (file ../FIG/ttester.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<../FIG/ttester.pdf, id=507, 768.8725pt x 404.51125pt>
+<../FIG/ttester.pdf, id=524, 768.8725pt x 404.51125pt>
 File: ../FIG/ttester.pdf Graphic file (type pdf)
 <use ../FIG/ttester.pdf>
-Package pdftex.def Info: ../FIG/ttester.pdf  used on input line 39.
+Package pdftex.def Info: ../FIG/ttester.pdf  used on input line 44.
 (pdftex.def)             Requested size: 512.14963pt x 269.4657pt.
 [9
 
@@ -996,38 +1087,38 @@ Package pdftex.def Info: ../FIG/ttester.pdf  used on input line 39.
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 52.
+(Font)              <10.95> on input line 57.
  [10 <../FIG/ttester.pdf>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 119.
+(hyperref)                removing `\textasciicaron' on input line 121.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 120.
+(hyperref)                removing `\textring' on input line 122.
 
 
 
 pdfTeX warning: pdflatex (file ../FIG/relay_addon.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<../FIG/relay_addon.pdf, id=530, 241.90375pt x 128.48pt>
+<../FIG/relay_addon.pdf, id=547, 241.90375pt x 128.48pt>
 File: ../FIG/relay_addon.pdf Graphic file (type pdf)
 <use ../FIG/relay_addon.pdf>
-Package pdftex.def Info: ../FIG/relay_addon.pdf  used on input line 132.
+Package pdftex.def Info: ../FIG/relay_addon.pdf  used on input line 134.
 (pdftex.def)             Requested size: 199.73804pt x 106.08943pt.
 
 
 pdfTeX warning: pdflatex (file ../FIG/diode_addon.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<../FIG/diode_addon.pdf, id=531, 232.87pt x 124.465pt>
+<../FIG/diode_addon.pdf, id=548, 232.87pt x 124.465pt>
 File: ../FIG/diode_addon.pdf Graphic file (type pdf)
 <use ../FIG/diode_addon.pdf>
-Package pdftex.def Info: ../FIG/diode_addon.pdf  used on input line 141.
+Package pdftex.def Info: ../FIG/diode_addon.pdf  used on input line 143.
 (pdftex.def)             Requested size: 199.73804pt x 106.76053pt.
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 130--144
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 132--146
 [][] [] 
  []
 
@@ -1035,40 +1126,40 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 130--144
 
 pdfTeX warning: pdflatex (file ../FIG/relay_um_addon.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/relay_um_addon.pdf, id=533, 270.00874pt x 169.63374pt>
+<../FIG/relay_um_addon.pdf, id=550, 270.00874pt x 169.63374pt>
 File: ../FIG/relay_um_addon.pdf Graphic file (type pdf)
 <use ../FIG/relay_um_addon.pdf>
-Package pdftex.def Info: ../FIG/relay_um_addon.pdf  used on input line 154.
+Package pdftex.def Info: ../FIG/relay_um_addon.pdf  used on input line 156.
 (pdftex.def)             Requested size: 297.04771pt x 186.62614pt.
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 162.
+(hyperref)                removing `\textasciicaron' on input line 165.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 162.
+(hyperref)                removing `\textasciicaron' on input line 165.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 162.
+(hyperref)                removing `\textasciicaron' on input line 165.
 
 [11 <../FIG/relay_addon.pdf> <../FIG/diode_addon.pdf> <../FIG/relay_um_addon.pd
 f>]
 
 pdfTeX warning: pdflatex (file ../FIG/zener_exp.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<../FIG/zener_exp.pdf, id=570, 593.21625pt x 161.60374pt>
+<../FIG/zener_exp.pdf, id=587, 593.21625pt x 161.60374pt>
 File: ../FIG/zener_exp.pdf Graphic file (type pdf)
 <use ../FIG/zener_exp.pdf>
-Package pdftex.def Info: ../FIG/zener_exp.pdf  used on input line 175.
+Package pdftex.def Info: ../FIG/zener_exp.pdf  used on input line 178.
 (pdftex.def)             Requested size: 460.93153pt x 125.57202pt.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 192.
+(hyperref)                removing `\textasciicaron' on input line 194.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
@@ -1089,378 +1180,351 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 
 pdfTeX warning: pdflatex (file ../FIG/Frequency_addon.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/Frequency_addon.pdf, id=572, 175.65625pt x 131.49126pt>
+<../FIG/Frequency_addon.pdf, id=588, 175.65625pt x 131.49126pt>
 File: ../FIG/Frequency_addon.pdf Graphic file (type pdf)
 <use ../FIG/Frequency_addon.pdf>
-Package pdftex.def Info: ../FIG/Frequency_addon.pdf  used on input line 222.
-(pdftex.def)             Requested size: 204.85672pt x 153.3626pt.
-[12 <../FIG/zener_exp.pdf>]
+Package pdftex.def Info: ../FIG/Frequency_addon.pdf  used on input line 208.
+(pdftex.def)             Requested size: 153.64644pt x 115.02446pt.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 228.
+(hyperref)                removing `\textasciicaron' on input line 232.
 
-
-
-pdfTeX warning: pdflatex (file ../FIG/rotary_extension.pdf): PDF inclusion: fou
-nd PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/rotary_extension.pdf, id=586, 126.4725pt x 195.73125pt>
+<../FIG/rotary_extension.pdf, id=590, 126.4725pt x 195.73125pt>
 File: ../FIG/rotary_extension.pdf Graphic file (type pdf)
 <use ../FIG/rotary_extension.pdf>
-Package pdftex.def Info: ../FIG/rotary_extension.pdf  used on input line 233.
-(pdftex.def)             Requested size: 153.64644pt x 237.79124pt.
-
-Underfull \hbox (badness 1221) in paragraph at lines 243--254
-[]\T1/lmr/m/n/12 Pro snad-n¥j²í ovlá-dání funkce menu pro AT-mega328
- []
-
-
+Package pdftex.def Info: ../FIG/rotary_extension.pdf  used on input line 236.
+(pdftex.def)             Requested size: 102.42836pt x 158.52351pt.
+[12 <../FIG/zener_exp.pdf> <../FIG/Frequency_addon.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/rotary_encoder.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/rotary_encoder.pdf, id=589, 466.74374pt x 364.36125pt>
+<../FIG/rotary_encoder.pdf, id=613, 466.74374pt x 364.36125pt>
 File: ../FIG/rotary_encoder.pdf Graphic file (type pdf)
 <use ../FIG/rotary_encoder.pdf>
-Package pdftex.def Info: ../FIG/rotary_encoder.pdf  used on input line 257.
+Package pdftex.def Info: ../FIG/rotary_encoder.pdf  used on input line 254.
 (pdftex.def)             Requested size: 445.56767pt x 347.84248pt.
-[13 <../FIG/Frequency_addon.pdf> <../FIG/rotary_extension.pdf>]
+
 
 pdfTeX warning: pdflatex (file ../FIG/rotary_bouncing.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/rotary_bouncing.pdf, id=615, 506.89375pt x 230.8625pt>
 File: ../FIG/rotary_bouncing.pdf Graphic file (type pdf)
 <use ../FIG/rotary_bouncing.pdf>
-Package pdftex.def Info: ../FIG/rotary_bouncing.pdf  used on input line 290.
+Package pdftex.def Info: ../FIG/rotary_bouncing.pdf  used on input line 277.
 (pdftex.def)             Requested size: 445.56767pt x 202.93768pt.
-[14 <../FIG/rotary_encoder.pdf>]
+[13 <../FIG/rotary_extension.pdf> <../FIG/rotary_encoder.pdf>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 306.
+(hyperref)                removing `\textasciicaron' on input line 307.
 
 
 
 pdfTeX warning: pdflatex (file ../FIG/ST7565lcd.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<../FIG/ST7565lcd.pdf, id=627, 485.815pt x 394.47375pt>
+<../FIG/ST7565lcd.pdf, id=639, 485.815pt x 394.47375pt>
 File: ../FIG/ST7565lcd.pdf Graphic file (type pdf)
 <use ../FIG/ST7565lcd.pdf>
-Package pdftex.def Info: ../FIG/ST7565lcd.pdf  used on input line 326.
+Package pdftex.def Info: ../FIG/ST7565lcd.pdf  used on input line 327.
 (pdftex.def)             Requested size: 416.88742pt x 338.50647pt.
-[15 <../FIG/rotary_bouncing.pdf>]
-Underfull \hbox (badness 2096) in paragraph at lines 335--343
-[]\T1/lmr/m/n/12 Tabulka []2.3[] zob-ra-zuje dal²í moº-nosti p°i-po-jení pro AT
--mega328 a dal²í pro-ce-sory s SPI
- []
-
-[16 <../FIG/ST7565lcd.pdf>]
+[14 <../FIG/rotary_bouncing.pdf>] [15 <../FIG/ST7565lcd.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/SSD1306_I2C.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<../FIG/SSD1306_I2C.pdf, id=656, 632.3625pt x 188.705pt>
+<../FIG/SSD1306_I2C.pdf, id=669, 632.3625pt x 188.705pt>
 File: ../FIG/SSD1306_I2C.pdf Graphic file (type pdf)
 <use ../FIG/SSD1306_I2C.pdf>
-Package pdftex.def Info: ../FIG/SSD1306_I2C.pdf  used on input line 387.
+Package pdftex.def Info: ../FIG/SSD1306_I2C.pdf  used on input line 386.
 (pdftex.def)             Requested size: 416.88742pt x 124.40746pt.
 
 
 pdfTeX warning: pdflatex (file ../FIG/ST7920interface.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ST7920interface.pdf, id=658, 537.00626pt x 367.3725pt>
+<../FIG/ST7920interface.pdf, id=671, 537.00626pt x 367.3725pt>
 File: ../FIG/ST7920interface.pdf Graphic file (type pdf)
 <use ../FIG/ST7920interface.pdf>
-Package pdftex.def Info: ../FIG/ST7920interface.pdf  used on input line 404.
+Package pdftex.def Info: ../FIG/ST7920interface.pdf  used on input line 403.
 (pdftex.def)             Requested size: 357.47943pt x 244.5575pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 413--418
-[]\T1/lmr/m/n/12 Pro oba typy p°i-po-jení musí být soft-ware spe-ci-áln¥ na-kon
--fi-gu-ro-ván. Ma-ke-file volba
- []
-
-[17 <../FIG/SSD1306_I2C.pdf> <../FIG/ST7920interface.pdf>]
-Underfull \hbox (badness 2269) in paragraph at lines 440--446
-[]\T1/lmr/m/n/12 Orientaci dis-pleje m·ºe být, stejn¥ jako u v²ech gra-fic-kých
- dis-plej·, na-sta-vena moº-ností
- []
-
-
+[16 <../FIG/SSD1306_I2C.pdf> <../FIG/ST7920interface.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/ST7108serial164.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ST7108serial164.pdf, id=679, 405.515pt x 308.15125pt>
+<../FIG/ST7108serial164.pdf, id=692, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial164.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial164.pdf>
-Package pdftex.def Info: ../FIG/ST7108serial164.pdf  used on input line 450.
+Package pdftex.def Info: ../FIG/ST7108serial164.pdf  used on input line 448.
 (pdftex.def)             Requested size: 230.46576pt x 175.13551pt.
 
 
 pdfTeX warning: pdflatex (file ../FIG/ST7108serial595.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ST7108serial595.pdf, id=680, 405.515pt x 308.15125pt>
+<../FIG/ST7108serial595.pdf, id=693, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial595.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial595.pdf>
-Package pdftex.def Info: ../FIG/ST7108serial595.pdf  used on input line 455.
+Package pdftex.def Info: ../FIG/ST7108serial595.pdf  used on input line 453.
 (pdftex.def)             Requested size: 230.46576pt x 175.13551pt.
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 448--458
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 446--456
 [][] [] 
  []
 
-[18 <../FIG/ST7108serial164.pdf> <../FIG/ST7108serial595.pdf>] [19]
+[17 <../FIG/ST7108serial164.pdf> <../FIG/ST7108serial595.pdf>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 573.
+(hyperref)                removing `\textasciicaron' on input line 570.
 
-<../PNG/Color_ILI9163_ST7735.jpg, id=712, 185.0112pt x 225.0006pt>
+<../PNG/Color_ILI9163_ST7735.jpg, id=719, 185.0112pt x 225.0006pt>
 File: ../PNG/Color_ILI9163_ST7735.jpg Graphic file (type jpg)
 <use ../PNG/Color_ILI9163_ST7735.jpg>
 Package pdftex.def Info: ../PNG/Color_ILI9163_ST7735.jpg  used on input line 58
-3.
+0.
 (pdftex.def)             Requested size: 235.59225pt x 286.53033pt.
-<../PNG/Color_PNP_ILI9163.jpg, id=714, 154.176pt x 158.994pt>
+[18]
+<../PNG/Color_PNP_ILI9163.jpg, id=729, 154.176pt x 158.994pt>
 File: ../PNG/Color_PNP_ILI9163.jpg Graphic file (type jpg)
 <use ../PNG/Color_PNP_ILI9163.jpg>
-Package pdftex.def Info: ../PNG/Color_PNP_ILI9163.jpg  used on input line 603.
+Package pdftex.def Info: ../PNG/Color_PNP_ILI9163.jpg  used on input line 600.
 (pdftex.def)             Requested size: 235.59225pt x 242.95918pt.
-[20 <../PNG/Color_ILI9163_ST7735.jpg>]
+ [19 <../PNG/Color_ILI9163_ST7735.jpg> <../PNG/Color_PNP_ILI9163.jpg>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 613.
+(hyperref)                removing `\textasciicaron' on input line 610.
 
-[21 <../PNG/Color_PNP_ILI9163.jpg>] [22]
+[20]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 726.
+(hyperref)                removing `\textasciicaron' on input line 718.
 
-
+[21]
 
 pdfTeX warning: pdflatex (file ../FIG/ST7108serial164_644.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ST7108serial164_644.pdf, id=737, 405.515pt x 308.15125pt>
+<../FIG/ST7108serial164_644.pdf, id=751, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial164_644.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial164_644.pdf>
-Package pdftex.def Info: ../FIG/ST7108serial164_644.pdf  used on input line 781
+Package pdftex.def Info: ../FIG/ST7108serial164_644.pdf  used on input line 773
 .
 (pdftex.def)             Requested size: 225.34708pt x 171.24695pt.
 
 
 pdfTeX warning: pdflatex (file ../FIG/ST7108serial595_644.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ST7108serial595_644.pdf, id=738, 405.515pt x 308.15125pt>
+<../FIG/ST7108serial595_644.pdf, id=752, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial595_644.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial595_644.pdf>
-Package pdftex.def Info: ../FIG/ST7108serial595_644.pdf  used on input line 787
+Package pdftex.def Info: ../FIG/ST7108serial595_644.pdf  used on input line 779
 .
 (pdftex.def)             Requested size: 225.34708pt x 171.24695pt.
 
-Overfull \hbox (7.8332pt too wide) in paragraph at lines 779--790
+Overfull \hbox (7.8332pt too wide) in paragraph at lines 771--782
 [][]   [] 
  []
 
-[23]
+
 
 pdfTeX warning: pdflatex (file ../FIG/t644tester.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/t644tester.pdf, id=747, 827.09pt x 964.60374pt>
+<../FIG/t644tester.pdf, id=753, 827.09pt x 964.60374pt>
 File: ../FIG/t644tester.pdf Graphic file (type pdf)
 <use ../FIG/t644tester.pdf>
-Package pdftex.def Info: ../FIG/t644tester.pdf  used on input line 798.
+Package pdftex.def Info: ../FIG/t644tester.pdf  used on input line 790.
 (pdftex.def)             Requested size: 512.14963pt x 597.31221pt.
-[24 <../FIG/ST7108serial164_644.pdf> <../FIG/ST7108serial595_644.pdf>] [25 <../
+[22 <../FIG/ST7108serial164_644.pdf> <../FIG/ST7108serial595_644.pdf>] [23 <../
 FIG/t644tester.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/t1280tester.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<../FIG/t1280tester.pdf, id=785, 571.13374pt x 489.83pt>
+<../FIG/t1280tester.pdf, id=793, 571.13374pt x 489.83pt>
 File: ../FIG/t1280tester.pdf Graphic file (type pdf)
 <use ../FIG/t1280tester.pdf>
-Package pdftex.def Info: ../FIG/t1280tester.pdf  used on input line 825.
+Package pdftex.def Info: ../FIG/t1280tester.pdf  used on input line 817.
 (pdftex.def)             Requested size: 512.14963pt x 439.24344pt.
-[26 <../FIG/t1280tester.pdf>]
+[24 <../FIG/t1280tester.pdf>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+C'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 862.
+(hyperref)                removing `\textasciicaron' on input line 853.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+C'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 901.
+(hyperref)                removing `\textasciicaron' on input line 892.
 
 
 
 pdfTeX warning: pdflatex (file ../FIG/Fish8840.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<../FIG/Fish8840.pdf, id=803, 397.485pt x 202.7575pt>
+<../FIG/Fish8840.pdf, id=812, 397.485pt x 202.7575pt>
 File: ../FIG/Fish8840.pdf Graphic file (type pdf)
 <use ../FIG/Fish8840.pdf>
-Package pdftex.def Info: ../FIG/Fish8840.pdf  used on input line 907.
+Package pdftex.def Info: ../FIG/Fish8840.pdf  used on input line 898.
 (pdftex.def)             Requested size: 358.50317pt x 182.87917pt.
-[27]
-<../PNG/Fish8840patch.jpg, id=810, 143.81488pt x 107.80074pt>
+[25]
+<../PNG/Fish8840patch.jpg, id=819, 143.81488pt x 107.80074pt>
 File: ../PNG/Fish8840patch.jpg Graphic file (type jpg)
 <use ../PNG/Fish8840patch.jpg>
-Package pdftex.def Info: ../PNG/Fish8840patch.jpg  used on input line 922.
+Package pdftex.def Info: ../PNG/Fish8840patch.jpg  used on input line 913.
 (pdftex.def)             Requested size: 358.50317pt x 268.72969pt.
-<../PNG/Fish8840Adapt1.jpg, id=812, 185.62996pt x 139.22247pt>
+<../PNG/Fish8840Adapt1.jpg, id=821, 185.62996pt x 139.22247pt>
 File: ../PNG/Fish8840Adapt1.jpg Graphic file (type jpg)
 <use ../PNG/Fish8840Adapt1.jpg>
-Package pdftex.def Info: ../PNG/Fish8840Adapt1.jpg  used on input line 940.
+Package pdftex.def Info: ../PNG/Fish8840Adapt1.jpg  used on input line 931.
 (pdftex.def)             Requested size: 256.07481pt x 192.05922pt.
-<../PNG/Fish8840Adapt2.jpg, id=813, 185.62996pt x 139.22247pt>
+<../PNG/Fish8840Adapt2.jpg, id=822, 185.62996pt x 139.22247pt>
 File: ../PNG/Fish8840Adapt2.jpg Graphic file (type jpg)
 <use ../PNG/Fish8840Adapt2.jpg>
-Package pdftex.def Info: ../PNG/Fish8840Adapt2.jpg  used on input line 946.
+Package pdftex.def Info: ../PNG/Fish8840Adapt2.jpg  used on input line 937.
 (pdftex.def)             Requested size: 256.07481pt x 192.05922pt.
 
-Overfull \hbox (7.8332pt too wide) in paragraph at lines 938--949
+Overfull \hbox (7.8332pt too wide) in paragraph at lines 929--940
 [][]   [] 
  []
 
-[28 <../FIG/Fish8840.pdf> <../PNG/Fish8840patch.jpg>]
-<../PNG/WEI_M8.JPG, id=829, 185.0112pt x 138.7584pt>
+[26 <../FIG/Fish8840.pdf> <../PNG/Fish8840patch.jpg>]
+<../PNG/WEI_M8.JPG, id=838, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8.JPG>
-Package pdftex.def Info: ../PNG/WEI_M8.JPG  used on input line 979.
+Package pdftex.def Info: ../PNG/WEI_M8.JPG  used on input line 970.
 (pdftex.def)             Requested size: 358.50317pt x 268.89243pt.
- [29 <../PNG/Fish8840Adapt1.jpg> <../PNG/Fish8840Adapt2.jpg>]
-<../PNG/WEI_M8_D.JPG, id=836, 185.0112pt x 138.7584pt>
+ [27 <../PNG/Fish8840Adapt1.jpg> <../PNG/Fish8840Adapt2.jpg>]
+<../PNG/WEI_M8_D.JPG, id=845, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8_D.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8_D.JPG>
-Package pdftex.def Info: ../PNG/WEI_M8_D.JPG  used on input line 991.
+Package pdftex.def Info: ../PNG/WEI_M8_D.JPG  used on input line 982.
 (pdftex.def)             Requested size: 256.07481pt x 192.06693pt.
-<../PNG/WEI_M8_L.JPG, id=837, 185.0112pt x 138.7584pt>
+<../PNG/WEI_M8_L.JPG, id=846, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8_L.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8_L.JPG>
-Package pdftex.def Info: ../PNG/WEI_M8_L.JPG  used on input line 997.
+Package pdftex.def Info: ../PNG/WEI_M8_L.JPG  used on input line 988.
 (pdftex.def)             Requested size: 256.07481pt x 192.06693pt.
 
-Overfull \hbox (7.8332pt too wide) in paragraph at lines 989--1000
+Overfull \hbox (7.8332pt too wide) in paragraph at lines 980--991
 [][]   [] 
  []
 
-<../PNG/WEI_M8_modified.JPG, id=839, 185.0112pt x 138.7584pt>
+<../PNG/WEI_M8_modified.JPG, id=848, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8_modified.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8_modified.JPG>
-Package pdftex.def Info: ../PNG/WEI_M8_modified.JPG  used on input line 1021.
+Package pdftex.def Info: ../PNG/WEI_M8_modified.JPG  used on input line 1012.
 (pdftex.def)             Requested size: 358.50317pt x 268.89243pt.
-[30 <../PNG/WEI_M8.JPG> <../PNG/WEI_M8_D.JPG> <../PNG/WEI_M8_L.JPG>]
-<../PNG/T4_front.JPG, id=848, 770.88pt x 578.16pt>
+[28 <../PNG/WEI_M8.JPG> <../PNG/WEI_M8_D.JPG> <../PNG/WEI_M8_L.JPG>]
+<../PNG/T4_front.JPG, id=856, 770.88pt x 578.16pt>
 File: ../PNG/T4_front.JPG Graphic file (type jpg)
 <use ../PNG/T4_front.JPG>
-Package pdftex.def Info: ../PNG/T4_front.JPG  used on input line 1040.
+Package pdftex.def Info: ../PNG/T4_front.JPG  used on input line 1031.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
-<../PNG/T4_front_noLCD.JPG, id=849, 770.88pt x 578.16pt>
+<../PNG/T4_front_noLCD.JPG, id=857, 770.88pt x 578.16pt>
 File: ../PNG/T4_front_noLCD.JPG Graphic file (type jpg)
 <use ../PNG/T4_front_noLCD.JPG>
-Package pdftex.def Info: ../PNG/T4_front_noLCD.JPG  used on input line 1046.
+Package pdftex.def Info: ../PNG/T4_front_noLCD.JPG  used on input line 1037.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 
-Overfull \hbox (7.8332pt too wide) in paragraph at lines 1038--1049
+Overfull \hbox (7.8332pt too wide) in paragraph at lines 1029--1040
 [][]   [] 
  []
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1056.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1047.
 
-<../PNG/T4_back.JPG, id=851, 770.88pt x 578.16pt>
+<../PNG/T4_back.JPG, id=859, 770.88pt x 578.16pt>
 File: ../PNG/T4_back.JPG Graphic file (type jpg)
 <use ../PNG/T4_back.JPG>
-Package pdftex.def Info: ../PNG/T4_back.JPG  used on input line 1064.
+Package pdftex.def Info: ../PNG/T4_back.JPG  used on input line 1055.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
-<../PNG/T4_back_clips.JPG, id=852, 770.88pt x 578.16pt>
+<../PNG/T4_back_clips.JPG, id=860, 770.88pt x 578.16pt>
 File: ../PNG/T4_back_clips.JPG Graphic file (type jpg)
 <use ../PNG/T4_back_clips.JPG>
-Package pdftex.def Info: ../PNG/T4_back_clips.JPG  used on input line 1070.
+Package pdftex.def Info: ../PNG/T4_back_clips.JPG  used on input line 1061.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 
-Overfull \hbox (7.8332pt too wide) in paragraph at lines 1062--1073
+Overfull \hbox (7.8332pt too wide) in paragraph at lines 1053--1064
 [][]   [] 
  []
 
-[31 <../PNG/WEI_M8_modified.JPG> <../PNG/T4_front.JPG> <../PNG/T4_front_noLCD.J
+[29 <../PNG/WEI_M8_modified.JPG> <../PNG/T4_front.JPG> <../PNG/T4_front_noLCD.J
 PG>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+C'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1086.
+(hyperref)                removing `\textasciicaron' on input line 1077.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1086.
+(hyperref)                removing `\textasciicaron' on input line 1077.
 
-<../PNG/Kit_ST7565a.jpg, id=861, 770.88pt x 578.16pt>
+<../PNG/Kit_ST7565a.jpg, id=869, 770.88pt x 578.16pt>
 File: ../PNG/Kit_ST7565a.jpg Graphic file (type jpg)
 <use ../PNG/Kit_ST7565a.jpg>
-Package pdftex.def Info: ../PNG/Kit_ST7565a.jpg  used on input line 1099.
+Package pdftex.def Info: ../PNG/Kit_ST7565a.jpg  used on input line 1090.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
-<../PNG/Kit_ST7565b.jpg, id=862, 770.88pt x 578.16pt>
+<../PNG/Kit_ST7565b.jpg, id=870, 770.88pt x 578.16pt>
 File: ../PNG/Kit_ST7565b.jpg Graphic file (type jpg)
 <use ../PNG/Kit_ST7565b.jpg>
-Package pdftex.def Info: ../PNG/Kit_ST7565b.jpg  used on input line 1105.
+Package pdftex.def Info: ../PNG/Kit_ST7565b.jpg  used on input line 1096.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 
-Overfull \hbox (7.8332pt too wide) in paragraph at lines 1097--1108
+Overfull \hbox (7.8332pt too wide) in paragraph at lines 1088--1099
 [][]   [] 
  []
 
-[32 <../PNG/T4_back.JPG> <../PNG/T4_back_clips.JPG> <../PNG/Kit_ST7565a.jpg> <.
+[30 <../PNG/T4_back.JPG> <../PNG/T4_back_clips.JPG> <../PNG/Kit_ST7565a.jpg> <.
 ./PNG/Kit_ST7565b.jpg>]
-<../PNG/Kit_Color_a.jpg, id=869, 770.88pt x 578.16pt>
+<../PNG/Kit_Color_a.jpg, id=878, 770.88pt x 578.16pt>
 File: ../PNG/Kit_Color_a.jpg Graphic file (type jpg)
 <use ../PNG/Kit_Color_a.jpg>
-Package pdftex.def Info: ../PNG/Kit_Color_a.jpg  used on input line 1123.
+Package pdftex.def Info: ../PNG/Kit_Color_a.jpg  used on input line 1114.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
-<../PNG/Kit_Color_b.jpg, id=870, 770.88pt x 578.16pt>
+<../PNG/Kit_Color_b.jpg, id=879, 770.88pt x 578.16pt>
 File: ../PNG/Kit_Color_b.jpg Graphic file (type jpg)
 <use ../PNG/Kit_Color_b.jpg>
-Package pdftex.def Info: ../PNG/Kit_Color_b.jpg  used on input line 1129.
+Package pdftex.def Info: ../PNG/Kit_Color_b.jpg  used on input line 1120.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 
-Overfull \hbox (7.8332pt too wide) in paragraph at lines 1121--1132
+Overfull \hbox (7.8332pt too wide) in paragraph at lines 1112--1123
 [][]   [] 
  []
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1153.
+(hyperref)                removing `\textasciicaron' on input line 1144.
 
 
 
 pdfTeX warning: pdflatex (file ../FIG/Kabel_Hiland.pdf): PDF inclusion: found P
 DF version <1.6>, but at most version <1.5> allowed
-<../FIG/Kabel_Hiland.pdf, id=873, 361.80069pt x 369.99632pt>
+<../FIG/Kabel_Hiland.pdf, id=882, 361.80069pt x 369.99632pt>
 File: ../FIG/Kabel_Hiland.pdf Graphic file (type pdf)
 <use ../FIG/Kabel_Hiland.pdf>
-Package pdftex.def Info: ../FIG/Kabel_Hiland.pdf  used on input line 1177.
+Package pdftex.def Info: ../FIG/Kabel_Hiland.pdf  used on input line 1168.
 (pdftex.def)             Requested size: 327.77544pt x 335.21236pt.
-<../PNG/Hi_u.jpg, id=874, 1453.43pt x 1680.2775pt>
+<../PNG/Hi_u.jpg, id=883, 1453.43pt x 1680.2775pt>
 File: ../PNG/Hi_u.jpg Graphic file (type jpg)
 <use ../PNG/Hi_u.jpg>
-Package pdftex.def Info: ../PNG/Hi_u.jpg  used on input line 1191.
+Package pdftex.def Info: ../PNG/Hi_u.jpg  used on input line 1182.
 (pdftex.def)             Requested size: 224.06546pt x 259.03018pt.
-<../PNG/Hi_o.jpg, id=875, 1236.62pt x 1481.535pt>
+<../PNG/Hi_o.jpg, id=884, 1236.62pt x 1481.535pt>
 File: ../PNG/Hi_o.jpg Graphic file (type jpg)
 <use ../PNG/Hi_o.jpg>
-Package pdftex.def Info: ../PNG/Hi_o.jpg  used on input line 1197.
+Package pdftex.def Info: ../PNG/Hi_o.jpg  used on input line 1188.
 (pdftex.def)             Requested size: 193.5917pt x 231.9188pt.
 
-Overfull \hbox (7.8332pt too wide) in paragraph at lines 1189--1200
+Overfull \hbox (7.8332pt too wide) in paragraph at lines 1180--1191
 [][]   [] 
  []
 
-[33 <../PNG/Kit_Color_a.jpg> <../PNG/Kit_Color_b.jpg>] [34 <../FIG/Kabel_Hiland
+[31 <../PNG/Kit_Color_a.jpg> <../PNG/Kit_Color_b.jpg>] [32 <../FIG/Kabel_Hiland
 .pdf, page is rotated 90 degrees> <../PNG/Hi_u.jpg> <../PNG/Hi_o.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1209--1215
+Underfull \hbox (badness 10000) in paragraph at lines 1199--1205
 
  []
 
-) [35]
+) [33]
 \openout2 = `30-manual.aux'.
 
  (./30-manual.tex
@@ -1475,17 +1539,17 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 4.
 
-[36
+[34
 
 
 
-] [37] [38] [39]
+] [35] [36] [37]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textring' on input line 260.
 
-[40]
+[38]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
@@ -1506,7 +1570,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--335
 
  []
 
-[41]
+[39]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
@@ -1552,7 +1616,7 @@ Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textring' on input line 385.
 
-[42]
+[40]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
@@ -1563,34 +1627,28 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 406.
 
-) [43]
+) [41]
 \openout2 = `40-configuring.aux'.
 
  (./40-configuring.tex
 Kapitola 4.
-[44
+[42
 
 
 
-] [45]
-Underfull \hbox (badness 2181) in paragraph at lines 142--145
-[]\T1/lmr/m/n/12 Die I$[]$C-adresa ovla-da£e SSD1306 lze na-sta-vit p°ed-na-sta
--ve-ním ad-resy
+] [43] [44] [45]
+Overfull \hbox (9.07347pt too wide) in paragraph at lines 256--264
+\T1/lmr/m/n/12 vést ka-lib-raci. Tyto po-kyny se ne-zob-ra-zují, po-kud je na-s
+ta-vena moº-nost SHORT_UNCAL_MSG.
  []
 
-[46] [47] [48] [49]
-Underfull \hbox (badness 1242) in paragraph at lines 368--373
-\T1/lmr/m/n/12 TQFP_ADC7. Tuto moº-nost lze po-u-ºít pouze tehdy, po-kud není n
-a-sta-vena moº-nost
- []
-
-[50]
-<../PNG/AREF2_1V.png, id=981, 321.2pt x 234.8775pt>
+[46] [47] [48]
+<../PNG/AREF2_1V.png, id=990, 321.2pt x 234.8775pt>
 File: ../PNG/AREF2_1V.png Graphic file (type png)
 <use ../PNG/AREF2_1V.png>
 Package pdftex.def Info: ../PNG/AREF2_1V.png  used on input line 405.
 (pdftex.def)             Requested size: 243.27028pt x 177.89589pt.
-<../PNG/AREF2VCC.png, id=982, 321.2pt x 234.8775pt>
+<../PNG/AREF2VCC.png, id=991, 321.2pt x 234.8775pt>
 File: ../PNG/AREF2VCC.png Graphic file (type png)
 <use ../PNG/AREF2VCC.png>
 Package pdftex.def Info: ../PNG/AREF2VCC.png  used on input line 412.
@@ -1600,80 +1658,88 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 403--416
 [][]   [] 
  []
 
-[51 <../PNG/AREF2_1V.png> <../PNG/AREF2VCC.png>] [52]
-Underfull \hbox (badness 3590) in paragraph at lines 487--495
+[49 <../PNG/AREF2_1V.png> <../PNG/AREF2VCC.png>] [50]
+Overfull \hbox (4.50119pt too wide) in paragraph at lines 487--495
 []\T1/lmr/m/n/12 zapne in-di-ká-tor na-p¥tí ba-te-rie na dis-pleji LCD, kdyº je
- vy-brána po-loºka
+ vy-brána po-loºka BAT_CHECK.
  []
 
-[53] [54]
+[51] [52]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 595.
+(hyperref)                removing `\textasciicaron' on input line 601.
 
-
-Package hyperref Warning: Composite letter `\textring+u'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 595.
-
-
-Package hyperref Warning: Composite letter `\textring+u'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 611.
-
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 6
+22.
+(/usr/share/texmf/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [53]
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-)
-Underfull \hbox (badness 10000) in paragraph at lines 632--634
-
+) [54] [55]
+Overfull \hbox (23.34882pt too wide) in paragraph at lines 780--780
+[]\T1/lmtt/m/n/10 /dev/serial/by-id/usb-Pololu_Corporation_Pololu_USB_AVR_Progr
+ammer_v2.1_00227484-if01 -> ../../ttyACM0[] 
  []
 
-[55]
-Overfull \hbox (6.55063pt too wide) in paragraph at lines 674--674
-[]\T1/lmtt/m/n/12 SUBSYSTEM=="usb", ATTRS{idVendor}=="03eb", ATTS{idProduct}=="
-2104", GROUP="plugdev",[] 
+
+Overfull \hbox (23.34882pt too wide) in paragraph at lines 780--780
+[]\T1/lmtt/m/n/10 /dev/serial/by-id/usb-Pololu_Corporation_Pololu_USB_AVR_Progr
+ammer_v2.1_00227484-if03 -> ../../ttyACM1[] 
  []
 
 [56] [57]
+Underfull \hbox (badness 10000) in paragraph at lines 937--940
+
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 959.
+[58] [59]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 731.
+(hyperref)                removing `\textasciicaron' on input line 1022.
 
-<../PNG/Notepad_open.png, id=1028, 757.83125pt x 813.0375pt>
+<../PNG/Notepad_open.png, id=1071, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_open.png Graphic file (type png)
 <use ../PNG/Notepad_open.png>
-Package pdftex.def Info: ../PNG/Notepad_open.png  used on input line 739.
-(pdftex.def)             Requested size: 243.27028pt x 260.9837pt.
-<../PNG/Notepad_save.png, id=1029, 757.83125pt x 813.0375pt>
+Package pdftex.def Info: ../PNG/Notepad_open.png  used on input line 1030.
+(pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
+<../PNG/Notepad_save.png, id=1072, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_save.png Graphic file (type png)
 <use ../PNG/Notepad_save.png>
-Package pdftex.def Info: ../PNG/Notepad_save.png  used on input line 745.
-(pdftex.def)             Requested size: 243.27028pt x 260.9837pt.
+Package pdftex.def Info: ../PNG/Notepad_save.png  used on input line 1036.
+(pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
 
-Overfull \hbox (7.8332pt too wide) in paragraph at lines 737--748
+Overfull \hbox (7.8332pt too wide) in paragraph at lines 1028--1039
 [][]   [] 
  []
 
-<../PNG/Notepad_make.png, id=1031, 757.83125pt x 813.0375pt>
+<../PNG/Notepad_make.png, id=1074, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_make.png Graphic file (type png)
 <use ../PNG/Notepad_make.png>
-Package pdftex.def Info: ../PNG/Notepad_make.png  used on input line 758.
-(pdftex.def)             Requested size: 243.27028pt x 260.9837pt.
-<../PNG/Notepad_program.png, id=1032, 757.83125pt x 813.0375pt>
+Package pdftex.def Info: ../PNG/Notepad_make.png  used on input line 1049.
+(pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
+<../PNG/Notepad_program.png, id=1075, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_program.png Graphic file (type png)
 <use ../PNG/Notepad_program.png>
-Package pdftex.def Info: ../PNG/Notepad_program.png  used on input line 764.
-(pdftex.def)             Requested size: 243.27028pt x 260.9837pt.
+Package pdftex.def Info: ../PNG/Notepad_program.png  used on input line 1055.
+(pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
 
-Overfull \hbox (7.8332pt too wide) in paragraph at lines 756--767
+Overfull \hbox (7.8332pt too wide) in paragraph at lines 1047--1058
 [][]   [] 
  []
 
-[58 <../PNG/Notepad_open.png (PNG copy)> <../PNG/Notepad_save.png (PNG copy)>]
-[59 <../PNG/Notepad_make.png (PNG copy)> <../PNG/Notepad_program.png (PNG copy)
->]) [60]
+[60 <../PNG/Notepad_open.png (PNG copy)> <../PNG/Notepad_save.png (PNG copy)> <
+../PNG/Notepad_make.png (PNG copy)> <../PNG/Notepad_program.png (PNG copy)>]
+[61]
+Overfull \hbox (13.72165pt too wide) in paragraph at lines 1140--1144
+[]\T1/lmr/m/n/12 Také zde chybí pull-up od-por u vstupu
+ []
+
+) [62]
 \openout2 = `50-measurement.aux'.
 
  (./50-measurement.tex
@@ -1692,7 +1758,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 
 pdfTeX warning: pdflatex (file ../FIG/port.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.5> allowed
-<../FIG/port.pdf, id=1052, 224.84pt x 123.46124pt>
+<../FIG/port.pdf, id=1095, 224.84pt x 123.46124pt>
 File: ../FIG/port.pdf Graphic file (type pdf)
 <use ../FIG/port.pdf>
 Package pdftex.def Info: ../FIG/port.pdf  used on input line 14.
@@ -1701,16 +1767,16 @@ Package pdftex.def Info: ../FIG/port.pdf  used on input line 14.
 
 pdfTeX warning: pdflatex (file ../FIG/terminal.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<../FIG/terminal.pdf, id=1054, 224.84pt x 152.57pt>
+<../FIG/terminal.pdf, id=1097, 224.84pt x 152.57pt>
 File: ../FIG/terminal.pdf Graphic file (type pdf)
 <use ../FIG/terminal.pdf>
 Package pdftex.def Info: ../FIG/terminal.pdf  used on input line 24.
 (pdftex.def)             Requested size: 409.72125pt x 278.0573pt.
-[61
+[63
 
 
 
- <../FIG/port.pdf>]) [62 <../FIG/terminal.pdf>]
+ <../FIG/port.pdf>]) [64 <../FIG/terminal.pdf>]
 \openout2 = `51-semicon.aux'.
 
  (./51-semicon.tex
@@ -1738,7 +1804,7 @@ Package hyperref Warning: Composite letter `\textring+u'
 
 pdfTeX warning: pdflatex (file ../FIG/JFETcd.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
-<../FIG/JFETcd.pdf, id=1084, 406.51875pt x 309.155pt>
+<../FIG/JFETcd.pdf, id=1127, 406.51875pt x 309.155pt>
 File: ../FIG/JFETcd.pdf Graphic file (type pdf)
 <use ../FIG/JFETcd.pdf>
 Package pdftex.def Info: ../FIG/JFETcd.pdf  used on input line 28.
@@ -1753,14 +1819,14 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 37.
 
-[63
+[65
 
 
  <../FIG/JFETcd.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/PNPcc.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/PNPcc.pdf, id=1104, 406.51875pt x 309.155pt>
+<../FIG/PNPcc.pdf, id=1148, 406.51875pt x 309.155pt>
 File: ../FIG/PNPcc.pdf Graphic file (type pdf)
 <use ../FIG/PNPcc.pdf>
 Package pdftex.def Info: ../FIG/PNPcc.pdf  used on input line 50.
@@ -1769,12 +1835,12 @@ Package pdftex.def Info: ../FIG/PNPcc.pdf  used on input line 50.
 
 pdfTeX warning: pdflatex (file ../FIG/PNPce.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/PNPce.pdf, id=1106, 406.51875pt x 309.155pt>
+<../FIG/PNPce.pdf, id=1150, 406.51875pt x 309.155pt>
 File: ../FIG/PNPce.pdf Graphic file (type pdf)
 <use ../FIG/PNPce.pdf>
 Package pdftex.def Info: ../FIG/PNPce.pdf  used on input line 76.
 (pdftex.def)             Requested size: 512.14963pt x 389.4996pt.
-[64 <../FIG/PNPcc.pdf>]
+[66 <../FIG/PNPcc.pdf>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
@@ -1789,18 +1855,18 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 
 pdfTeX warning: pdflatex (file ../FIG/NPNce.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/NPNce.pdf, id=1125, 406.51875pt x 309.155pt>
+<../FIG/NPNce.pdf, id=1170, 406.51875pt x 309.155pt>
 File: ../FIG/NPNce.pdf Graphic file (type pdf)
 <use ../FIG/NPNce.pdf>
 Package pdftex.def Info: ../FIG/NPNce.pdf  used on input line 94.
 (pdftex.def)             Requested size: 512.14963pt x 389.4996pt.
-[65 <../FIG/PNPce.pdf>]
-<../PNG/IRFU120gate.png, id=1144, 321.2pt x 234.8775pt>
+[67 <../FIG/PNPce.pdf>]
+<../PNG/IRFU120gate.png, id=1188, 321.2pt x 234.8775pt>
 File: ../PNG/IRFU120gate.png Graphic file (type png)
 <use ../PNG/IRFU120gate.png>
 Package pdftex.def Info: ../PNG/IRFU120gate.png  used on input line 124.
 (pdftex.def)             Requested size: 409.72125pt x 299.61716pt.
- [66 <../FIG/NPNce.pdf>]
+ [68 <../FIG/NPNce.pdf>]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
@@ -1810,30 +1876,30 @@ Package hyperref Warning: Composite letter `\textring+u'
 
 pdfTeX warning: pdflatex (file ../FIG/CheckSemi1.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/CheckSemi1.pdf, id=1162, 476.78125pt x 668.4975pt>
+<../FIG/CheckSemi1.pdf, id=1205, 476.78125pt x 668.4975pt>
 File: ../FIG/CheckSemi1.pdf Graphic file (type pdf)
 <use ../FIG/CheckSemi1.pdf>
 Package pdftex.def Info: ../FIG/CheckSemi1.pdf  used on input line 133.
 (pdftex.def)             Requested size: 409.72125pt x 574.49883pt.
-[67 <../PNG/IRFU120gate.png>]
+[69 <../PNG/IRFU120gate.png>]
 
 pdfTeX warning: pdflatex (file ../FIG/CheckSemi2.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/CheckSemi2.pdf, id=1168, 503.8825pt x 711.65875pt>
+<../FIG/CheckSemi2.pdf, id=1211, 503.8825pt x 711.65875pt>
 File: ../FIG/CheckSemi2.pdf Graphic file (type pdf)
 <use ../FIG/CheckSemi2.pdf>
 Package pdftex.def Info: ../FIG/CheckSemi2.pdf  used on input line 140.
 (pdftex.def)             Requested size: 409.72125pt x 578.66653pt.
-[68 <../FIG/CheckSemi1.pdf>]
+[70 <../FIG/CheckSemi1.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/CheckSemi3.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/CheckSemi3.pdf, id=1180, 348.30125pt x 419.5675pt>
+<../FIG/CheckSemi3.pdf, id=1223, 348.30125pt x 419.5675pt>
 File: ../FIG/CheckSemi3.pdf Graphic file (type pdf)
 <use ../FIG/CheckSemi3.pdf>
 Package pdftex.def Info: ../FIG/CheckSemi3.pdf  used on input line 147.
 (pdftex.def)             Requested size: 409.72125pt x 493.58086pt.
-[69 <../FIG/CheckSemi2.pdf>]
+[71 <../FIG/CheckSemi2.pdf>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
@@ -1859,7 +1925,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 169.
 
-[70 <../FIG/CheckSemi3.pdf>] [71] [72]) [73] [74]
+[72 <../FIG/CheckSemi3.pdf>] [73] [74]) [75] [76]
 \openout2 = `52-resistors.aux'.
 
  (./52-resistors.tex
@@ -1910,7 +1976,7 @@ Package hyperref Warning: Composite letter `\textring+u'
 
 pdfTeX warning: pdflatex (file ../FIG/ResistormessL1.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ResistormessL1.pdf, id=1229, 406.51875pt x 159.59625pt>
+<../FIG/ResistormessL1.pdf, id=1273, 406.51875pt x 159.59625pt>
 File: ../FIG/ResistormessL1.pdf Graphic file (type pdf)
 <use ../FIG/ResistormessL1.pdf>
 Package pdftex.def Info: ../FIG/ResistormessL1.pdf  used on input line 16.
@@ -1919,26 +1985,26 @@ Package pdftex.def Info: ../FIG/ResistormessL1.pdf  used on input line 16.
 
 pdfTeX warning: pdflatex (file ../FIG/ResistormessL2.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ResistormessL2.pdf, id=1230, 406.51875pt x 159.59625pt>
+<../FIG/ResistormessL2.pdf, id=1274, 406.51875pt x 159.59625pt>
 File: ../FIG/ResistormessL2.pdf Graphic file (type pdf)
 <use ../FIG/ResistormessL2.pdf>
 Package pdftex.def Info: ../FIG/ResistormessL2.pdf  used on input line 23.
 (pdftex.def)             Requested size: 409.72125pt x 160.85973pt.
-<../GNU/RLvtotCZ.pdf, id=1232, 361.35pt x 216.81pt>
+<../GNU/RLvtotCZ.pdf, id=1276, 361.35pt x 216.81pt>
 File: ../GNU/RLvtotCZ.pdf Graphic file (type pdf)
 <use ../GNU/RLvtotCZ.pdf>
 Package pdftex.def Info: ../GNU/RLvtotCZ.pdf  used on input line 45.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
-[75
+[77
 
 
  <../FIG/ResistormessL1.pdf> <../FIG/ResistormessL2.pdf>]
-<../GNU/RLvlowCZ.pdf, id=1265, 361.35pt x 216.81pt>
+<../GNU/RLvlowCZ.pdf, id=1308, 361.35pt x 216.81pt>
 File: ../GNU/RLvlowCZ.pdf Graphic file (type pdf)
 <use ../GNU/RLvlowCZ.pdf>
 Package pdftex.def Info: ../GNU/RLvlowCZ.pdf  used on input line 77.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/RLvhighCZ.pdf, id=1266, 361.35pt x 216.81pt>
+<../GNU/RLvhighCZ.pdf, id=1309, 361.35pt x 216.81pt>
 File: ../GNU/RLvhighCZ.pdf Graphic file (type pdf)
 <use ../GNU/RLvhighCZ.pdf>
 Package pdftex.def Info: ../GNU/RLvhighCZ.pdf  used on input line 84.
@@ -1971,7 +2037,7 @@ Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textring' on input line 92.
 
-[76 <../GNU/RLvtotCZ.pdf> <../GNU/RLvlowCZ.pdf
+[78 <../GNU/RLvtotCZ.pdf> <../GNU/RLvlowCZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/RLvlowCZ.pdf): PDF inclusion: multiple pd
 fs with page group included in a single page
@@ -1983,7 +2049,7 @@ dfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ../FIG/ResistormessH1.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ResistormessH1.pdf, id=1318, 406.51875pt x 159.59625pt>
+<../FIG/ResistormessH1.pdf, id=1362, 406.51875pt x 159.59625pt>
 File: ../FIG/ResistormessH1.pdf Graphic file (type pdf)
 <use ../FIG/ResistormessH1.pdf>
 Package pdftex.def Info: ../FIG/ResistormessH1.pdf  used on input line 108.
@@ -1992,17 +2058,17 @@ Package pdftex.def Info: ../FIG/ResistormessH1.pdf  used on input line 108.
 
 pdfTeX warning: pdflatex (file ../FIG/ResistormessH2.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ResistormessH2.pdf, id=1319, 406.51875pt x 159.59625pt>
+<../FIG/ResistormessH2.pdf, id=1363, 406.51875pt x 159.59625pt>
 File: ../FIG/ResistormessH2.pdf Graphic file (type pdf)
 <use ../FIG/ResistormessH2.pdf>
 Package pdftex.def Info: ../FIG/ResistormessH2.pdf  used on input line 115.
 (pdftex.def)             Requested size: 409.72125pt x 160.85973pt.
-<../GNU/RHvCZ.pdf, id=1320, 361.35pt x 216.81pt>
+<../GNU/RHvCZ.pdf, id=1364, 361.35pt x 216.81pt>
 File: ../GNU/RHvCZ.pdf Graphic file (type pdf)
 <use ../GNU/RHvCZ.pdf>
 Package pdftex.def Info: ../GNU/RHvCZ.pdf  used on input line 122.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
-[77 <../FIG/ResistormessH1.pdf> <../FIG/ResistormessH2.pdf>]
+[79 <../FIG/ResistormessH1.pdf> <../FIG/ResistormessH2.pdf>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
@@ -2018,18 +2084,18 @@ Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textring' on input line 127.
 
-<../GNU/Mega8resCZ.pdf, id=1351, 361.35pt x 216.81pt>
+<../GNU/Mega8resCZ.pdf, id=1395, 361.35pt x 216.81pt>
 File: ../GNU/Mega8resCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega8resCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega8resCZ.pdf  used on input line 145.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
-[78 <../GNU/RHvCZ.pdf>]
-<../GNU/Mega8AresCZ.pdf, id=1375, 361.35pt x 216.81pt>
+[80 <../GNU/RHvCZ.pdf>]
+<../GNU/Mega8AresCZ.pdf, id=1419, 361.35pt x 216.81pt>
 File: ../GNU/Mega8AresCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega8AresCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega8AresCZ.pdf  used on input line 153.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega8LresCZ.pdf, id=1376, 361.35pt x 216.81pt>
+<../GNU/Mega8LresCZ.pdf, id=1420, 361.35pt x 216.81pt>
 File: ../GNU/Mega8LresCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega8LresCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega8LresCZ.pdf  used on input line 160.
@@ -2039,12 +2105,12 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 151--164
 [][]   [] 
  []
 
-<../GNU/Mega168resCZ.pdf, id=1377, 361.35pt x 216.81pt>
+<../GNU/Mega168resCZ.pdf, id=1421, 361.35pt x 216.81pt>
 File: ../GNU/Mega168resCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega168resCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega168resCZ.pdf  used on input line 169.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
-[79 <../GNU/Mega8resCZ.pdf> <../GNU/Mega8AresCZ.pdf
+[81 <../GNU/Mega8resCZ.pdf> <../GNU/Mega8AresCZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega8AresCZ.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -2053,12 +2119,12 @@ pdfTeX warning: pdflatex (file ../GNU/Mega8AresCZ.pdf): PDF inclusion: multiple
 pdfTeX warning: pdflatex (file ../GNU/Mega8LresCZ.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-<../GNU/m168res_allCZ.pdf, id=1431, 361.35pt x 216.81pt>
+<../GNU/m168res_allCZ.pdf, id=1474, 361.35pt x 216.81pt>
 File: ../GNU/m168res_allCZ.pdf Graphic file (type pdf)
 <use ../GNU/m168res_allCZ.pdf>
 Package pdftex.def Info: ../GNU/m168res_allCZ.pdf  used on input line 193.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/m168ares_allCZ.pdf, id=1432, 361.35pt x 216.81pt>
+<../GNU/m168ares_allCZ.pdf, id=1475, 361.35pt x 216.81pt>
 File: ../GNU/m168ares_allCZ.pdf Graphic file (type pdf)
 <use ../GNU/m168ares_allCZ.pdf>
 Package pdftex.def Info: ../GNU/m168ares_allCZ.pdf  used on input line 200.
@@ -2068,12 +2134,12 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 191--204
 [][]   [] 
  []
 
-<../GNU/m168pres_allCZ.pdf, id=1433, 361.35pt x 216.81pt>
+<../GNU/m168pres_allCZ.pdf, id=1476, 361.35pt x 216.81pt>
 File: ../GNU/m168pres_allCZ.pdf Graphic file (type pdf)
 <use ../GNU/m168pres_allCZ.pdf>
 Package pdftex.def Info: ../GNU/m168pres_allCZ.pdf  used on input line 209.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
-[80 <../GNU/Mega168resCZ.pdf> <../GNU/m168res_allCZ.pdf
+[82 <../GNU/Mega168resCZ.pdf> <../GNU/m168res_allCZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/m168res_allCZ.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
@@ -2082,12 +2148,12 @@ le pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../GNU/m168ares_allCZ.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >]
-<../GNU/m328res_allCZ.pdf, id=1484, 361.35pt x 216.81pt>
+<../GNU/m328res_allCZ.pdf, id=1527, 361.35pt x 216.81pt>
 File: ../GNU/m328res_allCZ.pdf Graphic file (type pdf)
 <use ../GNU/m328res_allCZ.pdf>
 Package pdftex.def Info: ../GNU/m328res_allCZ.pdf  used on input line 217.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/m328pres_allCZ.pdf, id=1485, 361.35pt x 216.81pt>
+<../GNU/m328pres_allCZ.pdf, id=1528, 361.35pt x 216.81pt>
 File: ../GNU/m328pres_allCZ.pdf Graphic file (type pdf)
 <use ../GNU/m328pres_allCZ.pdf>
 Package pdftex.def Info: ../GNU/m328pres_allCZ.pdf  used on input line 224.
@@ -2097,7 +2163,7 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 215--228
 [][]   [] 
  []
 
-) [81 <../GNU/m168pres_allCZ.pdf> <../GNU/m328res_allCZ.pdf
+) [83 <../GNU/m168pres_allCZ.pdf> <../GNU/m328res_allCZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/m328res_allCZ.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
@@ -2143,29 +2209,29 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 
 pdfTeX warning: pdflatex (file ../FIG/Bigcap.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
-<../FIG/Bigcap.pdf, id=1535, 406.51875pt x 527.9725pt>
+<../FIG/Bigcap.pdf, id=1579, 406.51875pt x 527.9725pt>
 File: ../FIG/Bigcap.pdf Graphic file (type pdf)
 <use ../FIG/Bigcap.pdf>
 Package pdftex.def Info: ../FIG/Bigcap.pdf  used on input line 40.
 (pdftex.def)             Requested size: 476.2954pt x 618.61958pt.
-[82
+[84
 
 
-] [83 <../FIG/Bigcap.pdf>]
+] [85 <../FIG/Bigcap.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/Cap_residV.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/Cap_residV.pdf, id=1559, 406.51875pt x 155.58125pt>
+<../FIG/Cap_residV.pdf, id=1603, 406.51875pt x 155.58125pt>
 File: ../FIG/Cap_residV.pdf Graphic file (type pdf)
 <use ../FIG/Cap_residV.pdf>
 Package pdftex.def Info: ../FIG/Cap_residV.pdf  used on input line 65.
 (pdftex.def)             Requested size: 409.72125pt x 156.81294pt.
-<../PNG/charge_229uF.png, id=1562, 321.2pt x 234.8775pt>
+<../PNG/charge_229uF.png, id=1606, 321.2pt x 234.8775pt>
 File: ../PNG/charge_229uF.png Graphic file (type png)
 <use ../PNG/charge_229uF.png>
 Package pdftex.def Info: ../PNG/charge_229uF.png  used on input line 77.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/charge_5mF.png, id=1563, 321.2pt x 234.8775pt>
+<../PNG/charge_5mF.png, id=1607, 321.2pt x 234.8775pt>
 File: ../PNG/charge_5mF.png Graphic file (type png)
 <use ../PNG/charge_5mF.png>
 Package pdftex.def Info: ../PNG/charge_5mF.png  used on input line 84.
@@ -2175,12 +2241,12 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 75--88
 [][]   [] 
  []
 
-<../PNG/charge_15mF.png, id=1565, 321.2pt x 234.8775pt>
+<../PNG/charge_15mF.png, id=1609, 321.2pt x 234.8775pt>
 File: ../PNG/charge_15mF.png Graphic file (type png)
 <use ../PNG/charge_15mF.png>
 Package pdftex.def Info: ../PNG/charge_15mF.png  used on input line 93.
 (pdftex.def)             Requested size: 409.72125pt x 299.61716pt.
-[84 <../FIG/Cap_residV.pdf> <../PNG/charge_229uF.png> <../PNG/charge_5mF.png>]
+[86 <../FIG/Cap_residV.pdf> <../PNG/charge_229uF.png> <../PNG/charge_5mF.png>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
@@ -2191,21 +2257,21 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 108.
 
-[85 <../PNG/charge_15mF.png>]
+[87 <../PNG/charge_15mF.png>]
 
 pdfTeX warning: pdflatex (file ../FIG/Comparat.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<../FIG/Comparat.pdf, id=1597, 375.4025pt x 188.705pt>
+<../FIG/Comparat.pdf, id=1640, 375.4025pt x 188.705pt>
 File: ../FIG/Comparat.pdf Graphic file (type pdf)
 <use ../FIG/Comparat.pdf>
 Package pdftex.def Info: ../FIG/Comparat.pdf  used on input line 146.
 (pdftex.def)             Requested size: 409.72125pt x 205.96942pt.
-<../PNG/charge_22uF.png, id=1598, 321.2pt x 234.8775pt>
+<../PNG/charge_22uF.png, id=1641, 321.2pt x 234.8775pt>
 File: ../PNG/charge_22uF.png Graphic file (type png)
 <use ../PNG/charge_22uF.png>
 Package pdftex.def Info: ../PNG/charge_22uF.png  used on input line 153.
 (pdftex.def)             Requested size: 409.72125pt x 299.61716pt.
-[86 <../FIG/Comparat.pdf> <../PNG/charge_22uF.png>]
+[88 <../FIG/Comparat.pdf> <../PNG/charge_22uF.png>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
@@ -2220,12 +2286,12 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 
 pdfTeX warning: pdflatex (file ../FIG/sampling.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<../FIG/sampling.pdf, id=1619, 595.22375pt x 72.27pt>
+<../FIG/sampling.pdf, id=1662, 595.22375pt x 72.27pt>
 File: ../FIG/sampling.pdf Graphic file (type pdf)
 <use ../FIG/sampling.pdf>
 Package pdftex.def Info: ../FIG/sampling.pdf  used on input line 190.
 (pdftex.def)             Requested size: 512.14963pt x 62.18625pt.
-[87 <../FIG/sampling.pdf>]
+[89 <../FIG/sampling.pdf>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
@@ -2240,7 +2306,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 
 pdfTeX warning: pdflatex (file ../FIG/Cap_equiv.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<../FIG/Cap_equiv.pdf, id=1632, 94.3525pt x 58.2175pt>
+<../FIG/Cap_equiv.pdf, id=1675, 94.3525pt x 58.2175pt>
 File: ../FIG/Cap_equiv.pdf Graphic file (type pdf)
 <use ../FIG/Cap_equiv.pdf>
 Package pdftex.def Info: ../FIG/Cap_equiv.pdf  used on input line 233.
@@ -2257,23 +2323,23 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 242.
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 242.
 
-<../GNU/Cap_FC_dataCZ.pdf, id=1636, 361.35pt x 216.81pt>
+<../GNU/Cap_FC_dataCZ.pdf, id=1679, 361.35pt x 216.81pt>
 File: ../GNU/Cap_FC_dataCZ.pdf Graphic file (type pdf)
 <use ../GNU/Cap_FC_dataCZ.pdf>
 Package pdftex.def Info: ../GNU/Cap_FC_dataCZ.pdf  used on input line 249.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
-<../GNU/Cap_FR_dataCZ.pdf, id=1637, 361.35pt x 216.81pt>
+<../GNU/Cap_FR_dataCZ.pdf, id=1680, 361.35pt x 216.81pt>
 File: ../GNU/Cap_FR_dataCZ.pdf Graphic file (type pdf)
 <use ../GNU/Cap_FR_dataCZ.pdf>
 Package pdftex.def Info: ../GNU/Cap_FR_dataCZ.pdf  used on input line 256.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
-[88 <../FIG/Cap_equiv.pdf> <../GNU/Cap_FC_dataCZ.pdf>]
-<../GNU/Cap_FC_FR_dataCZ.pdf, id=1667, 361.35pt x 216.81pt>
+[90 <../FIG/Cap_equiv.pdf> <../GNU/Cap_FC_dataCZ.pdf>]
+<../GNU/Cap_FC_FR_dataCZ.pdf, id=1712, 361.35pt x 216.81pt>
 File: ../GNU/Cap_FC_FR_dataCZ.pdf Graphic file (type pdf)
 <use ../GNU/Cap_FC_FR_dataCZ.pdf>
 Package pdftex.def Info: ../GNU/Cap_FC_FR_dataCZ.pdf  used on input line 263.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
- [89 <../GNU/Cap_FR_dataCZ.pdf> <../GNU/Cap_FC_FR_dataCZ.pdf
+ [91 <../GNU/Cap_FR_dataCZ.pdf> <../GNU/Cap_FC_FR_dataCZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Cap_FC_FR_dataCZ.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
@@ -2292,18 +2358,18 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 
 pdfTeX warning: pdflatex (file ../FIG/Cap_esr.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<../FIG/Cap_esr.pdf, id=1706, 406.51875pt x 360.34625pt>
+<../FIG/Cap_esr.pdf, id=1750, 406.51875pt x 360.34625pt>
 File: ../FIG/Cap_esr.pdf Graphic file (type pdf)
 <use ../FIG/Cap_esr.pdf>
 Package pdftex.def Info: ../FIG/Cap_esr.pdf  used on input line 331.
 (pdftex.def)             Requested size: 512.14963pt x 453.99469pt.
-[90] [91 <../FIG/Cap_esr.pdf>]
-<../PNG/ESR_4uF.png, id=1731, 321.2pt x 234.8775pt>
+[92] [93 <../FIG/Cap_esr.pdf>]
+<../PNG/ESR_4uF.png, id=1774, 321.2pt x 234.8775pt>
 File: ../PNG/ESR_4uF.png Graphic file (type png)
 <use ../PNG/ESR_4uF.png>
 Package pdftex.def Info: ../PNG/ESR_4uF.png  used on input line 367.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/ESR4uF6R8.png, id=1732, 321.2pt x 234.8775pt>
+<../PNG/ESR4uF6R8.png, id=1775, 321.2pt x 234.8775pt>
 File: ../PNG/ESR4uF6R8.png Graphic file (type png)
 <use ../PNG/ESR4uF6R8.png>
 Package pdftex.def Info: ../PNG/ESR4uF6R8.png  used on input line 373.
@@ -2313,12 +2379,12 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 365--376
 [][]   [] 
  []
 
-<../PNG/ESR_2uF_pin2GND.png, id=1733, 321.2pt x 234.8775pt>
+<../PNG/ESR_2uF_pin2GND.png, id=1776, 321.2pt x 234.8775pt>
 File: ../PNG/ESR_2uF_pin2GND.png Graphic file (type png)
 <use ../PNG/ESR_2uF_pin2GND.png>
 Package pdftex.def Info: ../PNG/ESR_2uF_pin2GND.png  used on input line 383.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/ESR_2uF_pin2pin.png, id=1734, 321.2pt x 234.8775pt>
+<../PNG/ESR_2uF_pin2pin.png, id=1777, 321.2pt x 234.8775pt>
 File: ../PNG/ESR_2uF_pin2pin.png Graphic file (type png)
 <use ../PNG/ESR_2uF_pin2pin.png>
 Package pdftex.def Info: ../PNG/ESR_2uF_pin2pin.png  used on input line 389.
@@ -2328,14 +2394,14 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 381--392
 [][]   [] 
  []
 
-[92 <../PNG/ESR_4uF.png> <../PNG/ESR4uF6R8.png> <../PNG/ESR_2uF_pin2GND.png> <.
+[94 <../PNG/ESR_4uF.png> <../PNG/ESR4uF6R8.png> <../PNG/ESR_2uF_pin2GND.png> <.
 ./PNG/ESR_2uF_pin2pin.png>]
-<../GNU/CesrCZ.pdf, id=1748, 361.35pt x 216.81pt>
+<../GNU/CesrCZ.pdf, id=1791, 361.35pt x 216.81pt>
 File: ../GNU/CesrCZ.pdf Graphic file (type pdf)
 <use ../GNU/CesrCZ.pdf>
 Package pdftex.def Info: ../GNU/CesrCZ.pdf  used on input line 426.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
- [93 <../GNU/CesrCZ.pdf>]
+ [95 <../GNU/CesrCZ.pdf>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
@@ -2350,7 +2416,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 
 pdfTeX warning: pdflatex (file ../FIG/Cap_esr2_timing.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/Cap_esr2_timing.pdf, id=1773, 683.55376pt x 142.5325pt>
+<../FIG/Cap_esr2_timing.pdf, id=1816, 683.55376pt x 142.5325pt>
 File: ../FIG/Cap_esr2_timing.pdf Graphic file (type pdf)
 <use ../FIG/Cap_esr2_timing.pdf>
 Package pdftex.def Info: ../FIG/Cap_esr2_timing.pdf  used on input line 449.
@@ -2359,22 +2425,22 @@ Package pdftex.def Info: ../FIG/Cap_esr2_timing.pdf  used on input line 449.
 
 pdfTeX warning: pdflatex (file ../FIG/Cap_esr2.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<../FIG/Cap_esr2.pdf, id=1774, 406.51875pt x 664.4825pt>
+<../FIG/Cap_esr2.pdf, id=1817, 406.51875pt x 664.4825pt>
 File: ../FIG/Cap_esr2.pdf Graphic file (type pdf)
 <use ../FIG/Cap_esr2.pdf>
 Package pdftex.def Info: ../FIG/Cap_esr2.pdf  used on input line 456.
 (pdftex.def)             Requested size: 445.56767pt x 728.33737pt.
-[94 <../FIG/Cap_esr2_timing.pdf>]
+[96 <../FIG/Cap_esr2_timing.pdf>]
 Overfull \vbox (13.14848pt too high) has occurred while \output is active []
 
 
-[95 <../FIG/Cap_esr2.pdf>]
-<../PNG/NewEsr10uF0R0.png, id=1802, 321.2pt x 234.8775pt>
+[97 <../FIG/Cap_esr2.pdf>]
+<../PNG/NewEsr10uF0R0.png, id=1847, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr10uF0R0.png Graphic file (type png)
 <use ../PNG/NewEsr10uF0R0.png>
 Package pdftex.def Info: ../PNG/NewEsr10uF0R0.png  used on input line 486.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/NewEsr10uF2R7.png, id=1803, 321.2pt x 234.8775pt>
+<../PNG/NewEsr10uF2R7.png, id=1848, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr10uF2R7.png Graphic file (type png)
 <use ../PNG/NewEsr10uF2R7.png>
 Package pdftex.def Info: ../PNG/NewEsr10uF2R7.png  used on input line 492.
@@ -2384,12 +2450,12 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 484--495
 [][]   [] 
  []
 
-<../PNG/NewEsr2u2F0R0.png, id=1805, 321.2pt x 234.8775pt>
+<../PNG/NewEsr2u2F0R0.png, id=1850, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr2u2F0R0.png Graphic file (type png)
 <use ../PNG/NewEsr2u2F0R0.png>
 Package pdftex.def Info: ../PNG/NewEsr2u2F0R0.png  used on input line 506.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/NewEsr2u2F2R7.png, id=1806, 321.2pt x 234.8775pt>
+<../PNG/NewEsr2u2F2R7.png, id=1851, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr2u2F2R7.png Graphic file (type png)
 <use ../PNG/NewEsr2u2F2R7.png>
 Package pdftex.def Info: ../PNG/NewEsr2u2F2R7.png  used on input line 512.
@@ -2399,14 +2465,14 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 504--515
 [][]   [] 
  []
 
-[96 <../PNG/NewEsr10uF0R0.png> <../PNG/NewEsr10uF2R7.png> <../PNG/NewEsr2u2F0R0
+[98 <../PNG/NewEsr10uF0R0.png> <../PNG/NewEsr10uF2R7.png> <../PNG/NewEsr2u2F0R0
 .png> <../PNG/NewEsr2u2F2R7.png>]
-<../PNG/NewEsr2u2F0R0zoom.png, id=1820, 321.2pt x 234.8775pt>
+<../PNG/NewEsr2u2F0R0zoom.png, id=1864, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr2u2F0R0zoom.png Graphic file (type png)
 <use ../PNG/NewEsr2u2F0R0zoom.png>
 Package pdftex.def Info: ../PNG/NewEsr2u2F0R0zoom.png  used on input line 526.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/NewEsr2u2F2R7zoom.png, id=1821, 321.2pt x 234.8775pt>
+<../PNG/NewEsr2u2F2R7zoom.png, id=1865, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr2u2F2R7zoom.png Graphic file (type png)
 <use ../PNG/NewEsr2u2F2R7zoom.png>
 Package pdftex.def Info: ../PNG/NewEsr2u2F2R7zoom.png  used on input line 532.
@@ -2416,34 +2482,34 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 524--535
 [][]   [] 
  []
 
-<../GNU/Cesr2CZ.pdf, id=1824, 361.35pt x 216.81pt>
+<../GNU/Cesr2CZ.pdf, id=1868, 361.35pt x 216.81pt>
 File: ../GNU/Cesr2CZ.pdf Graphic file (type pdf)
 <use ../GNU/Cesr2CZ.pdf>
 Package pdftex.def Info: ../GNU/Cesr2CZ.pdf  used on input line 546.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-<../GNU/Elco_esrCZ.pdf, id=1826, 361.35pt x 216.81pt>
+<../GNU/Elco_esrCZ.pdf, id=1870, 361.35pt x 216.81pt>
 File: ../GNU/Elco_esrCZ.pdf Graphic file (type pdf)
 <use ../GNU/Elco_esrCZ.pdf>
 Package pdftex.def Info: ../GNU/Elco_esrCZ.pdf  used on input line 560.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
-[97 <../PNG/NewEsr2u2F0R0zoom.png> <../PNG/NewEsr2u2F2R7zoom.png> <../GNU/Cesr2
+[99 <../PNG/NewEsr2u2F0R0zoom.png> <../PNG/NewEsr2u2F2R7zoom.png> <../GNU/Cesr2
 CZ.pdf>]
-<../GNU/res_esrCZ.pdf, id=1853, 361.35pt x 216.81pt>
+<../GNU/res_esrCZ.pdf, id=1896, 361.35pt x 216.81pt>
 File: ../GNU/res_esrCZ.pdf Graphic file (type pdf)
 <use ../GNU/res_esrCZ.pdf>
 Package pdftex.def Info: ../GNU/res_esrCZ.pdf  used on input line 569.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
- [98 <../GNU/Elco_esrCZ.pdf> <../GNU/res_esrCZ.pdf
+ [100 <../GNU/Elco_esrCZ.pdf> <../GNU/res_esrCZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/res_esrCZ.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
 >]
-<../GNU/Cesr_22nCZ.pdf, id=1889, 361.35pt x 216.81pt>
+<../GNU/Cesr_22nCZ.pdf, id=1932, 361.35pt x 216.81pt>
 File: ../GNU/Cesr_22nCZ.pdf Graphic file (type pdf)
 <use ../GNU/Cesr_22nCZ.pdf>
 Package pdftex.def Info: ../GNU/Cesr_22nCZ.pdf  used on input line 593.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Cesr_22n_lowCZ.pdf, id=1890, 361.35pt x 216.81pt>
+<../GNU/Cesr_22n_lowCZ.pdf, id=1933, 361.35pt x 216.81pt>
 File: ../GNU/Cesr_22n_lowCZ.pdf Graphic file (type pdf)
 <use ../GNU/Cesr_22n_lowCZ.pdf>
 Package pdftex.def Info: ../GNU/Cesr_22n_lowCZ.pdf  used on input line 599.
@@ -2458,7 +2524,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 614.
 
-[99 <../GNU/Cesr_22nCZ.pdf> <../GNU/Cesr_22n_lowCZ.pdf
+[101 <../GNU/Cesr_22nCZ.pdf> <../GNU/Cesr_22n_lowCZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Cesr_22n_lowCZ.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
@@ -2488,18 +2554,18 @@ Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textring' on input line 693.
 
-[100]
-<../GNU/Mega8capCZ.pdf, id=1934, 361.35pt x 216.81pt>
+[102]
+<../GNU/Mega8capCZ.pdf, id=1979, 361.35pt x 216.81pt>
 File: ../GNU/Mega8capCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega8capCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega8capCZ.pdf  used on input line 706.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
-<../GNU/Mega8AcapCZ.pdf, id=1935, 361.35pt x 216.81pt>
+<../GNU/Mega8AcapCZ.pdf, id=1980, 361.35pt x 216.81pt>
 File: ../GNU/Mega8AcapCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega8AcapCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega8AcapCZ.pdf  used on input line 714.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega8LcapCZ.pdf, id=1936, 361.35pt x 216.81pt>
+<../GNU/Mega8LcapCZ.pdf, id=1981, 361.35pt x 216.81pt>
 File: ../GNU/Mega8LcapCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega8LcapCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega8LcapCZ.pdf  used on input line 721.
@@ -2509,12 +2575,12 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 712--725
 [][]   [] 
  []
 
-<../GNU/Mega168capCZ.pdf, id=1937, 361.35pt x 216.81pt>
+<../GNU/Mega168capCZ.pdf, id=1982, 361.35pt x 216.81pt>
 File: ../GNU/Mega168capCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega168capCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega168capCZ.pdf  used on input line 730.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
-[101 <../GNU/Mega8capCZ.pdf> <../GNU/Mega8AcapCZ.pdf
+[103 <../GNU/Mega8capCZ.pdf> <../GNU/Mega8AcapCZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega8AcapCZ.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -2523,18 +2589,18 @@ pdfTeX warning: pdflatex (file ../GNU/Mega8AcapCZ.pdf): PDF inclusion: multiple
 pdfTeX warning: pdflatex (file ../GNU/Mega8LcapCZ.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-<../GNU/capcompareCZ.pdf, id=1969, 361.35pt x 216.81pt>
+<../GNU/capcompareCZ.pdf, id=2013, 361.35pt x 216.81pt>
 File: ../GNU/capcompareCZ.pdf Graphic file (type pdf)
 <use ../GNU/capcompareCZ.pdf>
 Package pdftex.def Info: ../GNU/capcompareCZ.pdf  used on input line 747.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
- [102 <../GNU/Mega168capCZ.pdf>]
-<../GNU/Mega168allCZ.pdf, id=1989, 361.35pt x 216.81pt>
+ [104 <../GNU/Mega168capCZ.pdf>]
+<../GNU/Mega168allCZ.pdf, id=2032, 361.35pt x 216.81pt>
 File: ../GNU/Mega168allCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega168allCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega168allCZ.pdf  used on input line 767.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega168AallCZ.pdf, id=1990, 361.35pt x 216.81pt>
+<../GNU/Mega168AallCZ.pdf, id=2033, 361.35pt x 216.81pt>
 File: ../GNU/Mega168AallCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega168AallCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega168AallCZ.pdf  used on input line 774.
@@ -2544,12 +2610,12 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 765--778
 [][]   [] 
  []
 
-<../GNU/Mega168PAallCZ.pdf, id=1991, 361.35pt x 216.81pt>
+<../GNU/Mega168PAallCZ.pdf, id=2034, 361.35pt x 216.81pt>
 File: ../GNU/Mega168PAallCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega168PAallCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega168PAallCZ.pdf  used on input line 783.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[103 <../GNU/capcompareCZ.pdf> <../GNU/Mega168allCZ.pdf
+[105 <../GNU/capcompareCZ.pdf> <../GNU/Mega168allCZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega168allCZ.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -2558,12 +2624,12 @@ e pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../GNU/Mega168AallCZ.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<../GNU/Mega328allCZ.pdf, id=2021, 361.35pt x 216.81pt>
+<../GNU/Mega328allCZ.pdf, id=2064, 361.35pt x 216.81pt>
 File: ../GNU/Mega328allCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega328allCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega328allCZ.pdf  used on input line 791.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega328PallCZ.pdf, id=2022, 361.35pt x 216.81pt>
+<../GNU/Mega328PallCZ.pdf, id=2065, 361.35pt x 216.81pt>
 File: ../GNU/Mega328PallCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega328PallCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega328PallCZ.pdf  used on input line 798.
@@ -2573,12 +2639,12 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 789--802
 [][]   [] 
  []
 
-<../GNU/Mega168cap_optCZ.pdf, id=2024, 361.35pt x 216.81pt>
+<../GNU/Mega168cap_optCZ.pdf, id=2067, 361.35pt x 216.81pt>
 File: ../GNU/Mega168cap_optCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega168cap_optCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega168cap_optCZ.pdf  used on input line 822.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[104 <../GNU/Mega168PAallCZ.pdf> <../GNU/Mega328allCZ.pdf
+[106 <../GNU/Mega168PAallCZ.pdf> <../GNU/Mega328allCZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega328allCZ.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -2602,19 +2668,19 @@ Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textring' on input line 827.
 
-<../GNU/ComparatorAdjustCZ.pdf, id=2059, 361.35pt x 216.81pt>
+<../GNU/ComparatorAdjustCZ.pdf, id=2102, 361.35pt x 216.81pt>
 File: ../GNU/ComparatorAdjustCZ.pdf Graphic file (type pdf)
 <use ../GNU/ComparatorAdjustCZ.pdf>
 Package pdftex.def Info: ../GNU/ComparatorAdjustCZ.pdf  used on input line 857.
 
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
-[105 <../GNU/Mega168cap_optCZ.pdf>]
-<../GNU/Mega168calCZ.pdf, id=2078, 361.35pt x 216.81pt>
+[107 <../GNU/Mega168cap_optCZ.pdf>]
+<../GNU/Mega168calCZ.pdf, id=2122, 361.35pt x 216.81pt>
 File: ../GNU/Mega168calCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega168calCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega168calCZ.pdf  used on input line 873.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega168AcalCZ.pdf, id=2079, 361.35pt x 216.81pt>
+<../GNU/Mega168AcalCZ.pdf, id=2123, 361.35pt x 216.81pt>
 File: ../GNU/Mega168AcalCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega168AcalCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega168AcalCZ.pdf  used on input line 880.
@@ -2624,12 +2690,12 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 871--884
 [][]   [] 
  []
 
-<../GNU/Mega168PAcalCZ.pdf, id=2080, 361.35pt x 216.81pt>
+<../GNU/Mega168PAcalCZ.pdf, id=2124, 361.35pt x 216.81pt>
 File: ../GNU/Mega168PAcalCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega168PAcalCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega168PAcalCZ.pdf  used on input line 889.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[106 <../GNU/ComparatorAdjustCZ.pdf> <../GNU/Mega168calCZ.pdf
+[108 <../GNU/ComparatorAdjustCZ.pdf> <../GNU/Mega168calCZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega168calCZ.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -2638,12 +2704,12 @@ e pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../GNU/Mega168AcalCZ.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<../GNU/Mega328calCZ.pdf, id=2118, 361.35pt x 216.81pt>
+<../GNU/Mega328calCZ.pdf, id=2162, 361.35pt x 216.81pt>
 File: ../GNU/Mega328calCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega328calCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega328calCZ.pdf  used on input line 897.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega328PcalCZ.pdf, id=2119, 361.35pt x 216.81pt>
+<../GNU/Mega328PcalCZ.pdf, id=2163, 361.35pt x 216.81pt>
 File: ../GNU/Mega328PcalCZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega328PcalCZ.pdf>
 Package pdftex.def Info: ../GNU/Mega328PcalCZ.pdf  used on input line 904.
@@ -2653,12 +2719,12 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 895--908
 [][]   [] 
  []
 
-<../GNU/MegaAutoCZ.pdf, id=2121, 361.35pt x 216.81pt>
+<../GNU/MegaAutoCZ.pdf, id=2165, 361.35pt x 216.81pt>
 File: ../GNU/MegaAutoCZ.pdf Graphic file (type pdf)
 <use ../GNU/MegaAutoCZ.pdf>
 Package pdftex.def Info: ../GNU/MegaAutoCZ.pdf  used on input line 924.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[107 <../GNU/Mega168PAcalCZ.pdf> <../GNU/Mega328calCZ.pdf
+[109 <../GNU/Mega168PAcalCZ.pdf> <../GNU/Mega328calCZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega328calCZ.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -2667,12 +2733,12 @@ e pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../GNU/Mega328PcalCZ.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<../GNU/Mega1284CZ.pdf, id=2150, 361.35pt x 216.81pt>
+<../GNU/Mega1284CZ.pdf, id=2194, 361.35pt x 216.81pt>
 File: ../GNU/Mega1284CZ.pdf Graphic file (type pdf)
 <use ../GNU/Mega1284CZ.pdf>
 Package pdftex.def Info: ../GNU/Mega1284CZ.pdf  used on input line 937.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-) [108 <../GNU/MegaAutoCZ.pdf> <../GNU/Mega1284CZ.pdf
+) [110 <../GNU/MegaAutoCZ.pdf> <../GNU/Mega1284CZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega1284CZ.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
@@ -2699,12 +2765,20 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 
 pdfTeX warning: pdflatex (file ../FIG/Inductance.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/Inductance.pdf, id=2173, 375.4025pt x 222.8325pt>
+<../FIG/Inductance.pdf, id=2216, 375.4025pt x 222.8325pt>
 File: ../FIG/Inductance.pdf Graphic file (type pdf)
 <use ../FIG/Inductance.pdf>
 Package pdftex.def Info: ../FIG/Inductance.pdf  used on input line 25.
 (pdftex.def)             Requested size: 409.72125pt x 243.21922pt.
-[109
+
+Overfull \hbox (50.01897pt too wide) in paragraph at lines 30--52
+\T1/lmr/m/n/12 po-m¥r re-fe-ren£-ního na-p¥tí vzhle-dem k m¥-°ení ma-xi-mál-níh
+o na-p¥tí na $\OT1/lmr/m/n/12 680
+$ \T1/lmr/m/n/12 od-poru $\OML/lmm/m/it/12 Umax  \OT1/lmr/m/n/12 =  \OML/lmm/m/
+it/12 Imax  \OMS/lmsy/m/n/12 ^^A  \OT1/lmr/m/n/12 (680  +  19)$
+ []
+
+[111
 
 
  <../FIG/Inductance.pdf>]
@@ -2723,7 +2797,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 53.
 
-<../GNU/induct328pCZ.pdf, id=2189, 361.35pt x 216.81pt>
+<../GNU/induct328pCZ.pdf, id=2232, 361.35pt x 216.81pt>
 File: ../GNU/induct328pCZ.pdf Graphic file (type pdf)
 <use ../GNU/induct328pCZ.pdf>
 Package pdftex.def Info: ../GNU/induct328pCZ.pdf  used on input line 61.
@@ -2743,13 +2817,13 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 66.
 
-[110 <../GNU/induct328pCZ.pdf>] [111]
-<../GNU/W12compareCZ.pdf, id=2210, 361.35pt x 216.81pt>
+[112 <../GNU/induct328pCZ.pdf>] [113]
+<../GNU/W12compareCZ.pdf, id=2254, 361.35pt x 216.81pt>
 File: ../GNU/W12compareCZ.pdf Graphic file (type pdf)
 <use ../GNU/W12compareCZ.pdf>
 Package pdftex.def Info: ../GNU/W12compareCZ.pdf  used on input line 179.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
-) [112 <../GNU/W12compareCZ.pdf>]
+) [114 <../GNU/W12compareCZ.pdf>]
 \openout2 = `55-selftest.aux'.
 
 
@@ -2757,24 +2831,24 @@ Package pdftex.def Info: ../GNU/W12compareCZ.pdf  used on input line 179.
 
 pdfTeX warning: pdflatex (file ../FIG/Test2.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/Test2.pdf, id=2225, 611.28375pt x 149.55875pt>
+<../FIG/Test2.pdf, id=2270, 611.28375pt x 149.55875pt>
 File: ../FIG/Test2.pdf Graphic file (type pdf)
 <use ../FIG/Test2.pdf>
 Package pdftex.def Info: ../FIG/Test2.pdf  used on input line 59.
 (pdftex.def)             Requested size: 512.14963pt x 125.30899pt.
-[113
+[115
 
 
 ]
 
 pdfTeX warning: pdflatex (file ../FIG/Test7.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/Test7.pdf, id=2235, 386.44376pt x 152.57pt>
+<../FIG/Test7.pdf, id=2279, 386.44376pt x 152.57pt>
 File: ../FIG/Test7.pdf Graphic file (type pdf)
 <use ../FIG/Test7.pdf>
 Package pdftex.def Info: ../FIG/Test7.pdf  used on input line 99.
 (pdftex.def)             Requested size: 460.93153pt x 181.9796pt.
-[114 <../FIG/Test2.pdf>]
+[116 <../FIG/Test2.pdf>]
 
 LaTeX Warning: Command \' invalid in math mode on input line 113.
 
@@ -2785,35 +2859,35 @@ LaTeX Warning: Command \' invalid in math mode on input line 113.
 
 pdfTeX warning: pdflatex (file ../FIG/Test8.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/Test8.pdf, id=2260, 384.43625pt x 152.57pt>
+<../FIG/Test8.pdf, id=2303, 384.43625pt x 152.57pt>
 File: ../FIG/Test8.pdf Graphic file (type pdf)
 <use ../FIG/Test8.pdf>
 Package pdftex.def Info: ../FIG/Test8.pdf  used on input line 121.
 (pdftex.def)             Requested size: 460.93153pt x 182.94107pt.
-[115 <../FIG/Test7.pdf> <../FIG/Test8.pdf>]
-<../PNG/Frequency50.png, id=2291, 321.2pt x 234.8775pt>
+[117 <../FIG/Test7.pdf> <../FIG/Test8.pdf>]
+<../PNG/Frequency50.png, id=2334, 321.2pt x 234.8775pt>
 File: ../PNG/Frequency50.png Graphic file (type png)
 <use ../PNG/Frequency50.png>
 Package pdftex.def Info: ../PNG/Frequency50.png  used on input line 186.
 (pdftex.def)             Requested size: 321.19922pt x 234.87692pt.
- [116]
+ [118]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 196.
 
-<../GNU/SelfTrefCZ.pdf, id=2309, 361.35pt x 216.81pt>
+<../GNU/SelfTrefCZ.pdf, id=2352, 361.35pt x 216.81pt>
 File: ../GNU/SelfTrefCZ.pdf Graphic file (type pdf)
 <use ../GNU/SelfTrefCZ.pdf>
 Package pdftex.def Info: ../GNU/SelfTrefCZ.pdf  used on input line 234.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
-[117 <../PNG/Frequency50.png>]
-<../GNU/SelfTMitLCZ.pdf, id=2322, 361.35pt x 216.81pt>
+[119 <../PNG/Frequency50.png>]
+<../GNU/SelfTMitLCZ.pdf, id=2365, 361.35pt x 216.81pt>
 File: ../GNU/SelfTMitLCZ.pdf Graphic file (type pdf)
 <use ../GNU/SelfTMitLCZ.pdf>
 Package pdftex.def Info: ../GNU/SelfTMitLCZ.pdf  used on input line 242.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/SelfTMitHCZ.pdf, id=2323, 361.35pt x 216.81pt>
+<../GNU/SelfTMitHCZ.pdf, id=2366, 361.35pt x 216.81pt>
 File: ../GNU/SelfTMitHCZ.pdf Graphic file (type pdf)
 <use ../GNU/SelfTMitHCZ.pdf>
 Package pdftex.def Info: ../GNU/SelfTMitHCZ.pdf  used on input line 249.
@@ -2823,12 +2897,12 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 240--253
 [][]   [] 
  []
 
-<../GNU/SelfTbottomHCZ.pdf, id=2324, 361.35pt x 216.81pt>
+<../GNU/SelfTbottomHCZ.pdf, id=2367, 361.35pt x 216.81pt>
 File: ../GNU/SelfTbottomHCZ.pdf Graphic file (type pdf)
 <use ../GNU/SelfTbottomHCZ.pdf>
 Package pdftex.def Info: ../GNU/SelfTbottomHCZ.pdf  used on input line 259.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/SelfTtopHCZ.pdf, id=2325, 361.35pt x 216.81pt>
+<../GNU/SelfTtopHCZ.pdf, id=2368, 361.35pt x 216.81pt>
 File: ../GNU/SelfTtopHCZ.pdf Graphic file (type pdf)
 <use ../GNU/SelfTtopHCZ.pdf>
 Package pdftex.def Info: ../GNU/SelfTtopHCZ.pdf  used on input line 266.
@@ -2838,12 +2912,12 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 257--270
 [][]   [] 
  []
 
-<../GNU/SelfTRiLoCZ.pdf, id=2326, 361.35pt x 216.81pt>
+<../GNU/SelfTRiLoCZ.pdf, id=2369, 361.35pt x 216.81pt>
 File: ../GNU/SelfTRiLoCZ.pdf Graphic file (type pdf)
 <use ../GNU/SelfTRiLoCZ.pdf>
 Package pdftex.def Info: ../GNU/SelfTRiLoCZ.pdf  used on input line 276.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/SelfTRiHiCZ.pdf, id=2327, 361.35pt x 216.81pt>
+<../GNU/SelfTRiHiCZ.pdf, id=2370, 361.35pt x 216.81pt>
 File: ../GNU/SelfTRiHiCZ.pdf Graphic file (type pdf)
 <use ../GNU/SelfTRiHiCZ.pdf>
 Package pdftex.def Info: ../GNU/SelfTRiHiCZ.pdf  used on input line 283.
@@ -2853,7 +2927,7 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 274--287
 [][]   [] 
  []
 
-[118 <../GNU/SelfTrefCZ.pdf> <../GNU/SelfTMitLCZ.pdf
+[120 <../GNU/SelfTrefCZ.pdf> <../GNU/SelfTMitLCZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/SelfTMitLCZ.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -2870,22 +2944,28 @@ ple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../GNU/SelfTtopHCZ.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-<../GNU/SelfTcap0CZ.pdf, id=2404, 361.35pt x 216.81pt>
+<../GNU/SelfTcap0CZ.pdf, id=2448, 361.35pt x 216.81pt>
 File: ../GNU/SelfTcap0CZ.pdf Graphic file (type pdf)
 <use ../GNU/SelfTcap0CZ.pdf>
 Package pdftex.def Info: ../GNU/SelfTcap0CZ.pdf  used on input line 292.
 (pdftex.def)             Requested size: 307.2929pt x 184.37538pt.
-<../GNU/SelfTrefKorrCZ.pdf, id=2405, 361.35pt x 216.81pt>
+<../GNU/SelfTrefKorrCZ.pdf, id=2449, 361.35pt x 216.81pt>
 File: ../GNU/SelfTrefKorrCZ.pdf Graphic file (type pdf)
 <use ../GNU/SelfTrefKorrCZ.pdf>
 Package pdftex.def Info: ../GNU/SelfTrefKorrCZ.pdf  used on input line 299.
 (pdftex.def)             Requested size: 307.2929pt x 184.37538pt.
-<../GNU/SelfTrefDiffCZ.pdf, id=2407, 361.35pt x 216.81pt>
+<../GNU/SelfTrefDiffCZ.pdf, id=2451, 361.35pt x 216.81pt>
 File: ../GNU/SelfTrefDiffCZ.pdf Graphic file (type pdf)
 <use ../GNU/SelfTrefDiffCZ.pdf>
 Package pdftex.def Info: ../GNU/SelfTrefDiffCZ.pdf  used on input line 311.
 (pdftex.def)             Requested size: 307.2929pt x 184.37538pt.
- [119 <../GNU/SelfTRiLoCZ.pdf> <../GNU/SelfTRiHiCZ.pdf
+
+Overfull \hbox (32.32529pt too wide) in paragraph at lines 304--314
+\T1/lmr/m/n/12 °e-ných s re-fe-ren£-ních ADC na-p¥tí 15 r·z-ných AT-me-gas a t¥
+ch s au-to-ma-ticky na-sta-ve-ných (REF_R_KORR)
+ []
+
+[121 <../GNU/SelfTRiLoCZ.pdf> <../GNU/SelfTRiHiCZ.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/SelfTRiHiCZ.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -2897,7 +2977,7 @@ pdfTeX warning: pdflatex (file ../GNU/SelfTcap0CZ.pdf): PDF inclusion: multiple
 
 pdfTeX warning: pdflatex (file ../GNU/SelfTrefKorrCZ.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->]) [120 <../GNU/SelfTrefDiffCZ.pdf>]
+>]) [122 <../GNU/SelfTrefDiffCZ.pdf>]
 \openout2 = `56-frequency.aux'.
 
  (./56-frequency.tex
@@ -2911,7 +2991,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 3.
 
-<../GNU/frequency-ppmCZ.pdf, id=2491, 361.35pt x 216.81pt>
+<../GNU/frequency-ppmCZ.pdf, id=2535, 361.35pt x 216.81pt>
 File: ../GNU/frequency-ppmCZ.pdf Graphic file (type pdf)
 <use ../GNU/frequency-ppmCZ.pdf>
 Package pdftex.def Info: ../GNU/frequency-ppmCZ.pdf  used on input line 37.
@@ -2926,14 +3006,14 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 42.
 
-[121
+[123
 
 
  <../GNU/frequency-ppmCZ.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/GPS_UP501.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<../FIG/GPS_UP501.pdf, id=2506, 531.9875pt x 294.09875pt>
+<../FIG/GPS_UP501.pdf, id=2550, 531.9875pt x 294.09875pt>
 File: ../FIG/GPS_UP501.pdf Graphic file (type pdf)
 <use ../FIG/GPS_UP501.pdf>
 Package pdftex.def Info: ../FIG/GPS_UP501.pdf  used on input line 59.
@@ -2942,7 +3022,7 @@ Package pdftex.def Info: ../FIG/GPS_UP501.pdf  used on input line 59.
 
 pdfTeX warning: pdflatex (file ../FIG/GPS_GNS701.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/GPS_GNS701.pdf, id=2507, 500.87125pt x 294.09875pt>
+<../FIG/GPS_GNS701.pdf, id=2551, 500.87125pt x 294.09875pt>
 File: ../FIG/GPS_GNS701.pdf Graphic file (type pdf)
 <use ../FIG/GPS_GNS701.pdf>
 Package pdftex.def Info: ../FIG/GPS_GNS701.pdf  used on input line 65.
@@ -2952,13 +3032,13 @@ Overfull \hbox (7.8332pt too wide) in paragraph at lines 57--68
 [][]   [] 
  []
 
-<../PNG/DS3231M.jpg, id=2509, 770.88pt x 578.16pt>
+<../PNG/DS3231M.jpg, id=2553, 770.88pt x 578.16pt>
 File: ../PNG/DS3231M.jpg Graphic file (type jpg)
 <use ../PNG/DS3231M.jpg>
 Package pdftex.def Info: ../PNG/DS3231M.jpg  used on input line 87.
 (pdftex.def)             Requested size: 307.2929pt x 230.46591pt.
-) [122 <../FIG/GPS_UP501.pdf> <../FIG/GPS_GNS701.pdf> <../PNG/DS3231M.jpg>]
-[123]
+) [124 <../FIG/GPS_UP501.pdf> <../FIG/GPS_GNS701.pdf> <../PNG/DS3231M.jpg>]
+[125]
 \openout2 = `60-generators.aux'.
 
  (./60-generators.tex
@@ -2973,11 +3053,11 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 44.
 
-[124
+[126
 
 
 
-]) [125]
+]) [127]
 \openout2 = `70-errors.aux'.
 
  (./70-errors.tex
@@ -2987,7 +3067,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 1.
 
-) [126
+) [128
 
 
 
@@ -3011,7 +3091,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--33
 
  []
 
-) [127
+) [129
 
 
 
@@ -3020,53 +3100,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--33
 
  (./90-todo.tex
 Kapitola 9.
-) [128
+) [130
 
 
 
 ]
-Overfull \hbox (11.53984pt too wide) in paragraph at lines 156--158
-[]\T1/lmr/m/n/12 https://github.com/mikrocontroller-net/transistortester/Doku/ 
-trunk/pdftex/german/ttester.pdf 
- []
-
-
-Underfull \hbox (badness 1661) in paragraph at lines 226--230
+Underfull \hbox (badness 1661) in paragraph at lines 249--253
 [][]$\T1/lmtt/m/n/12 http : / / www . mikrocontroller . net / articles / AVRDUD
 E$[] \T1/lmr/m/it/12 On-line Do-ku-men-tace avr-dude pro-
  []
 
-[129
+[131
 
 
 ]
-Underfull \hbox (badness 4454) in paragraph at lines 268--272
+Underfull \hbox (badness 4454) in paragraph at lines 291--295
 [][]$\T1/lmtt/m/n/12 http : / / www . orientdisplay . com / pdf / ST7565 . pdf$
 [] \T1/lmr/m/it/12 Tech-nické údaje gra-fic-kého kon-t-ro-léru
  []
 
-[130]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
+[132]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 328.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 328.
  (./ttester.aux (./00-preface.aux) (./10-features.aux) (./20-hardware.aux) (./3
 0-manual.aux) (./40-configuring.aux) (./50-measurement.aux)
 (./51-semicon.aux) (./52-resistors.aux) (./53-capacitors.aux)
 (./54-inductors.aux) (./55-selftest.aux) (./56-frequency.aux)
 (./60-generators.aux) (./70-errors.aux) (./80-special.aux) (./90-todo.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 328.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 328.
 Package rerunfilecheck Info: File `ttester.out' has not changed.
-(rerunfilecheck)             Checksum: DE94EBBA93EB83EA675A666C434D6091;6400.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 305.
+(rerunfilecheck)             Checksum: 46F1E5A361272CE71187795B035BD3EB;6138.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 328.
  ) 
 Here is how much of TeX's memory you used:
- 33976 strings out of 481239
- 768047 string characters out of 5920377
- 1238295 words of memory out of 5000000
- 48006 multiletter control sequences out of 15000+600000
- 605840 words of font info for 70 fonts, out of 8000000 for 9000
+ 37726 strings out of 481239
+ 830923 string characters out of 5920377
+ 1350267 words of memory out of 5000000
+ 51671 multiletter control sequences out of 15000+600000
+ 618431 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,13n,70p,432b,854s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,13n,87p,910b,1242s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
@@ -3077,13 +3151,14 @@ ype1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/pub
 lic/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.p
-fb>
-Output written on ttester.pdf (131 pages, 4033851 bytes).
+mri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on ttester.pdf (133 pages, 4115012 bytes).
 PDF statistics:
- 2773 PDF objects out of 2984 (max. 8388607)
- 2168 compressed objects within 22 object streams
- 444 named destinations out of 1000 (max. 500000)
- 1341 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2829 PDF objects out of 2984 (max. 8388607)
+ 2202 compressed objects within 23 object streams
+ 458 named destinations out of 1000 (max. 500000)
+ 1413 words of extra memory for PDF output out of 10000 (max. 10000000)
 
