@@ -140,7 +140,7 @@ Pro ostatní signály SPI jsou dočasně použity interní \inquotes{Pull-Up} od
 pokud je nastavena volba PULLUP\_DISABLE.\\
 Příklad: CFLAG += -DLCD\_SPI\_OPEN\_COL
 \item[LCD\_I2C\_ADDR] Die I\textsuperscript{2}C-adresa ovladače SSD1306 lze nastavit přednastavením adresy
-LCD\_\discretionary{}{}{}I2C\_\discretionary{}{}{}ADDR na předem zvolenou adresu nastavit.\\
+LCD\_I2C\_ADDR na předem zvolenou adresu nastavit.\\
 Příklad: CFLAGS += -DLCD\_I2C\_ADDR=0x3d
 \item[LCD\_ST7565\_RESISTOR\_RATIO] Tato volba nastaví poměr děliče odporu pro
 Regulátor napětí regulátoru ST7565. Užitečné hodnoty jsou obecně mezi 4 a 7.
@@ -331,7 +331,7 @@ menších kapacit (pod \(40\mu F\)).\\
 Příklad: CFLAGS += -DWITH\_AUTO\_REF
   \item[REF\_C\_KORR] určuje posun pro čtené referenční napětí v jednotkách mV.
 To lze použít pro nastavení kapacitního měření malých kondenzátorů.
-Navíc, pokud je vybrána možnost AUTO\_\discretionary{}{}{}CAL je to jen další offset pro
+Navíc, pokud je vybrána možnost AUTO\_CAL je to jen další offset pro
 nalezený ofset komparátoru.
 Hodnota 10 dává zhruba o 1 procent menší čtení.\\
 Příklad: CFLAGS += -DREF\_C\_KORR=14
@@ -367,7 +367,7 @@ Oba piny by pak měly být připojeny k děliči napětí 10:1.\\
 Příklad: CFLAGS += -DTQFP\_ADC7
   \item[WITH\_VEXT]  umožňuje měřit externí napětí přes dělič napětí 10:1.
 Pro ATmega168 nebo ATmega328 se běžně používá pin PC3,
-pokud není zvolená možnost TQFP\_\discretionary{}{}{}ADC6 nebo TQFP\_\discretionary{}{}{}ADC7.
+pokud není zvolená možnost TQFP\_ADC6 nebo TQFP\_ADC7.
 Tuto možnost lze použít pouze tehdy, pokud není nastavena možnost WITH\_UART.\\
 Příklad: CFLAGS += -DWITH\_VEXT 
   \item[RMETER\_WITH\_L] volí funkci měření odporu, která, spuštěna odporem na TP1 a TP3,
@@ -897,7 +897,7 @@ mkdir ~/Mytester
 Pokud jsi stáhl z \lname{Github} archivu všechny zdrojové soubory do adresáře \lname{\textasciitilde/transistortester},\\
 získáš následujícím příkazem kopii tvých souborů a jejich podadresářů do adresáře \lname{\textbf{Mytester}}: 
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-rsync -auv ~/transistortester/Software/trunk/ ./Mytester
+rsync -auv ~/transistortester/Software/trunk ./Mytester
 \end{verbatim} \end{large}
 
 Kvůli přítomnosti \lcmd{-v} protokoluje \lcmd{rsync} všechny procesy kopírování.
@@ -905,7 +905,7 @@ Pokud místo možností \lcmd {-auv} zadáš jen \lcmd{-au}, proces kopírován�
 K naplněnému kufru podadresáře však můžete přistupovat pomocí následujícího příkazu
 přesvědčit: 
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-ls -lh ~/Mytester
+ls -lh ~/Mytester/trunk
 \end{verbatim} \end{large}
 
 K dispozici je také jasná reprezentace adresářové struktury a souborů příkazem:

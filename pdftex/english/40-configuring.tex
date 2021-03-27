@@ -972,7 +972,7 @@ If you have downloaded the transistortester archive in the directory \lname{\tex
 you can give the next instruction to copy the source files and subdirectories
 in the Mytester directory:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-rsync -auv ~/transistortester/Software/trunk/ ./Mytester
+rsync -auv ~/transistortester/Software/trunk ./Mytester
 \end{verbatim} \end{large}
 Because the \lname{ -v} Option is given to the rsync program, all
 copies are logged at the screen.
@@ -980,13 +980,16 @@ If you had specified the \lname{ -au} option instead of the \lname{ -auv},
 the \lcmd{rsync} would do the same copy without any log.
 You can take a look to the copied subdirectory with:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-ls -lh ~/Mytester/
+ls -lh ~/Mytester/trunk
 \end{verbatim} \end{large}
-A clear representation of the directory structure and the files is possible with the
-command \lcmd{tree \textasciitilde/Mytester}.
-The tree command is not installed by default, which you can easily dos
-with \lcmd{sudo apt-get install tree}.\\
-
+A clear representation of the directory structure and the files is possible with the command
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+tree ~/Mytester
+\end{verbatim} \end{large}
+The tree command is not installed by default, which you can easily dos with
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+sudo apt-get install tree
+\end{verbatim} \end{large}
 If you now know which subdirectory is suitable for your tester,
 you can now change to this subdirectory.
 Let's assume you have a Chinese kit with a monochrome graphical display,s
@@ -1075,7 +1078,7 @@ The copy of the transistortester sources can be kept up to date with the command
 If you work in a copy under \lname{\textasciitilde/Mytester} as recommended here,
 the changes will only be transferred if you also execute the command:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-rsync -auv ~/transistortester/Software/trunk/ ~/Mytester
+rsync -auv ~/transistortester/Software/trunk ~/Mytester
 \end{verbatim} \end{large}
 It can happen that the Makefile on the github server has a newer date than
 the locally changed copy.

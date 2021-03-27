@@ -430,6 +430,8 @@ ttester.pdf: ttester.tex $(LISTE1) $(LISTE2) $(LISTE3) $(LISTE4) $(LISTE21) $(TE
 ttinfo.pdf: ttinfo.tex $(LISTE50) $(TEXLIST50) Makefile
 	pdflatex --shell-escape ttinfo.tex
 	pdflatex --shell-escape ttinfo.tex
+picture-link.pdf: picture-link.tex
+	pdflatex --shell-escape picture-link.tex
 clean:
 	rm -f $(LISTE1) ../GNU/*EN.pdf $(LISTE2) ../GNU/*CZ.pdf $(LISTE3) ../GNU/*RU.pdf $(LISTE4) ../GNU/*GE.pdf $(LISTE21) $(LISTE50)
 steril:

@@ -41,7 +41,7 @@
 \contentsline {subsubsection}{usage of interfaces}{59}{section*.51}%
 \contentsline {subsubsection}{group membership}{61}{section*.52}%
 \contentsline {subsubsection}{Working environment and compiling of sources}{61}{section*.53}%
-\contentsline {subsubsection}{method with graphical interface}{61}{section*.54}%
+\contentsline {subsubsection}{method with graphical interface}{62}{section*.54}%
 \contentsline {subsubsection}{edit Makefile}{62}{section*.55}%
 \contentsline {subsubsection}{programming testers}{62}{section*.56}%
 \contentsline {subsubsection}{Tips to the terminal}{62}{section*.57}%

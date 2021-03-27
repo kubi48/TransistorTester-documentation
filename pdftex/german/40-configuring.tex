@@ -1049,23 +1049,34 @@ Dazu legen Sie erst einmal ein leeres Verzeichnis an mit:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
 mkdir ~/Mytester
 \end{verbatim} \end{large}
+ \vspace{-0.5em} 
 Wenn Sie den Download vom Archiv in das Verzeichnis \lname{\textasciitilde/transistortester}  durchgeführt haben,
 können Sie den nachfolgenden Befehl ausführen, um die Quelldateien und dessen Unterverzeichnisse
 in das Mytester Verzeichnis zu kopieren.
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-rsync -auv ~/transistortester/Software/trunk/ ./Mytester
+rsync -auv ~/transistortester/Software/trunk ./Mytester
 \end{verbatim} \end{large}
+ \vspace{-0.5em} 
 Wegen der \lcmd{-v} Option protokolliert \lcmd{rsync} alle Kopiervorgänge.
 Wenn Sie statt der \lcmd{-auv} Optionen also \lcmd{-au} als Optionen angeben,
 bleibt der Kopiervorgang stumm.
 Sie können sich aber vom gefüllten Unterverzeichnis mit folgendem Befehl
 überzeugen:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-ls -lh ~/Mytester
+ls -lh ~/Mytester/trunk
 \end{verbatim} \end{large}
-Eine übersichtliche Darstellung der Verzeichnisstruktur und der Dateien ist mit
-dem Kommando \lcmd{tree \textasciitilde/Mytester} möglich. Das Kommando ist aber nicht als
-Standard installiert, was sie aber mit \lcmd{sudo apt-get install tree} leicht nachholen können.\\
+ \vspace{-0.5em} 
+Eine übersichtliche Darstellung der Verzeichnisstruktur und der Dateien ist mit dem Kommando
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+tree ~/Mytester
+\end{verbatim} \end{large}
+ \vspace{-0.5em} 
+möglich. Das Kommando ist aber nicht als Standard installiert, was sie aber mit
+\begin{large} \vspace{-0.4em} \begin{verbatim}
+sudo apt-get install tree
+\end{verbatim} \end{large}
+ \vspace{-0.5em} 
+leicht nachholen können.\\
 Wenn Sie jetzt wissen, welches Unterverzeichnis für Ihren Tester paßt,
 können Sie in dieses Unterverzeichnis wechseln.
 Nehmen wir mal an, Sie besäßen einen chinesischen Bausatz mit SW-Display, 
@@ -1074,13 +1085,13 @@ Der Befehl dazu wäre dann:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
 cd ~/Mytester/mega328_st7565_kit
 \end{verbatim} \end{large}
-\vspace{-1em} 
+\vspace{-0.5em} 
 Mit einem simplen \lcmd{make} Aufruf würde der Quellcode mit
 den voreingestellen Einstellungen in der \lname{Makefile} neu übersetzt.
 
 \subsubsection{Methode mit grafische Oberfläche}
 Wenn das MyTester Verzeichnis schon angelegt ist, können Sie auch mit
-dem Dateien Fenster in das gewünschte Verueichnis wechseln.
+dem Dateien Fenster in das gewünschte Verzeichnis wechseln.
 Sie können die Dateien in \lname{\textasciitilde/Mytester/} auch mit dem Dateien Fenster ansehen
 \menu[,]{Menü, Zubehör, Dateien}, dabei muß das Verzeichnis \lname{Mytester} durch \LMB Doppelclick ausgewählt werden.
 Hier erscheinen jetzt viele Unterverzeichnisse, darunter auch beispielsweise
@@ -1170,7 +1181,7 @@ auf dem aktuellen Stand gehalten werden.
 Wenn man wie hier empfohlen in einer Kopie unter \lname{\textasciitilde/Mytester} arbeitet,
 werden die Änderungen erst übertragen, wenn man auch das Kommando
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-rsync -auv ~/transistortester/Software/trunk/ ~/Mytester
+rsync -auv ~/transistortester/Software/trunk ~/Mytester
 \end{verbatim} \end{large}
 ausführt.
 Dabei kann es passieren, daß die \lname{Makefile} auf dem github Server ein neueres Datum 
@@ -1193,8 +1204,6 @@ richtig programmierten ATmega zu kommen, die Benutzung der WinAVR-Paketes \cite{
 Mit meinem Patch \cite{winavr3} können Sie auch die Fuses mit der \lname{Makefile} setzen.
 Natürlich muss das \lcmd{avrdude} Programm Ihren Programmer unterstützen und die Konfiguration muss in
 der \lname{Makefile} richtig angepaßt sein.
-Die Abbildungen \ref{fig:WinAVR1} zeigen das File-Menü der Bedienoberfläche von WinAVR zum
-Öffnen der Datei \lname{Makefile} und zum Abspeichern der \lname{Makefile} nach den Änderungen (save).
 
 \begin{figure}[H]
   \begin{subfigure}[b]{.5\textwidth}
@@ -1211,9 +1220,8 @@ Die Abbildungen \ref{fig:WinAVR1} zeigen das File-Menü der Bedienoberfläche vo
   \caption{Bedienung der WinAVR-Oberfläche Programmer's Notepad}
   \label{fig:WinAVR1}
 \end{figure}
-Die nächsten Abbildungen \ref{fig:WinAVR2} zeigen das Tools-Menü von Programmer's Notepad
-zum Übersetzen des Programms (Make All) und zum Programmieren des ATmega (Program) mit \lcmd{avrdude}.
-
+Die Abbildungen \ref{fig:WinAVR1} zeigen das File-Menü der Bedienoberfläche von WinAVR zum
+Öffnen der Datei \lname{Makefile} und zum Abspeichern der \lname{Makefile} nach den Änderungen (save).
 \begin{figure}[H]
   \begin{subfigure}[b]{.5\textwidth}
     \centering
@@ -1229,4 +1237,5 @@ zum Übersetzen des Programms (Make All) und zum Programmieren des ATmega (Progr
   \caption{Bedienung der WinAVR-Oberfläche Programmer's Notepad}
   \label{fig:WinAVR2}
 \end{figure}
-
+Die nächsten Abbildungen \ref{fig:WinAVR2} zeigen das Tools-Menü von Programmer's Notepad
+zum Übersetzen des Programms (Make All) und zum Programmieren des ATmega (Program) mit \lcmd{avrdude}.
