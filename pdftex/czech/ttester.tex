@@ -65,6 +65,10 @@
 %\newcommand{\lcmd}[1]{{\textls[150]{ #1}}} % Linux command only streched
 \newcommand{\lname}[1]{\mbox{{\colorbox{blue!15}{#1}}}} % Linux key word blue normal
 \newcommand{\inquotes}[1]{\glqq{#1}\grqq}  % set in quotes "text"
+
+% Allow separation behind all underscores 
+\DeclareRobustCommand{\_}{\ifmmode{\rule{1ex}{.4pt}}\else\textunderscore\hspace{0pt}\fi}
+
 %\sloppy			% Blocksatz 
 
 \begin{document}

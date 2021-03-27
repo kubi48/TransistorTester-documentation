@@ -333,12 +333,12 @@ případě lepší řešení.
 \label{fig:ST7565lcd}
 \end{figure}
 Tabulka \ref{tab:spi-processor} zobrazuje další možnosti připojení
-pro ATmega328 a další procesory s SPI (LCD\_\discretionary{}{}{}INTERFACE\_\discretionary{}{}{}MODE=4)
-nebo 3LINE (LCD \_\discretionary{}{}{}INTERFACE \_\discretionary{}{}{}MODE = 3)  rozhraním. Různé zadání pro
+pro ATmega328 a další procesory s SPI (LCD\_INTERFACE\_MODE=4)
+nebo 3LINE (LCD\_INTERFACE\_MODE = 3)  rozhraním. Různé zadání pro
 procesor je s volbou STRIP\_GRID\_BOARD možné.
 Přiřazení jsou definována v souboru config.h. 
 Pokud je vyžadováno více variant obsazenosti, měly by tyto být
-určeny dalšími kódovými čísly možností v STRIP\_\discretionary{}{}{}GRID\_\discretionary{}{}{}BOARD
+určeny dalšími kódovými čísly možností v STRIP\_GRID\_BOARD
 a pak přidány do config.h.
 
 \begin{table}[H]
@@ -410,8 +410,8 @@ pomocí speciálního sériového rozhraní jak ukazuje obrázek \ref{fig:ST7920
 \end{figure}
 
 Pro oba typy připojení musí být software speciálně nakonfigurován.
-Makefile volba \inquotes{WITH\_\discretionary{}{}{}LCD\_\discretionary{}{}{}ST7565 = 7920} musí být v každém případě nastavena.
-Pro sériový Typ připojení musí být také volba \inquotes{CFLAGS + = -DLCD\_\discretionary{}{}{}INTERFACE\_\discretionary{}{}{}MODE=5} zvolená.
+Makefile volba \inquotes{WITH\_LCD\_ST7565 = 7920} musí být v každém případě nastavena.
+Pro sériový Typ připojení musí být také volba \inquotes{CFLAGS + = -DLCD\_INTERFACE\_MODE=5} zvolená.
 Tabulka~\ref{tab:ser-processor} ukazuje přiřazení signálů sériového portu
 připojení typu 5 (ST7920) a 7 (SSD1803) pro různé procesory.
 
@@ -436,7 +436,7 @@ STRIP\_GRID\_BOARD &       &   1   &        &     \\
 \end{table}
 
 Orientaci displeje může být, stejně jako u všech grafických displejů, nastavena
-možností LCD\_\discretionary{}{}{}ST7565\_\discretionary{}{}{}H\_FLIP a LCD\_\discretionary{}{}{}ST7565\_\discretionary{}{}{}V\_FLIP.
+možností LCD\_ST7565\_H\_FLIP a LCD\_ST7565\_V\_FLIP.
 Zvláštním případem jsou displeje s řadiči NT7108 nebo KS0108 (S6B0108). Jelikož jsou ovládané
 pouze s 8bitovým paralelním rozhraním. U nich je třeba použít externí sériově paralelní převodník.
 Nejjednodušší řešení se mi zdá použít čip 74HCT164 nebo 74HCT595.

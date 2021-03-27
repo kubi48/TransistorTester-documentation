@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  26 MAR 2021 21:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  27 MAR 2021 11:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -929,6 +929,8 @@ M)
 )
 \c@tw@hyphen@char@num=\count336
 )
+LaTeX Info: Redefining \_ on input line 50.
+
 (./ttester.aux (./00-preface.aux) (./10-features.aux) (./20-hardware.aux)
 (./30-manual.aux) (./40-configuring.aux) (./50-measurement.aux)
 (./51-semicon.aux) (./52-resistors.aux) (./53-capacitors.aux)
@@ -936,22 +938,22 @@ M)
 (./60-generators.aux) (./70-errors.aux) (./80-special.aux) (./90-todo.aux))
 \openout1 = `ttester.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -975,14 +977,14 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 51.
+LaTeX Info: Redefining \microtypecontext on input line 54.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 51.
+LaTeX Info: Redefining \showhyphens on input line 54.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -991,7 +993,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 \AtBeginShipoutBox=\box65
-Package hyperref Info: Link coloring OFF on input line 51.
+Package hyperref Info: Link coloring OFF on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1004,9 +1006,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count343
 )
-LaTeX Info: Redefining \ref on input line 51.
-LaTeX Info: Redefining \pageref on input line 51.
-LaTeX Info: Redefining \nameref on input line 51.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
 
 (./ttester.out) (./ttester.out)
 \@outlinefile=\write4
@@ -1014,57 +1016,57 @@ LaTeX Info: Redefining \nameref on input line 51.
 
 \symgns@font=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/lmr/m/n --> TS1/lmr/b/n on input line 51.
-Package gensymb Info: Math companion symbols declared on input line 51.
-LaTeX Info: Redefining \degree on input line 51.
-LaTeX Info: Redefining \celsius on input line 51.
+(Font)                  TS1/lmr/m/n --> TS1/lmr/b/n on input line 54.
+Package gensymb Info: Math companion symbols declared on input line 54.
+LaTeX Info: Redefining \degree on input line 54.
+LaTeX Info: Redefining \celsius on input line 54.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 51.
-LaTeX Info: Redefining \ohm on input line 51.
-Package gensymb Info: Using \textohm for \ohm on input line 51.
-Package gensymb Info: Using \textmu for \micro on input line 51.
+erthousand on input line 54.
+LaTeX Info: Redefining \ohm on input line 54.
+Package gensymb Info: Using \textohm for \ohm on input line 54.
+Package gensymb Info: Using \textmu for \micro on input line 54.
  ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-09.
+12.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-09.
+12.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-109.
+112.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-109.
+112.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 109.
+(Font)              <14.4> on input line 112.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 109.
+(Font)              <10> on input line 112.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 109.
+(Font)              <7> on input line 112.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-09.
+12.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-09.
+12.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1076,7 +1078,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 <../FIG/Wallpaper.pdf, id=324, 597.45204pt x 845.1575pt>
 File: ../FIG/Wallpaper.pdf Graphic file (type pdf)
 <use ../FIG/Wallpaper.pdf>
-Package pdftex.def Info: ../FIG/Wallpaper.pdf  used on input line 109.
+Package pdftex.def Info: ../FIG/Wallpaper.pdf  used on input line 112.
 (pdftex.def)             Requested size: 597.51439pt x 845.06516pt.
  [1
 
@@ -1248,12 +1250,6 @@ File: ../FIG/ST7920interface.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../FIG/ST7920interface.pdf  used on input line 427.
 (pdftex.def)             Requested size: 357.47943pt x 244.5575pt.
 [18 <../FIG/SSD1306_I2C.pdf> <../FIG/ST7920interface.pdf>]
-Overfull \hbox (9.6579pt too wide) in paragraph at lines 463--465
-[]\T1/lmr/m/n/12 (-20) Die Aus-rich-tung der Dar-stel-lung kann wie bei al-len 
-gra-phi-schen Dis-plays mit den Op-tio-nen LCD_ST7565-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 463--465
 
  []
@@ -1580,18 +1576,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--173
 
 Underfull \hbox (badness 10000) in paragraph at lines 175--182
 
- []
-
-
-Overfull \hbox (16.32951pt too wide) in paragraph at lines 191--196
-[]\T1/lmr/m/n/12 (-20) Für Farb-dis-plays kann die-ser Menü-punkt mit der Ma-ke
--fi-le Op-ti-on LCD_CHANGE_COLOR
- []
-
-
-Overfull \hbox (19.41998pt too wide) in paragraph at lines 198--203
-[]\T1/lmr/m/n/12 (-20) Für Farb-dis-plays kann die-ser Menü-punkt mit der Ma-ke
--fi-le Op-ti-on LCD_CHANGE_COLOR
  []
 
 [43]
@@ -2700,7 +2684,7 @@ Kapitel 9.
 
 
 ]
-Underfull \hbox (badness 3302) in paragraph at lines 194--199
+Underfull \hbox (badness 3302) in paragraph at lines 197--202
 []\T1/lmr/m/n/12 (+20) Wikipedia []$\T1/lmtt/m/n/12 http : / / de . wikipedia .
  org / wiki / Equivalent _ Series _ Resistance$[] \T1/lmr/m/it/12 (+20) Er-läu-
 te-rung
@@ -2710,29 +2694,29 @@ te-rung
 
 
 ]
-Underfull \hbox (badness 4108) in paragraph at lines 261--265
+Underfull \hbox (badness 4108) in paragraph at lines 264--268
 [][]$\T1/lmtt/m/n/12 http : / / www . orientdisplay . com / pdf / ST7565 . pdf$
 [] \T1/lmr/m/it/12 (+20) Da-ten-blatt des gra-fi-schen Con-trol-lers
  []
 
 [147]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 284.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 284.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 287.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 287.
  (./ttester.aux (./00-preface.aux) (./10-features.aux) (./20-hardware.aux) (./3
 0-manual.aux) (./40-configuring.aux) (./50-measurement.aux)
 (./51-semicon.aux) (./52-resistors.aux) (./53-capacitors.aux)
 (./54-inductors.aux) (./55-selftest.aux) (./56-frequency.aux)
 (./60-generators.aux) (./70-errors.aux) (./80-special.aux) (./90-todo.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 284.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 284.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 287.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 287.
 Package rerunfilecheck Info: File `ttester.out' has not changed.
 (rerunfilecheck)             Checksum: B85DC714A2ADE761E2C406E19C1CF8FF;6030.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 284.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
  ) 
 Here is how much of TeX's memory you used:
  38589 strings out of 481239
  853313 string characters out of 5920377
- 1415492 words of memory out of 5000000
+ 1415481 words of memory out of 5000000
  52294 multiletter control sequences out of 15000+600000
  631130 words of font info for 182 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2752,7 +2736,7 @@ onts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on ttester.pdf (148 pages, 4194629 bytes).
+Output written on ttester.pdf (148 pages, 4194575 bytes).
 PDF statistics:
  2848 PDF objects out of 2984 (max. 8388607)
  2219 compressed objects within 23 object streams

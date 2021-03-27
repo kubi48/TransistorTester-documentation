@@ -434,8 +434,8 @@ speziellen Seriellschnittstelle angeschlossen werden, wie die Abbildung~\ref{fig
 \end{figure}
 
 Für beide Anschlußarten muß die Software speziell konfiguriert werden. 
-Die Makefile Option \inquotes{WITH\_""LCD\_""ST7565 = 7920} muß dazu auf jeden Fall gesetzt werden, für die serielle
-Anschlußart muß außerdem die Option \inquotes{CFLAGS += -DLCD\_""INTERFACE\_""MODE=5} gesetzt sein.
+Die Makefile Option \inquotes{WITH\_LCD\_ST7565 = 7920} muß dazu auf jeden Fall gesetzt werden, für die serielle
+Anschlußart muß außerdem die Option \inquotes{CFLAGS += -DLCD\_INTERFACE\_MODE=5} gesetzt sein.
 Die Tabelle~\ref{tab:ser-processor} zeigt die Belegung der seriellen Anschlußsignale bei 
 dem Anschlußtyp 5 (ST7920) und 7 (SSD1803) für verschiedene Prozessoren.
 
@@ -1236,7 +1236,7 @@ Er bietet folgende Zusätze:
  \item 10-bit PWM
  \item Impulsdrehgeber
  \item die Quarz-Messung
- \item Spannung und Zehnerdioden Bestimmung (bis fast 50V).
+ \item Spannung und Zenerdioden Bestimmung (bis fast 50V).
 \end{itemize}
 \vspace{-0.5\baselineskip}
 Die Platine ist mit einem 8MHz Quarz bestückt. Besser wäre wohl ein 16MHz Quarz,

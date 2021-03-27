@@ -340,13 +340,13 @@ The signal form at the controller inputs will be more simular to the output shap
 \end{figure}
 
 The table~\ref{tab:spi-processor} shows more alternativs to connect a 
-ATmega328 or other prozessors with the SPI (LCD\_\discretionary{}{}{}INTERFACE\_\discretionary{}{}{}MODE=4) or the
-3LINE (LCD\_\discretionary{}{}{}INTERFACE\_\discretionary{}{}{}MODE=3) interface.
+ATmega328 or other prozessors with the SPI (LCD\_INTERFACE\_MODE=4) or the
+3LINE (LCD\_INTERFACE\_MODE=3) interface.
 The different connector lists for one processor type
-can be selected with the Makefile Option STRIP\_\discretionary{}{}{}GRID\_\discretionary{}{}{}BOARD.
+can be selected with the Makefile Option STRIP\_GRID\_BOARD.
 The connector pin list is defined in the file config.h.
 If you need a different wiring list, you should choose a new code number
-for the option STRIP\_\discretionary{}{}{}GRID\_\discretionary{}{}{}BOARD and supplement the setting in the config.h file.
+for the option STRIP\_GRID\_BOARD and supplement the setting in the config.h file.
 
 \begin{table}[H]
   \begin{center}

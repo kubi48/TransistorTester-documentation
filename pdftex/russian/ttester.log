@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  20 MAR 2021 13:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  27 MAR 2021 11:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -871,6 +871,8 @@ M)
 )
 \c@tw@hyphen@char@num=\count333
 )
+LaTeX Info: Redefining \_ on input line 68.
+
 (./ttester.aux
 LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 2
 2.
@@ -883,26 +885,26 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 (./60-generators.aux) (./70-errors.aux) (./80-special.aux) (./90-todo.aux))
 \openout1 = `ttester.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -926,7 +928,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box64
-Package hyperref Info: Link coloring OFF on input line 69.
+Package hyperref Info: Link coloring OFF on input line 72.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -938,9 +940,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count340
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
+LaTeX Info: Redefining \ref on input line 72.
+LaTeX Info: Redefining \pageref on input line 72.
+LaTeX Info: Redefining \nameref on input line 72.
 
 (./ttester.out) (./ttester.out)
 \@outlinefile=\write4
@@ -948,26 +950,26 @@ LaTeX Info: Redefining \nameref on input line 69.
 
 \symgns@font=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 69.
-Package gensymb Info: Math companion symbols declared on input line 69.
-LaTeX Info: Redefining \degree on input line 69.
-LaTeX Info: Redefining \celsius on input line 69.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 72.
+Package gensymb Info: Math companion symbols declared on input line 72.
+LaTeX Info: Redefining \degree on input line 72.
+LaTeX Info: Redefining \celsius on input line 72.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 69.
-LaTeX Info: Redefining \ohm on input line 69.
-Package gensymb Info: Using \textohm for \ohm on input line 69.
-Package gensymb Info: Using \textmu for \micro on input line 69.
+erthousand on input line 72.
+LaTeX Info: Redefining \ohm on input line 72.
+Package gensymb Info: Using \textohm for \ohm on input line 72.
+Package gensymb Info: Using \textmu for \micro on input line 72.
  ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-4.def
 File: uni-4.def 2013/05/13 UCS: Unicode data U+0400..U+04FF
 )<<ot1.cmap>><<oml.cmap>><<oms.cmap>>
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 122.
+(Font)              <14.4> on input line 125.
 <<omx.cmap>>
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 122.
+(Font)              <7> on input line 125.
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-122.
+125.
 
 (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
@@ -975,7 +977,7 @@ File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 <../FIG/Wallpaper.pdf, id=349, 597.45204pt x 845.1575pt>
 File: ../FIG/Wallpaper.pdf Graphic file (type pdf)
 <use ../FIG/Wallpaper.pdf>
-Package pdftex.def Info: ../FIG/Wallpaper.pdf  used on input line 122.
+Package pdftex.def Info: ../FIG/Wallpaper.pdf  used on input line 125.
 (pdftex.def)             Requested size: 597.51439pt x 845.06516pt.
  [1
 
@@ -1162,10 +1164,6 @@ File: ../FIG/Frequency_addon.pdf Graphic file (type pdf)
 <use ../FIG/Frequency_addon.pdf>
 Package pdftex.def Info: ../FIG/Frequency_addon.pdf  used on input line 222.
 (pdftex.def)             Requested size: 204.85672pt x 153.3626pt.
-
-
-pdfTeX warning: pdflatex (file ../FIG/rotary_extension.pdf): PDF inclusion: fou
-nd PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/rotary_extension.pdf, id=633, 126.4725pt x 195.73125pt>
 File: ../FIG/rotary_extension.pdf Graphic file (type pdf)
 <use ../FIG/rotary_extension.pdf>
@@ -1293,12 +1291,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 719--720
 
  []
 
-
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 720--721
 
  []
 
-[25]
+
 Underfull \hbox (badness 10000) in paragraph at lines 721--722
 
  []
@@ -1734,12 +1732,6 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 470--483
 [][]   [] 
  []
 
-
-Underfull \hbox (badness 1226) in paragraph at lines 485--491
-\T2A/cmr/m/n/12 wurde, ist dieser Wert nur ein Offset zu der gefundenen Spannun
-gs-Differenz in der
- []
-
 [59 <../PNG/AREF2_1V.png> <../PNG/AREF2VCC.png>] [60]
 Underfull \hbox (badness 10000) in paragraph at lines 613--614
 
@@ -1789,7 +1781,7 @@ Underfull \hbox (badness 2726) in paragraph at lines 866--873
 уб-ли-ка-ты ис-точ-ни-ков с име-нем
  []
 
-[66]
+
 Underfull \hbox (badness 3668) in paragraph at lines 887--889
 \T2A/cmr/m/n/12 Четкое отоб-ра-же-ние струк-ту-ры ка-та-ло-гов и фай-лов воз-мо
 ж-но с по-мо-щью ко-ман-ды
@@ -1800,7 +1792,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 887--889
 
  []
 
-
+[66]
 Underfull \hbox (badness 10000) in paragraph at lines 935--942
 
  []
@@ -2848,25 +2840,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--36
 
 
 ]
-Overfull \hbox (11.41255pt too wide) in paragraph at lines 158--160
+Overfull \hbox (11.41255pt too wide) in paragraph at lines 161--163
 []\T2A/cmr/m/n/12 https://github.com/mikrocontroller-net/transistortester/Doku/
  trunk/pdftex/german/ttester.pdf 
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 169--174
+Underfull \hbox (badness 1584) in paragraph at lines 172--177
 []\T2A/cmr/m/n/12 Atmel Corporation \T2A/cmr/m/it/12 8-bit AVR with 4/8/16/32KB
 ytes In-System Programmable Flash -
  []
 
 
-Underfull \hbox (badness 1874) in paragraph at lines 202--207
+Underfull \hbox (badness 1874) in paragraph at lines 205--210
 []\T2A/cmr/m/n/12 Wikipedia []$\T2A/cmtt/m/n/12 http : / / de . wikipedia . org
  / wiki / Equivalent _ Series _ Resistance$[] \T2A/cmr/m/it/12 Что та-кое
  []
 
 
-Underfull \hbox (badness 6910) in paragraph at lines 240--244
+Underfull \hbox (badness 6910) in paragraph at lines 243--247
 [][]$\T2A/cmtt/m/n/12 http : / / www . mikrocontroller . net / articles / AVR _
  Transistortester$[] \T2A/cmr/m/it/12 Крат-кое опи-са-ние
  []
@@ -2875,29 +2867,29 @@ Underfull \hbox (badness 6910) in paragraph at lines 240--244
 
 
 ]
-Underfull \hbox (badness 3635) in paragraph at lines 264--268
+Underfull \hbox (badness 3635) in paragraph at lines 267--271
 [][]$\T2A/cmtt/m/n/12 http : / / www . mikrocontroller . net / topic / 248078 ?
  page = 5 # 2922341$[] \T2A/cmr/m/it/12 Патч для WinAVR,
  []
 
 [148]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 293.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 293.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
  (./ttester.aux (./00-preface.aux) (./10-features.aux) (./20-hardware.aux) (./3
 0-manual.aux) (./40-configuring.aux) (./50-measurement.aux)
 (./51-semicon.aux) (./52-resistors.aux) (./53-capacitors.aux)
 (./54-inductors.aux) (./55-selftest.aux) (./56-frequency.aux)
 (./60-generators.aux) (./70-errors.aux) (./80-special.aux) (./90-todo.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 293.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 293.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 296.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
 Package rerunfilecheck Info: File `ttester.out' has not changed.
 (rerunfilecheck)             Checksum: 3A3CD60E9075F973B6E861A05D09BC72;23829.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 293.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 296.
  ) 
 Here is how much of TeX's memory you used:
  40996 strings out of 481239
  872980 string characters out of 5920377
- 1387902 words of memory out of 5000000
+ 1387401 words of memory out of 5000000
  54889 multiletter control sequences out of 15000+600000
  554922 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2926,7 +2918,7 @@ uper/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sftt1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sftt1440.pfb>
-Output written on ttester.pdf (149 pages, 4448590 bytes).
+Output written on ttester.pdf (149 pages, 4449116 bytes).
 PDF statistics:
  3081 PDF objects out of 3580 (max. 8388607)
  2382 compressed objects within 24 object streams

@@ -61,6 +61,9 @@
 %\newcommand{\inquotes}[1]{\og{#1}\fg}  % set "text" in french quotes
 \newcommand{\inquotes}[1]{``{#1}''}  % set "text" in american  quotes
 
+% Allow separation behind all underscores
+\DeclareRobustCommand{\_}{\ifmmode{\rule{1ex}{.4pt}}\else\textunderscore\hspace{0pt}\fi}
+
 %\sloppy
 
 \begin{document}

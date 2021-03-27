@@ -4,7 +4,7 @@
 \usepackage[T1]{fontenc}		%umlaute!
 \usepackage[utf8x]{inputenc}
 \usepackage[cm]{fullpage}
-\usepackage[english,ngerman]{babel}
+\usepackage[ngerman]{babel}
 \usepackage{textcomp}           % Wegen Fehler,perthousand,micro
 \usepackage[pdftex]{graphicx}
 \usepackage[labelsep=period]{caption}
@@ -45,6 +45,9 @@
 %\newcommand{\lcmd}[1]{{\textls[150]{ #1}}} % Linux command only streched
 \newcommand{\lname}[1]{\mbox{{\colorbox{blue!15}{#1}}}} % Linux key word blue normal
 \newcommand{\inquotes}[1]{\glqq{#1}\grqq}  % set in quotes "text"
+
+% Ermögliche Trennung hinter allen Unterstrichen
+\DeclareRobustCommand{\_}{\ifmmode{\rule{1ex}{.4pt}}\else\textunderscore\hspace{0pt}\fi}
 
 %\sloppy			% Blocksatz 
 

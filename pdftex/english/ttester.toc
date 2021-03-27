@@ -84,5 +84,5 @@
 \contentsline {section}{\numberline {6.1}Frequency Generation}{133}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Puls width generation}{133}{section.6.2}%
 \contentsline {chapter}{\numberline {7}Known errors and unsolved problems}{134}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Special Software Parts}{135}{chapter.8}%
-\contentsline {chapter}{\numberline {9}To Do List and new ideas}{136}{chapter.9}%
+\contentsline {chapter}{\numberline {8}Special Software Parts}{136}{chapter.8}%
+\contentsline {chapter}{\numberline {9}To Do List and new ideas}{137}{chapter.9}%
