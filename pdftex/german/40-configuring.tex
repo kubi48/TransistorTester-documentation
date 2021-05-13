@@ -796,16 +796,16 @@ kann man mit dem folgenden Kommando prüfen:
 git version
 \end{verbatim} \end{large}
 Das \lcmd{git} Programm sollte mit der Ausgabe seiner Versionsnummer antworten.
-Falls in Ihrem Heimatverzeichnis schon ein Ordner transistortester existiert,
+Falls in Ihrem Heimatverzeichnis schon ein Ordner TransistorTester-source existiert,
 sollte man den umbenennen oder löschen.
 Das Programm \lcmd{git} wird für den Download der Quellen und Dokumentation benutzt.
 Mit dem Befehl:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-git clone https://github.com/Mikrocontroller-net/transistortester
+git clone https://github.com/kubi48/TransistorTester-source
 \end{verbatim} \end{large}
-wird das komplette transistortester Archiv heruntergeladen.
+wird das aktuelle Transistortester Quellcode-Archiv heruntergeladen.
 Die Dateien sind nun in dem Linux [Persönlicher Ordner] , üblicherweise \lname{/home/} gefolgt
-von Ihrem Benutzerkürzel, mit dem  Verzeichnisnamen \lname{transistortester}.
+von Ihrem Benutzerkürzel, mit dem  Verzeichnisnamen \lname{TransistorTester-source}.
 Mit der Terminaleingabe  \lcmd{ls} \(\mbox{\keys{l} \keys{s} \keys{\return}}\) kann man
 das Vorhandensein überprüfen.
 Mehr Informationen über Dateien und Verzeichnisse erhält man mit
@@ -824,10 +824,10 @@ Um neue Updates heruntergeladen, reicht es in der Zukunft,
 \begin{large} \vspace{-0.4em} \begin{verbatim}
 git pull
 \end{verbatim} \end{large}
-im Arbeitsverzeichnis \lname{transistortester} einzugeben.
+im Arbeitsverzeichnis \lname{TransistorTester-source} einzugeben.
 Das kann je nach Kommandointerpreter auch mit
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-(cd ~/transistortester ; git pull)
+(cd ~/TransistorTester-source ; git pull)
 \end{verbatim} \end{large}
 aus jedem Arbeisverzeichnis erfolgen.
 Damit der \lcmd{git pull} einwandfrei funktioniert, sollte man den
@@ -1050,11 +1050,11 @@ Dazu legen Sie erst einmal ein leeres Verzeichnis an mit:
 mkdir ~/Mytester
 \end{verbatim} \end{large}
  \vspace{-0.5em} 
-Wenn Sie den Download vom Archiv in das Verzeichnis \lname{\textasciitilde/transistortester}  durchgeführt haben,
+Wenn Sie den Download vom Archiv in das Verzeichnis \lname{\textasciitilde/TransistorTester-source}  durchgeführt haben,
 können Sie den nachfolgenden Befehl ausführen, um die Quelldateien und dessen Unterverzeichnisse
 in das Mytester Verzeichnis zu kopieren.
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-rsync -auv ~/transistortester/Software/trunk ./Mytester
+rsync -auv ~/TransistorTester-source/trunk ./Mytester
 \end{verbatim} \end{large}
  \vspace{-0.5em} 
 Wegen der \lcmd{-v} Option protokolliert \lcmd{rsync} alle Kopiervorgänge.
@@ -1175,13 +1175,13 @@ Zum Schluß sind hier noch einmal die wichtigsten \lname{Makefile} Aufrufe aufge
 \subsubsection{Hinweise zum Update der Transistortester-Quellen}
 Die Kopie der transistortester-Quellen kann mit dem Kommando
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-(cd ~/transistortester ; git pull)
+(cd ~/TransistorTester-source ; git pull)
 \end{verbatim} \end{large}
 auf dem aktuellen Stand gehalten werden.
 Wenn man wie hier empfohlen in einer Kopie unter \lname{\textasciitilde/Mytester} arbeitet,
 werden die Änderungen erst übertragen, wenn man auch das Kommando
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-rsync -auv ~/transistortester/Software/trunk ~/Mytester
+rsync -auv ~/TransistorTester-source/trunk ~/Mytester
 \end{verbatim} \end{large}
 ausführt.
 Dabei kann es passieren, daß die \lname{Makefile} auf dem github Server ein neueres Datum 

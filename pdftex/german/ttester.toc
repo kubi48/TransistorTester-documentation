@@ -45,7 +45,7 @@
 \contentsline {subsubsection}{Methode mit grafische Oberfl\IeC {\"a}che}{68}{section*.54}%
 \contentsline {subsubsection}{Bearbeitung von Makefile}{68}{section*.55}%
 \contentsline {subsubsection}{Tester programmieren}{68}{section*.56}%
-\contentsline {subsubsection}{Tipps zum Terminal}{68}{section*.57}%
+\contentsline {subsubsection}{Tipps zum Terminal}{69}{section*.57}%
 \contentsline {subsubsection}{M\IeC {\"o}gliche Makefile Aufrufe}{69}{section*.58}%
 \contentsline {subsubsection}{Hinweise zum Update der Transistortester-Quellen}{69}{section*.60}%
 \contentsline {subsection}{\numberline {4.2.2}Erstellen der Software unter Windows}{70}{subsection.4.2.2}%

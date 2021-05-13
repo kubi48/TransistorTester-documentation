@@ -765,17 +765,17 @@ You can check the correct installation of the git package by typing the command:
 git version
 \end{verbatim} \end{large}
 The \lcmd{git} program should respond with the output of its version number.
-If a folder transistortester already exists in your home directory,
+If a folder TransistorTester-source already exists in your home directory,
 you should rename or delete it.
 The package \inquotes{git} is used for downloading the sources and the documentation from the Git archive.
 With the command:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-git clone https://github.com/Mikrocontroller-net/transistortester
+git clone https://github.com/kubi48/TransistorTester-source
 \end{verbatim} \end{large}
-you can download the complete transistortester archive.
-The directory \lname{transistortester} is now addded to your home directory,
+you can download the actual transistortester source archive.
+The directory \lname{TransistorTester-source} is now addded to your home directory,
 wich is usually the full file name \lname{/home/} followed by your user ID.
-So you must see a new directory \lname{transistortester}, which can
+So you must see a new directory \lname{TransistorTester-source}, which can
 be checked by typing \lcmd{ls} ( \mbox{\keys{L} \keys{S} \keys{\return}} ).
 You get more information about files and directories, if you call
 the command with options like \lcmd{ls -lh}.
@@ -792,21 +792,21 @@ and you need only one - character in front of the collection.
 You can get help about the command and the options for nearly every command by appending
 the \lcmd{ --help} option.
 Of course, this also applies to the git command.\\
-For getting updates, you should change your working dirctory to \lname{transistortester} and call:
+For getting updates, you should change your working dirctory to \lname{TransistorTester-source} and call:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
 git pull
 \end{verbatim} \end{large}
 You can do that also from every working directotory with some command interpreters:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-(cd ~/transistortester ; git pull)
+(cd ~/TransistorTester-source ; git pull)
 \end{verbatim} \end{large}
-You should better not change anything in the \lname{\textasciitilde/transistortester}
+You should better not change anything in the \lname{\textasciitilde/TransistorTester-source}
 directory tree to let the \lcmd{git pull} run properly.
 
 
 \subsubsection{compiling of transistor tester source}
 For compiling the source you must only type the simple command \lcmd{make}
-in thbe right working directory.
+in the right working directory.
 Because the ATmega can be easy programmed with a \lcmd{make upload} command,
 we should first prepare the access to the interface of the ISB-programmer.
 The further operating steps you can find in section~\ref{sec:Arbeitsumgebung}
@@ -968,11 +968,11 @@ To do this task, first create an empty directory with:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
 mkdir ~/Mytester
 \end{verbatim} \end{large}
-If you have downloaded the transistortester archive in the directory \lname{\textasciitilde/transistortester},
+If you have downloaded the transistortester archive in the directory \lname{\textasciitilde/TransistorTester-source},
 you can give the next instruction to copy the source files and subdirectories
 in the Mytester directory:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-rsync -auv ~/transistortester/Software/trunk ./Mytester
+rsync -auv ~/TransistorTester-source/trunk ./Mytester
 \end{verbatim} \end{large}
 Because the \lname{ -v} Option is given to the rsync program, all
 copies are logged at the screen.
@@ -1073,12 +1073,12 @@ At last I would like to list the most important Makefile orders:
 \subsubsection{Hints for updates of the transistortester sources}
 The copy of the transistortester sources can be kept up to date with the command:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-(cd ~/transistortester; git pull)
+(cd ~/TransistorTester-source; git pull)
 \end{verbatim} \end{large}
 If you work in a copy under \lname{\textasciitilde/Mytester} as recommended here,
 the changes will only be transferred if you also execute the command:
 \begin{large} \vspace{-0.4em} \begin{verbatim}
-rsync -auv ~/transistortester/Software/trunk ~/Mytester
+rsync -auv ~/TransistorTester-source/trunk ~/Mytester
 \end{verbatim} \end{large}
 It can happen that the Makefile on the github server has a newer date than
 the locally changed copy.

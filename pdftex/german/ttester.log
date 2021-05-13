@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  13 MAY 2021 13:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  13 MAY 2021 17:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1690,7 +1690,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 931--939
 
  []
 
-[65] [66] [67]
+[65] [66] [67] [68]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 1149.
 
@@ -1698,7 +1698,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1148--1155
 
  []
 
-[68]
+
 Overfull \hbox (34.73843pt too wide) in paragraph at lines 1161--1173
 [][] 
  []
@@ -2722,7 +2722,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
 Here is how much of TeX's memory you used:
  38592 strings out of 481239
  853355 string characters out of 5920377
- 1415348 words of memory out of 5000000
+ 1412897 words of memory out of 5000000
  52295 multiletter control sequences out of 15000+600000
  631130 words of font info for 182 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2742,7 +2742,7 @@ onts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on ttester.pdf (149 pages, 4198206 bytes).
+Output written on ttester.pdf (149 pages, 4198109 bytes).
 PDF statistics:
  2857 PDF objects out of 2984 (max. 8388607)
  2227 compressed objects within 23 object streams
