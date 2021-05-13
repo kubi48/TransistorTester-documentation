@@ -1103,9 +1103,60 @@ KDE desctop environment, but you can install ist with:
 sudo apt-get install kdiff3
 \end{verbatim} \end{large}
 
+\newpage
+\subsection{Building the Software with Windows}
+Probably the easiest way right now is to install the Arduino IDE (Integrated Development Environment) first.
+This software package installs a actual version of the avr-gcc compiler, which can then also be used outside the IDE,s
+because the path to the programs is registered in the Windows PATH variable. 
+Usually the programs are installed in C:\textbackslash Arduino\textbackslash hardware\textbackslash tools\textbackslash avr\textbackslash bin.
+The avrdude program for operating the IDE programmer can also be found there.
+Only a GNU make program is missing to be able to use the Makefile
+I installed this program with the Cygwin64 package.
+To download the transistor tester software, the git program is used, which is also included in the Cygwin64 package an
+can be selected during installation. 
+The Cygwin64 package uses its own installer setup-x86\_64.exe, which can be used for new installations or updates as well as
+to add missing tools.
+The formerly shared transistor tester archive is now divided into three different github archives.
+The documentation and sources of old versions can be found at http://github.com/kubi48/TransistorTester-old-versions.
+The current documentation can be found at http://github.com/kubi48/TransistorTester-documentation.
+The last sources can be found at http://github.com/kubi48/TransistorTester-source.
+In a command window you can copy the archives with ''git clone'' and the respective address of the github archive into the local directory.
+The sources from github can be copied to your own computer with the following command:
+\begin{verbatim}
+git clone https://github.com/kubi48/TransistorTester-source
+\end{verbatim}
+If the command has been processed without errors, there should be a copy of the last source codes
+in the TransistorTester-source directory. 
+The sources of the k-version described here are located in the trunk subdirectory.
+You can also find compressed tar archives (.tgz) of the last m-versions in the Markus subdirectory.\\
+The source code of the k version in the trunk directory has several subdirectories, each with a Makefile.
+The different Makefiles are used to make adjustments to the different tester models.
+To find the name of the appropriate subdirectory, you can open the file picture-link.pdf in
+the TransistorTester-source directory with Acrobat Reader.
+There is one link or several links to a suitable subdirectory under each of the testers shown.
+However, there are currently not photos of all testers entered.
+To translate the sources, you have to open the command window and you must change into the subdirectory
+that corresponds to your tester.
+The following command sequence is required for the Chinese transistor tester kit with the graphic display (ST7565 controller): 
+\begin{verbatim}
+cd TransistorTester-source
+cd trunk
+cd mega328_st7565_kit
+make
+\end{verbatim}
+Of course, you can change the options in the Makefile with an editor of your choice before calling make.
+If you have adapted the PROGRAMMER and PORT settings to your ISP programmer in the Makefile, you can transfers
+the translated program to the connected transistor tester with a "make upload".
+With new AVR processors or if the correct setting of the fuses is not certain,
+you should set the fuses appropriately with "make fuses-crystal". 
+
 \subsection{Using the WinAVR package with Windows}
-If you use the Windows operating system, the easiest way to get a correct programmed
-ATmega is to use the WinAVR package \cite{winavr1},\cite{winavr2}.
+The WinAVR package can currently no longer be recommended because the package is very old and has not been maintained.
+The integrated avr-gcc compiler is therefore also very old.
+The newer versions of the avr-gcc compiler optimize the program much better.
+Because the ATmega memory is often full to the limit with well-optimizing compilers,
+you can only use WinAVR if you deselect functions in the Makefile. 
+Then you can use the WinAVR package \cite{winavr1},\cite{winavr2}.
 With my patch \cite{winavr3} you can also set the fuses by using the Makefile.
 Of course the \lcmd{avrdude} program must support your programmer and the configuration
 in the Makefile must match to your environment.

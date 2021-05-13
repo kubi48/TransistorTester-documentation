@@ -1196,11 +1196,62 @@ möglich. Das Programm muß aber wahrscheinlich mit \lcmd{sudo apt-get install k
 erst installiert werden, da es eigentlich für die KDE Desktopumgebung entwickelt wurde.
 
 \newpage
+\subsection{Erstellen der Software unter Windows}
+Wahrscheinlich ist derzeit der einfachste Weg, zuerst die Arduino IDE (Integrierte Entwicklungsumgebung) zu installieren.
+Dieses Softwarepaket installiert eine aktuelle Version des avr-gcc Kompilers, der dann
+auch außerhalb der IDE benutzbar ist, weil der Pfad zu den Programmen in der PATH Variablen von Windows eingetragen ist.
+Normalerweise werden die Programme in C:\textbackslash Arduino\textbackslash hardware\textbackslash tools\textbackslash avr\textbackslash bin installiert.
+Dort ist dann auch das avrdude Programm für die Bedienung des IDE-Programmers zu finden.
+Lediglich ein GNU make Programm fehlt, um die Makefile nutzen zu können.
+Dieses Programm habe ich mit dem Cygwin64 Paket installiert.
+Für den Download der Transistortester Software wird das Programm git benutzt,
+das ebenfalls im Cygwin64 Paket vorhanden ist und sich bei der Installation auswählen läßt.
+Das Cygwin64 Paket benutzt einen eigenen Installer setup-x86\_64.exe, der sowohl für Neuinstallationen oder Updates als
+auch für Nachinstallation fehlender Tools benutzt wird.
+Das ehemals gesamte Transistortester Archiv ist jetzt aufgeteilt in drei verschiedene github Archive.
+Die Dokumentation und Quellen alter Versionen befindet sich auf http://github.com/kubi48/TransistorTester-old-versions .
+Die aktuelle Dokumentation findet man unter http://github.com/kubi48/TransistorTester-documentation .
+Die letzten Quellen findet man unter http://github.com/kubi48/TransistorTester-source .
+In einem Kommando-Fenster kann man die Archive mit ,,git clone'' und der jeweiligen Adresse des github Archivs in das lokale
+Verzeichnis kopieren.
+Die Quellen von github können mit dem folgenden Kommando auf den eigenen Rechner kopiert werden:
+\begin{verbatim}
+git clone https://github.com/kubi48/TransistorTester-source
+\end{verbatim}
+Wenn das Kommando fehlerfrei abgearbeitet wurde, sollte sich im
+Verzeichnis TransistorTester-source eine Kopie des letzten Quellcodes befinden.  
+Die Quellen der hier beschriebene k-Version  befinden sich im Unterverzeichnis trunk.
+Außerdem findet man komprimierte tar Archive (.tgz) der letzten m-Versionen im
+Unterverzeichnis Markus.\\
+Der Quellcode der k-Version im Verzeichnis trunk hat mehrere Unterverzeichnisse mit je einer Makefile.
+Die verschiedenen Makefiles dienen dazu, Anpassungen an die verschiedenen Testermodelle vorzunehmen.
+Um den Namen des passenden Unterverzeichnisses zu finden können Sie die Datei picture-link.pdf im
+TransistorTester-source Verzeichnis mit dem Acrobat Reader öffnen. Unter den abgebildeten Testern
+befindet sich jeweils ein Link oder mehrere Links zu einem passenden Unterverzeichnis.
+Es sind aber derzeit nicht von allen Testern Fotos eingetragen.
+Zum Übersetzen der Quellen müssen Sie iein Kommandofenster öffnen und in das zu ihrem Tester passende Unterverzeichnis
+wechseln. Für den chinesischen Transistortester Kit mit dem grafischen Display (ST7565 Kontroller) ist dazu die
+Kommandofolge erforderlich:
+\begin{verbatim}
+cd TransistorTester-source
+cd trunk
+cd mega328_st7565_kit
+make
+\end{verbatim}
+Natürlich können Sie die Optionen in der Makefile mit einem Editor Ihrer Wahl vor dem make Aufruf verändern.
+Wenn Sie in der Makefile die Einstellungen PROGRAMMER und PORT an Ihren ISP-Programmer angepasst haben,
+können Sie das übersetzte Programm mit einem ,,make upload'' zum angeschlossenen Transistortester übertragen.
+Bei neuen AVR-Prozessoren oder wenn die richtige Einstellung der Fuses nicht sicher ist,
+sollten Sie die Fuses mit ,,make fuses-crystal'' passend einstellen.
+
 
 \subsection{Benutzung des WinAVR-Paketes unter Windows}
 
-Wenn Sie unter dem Windows Betriebssystem arbeiten, ist der leichteste Weg zum
-richtig programmierten ATmega zu kommen, die Benutzung der WinAVR-Paketes \cite{winavr1},\cite{winavr2}.
+Derzeit kann das WinAVR Paket nicht mehr empfohlen werden, da das Paket sehr alt ist und nicht gewartet wurde.
+Der integrierte avr-gcc Kompiler ist damit auch sehr alt. Die neueren Versionen des avr-gcc Kompilers
+optimieren das Programm deutlich besser. Weil oft der Speicher des ATmege schon bei gut optimierenden
+Kompiler randvoll ist, kann man WinAVR nur benutzen, wenn man Funktionen in der Makefile abwählt.
+Dann können Sie das WinAVR-Paket \cite{winavr1},\cite{winavr2} benutzen.
 Mit meinem Patch \cite{winavr3} können Sie auch die Fuses mit der \lname{Makefile} setzen.
 Natürlich muss das \lcmd{avrdude} Programm Ihren Programmer unterstützen und die Konfiguration muss in
 der \lname{Makefile} richtig angepaßt sein.
