@@ -284,6 +284,16 @@ Poměr děliče lze nastavit na 1:1, 1:2, 1:4, 1:8, 1:16, 1:32, 1:64 a 1:128.
 Tato volba je užitečná pouze tehdy, pokud je k frekvenčnímu vstupu připojen externí před dělič.
 Frekvence a doby zobrazované během měření berou v úvahu nastavený poměr před děliče.\\
 Příklad: CFLAGS += -DWITH\_FREQUENCY\_DIVIDER
+
+
+ \item[NO\_FREQUENCY\_SWITCH]
+U této volby není podporováno přepínání frekvenčního vstupu obvodu ATmega644 / ATmega1284. 
+Tato možnost nepodporuje měření LF a HF quartz.\\
+Příklad: CFLAGS += -DNO\_FREQUENCY\_SWITCH=1
+
+\item[PWM\_SERVO] 
+vybere speciální generaci PWM pro testování serv namísto obecné generace PWM.\\
+Příklad: CFLAGS += -DPWM\_SERVO=1
   \item[WITH\_SamplingADC] Tato funkce používá metodu vzorkování S ADC v určitých případech.
 Přemístěním doby vzorkování ADC, pro opakovatelné signály, může být průběh křivky rozložen jednou
 skenován každým taktem procesoru nebo za 4 i 16 procesorových taktů.

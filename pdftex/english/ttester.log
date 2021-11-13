@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  13 MAY 2021 17:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  13 NOV 2021 11:50
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1514,96 +1514,96 @@ Overfull \hbox (6.706pt too wide) in paragraph at lines 311--316
 caler
  []
 
-[50] [51]
-<../PNG/AREF2_1V.png, id=995, 321.2pt x 234.8775pt>
+[50] [51] [52]
+<../PNG/AREF2_1V.png, id=999, 321.2pt x 234.8775pt>
 File: ../PNG/AREF2_1V.png Graphic file (type png)
 <use ../PNG/AREF2_1V.png>
-Package pdftex.def Info: ../PNG/AREF2_1V.png  used on input line 443.
+Package pdftex.def Info: ../PNG/AREF2_1V.png  used on input line 452.
 (pdftex.def)             Requested size: 243.27028pt x 177.89589pt.
-<../PNG/AREF2VCC.png, id=996, 321.2pt x 234.8775pt>
+<../PNG/AREF2VCC.png, id=1000, 321.2pt x 234.8775pt>
 File: ../PNG/AREF2VCC.png Graphic file (type png)
 <use ../PNG/AREF2VCC.png>
-Package pdftex.def Info: ../PNG/AREF2VCC.png  used on input line 450.
+Package pdftex.def Info: ../PNG/AREF2VCC.png  used on input line 459.
 (pdftex.def)             Requested size: 243.27028pt x 177.89589pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 441--454
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 450--463
 [][]   [] 
  []
 
-[52] [53 <../PNG/AREF2_1V.png> <../PNG/AREF2VCC.png>] [54]
-Overfull \hbox (10.85744pt too wide) in paragraph at lines 594--596
+[53 <../PNG/AREF2_1V.png> <../PNG/AREF2VCC.png>] [54]
+Overfull \hbox (10.85744pt too wide) in paragraph at lines 603--605
 []\OT1/cmr/m/n/12 select the port where [] can reach your mi-cro-con-troller (a
 t-mega). Ex-am-ple: PORT=usb 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 594--596
+Underfull \hbox (badness 10000) in paragraph at lines 603--605
 
  []
 
 [55] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 ) [56]
-Underfull \hbox (badness 10000) in paragraph at lines 725--749
+Underfull \hbox (badness 10000) in paragraph at lines 734--758
 
  []
 
-[57] [58]
-Underfull \hbox (badness 10000) in paragraph at lines 878--879
-
- []
-
-[59]
-Underfull \hbox (badness 10000) in paragraph at lines 880--887
+[57] [58] [59]
+Underfull \hbox (badness 10000) in paragraph at lines 887--888
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 933--939
+Underfull \hbox (badness 10000) in paragraph at lines 889--896
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 942--948
 
  []
 
 [60] [61]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 1050.
+(Font)              <5> on input line 1059.
  [62] [63]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
-111.
+120.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1111.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1120.
 
 
 [64]
 <../PNG/Notepad_open.png, id=1087, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_open.png Graphic file (type png)
 <use ../PNG/Notepad_open.png>
-Package pdftex.def Info: ../PNG/Notepad_open.png  used on input line 1172.
+Package pdftex.def Info: ../PNG/Notepad_open.png  used on input line 1181.
 (pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
 <../PNG/Notepad_save.png, id=1088, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_save.png Graphic file (type png)
 <use ../PNG/Notepad_save.png>
-Package pdftex.def Info: ../PNG/Notepad_save.png  used on input line 1178.
+Package pdftex.def Info: ../PNG/Notepad_save.png  used on input line 1187.
 (pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1170--1181
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1179--1190
 [][]   [] 
  []
 
 <../PNG/Notepad_make.png, id=1090, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_make.png Graphic file (type png)
 <use ../PNG/Notepad_make.png>
-Package pdftex.def Info: ../PNG/Notepad_make.png  used on input line 1191.
+Package pdftex.def Info: ../PNG/Notepad_make.png  used on input line 1200.
 (pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
 <../PNG/Notepad_program.png, id=1091, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_program.png Graphic file (type png)
 <use ../PNG/Notepad_program.png>
-Package pdftex.def Info: ../PNG/Notepad_program.png  used on input line 1197.
+Package pdftex.def Info: ../PNG/Notepad_program.png  used on input line 1206.
 (pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1189--1200
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1198--1209
 [][]   [] 
  []
 
@@ -2572,7 +2572,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
 Here is how much of TeX's memory you used:
  36607 strings out of 481239
  817878 string characters out of 5920377
- 1355116 words of memory out of 5000000
+ 1347957 words of memory out of 5000000
  50585 multiletter control sequences out of 15000+600000
  543854 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2595,7 +2595,7 @@ fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
 1200.pfb>
-Output written on ttester.pdf (141 pages, 4036451 bytes).
+Output written on ttester.pdf (141 pages, 4037264 bytes).
 PDF statistics:
  2804 PDF objects out of 2984 (max. 8388607)
  2183 compressed objects within 22 object streams

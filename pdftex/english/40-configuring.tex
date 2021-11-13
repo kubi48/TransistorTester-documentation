@@ -314,6 +314,15 @@ This option is only useful, if a external prescaler can be connected to the freq
 The shown frequencies and periodes of the measurements will respect the selected scaling factor.\\
 Example: CFLAGS += -DWITH\_FREQUENCY\_DIVIDER
 
+ \item[NO\_FREQUENCY\_SWITCH]
+With this switch you can deselect the support of the frequency input switch of the ATmega644/ATmega1284 circuit.
+The support of the LF and HF crystal measurement will not be supported with this option.\\
+Example: CFLAGS += -DNO\_FREQUENCY\_SWITCH=1
+
+\item[PWM\_SERVO] 
+will select a special PWM generation for testing servos instead of a general purpose PWM generation.\\
+Example: CFLAGS += -DPWM\_SERVO=1
+
   \item[WITH\_SamplingADC] With this option set, the tester make use of the sampling method of ADC in special cases.
 By shifting the sampling time of the ADC with increments of 1, 4 or 16 processor clock intervals for repeatable signals
 fast changes of voltages can be monitored.

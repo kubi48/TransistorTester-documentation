@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  13 MAY 2021 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  13 NOV 2021 11:57
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1621,31 +1621,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--93
 <../PNG/AREF2_1V.png, id=1030, 321.2pt x 234.8775pt>
 File: ../PNG/AREF2_1V.png Graphic file (type png)
 <use ../PNG/AREF2_1V.png>
-Package pdftex.def Info: ../PNG/AREF2_1V.png  used on input line 452.
+Package pdftex.def Info: ../PNG/AREF2_1V.png  used on input line 461.
 (pdftex.def)             Requested size: 243.27028pt x 177.89589pt.
 <../PNG/AREF2VCC.png, id=1031, 321.2pt x 234.8775pt>
 File: ../PNG/AREF2VCC.png Graphic file (type png)
 <use ../PNG/AREF2VCC.png>
-Package pdftex.def Info: ../PNG/AREF2VCC.png  used on input line 459.
+Package pdftex.def Info: ../PNG/AREF2VCC.png  used on input line 468.
 (pdftex.def)             Requested size: 243.27028pt x 177.89589pt.
 
-Overfull \hbox (7.8332pt too wide) in paragraph at lines 450--463
+Overfull \hbox (7.8332pt too wide) in paragraph at lines 459--472
 [][]   [] 
  []
 
-[57 <../PNG/AREF2_1V.png> <../PNG/AREF2VCC.png>] [58] [59]
-Overfull \hbox (26.58122pt too wide) in paragraph at lines 646--648
+[57 <../PNG/AREF2_1V.png> <../PNG/AREF2VCC.png>] [58] [59] [60]
+Overfull \hbox (26.58122pt too wide) in paragraph at lines 655--657
 []\T1/lmr/m/n/12 (-20) Sie brau-chen nur [] auf-ru-fen, wenn Sie kei-nen Quarz 
 be-nut-zen oder Sie müs-sen []
  []
 
-[60] [61]
-Underfull \hbox (badness 10000) in paragraph at lines 672--676
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 681--685
 
  []
 
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 7
-20.
+29.
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1654,57 +1654,57 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 727--734
+Underfull \hbox (badness 10000) in paragraph at lines 736--743
 
  []
 
 [62]
-Underfull \hbox (badness 10000) in paragraph at lines 759--781
+Underfull \hbox (badness 10000) in paragraph at lines 768--790
 
  []
 
 [63]
-Underfull \hbox (badness 10000) in paragraph at lines 806--822
+Underfull \hbox (badness 10000) in paragraph at lines 815--831
 
  []
 
 [64]
-Underfull \hbox (badness 10000) in paragraph at lines 914--915
+Underfull \hbox (badness 10000) in paragraph at lines 923--924
 
  []
 
 
-Overfull \hbox (22.82382pt too wide) in paragraph at lines 927--927
+Overfull \hbox (22.82382pt too wide) in paragraph at lines 936--936
 []\T1/lmtt/m/n/10 /dev/serial/by-id/usb-Pololu_Corporation_Pololu_USB_AVR_Progr
 ammer_v2.1_00227484-if01 -> ../../ttyACM0[] 
  []
 
 
-Overfull \hbox (22.56133pt too wide) in paragraph at lines 927--927
+Overfull \hbox (22.56133pt too wide) in paragraph at lines 936--936
 []\T1/lmtt/m/n/10 /dev/serial/by-id/usb-Pololu_Corporation_Pololu_USB_AVR_Progr
 ammer_v2.1_00227484-if03 -> ../../ttyACM1[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 931--939
+Underfull \hbox (badness 10000) in paragraph at lines 940--948
 
  []
 
 [65] [66] [67] [68]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 1149.
+(Font)              <5> on input line 1158.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1148--1155
+Underfull \hbox (badness 10000) in paragraph at lines 1157--1164
 
  []
 
 
-Overfull \hbox (34.73843pt too wide) in paragraph at lines 1161--1173
+Overfull \hbox (34.73843pt too wide) in paragraph at lines 1170--1182
 [][] 
  []
 
 [69]
-Overfull \hbox (23.8036pt too wide) in paragraph at lines 1200--1218
+Overfull \hbox (23.8036pt too wide) in paragraph at lines 1209--1227
 \T1/lmr/m/n/12 (-20) von Win-dows ein-ge-tra-gen ist. Nor-ma-ler-wei-se wer-den
  die Pro-gram-me in C:\Arduino\hardware\tools\avr\bin
  []
@@ -1713,30 +1713,30 @@ Overfull \hbox (23.8036pt too wide) in paragraph at lines 1200--1218
 <../PNG/Notepad_open.png, id=1126, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_open.png Graphic file (type png)
 <use ../PNG/Notepad_open.png>
-Package pdftex.def Info: ../PNG/Notepad_open.png  used on input line 1262.
+Package pdftex.def Info: ../PNG/Notepad_open.png  used on input line 1271.
 (pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
 <../PNG/Notepad_save.png, id=1127, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_save.png Graphic file (type png)
 <use ../PNG/Notepad_save.png>
-Package pdftex.def Info: ../PNG/Notepad_save.png  used on input line 1268.
+Package pdftex.def Info: ../PNG/Notepad_save.png  used on input line 1277.
 (pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
 
-Overfull \hbox (7.8332pt too wide) in paragraph at lines 1260--1271
+Overfull \hbox (7.8332pt too wide) in paragraph at lines 1269--1280
 [][]   [] 
  []
 
 <../PNG/Notepad_make.png, id=1129, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_make.png Graphic file (type png)
 <use ../PNG/Notepad_make.png>
-Package pdftex.def Info: ../PNG/Notepad_make.png  used on input line 1279.
+Package pdftex.def Info: ../PNG/Notepad_make.png  used on input line 1288.
 (pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
 <../PNG/Notepad_program.png, id=1130, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_program.png Graphic file (type png)
 <use ../PNG/Notepad_program.png>
-Package pdftex.def Info: ../PNG/Notepad_program.png  used on input line 1285.
+Package pdftex.def Info: ../PNG/Notepad_program.png  used on input line 1294.
 (pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
 
-Overfull \hbox (7.8332pt too wide) in paragraph at lines 1277--1288
+Overfull \hbox (7.8332pt too wide) in paragraph at lines 1286--1297
 [][]   [] 
  []
 
@@ -2722,7 +2722,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
 Here is how much of TeX's memory you used:
  38592 strings out of 481239
  853355 string characters out of 5920377
- 1412897 words of memory out of 5000000
+ 1412899 words of memory out of 5000000
  52295 multiletter control sequences out of 15000+600000
  631130 words of font info for 182 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2742,7 +2742,7 @@ onts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on ttester.pdf (149 pages, 4198109 bytes).
+Output written on ttester.pdf (149 pages, 4198399 bytes).
 PDF statistics:
  2857 PDF objects out of 2984 (max. 8388607)
  2227 compressed objects within 23 object streams

@@ -35,7 +35,7 @@
 \contentsline {subsubsection}{Pozn\IeC {\'a}mka p\IeC {\v r}ekladatele}{53}{section*.46}%
 \contentsline {subsection}{\numberline {4.2.1}Opera\IeC {\v c}n\IeC {\'\i } system Linux}{53}{subsection.4.2.1}%
 \contentsline {subsubsection}{Rady k pou\IeC {\v z}it\IeC {\'\i } s Linuxem}{53}{section*.47}%
-\contentsline {subsubsection}{Instalace programov\IeC {\'y}ch bal\IeC {\'\i }\IeC {\v c}k\IeC {\r u}}{53}{section*.48}%
+\contentsline {subsubsection}{Instalace programov\IeC {\'y}ch bal\IeC {\'\i }\IeC {\v c}k\IeC {\r u}}{54}{section*.48}%
 \contentsline {subsubsection}{St\IeC {\'a}hnut\IeC {\'\i } zdroj\IeC {\r u}}{54}{section*.49}%
 \contentsline {subsubsection}{Pou\IeC {\v z}\IeC {\'\i }v\IeC {\'a}n\IeC {\'\i } USB rozhran\IeC {\'\i }}{55}{section*.50}%
 \contentsline {subsubsection}{Skupinov\IeC {\'e} \IeC {\v c}lenstv\IeC {\'\i }}{57}{section*.51}%

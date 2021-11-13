@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  8 MAY 2021 21:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  13 NOV 2021 11:57
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -873,16 +873,7 @@ M)
 )
 LaTeX Info: Redefining \_ on input line 68.
 
-(./ttester.aux
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 2
-2.
- (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
-File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)<<t2a.cmap>> (./00-preface.aux) (./10-features.aux) (./20-hardware.aux)
-(./30-manual.aux) (./40-configuring.aux) (./50-measurement.aux)
-(./51-semicon.aux) (./52-resistors.aux) (./53-capacitors.aux)
-(./54-inductors.aux) (./55-selftest.aux) (./56-frequency.aux)
-(./60-generators.aux) (./70-errors.aux) (./80-special.aux) (./90-todo.aux))
+No file ttester.aux.
 \openout1 = `ttester.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
@@ -900,6 +891,11 @@ LaTeX Font Info:    ... okay on input line 72.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
 LaTeX Font Info:    ... okay on input line 72.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 72.
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 7
+2.
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
 LaTeX Font Info:    ... okay on input line 72.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
 LaTeX Font Info:    ... okay on input line 72.
@@ -908,7 +904,7 @@ LaTeX Font Info:    ... okay on input line 72.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
-)
+)<<t2a.cmap>>
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count334
@@ -985,59 +981,107 @@ Package pdftex.def Info: ../FIG/Wallpaper.pdf  used on input line 125.
 Non-PDF special ignored!
 <special> papersize=210mm,297mm
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../FIG/Wallpaper.pdf>]
-(./ttester.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 4.
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
+\tf@toc=\write5
+\openout5 = `ttester.toc'.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.53 ... } P-Channel-MOSFET}{75}{subsection.5.1.1}
-                                                  % [1
+l.127 \include{00-preface}
+                           [1
 
-])
-\tf@toc=\write5
-\openout5 = `ttester.toc'.
-
- [2]
+]
 \openout2 = `00-preface.aux'.
 
  (./00-preface.tex
+
+LaTeX Warning: Reference `sec:hiland' on page 2 undefined on input line 5.
+
+
+LaTeX Warning: Reference `sec:config-Prog' on page 2 undefined on input line 6.
+
+
+
+LaTeX Warning: Reference `sec:linux' on page 2 undefined on input line 7.
+
+
+LaTeX Warning: Citation `khk' on page 2 undefined on input line 15.
+
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [3
+)
+
+LaTeX Warning: Reference `sec:linux' on page 2 undefined on input line 31.
+
+
+LaTeX Warning: Citation `tt' on page 2 undefined on input line 35.
+
+[2
 
 ]
+
+LaTeX Warning: Citation `Frejek' on page 3 undefined on input line 51.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 55.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 55.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 55.
+
+LaTeX Warning: Citation `AVR121' on page 3 undefined on input line 61.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 51--66
 
  []
+
+
+LaTeX Warning: Reference `sec:features' on page 3 undefined on input line 70.
+
+
+LaTeX Warning: Reference `sec:todo' on page 3 undefined on input line 71.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 67--72
 
  []
 
-[4]) [5]
+[3]) [4]
 \openout2 = `10-features.aux'.
 
  (./10-features.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
-[6
+[5
 
 
 
 ] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [7] [8])
-[9]
+) [6]
+
+LaTeX Warning: Reference `sec:frequency_counter' on page 7 undefined on input l
+ine 100.
+
+
+LaTeX Warning: Reference `sec:frequency_counter' on page 7 undefined on input l
+ine 101.
+
+[7]) [8]
 \openout2 = `20-hardware.aux'.
 
  (./20-hardware.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
+
+LaTeX Warning: Reference `fig:ttester' on page 9 undefined on input line 6.
+
+
+LaTeX Warning: Citation `Frejek' on page 9 undefined on input line 6.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
@@ -1059,9 +1103,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--21
  []
 
 
+LaTeX Warning: Reference `sec:config' on page 9 undefined on input line 26.
+
+
+LaTeX Warning: Reference `sec:config' on page 9 undefined on input line 26.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 22--27
 
  []
+
+
+LaTeX Warning: Citation `Frejek' on page 9 undefined on input line 29.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 28--31
@@ -1077,21 +1130,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--35
 
 pdfTeX warning: pdflatex (file ../FIG/ttester.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<../FIG/ttester.pdf, id=534, 768.8725pt x 404.51125pt>
+<../FIG/ttester.pdf, id=434, 768.8725pt x 404.51125pt>
 File: ../FIG/ttester.pdf Graphic file (type pdf)
 <use ../FIG/ttester.pdf>
 Package pdftex.def Info: ../FIG/ttester.pdf  used on input line 41.
 (pdftex.def)             Requested size: 512.14963pt x 269.4657pt.
-[10
+[9
 
 
 
 ]
+
+LaTeX Warning: Reference `tab:display-con' on page 10 undefined on input line 4
+6.
+
+
 Overfull \hbox (13.35564pt too wide) in paragraph at lines 52--74
  [] 
  []
 
-[11 <../FIG/ttester.pdf>]
+
+LaTeX Warning: Reference `tab:grid-change' on page 10 undefined on input line 8
+0.
+
+[10 <../FIG/ttester.pdf>]
+
+LaTeX Warning: Reference `fig:relay_addon' on page 11 undefined on input line 1
+23.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 123--126
 
  []
@@ -1105,7 +1172,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--129
 
 pdfTeX warning: pdflatex (file ../FIG/relay_addon.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<../FIG/relay_addon.pdf, id=558, 241.90375pt x 128.48pt>
+<../FIG/relay_addon.pdf, id=454, 241.90375pt x 128.48pt>
 File: ../FIG/relay_addon.pdf Graphic file (type pdf)
 <use ../FIG/relay_addon.pdf>
 Package pdftex.def Info: ../FIG/relay_addon.pdf  used on input line 136.
@@ -1114,7 +1181,7 @@ Package pdftex.def Info: ../FIG/relay_addon.pdf  used on input line 136.
 
 pdfTeX warning: pdflatex (file ../FIG/diode_addon.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<../FIG/diode_addon.pdf, id=559, 232.87pt x 124.465pt>
+<../FIG/diode_addon.pdf, id=455, 232.87pt x 124.465pt>
 File: ../FIG/diode_addon.pdf Graphic file (type pdf)
 <use ../FIG/diode_addon.pdf>
 Package pdftex.def Info: ../FIG/diode_addon.pdf  used on input line 146.
@@ -1125,19 +1192,27 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 134--149
  []
 
 
+LaTeX Warning: Reference `fig:relay_um_addon' on page 11 undefined on input lin
+e 153.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/relay_um_addon.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/relay_um_addon.pdf, id=561, 270.00874pt x 169.63374pt>
+<../FIG/relay_um_addon.pdf, id=456, 270.00874pt x 169.63374pt>
 File: ../FIG/relay_um_addon.pdf Graphic file (type pdf)
 <use ../FIG/relay_um_addon.pdf>
 Package pdftex.def Info: ../FIG/relay_um_addon.pdf  used on input line 159.
 (pdftex.def)             Requested size: 297.04771pt x 186.62614pt.
-[12 <../FIG/relay_addon.pdf> <../FIG/diode_addon.pdf>]
+[11 <../FIG/relay_addon.pdf> <../FIG/diode_addon.pdf>]
+
+LaTeX Warning: Reference `fig:zener' on page 12 undefined on input line 171.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/zener_exp.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<../FIG/zener_exp.pdf, id=592, 593.21625pt x 161.60374pt>
+<../FIG/zener_exp.pdf, id=485, 593.21625pt x 161.60374pt>
 File: ../FIG/zener_exp.pdf Graphic file (type pdf)
 <use ../FIG/zener_exp.pdf>
 Package pdftex.def Info: ../FIG/zener_exp.pdf  used on input line 178.
@@ -1152,75 +1227,121 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--204
 
  []
 
-[13 <../FIG/relay_um_addon.pdf> <../FIG/zener_exp.pdf>]
+[12 <../FIG/relay_um_addon.pdf> <../FIG/zener_exp.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 208--213
 
  []
 
 
+LaTeX Warning: Reference `fig:FreqMes' on page 13 undefined on input line 214.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/Frequency_addon.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/Frequency_addon.pdf, id=613, 175.65625pt x 131.49126pt>
+<../FIG/Frequency_addon.pdf, id=507, 175.65625pt x 131.49126pt>
 File: ../FIG/Frequency_addon.pdf Graphic file (type pdf)
 <use ../FIG/Frequency_addon.pdf>
 Package pdftex.def Info: ../FIG/Frequency_addon.pdf  used on input line 222.
 (pdftex.def)             Requested size: 204.85672pt x 153.3626pt.
-<../FIG/rotary_extension.pdf, id=615, 126.4725pt x 195.73125pt>
+
+LaTeX Warning: Reference `fig:RotExt' on page 13 undefined on input line 231.
+
+<../FIG/rotary_extension.pdf, id=508, 126.4725pt x 195.73125pt>
 File: ../FIG/rotary_extension.pdf Graphic file (type pdf)
 <use ../FIG/rotary_extension.pdf>
 Package pdftex.def Info: ../FIG/rotary_extension.pdf  used on input line 239.
 (pdftex.def)             Requested size: 153.64644pt x 237.79124pt.
-[14 <../FIG/Frequency_addon.pdf>]
+[13 <../FIG/Frequency_addon.pdf>]
+
+LaTeX Warning: Reference `fig:RotEnc' on page 14 undefined on input line 247.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/rotary_encoder.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/rotary_encoder.pdf, id=631, 466.74374pt x 364.36125pt>
+<../FIG/rotary_encoder.pdf, id=522, 466.74374pt x 364.36125pt>
 File: ../FIG/rotary_encoder.pdf Graphic file (type pdf)
 <use ../FIG/rotary_encoder.pdf>
 Package pdftex.def Info: ../FIG/rotary_encoder.pdf  used on input line 258.
 (pdftex.def)             Requested size: 445.56767pt x 347.84248pt.
-[15 <../FIG/rotary_extension.pdf>]
+[14 <../FIG/rotary_extension.pdf>]
+
+LaTeX Warning: Reference `fig:RotBounce' on page 15 undefined on input line 274
+.
+
+
+LaTeX Warning: Reference `fig:RotBounce' on page 15 undefined on input line 285
+.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/rotary_bouncing.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/rotary_bouncing.pdf, id=648, 506.89375pt x 230.8625pt>
+<../FIG/rotary_bouncing.pdf, id=537, 506.89375pt x 230.8625pt>
 File: ../FIG/rotary_bouncing.pdf Graphic file (type pdf)
 <use ../FIG/rotary_bouncing.pdf>
 Package pdftex.def Info: ../FIG/rotary_bouncing.pdf  used on input line 296.
 (pdftex.def)             Requested size: 445.56767pt x 202.93768pt.
-[16 <../FIG/rotary_encoder.pdf>]
+[15 <../FIG/rotary_encoder.pdf>]
+
+LaTeX Warning: Reference `fig:ST7565lcd' on page 16 undefined on input line 322
+.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/ST7565lcd.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<../FIG/ST7565lcd.pdf, id=660, 485.815pt x 394.47375pt>
+<../FIG/ST7565lcd.pdf, id=548, 485.815pt x 394.47375pt>
 File: ../FIG/ST7565lcd.pdf Graphic file (type pdf)
 <use ../FIG/ST7565lcd.pdf>
 Package pdftex.def Info: ../FIG/ST7565lcd.pdf  used on input line 335.
 (pdftex.def)             Requested size: 416.88742pt x 338.50647pt.
-[17 <../FIG/rotary_bouncing.pdf>] [18 <../FIG/ST7565lcd.pdf>]
+[16 <../FIG/rotary_bouncing.pdf>]
+
+LaTeX Warning: Reference `tab:spi-processor' on page 17 undefined on input line
+ 344.
+
+
+LaTeX Warning: Reference `fig:ssd1306i2c' on page 17 undefined on input line 38
+2.
+
+[17 <../FIG/ST7565lcd.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/SSD1306_I2C.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<../FIG/SSD1306_I2C.pdf, id=690, 632.3625pt x 188.705pt>
+<../FIG/SSD1306_I2C.pdf, id=575, 632.3625pt x 188.705pt>
 File: ../FIG/SSD1306_I2C.pdf Graphic file (type pdf)
 <use ../FIG/SSD1306_I2C.pdf>
 Package pdftex.def Info: ../FIG/SSD1306_I2C.pdf  used on input line 400.
 (pdftex.def)             Requested size: 416.88742pt x 124.40746pt.
 
+LaTeX Warning: Reference `fig:ST7920lcd' on page 18 undefined on input line 413
+.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/ST7920interface.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ST7920interface.pdf, id=692, 537.00626pt x 367.3725pt>
+<../FIG/ST7920interface.pdf, id=576, 537.00626pt x 367.3725pt>
 File: ../FIG/ST7920interface.pdf Graphic file (type pdf)
 <use ../FIG/ST7920interface.pdf>
 Package pdftex.def Info: ../FIG/ST7920interface.pdf  used on input line 417.
 (pdftex.def)             Requested size: 357.47943pt x 244.5575pt.
-[19 <../FIG/SSD1306_I2C.pdf>]
+[18 <../FIG/SSD1306_I2C.pdf>]
+
+LaTeX Warning: Reference `tab:ser-processor' on page 19 undefined on input line
+ 430.
+
+
+LaTeX Warning: Reference `fig:NT7108lcd' on page 19 undefined on input line 460
+.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/ST7108serial164.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ST7108serial164.pdf, id=706, 405.515pt x 308.15125pt>
+<../FIG/ST7108serial164.pdf, id=589, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial164.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial164.pdf>
 Package pdftex.def Info: ../FIG/ST7108serial164.pdf  used on input line 465.
@@ -1229,7 +1350,7 @@ Package pdftex.def Info: ../FIG/ST7108serial164.pdf  used on input line 465.
 
 pdfTeX warning: pdflatex (file ../FIG/ST7108serial595.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ST7108serial595.pdf, id=707, 405.515pt x 308.15125pt>
+<../FIG/ST7108serial595.pdf, id=590, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial595.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial595.pdf>
 Package pdftex.def Info: ../FIG/ST7108serial595.pdf  used on input line 471.
@@ -1239,21 +1360,37 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 463--474
 [][]   [] 
  []
 
-[20 <../FIG/ST7920interface.pdf>] [21 <../FIG/ST7108serial164.pdf> <../FIG/ST71
-08serial595.pdf>]
-<../PNG/Color_ILI9163_ST7735.jpg, id=746, 185.0112pt x 225.0006pt>
+[19 <../FIG/ST7920interface.pdf>]
+
+LaTeX Warning: Reference `tab:NT7108types' on page 20 undefined on input line 4
+80.
+
+
+LaTeX Warning: Reference `tab:7108-processor' on page 20 undefined on input lin
+e 522.
+
+[20 <../FIG/ST7108serial164.pdf> <../FIG/ST7108serial595.pdf>]
+
+LaTeX Warning: Reference `fig:Color_both' on page 21 undefined on input line 59
+9.
+
+<../PNG/Color_ILI9163_ST7735.jpg, id=626, 185.0112pt x 225.0006pt>
 File: ../PNG/Color_ILI9163_ST7735.jpg Graphic file (type jpg)
 <use ../PNG/Color_ILI9163_ST7735.jpg>
 Package pdftex.def Info: ../PNG/Color_ILI9163_ST7735.jpg  used on input line 60
 6.
 (pdftex.def)             Requested size: 235.59225pt x 286.53033pt.
- [22]
-<../PNG/Color_PNP_ILI9163.jpg, id=754, 154.176pt x 158.994pt>
+[21]
+
+LaTeX Warning: Reference `fig:Color_PNP' on page 22 undefined on input line 620
+.
+
+<../PNG/Color_PNP_ILI9163.jpg, id=633, 154.176pt x 158.994pt>
 File: ../PNG/Color_PNP_ILI9163.jpg Graphic file (type jpg)
 <use ../PNG/Color_PNP_ILI9163.jpg>
 Package pdftex.def Info: ../PNG/Color_PNP_ILI9163.jpg  used on input line 625.
 (pdftex.def)             Requested size: 235.59225pt x 242.95918pt.
- [23 <../PNG/Color_ILI9163_ST7735.jpg> <../PNG/Color_PNP_ILI9163.jpg>]
+[22 <../PNG/Color_ILI9163_ST7735.jpg> <../PNG/Color_PNP_ILI9163.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 640--644
 
  []
@@ -1273,7 +1410,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 653--660
 
  []
 
-[24]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 686--690
 []\T2A/cmr/m/n/12 Отсутствие под-тя-ги-ва-ю-ще-го
  []
@@ -1293,7 +1430,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 719--720
 
  []
 
-[25]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 720--721
 
  []
@@ -1309,19 +1446,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 722--723
  []
 
 
+LaTeX Warning: Reference `fig:t644tester' on page 25 undefined on input line 73
+4.
+
+
+LaTeX Warning: Reference `fig:ttester' on page 25 undefined on input line 736.
+
+
+LaTeX Warning: Reference `fig:RotExt' on page 25 undefined on input line 738.
+
+
+LaTeX Warning: Reference `tab:mega644-display' on page 25 undefined on input li
+ne 746.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/t644tester.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/t644tester.pdf, id=775, 827.09pt x 964.60374pt>
+<../FIG/t644tester.pdf, id=650, 827.09pt x 964.60374pt>
 File: ../FIG/t644tester.pdf Graphic file (type pdf)
 <use ../FIG/t644tester.pdf>
 Package pdftex.def Info: ../FIG/t644tester.pdf  used on input line 755.
 (pdftex.def)             Requested size: 512.14963pt x 597.31221pt.
-[26] [27 <../FIG/t644tester.pdf>]
+[25] [26 <../FIG/t644tester.pdf>]
+
+LaTeX Warning: Reference `fig:NT7108lcd_644' on page 27 undefined on input line
+ 789.
+
+
+LaTeX Warning: Reference `tab:NT7108types' on page 27 undefined on input line 7
+91.
+
+
+LaTeX Warning: Reference `tab:NT7108types' on page 27 undefined on input line 7
+91.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/ST7108serial164_644.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ST7108serial164_644.pdf, id=798, 405.515pt x 308.15125pt>
+<../FIG/ST7108serial164_644.pdf, id=670, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial164_644.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial164_644.pdf>
 Package pdftex.def Info: ../FIG/ST7108serial164_644.pdf  used on input line 796
@@ -1331,7 +1495,7 @@ Package pdftex.def Info: ../FIG/ST7108serial164_644.pdf  used on input line 796
 
 pdfTeX warning: pdflatex (file ../FIG/ST7108serial595_644.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ST7108serial595_644.pdf, id=799, 405.515pt x 308.15125pt>
+<../FIG/ST7108serial595_644.pdf, id=671, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial595_644.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial595_644.pdf>
 Package pdftex.def Info: ../FIG/ST7108serial595_644.pdf  used on input line 802
@@ -1347,47 +1511,73 @@ Underfull \hbox (badness 1442) in paragraph at lines 809--809
 []\T2A/cmr/bx/n/17.28 Схема с ис-поль-зо-ва-ни-ем ATmega1280 или Arduino
  []
 
-[28 <../FIG/ST7108serial164_644.pdf> <../FIG/ST7108serial595_644.pdf>]
+
+LaTeX Warning: Reference `fig:t1280tester' on page 27 undefined on input line 8
+13.
+
+[27 <../FIG/ST7108serial164_644.pdf> <../FIG/ST7108serial595_644.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/t1280tester.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<../FIG/t1280tester.pdf, id=824, 571.13374pt x 489.83pt>
+<../FIG/t1280tester.pdf, id=695, 571.13374pt x 489.83pt>
 File: ../FIG/t1280tester.pdf Graphic file (type pdf)
 <use ../FIG/t1280tester.pdf>
 Package pdftex.def Info: ../FIG/t1280tester.pdf  used on input line 834.
 (pdftex.def)             Requested size: 512.14963pt x 439.24344pt.
+
+LaTeX Warning: Reference `tab:display-1280' on page 28 undefined on input line 
+840.
+
 
 Underfull \hbox (badness 1968) in paragraph at lines 839--841
 []\T2A/cmr/m/n/12 Конечно, Вы мо-же-те под-клю-чить все под-дер-жи-ва-е-мые дис
 -плеи и к ATmega1280 или
  []
 
-[29 <../FIG/t1280tester.pdf>]
+[28 <../FIG/t1280tester.pdf>]
+
+LaTeX Warning: Reference `sec:change_markus' on page 29 undefined on input line
+ 874.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 871--880
 
  []
 
-[30]
+[29]
+
+LaTeX Warning: Reference `fig:Fish8840' on page 30 undefined on input line 904.
+
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/Fish8840.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<../FIG/Fish8840.pdf, id=847, 397.485pt x 202.7575pt>
+<../FIG/Fish8840.pdf, id=715, 397.485pt x 202.7575pt>
 File: ../FIG/Fish8840.pdf Graphic file (type pdf)
 <use ../FIG/Fish8840.pdf>
 Package pdftex.def Info: ../FIG/Fish8840.pdf  used on input line 907.
 (pdftex.def)             Requested size: 358.50317pt x 182.87917pt.
-<../PNG/Fish8840patch.jpg, id=849, 143.81488pt x 107.80074pt>
+
+LaTeX Warning: Reference `fig:Fish8840patch' on page 30 undefined on input line
+ 916.
+
+<../PNG/Fish8840patch.jpg, id=716, 143.81488pt x 107.80074pt>
 File: ../PNG/Fish8840patch.jpg Graphic file (type jpg)
 <use ../PNG/Fish8840patch.jpg>
 Package pdftex.def Info: ../PNG/Fish8840patch.jpg  used on input line 920.
 (pdftex.def)             Requested size: 358.50317pt x 268.72969pt.
-[31 <../FIG/Fish8840.pdf>]
-<../PNG/Fish8840Adapt1.jpg, id=865, 185.62996pt x 139.22247pt>
+[30 <../FIG/Fish8840.pdf>]
+
+LaTeX Warning: Reference `fig:Fish8840Adapt' on page 31 undefined on input line
+ 930.
+
+<../PNG/Fish8840Adapt1.jpg, id=731, 185.62996pt x 139.22247pt>
 File: ../PNG/Fish8840Adapt1.jpg Graphic file (type jpg)
 <use ../PNG/Fish8840Adapt1.jpg>
 Package pdftex.def Info: ../PNG/Fish8840Adapt1.jpg  used on input line 937.
 (pdftex.def)             Requested size: 256.07481pt x 192.05922pt.
-<../PNG/Fish8840Adapt2.jpg, id=866, 185.62996pt x 139.22247pt>
+<../PNG/Fish8840Adapt2.jpg, id=732, 185.62996pt x 139.22247pt>
 File: ../PNG/Fish8840Adapt2.jpg Graphic file (type jpg)
 <use ../PNG/Fish8840Adapt2.jpg>
 Package pdftex.def Info: ../PNG/Fish8840Adapt2.jpg  used on input line 943.
@@ -1402,23 +1592,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 949--965
 
  []
 
-[32 <../PNG/Fish8840patch.jpg> <../PNG/Fish8840Adapt1.jpg> <../PNG/Fish8840Adap
+[31 <../PNG/Fish8840patch.jpg> <../PNG/Fish8840Adapt1.jpg> <../PNG/Fish8840Adap
 t2.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 966--970
 
  []
 
-<../PNG/WEI_M8.JPG, id=873, 185.0112pt x 138.7584pt>
+
+LaTeX Warning: Reference `fig:WeiM8' on page 32 undefined on input line 971.
+
+<../PNG/WEI_M8.JPG, id=739, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8.JPG>
 Package pdftex.def Info: ../PNG/WEI_M8.JPG  used on input line 977.
 (pdftex.def)             Requested size: 358.50317pt x 268.89243pt.
-<../PNG/WEI_M8_D.JPG, id=875, 185.0112pt x 138.7584pt>
+
+LaTeX Warning: Reference `fig:WeiM8int' on page 32 undefined on input line 982.
+
+
+<../PNG/WEI_M8_D.JPG, id=740, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8_D.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8_D.JPG>
 Package pdftex.def Info: ../PNG/WEI_M8_D.JPG  used on input line 988.
 (pdftex.def)             Requested size: 256.07481pt x 192.06693pt.
-<../PNG/WEI_M8_L.JPG, id=876, 185.0112pt x 138.7584pt>
+<../PNG/WEI_M8_L.JPG, id=741, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8_L.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8_L.JPG>
 Package pdftex.def Info: ../PNG/WEI_M8_L.JPG  used on input line 994.
@@ -1428,18 +1625,26 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 986--997
 [][]   [] 
  []
 
-[33 <../PNG/WEI_M8.JPG>]
-<../PNG/WEI_M8_modified.JPG, id=884, 185.0112pt x 138.7584pt>
+[32 <../PNG/WEI_M8.JPG>]
+
+LaTeX Warning: Reference `fig:WeiM8mod' on page 33 undefined on input line 1008
+.
+
+<../PNG/WEI_M8_modified.JPG, id=747, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8_modified.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8_modified.JPG>
 Package pdftex.def Info: ../PNG/WEI_M8_modified.JPG  used on input line 1014.
 (pdftex.def)             Requested size: 358.50317pt x 268.89243pt.
-<../PNG/T4_front.JPG, id=886, 770.88pt x 578.16pt>
+
+LaTeX Warning: Reference `fig:T4_front' on page 33 undefined on input line 1021
+.
+
+<../PNG/T4_front.JPG, id=748, 770.88pt x 578.16pt>
 File: ../PNG/T4_front.JPG Graphic file (type jpg)
 <use ../PNG/T4_front.JPG>
 Package pdftex.def Info: ../PNG/T4_front.JPG  used on input line 1033.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
-<../PNG/T4_front_noLCD.JPG, id=887, 770.88pt x 578.16pt>
+<../PNG/T4_front_noLCD.JPG, id=749, 770.88pt x 578.16pt>
 File: ../PNG/T4_front_noLCD.JPG Graphic file (type jpg)
 <use ../PNG/T4_front_noLCD.JPG>
 Package pdftex.def Info: ../PNG/T4_front_noLCD.JPG  used on input line 1039.
@@ -1449,13 +1654,17 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 1031--1042
 [][]   [] 
  []
 
-[34 <../PNG/WEI_M8_D.JPG> <../PNG/WEI_M8_L.JPG> <../PNG/WEI_M8_modified.JPG>]
-<../PNG/T4_back.JPG, id=894, 770.88pt x 578.16pt>
+[33 <../PNG/WEI_M8_D.JPG> <../PNG/WEI_M8_L.JPG> <../PNG/WEI_M8_modified.JPG>]
+
+LaTeX Warning: Reference `fig:T4_back' on page 34 undefined on input line 1046.
+
+
+<../PNG/T4_back.JPG, id=756, 770.88pt x 578.16pt>
 File: ../PNG/T4_back.JPG Graphic file (type jpg)
 <use ../PNG/T4_back.JPG>
 Package pdftex.def Info: ../PNG/T4_back.JPG  used on input line 1056.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
-<../PNG/T4_back_clips.JPG, id=895, 770.88pt x 578.16pt>
+<../PNG/T4_back_clips.JPG, id=757, 770.88pt x 578.16pt>
 File: ../PNG/T4_back_clips.JPG Graphic file (type jpg)
 <use ../PNG/T4_back_clips.JPG>
 Package pdftex.def Info: ../PNG/T4_back_clips.JPG  used on input line 1062.
@@ -1465,14 +1674,18 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 1054--1065
 [][]   [] 
  []
 
-[35 <../PNG/T4_front.JPG> <../PNG/T4_front_noLCD.JPG> <../PNG/T4_back.JPG> <../
+[34 <../PNG/T4_front.JPG> <../PNG/T4_front_noLCD.JPG> <../PNG/T4_back.JPG> <../
 PNG/T4_back_clips.JPG>]
-<../PNG/Kit_ST7565a.jpg, id=904, 770.88pt x 578.16pt>
+
+LaTeX Warning: Reference `fig:Kit_mono' on page 35 undefined on input line 1084
+.
+
+<../PNG/Kit_ST7565a.jpg, id=764, 770.88pt x 578.16pt>
 File: ../PNG/Kit_ST7565a.jpg Graphic file (type jpg)
 <use ../PNG/Kit_ST7565a.jpg>
 Package pdftex.def Info: ../PNG/Kit_ST7565a.jpg  used on input line 1090.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
-<../PNG/Kit_ST7565b.jpg, id=905, 770.88pt x 578.16pt>
+<../PNG/Kit_ST7565b.jpg, id=765, 770.88pt x 578.16pt>
 File: ../PNG/Kit_ST7565b.jpg Graphic file (type jpg)
 <use ../PNG/Kit_ST7565b.jpg>
 Package pdftex.def Info: ../PNG/Kit_ST7565b.jpg  used on input line 1095.
@@ -1482,12 +1695,16 @@ Overfull \hbox (2.61049pt too wide) in paragraph at lines 1088--1098
 [][] [] 
  []
 
-<../PNG/Kit_Color_a.jpg, id=907, 770.88pt x 578.16pt>
+
+LaTeX Warning: Reference `fig:Kit_color' on page 35 undefined on input line 110
+6.
+
+<../PNG/Kit_Color_a.jpg, id=766, 770.88pt x 578.16pt>
 File: ../PNG/Kit_Color_a.jpg Graphic file (type jpg)
 <use ../PNG/Kit_Color_a.jpg>
 Package pdftex.def Info: ../PNG/Kit_Color_a.jpg  used on input line 1111.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
-<../PNG/Kit_Color_b.jpg, id=908, 770.88pt x 578.16pt>
+<../PNG/Kit_Color_b.jpg, id=767, 770.88pt x 578.16pt>
 File: ../PNG/Kit_Color_b.jpg Graphic file (type jpg)
 <use ../PNG/Kit_Color_b.jpg>
 Package pdftex.def Info: ../PNG/Kit_Color_b.jpg  used on input line 1117.
@@ -1497,32 +1714,40 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 1109--1120
 [][]   [] 
  []
 
-[36 <../PNG/Kit_ST7565a.jpg> <../PNG/Kit_ST7565b.jpg>] [37 <../PNG/Kit_Color_a.
-jpg> <../PNG/Kit_Color_b.jpg>]
+[35 <../PNG/Kit_ST7565a.jpg> <../PNG/Kit_ST7565b.jpg>]
+
+LaTeX Warning: Reference `fig:t644tester' on page 36 undefined on input line 11
+47.
+
+
+LaTeX Warning: Reference `fig:t644tester' on page 36 undefined on input line 11
+47.
+
+[36 <../PNG/Kit_Color_a.jpg> <../PNG/Kit_Color_b.jpg>]
 
 pdfTeX warning: pdflatex (file ../FIG/Kabel_Hiland.pdf): PDF inclusion: found P
 DF version <1.6>, but at most version <1.5> allowed
-<../FIG/Kabel_Hiland.pdf, id=922, 361.80069pt x 369.99632pt>
+<../FIG/Kabel_Hiland.pdf, id=779, 361.80069pt x 369.99632pt>
 File: ../FIG/Kabel_Hiland.pdf Graphic file (type pdf)
 <use ../FIG/Kabel_Hiland.pdf>
 Package pdftex.def Info: ../FIG/Kabel_Hiland.pdf  used on input line 1172.
 (pdftex.def)             Requested size: 327.77544pt x 335.21236pt.
-<../PNG/Hi_u.jpg, id=923, 1453.43pt x 1680.2775pt>
+<../PNG/Hi_u.jpg, id=780, 1453.43pt x 1680.2775pt>
 File: ../PNG/Hi_u.jpg Graphic file (type jpg)
 <use ../PNG/Hi_u.jpg>
 Package pdftex.def Info: ../PNG/Hi_u.jpg  used on input line 1188.
 (pdftex.def)             Requested size: 210.62207pt x 243.49298pt.
-<../PNG/Hi_o.jpg, id=924, 1236.62pt x 1481.535pt>
+<../PNG/Hi_o.jpg, id=781, 1236.62pt x 1481.535pt>
 File: ../PNG/Hi_o.jpg Graphic file (type jpg)
 <use ../PNG/Hi_o.jpg>
 Package pdftex.def Info: ../PNG/Hi_o.jpg  used on input line 1193.
 (pdftex.def)             Requested size: 193.5917pt x 231.9188pt.
-[38 <../FIG/Kabel_Hiland.pdf, page is rotated 90 degrees>]
+[37 <../FIG/Kabel_Hiland.pdf, page is rotated 90 degrees>]
 Underfull \hbox (badness 10000) in paragraph at lines 1205--1206
 
  []
 
-) [39 <../PNG/Hi_u.jpg> <../PNG/Hi_o.jpg>]
+) [38 <../PNG/Hi_u.jpg> <../PNG/Hi_o.jpg>]
 \openout2 = `30-manual.aux'.
 
  (./30-manual.tex
@@ -1532,7 +1757,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--15
 
  []
 
-[40
+[39
 
 
 
@@ -1557,7 +1782,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--85
 
  []
 
-[41]
+[40]
 Underfull \hbox (badness 10000) in paragraph at lines 87--94
 
  []
@@ -1578,7 +1803,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--158
 
  []
 
-[42]
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 175--177
 
  []
@@ -1588,7 +1813,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--187
 
  []
 
-[43]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 189--195
 
  []
@@ -1623,7 +1848,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--238
 
  []
 
-[44]
+[43]
+
+LaTeX Warning: Reference `sec:selftest' on page 44 undefined on input line 239.
+
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
@@ -1659,7 +1889,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--277
 
  []
 
-[45]
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 278--281
 
  []
@@ -1675,11 +1905,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 293--297
  []
 
 
+LaTeX Warning: Reference `sec:measurement' on page 45 undefined on input line 3
+13.
+
+
+LaTeX Warning: Reference `sec:measurement' on page 45 undefined on input line 3
+13.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 316--322
 
  []
 
-[46]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 349--354
 
  []
@@ -1694,162 +1932,276 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--368
 
  []
 
-[47]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 369--373
 
  []
 
-[48]) [49]
+[47]) [48]
 \openout2 = `40-configuring.aux'.
 
  (./40-configuring.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
-[50
+
+LaTeX Warning: Citation `avrdude' on page 49 undefined on input line 8.
+
+
+LaTeX Warning: Citation `winavr1' on page 49 undefined on input line 9.
+
+
+LaTeX Warning: Citation `winavr2' on page 49 undefined on input line 9.
+
+[49
 
 
 
-] [51] [52] [53] [54] [55] [56] [57]
-Underfull \hbox (badness 1635) in paragraph at lines 460--468
+]
+
+LaTeX Warning: Reference `fig:RotExt' on page 50 undefined on input line 55.
+
+[50]
+
+LaTeX Warning: Reference `tab:cod-display' on page 51 undefined on input line 1
+20.
+
+
+LaTeX Warning: Reference `tab:cod-display' on page 51 undefined on input line 1
+34.
+
+[51] [52]
+
+LaTeX Warning: Reference `sec:hardware' on page 53 undefined on input line 259.
+
+
+
+LaTeX Warning: Reference `sec:hardware' on page 53 undefined on input line 260.
+
+
+[53]
+Underfull \hbox (badness 3323) in paragraph at lines 316--319
+[]\T2A/cmr/m/n/12 В этой оп-ции пе-ре-клю-че-ние ча-стот-но-го вхо-да схе-мы
+ []
+
+[54] [55] [56] [57]
+
+LaTeX Warning: Reference `pic:aref1' on page 58 undefined on input line 471.
+
+
+LaTeX Warning: Reference `pic:aref5' on page 58 undefined on input line 471.
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 469--477
 []\T2A/cmr/m/n/12 Сообщает про-грамм-но-му обес-пе-че-нию, что у Вас нет кон-де
 н-са-то-ра
  []
 
-[58]
-<../PNG/AREF2_1V.png, id=1041, 321.2pt x 234.8775pt>
+<../PNG/AREF2_1V.png, id=882, 321.2pt x 234.8775pt>
 File: ../PNG/AREF2_1V.png Graphic file (type png)
 <use ../PNG/AREF2_1V.png>
-Package pdftex.def Info: ../PNG/AREF2_1V.png  used on input line 472.
+Package pdftex.def Info: ../PNG/AREF2_1V.png  used on input line 481.
 (pdftex.def)             Requested size: 243.27028pt x 177.89589pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 473.
-<../PNG/AREF2VCC.png, id=1042, 321.2pt x 234.8775pt>
+(Font)              <10.95> on input line 482.
+<../PNG/AREF2VCC.png, id=883, 321.2pt x 234.8775pt>
 File: ../PNG/AREF2VCC.png Graphic file (type png)
 <use ../PNG/AREF2VCC.png>
-Package pdftex.def Info: ../PNG/AREF2VCC.png  used on input line 479.
+Package pdftex.def Info: ../PNG/AREF2VCC.png  used on input line 488.
 (pdftex.def)             Requested size: 243.27028pt x 177.89589pt.
 
-Overfull \hbox (7.83147pt too wide) in paragraph at lines 470--483
+Overfull \hbox (7.83147pt too wide) in paragraph at lines 479--492
 [][]   [] 
  []
 
-[59 <../PNG/AREF2_1V.png> <../PNG/AREF2VCC.png>] [60]
-Underfull \hbox (badness 10000) in paragraph at lines 613--614
+[58 <../PNG/AREF2_1V.png> <../PNG/AREF2VCC.png>] [59] [60]
+Underfull \hbox (badness 10000) in paragraph at lines 622--623
 
  []
 
-[61]
-Underfull \hbox (badness 1097) in paragraph at lines 648--660
+
+LaTeX Warning: Reference `sec:config' on page 61 undefined on input line 663.
+
+
+LaTeX Warning: Reference `sec:config' on page 61 undefined on input line 663.
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 657--669
 \T2A/cmr/m/n/12 пред-ком-пи-ли-ро-ва-ны с ис-ход-ни-ком. По-жа-луй-ста, смот-ри
 -те [] файл в ка-та-ло-ге
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 648--660
+Underfull \hbox (badness 10000) in paragraph at lines 657--669
 
  []
+
+[61]
+
+LaTeX Warning: Citation `avrdude' on page 62 undefined on input line 671.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--687
+
+ []
+
+
+LaTeX Warning: Citation `karlheinz1' on page 62 undefined on input line 697.
 
 [62]
-Underfull \hbox (badness 10000) in paragraph at lines 671--678
-
- []
-
-[63]
 LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 
-729.
+738.
  (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmss.fd
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-) [64]
-Underfull \hbox (badness 10000) in paragraph at lines 826--829
+) [63]
+
+LaTeX Warning: Reference `sec:Arbeitsumgebung' on page 64 undefined on input li
+ne 803.
+
+
+LaTeX Warning: Reference `sec:Arbeitsumgebung' on page 64 undefined on input li
+ne 804.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 835--838
 
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 826--829
+Underfull \hbox (badness 3312) in paragraph at lines 835--838
 \T2A/cmr/m/n/12 Чтобы ис-поль-зо-вать боль-шин-ство про-грам-ми-стов, ре-ко-мен
 -ду-ет-ся сле-ду-ю-щий текст на
  []
 
-
-Overfull \hbox (12.59723pt too wide) in paragraph at lines 843--843
+[64]
+Overfull \hbox (12.59723pt too wide) in paragraph at lines 852--852
 []\T2A/cmtt/m/n/12 SUBSYSTEM=="usb", ENV {DEVTYPE}=="usb_device", SYSFS {idVend
 or}=="16c0", MODE="0666",[] 
  []
 
-[65]
-Underfull \hbox (badness 2726) in paragraph at lines 867--874
+
+Underfull \hbox (badness 2726) in paragraph at lines 876--883
 \T2A/cmr/m/n/12 Чтоб со-хра-нил-ся ори-ги-нал, ре-ко-мен-ду-ет-ся со-зда-вать д
 уб-ли-ка-ты ис-точ-ни-ков с име-нем
  []
 
+[65]
+
+LaTeX Warning: Reference `sec:config' on page 66 undefined on input line 942.
+
+
+LaTeX Warning: Reference `sec:config-Prog' on page 66 undefined on input line 9
+42.
+
 [66]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 950.
+(Font)              <5> on input line 959.
 
-Underfull \hbox (badness 10000) in paragraph at lines 949--954
+Underfull \hbox (badness 10000) in paragraph at lines 958--963
 
  []
 
-[67] [68]
-<../PNG/Notepad_open.png, id=1120, 757.83125pt x 813.0375pt>
+[67]
+
+LaTeX Warning: Citation `winavr1' on page 68 undefined on input line 1006.
+
+
+LaTeX Warning: Citation `winavr2' on page 68 undefined on input line 1006.
+
+
+LaTeX Warning: Citation `winavr3' on page 68 undefined on input line 1007.
+
+<../PNG/Notepad_open.png, id=951, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_open.png Graphic file (type png)
 <use ../PNG/Notepad_open.png>
-Package pdftex.def Info: ../PNG/Notepad_open.png  used on input line 1002.
+Package pdftex.def Info: ../PNG/Notepad_open.png  used on input line 1011.
 (pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
-<../PNG/Notepad_save.png, id=1121, 757.83125pt x 813.0375pt>
+<../PNG/Notepad_save.png, id=952, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_save.png Graphic file (type png)
 <use ../PNG/Notepad_save.png>
-Package pdftex.def Info: ../PNG/Notepad_save.png  used on input line 1008.
+Package pdftex.def Info: ../PNG/Notepad_save.png  used on input line 1017.
 (pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
 
-Overfull \hbox (7.83147pt too wide) in paragraph at lines 1000--1011
+Overfull \hbox (7.83147pt too wide) in paragraph at lines 1009--1020
 [][]   [] 
  []
 
-<../PNG/Notepad_make.png, id=1123, 757.83125pt x 813.0375pt>
+
+LaTeX Warning: Reference `fig:WinAVR1' on page 68 undefined on input line 1023.
+
+
+<../PNG/Notepad_make.png, id=953, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_make.png Graphic file (type png)
 <use ../PNG/Notepad_make.png>
-Package pdftex.def Info: ../PNG/Notepad_make.png  used on input line 1020.
+Package pdftex.def Info: ../PNG/Notepad_make.png  used on input line 1029.
 (pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
-<../PNG/Notepad_program.png, id=1124, 757.83125pt x 813.0375pt>
+<../PNG/Notepad_program.png, id=954, 757.83125pt x 813.0375pt>
 File: ../PNG/Notepad_program.png Graphic file (type png)
 <use ../PNG/Notepad_program.png>
-Package pdftex.def Info: ../PNG/Notepad_program.png  used on input line 1026.
+Package pdftex.def Info: ../PNG/Notepad_program.png  used on input line 1035.
 (pdftex.def)             Requested size: 217.66515pt x 233.51695pt.
 
-Overfull \hbox (7.83147pt too wide) in paragraph at lines 1018--1029
+Overfull \hbox (7.83147pt too wide) in paragraph at lines 1027--1038
 [][]   [] 
  []
 
-[69 <../PNG/Notepad_open.png (PNG copy)> <../PNG/Notepad_save.png (PNG copy)> <
+
+LaTeX Warning: Reference `fig:WinAVR2' on page 68 undefined on input line 1041.
+
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 1041--1043
+[]\T2A/cmr/m/n/12 Следующий ри-су-нок [] по-ка-зы-ва-ет ме-ню Tools гра-фи-че-с
+ко-го ин-тер-фей-са поль-зо-ва-те-ля
+ []
+
+[68 <../PNG/Notepad_open.png (PNG copy)> <../PNG/Notepad_save.png (PNG copy)> <
 ../PNG/Notepad_make.png (PNG copy)> <../PNG/Notepad_program.png (PNG copy)>]
-[70]) [71]
+[69]
+
+LaTeX Warning: Reference `sec:selftest' on page 70 undefined on input line 1094
+.
+
+
+LaTeX Warning: Reference `fig:ttester' on page 70 undefined on input line 1098.
+
+
+) [70]
 \openout2 = `50-measurement.aux'.
 
  (./50-measurement.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 5.
 
+LaTeX Warning: Reference `fig:port' on page 71 undefined on input line 3.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/port.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.5> allowed
-<../FIG/port.pdf, id=1144, 224.84pt x 123.46124pt>
+<../FIG/port.pdf, id=969, 224.84pt x 123.46124pt>
 File: ../FIG/port.pdf Graphic file (type pdf)
 <use ../FIG/port.pdf>
 Package pdftex.def Info: ../FIG/port.pdf  used on input line 13.
 (pdftex.def)             Requested size: 409.72125pt x 225.00685pt.
 
+LaTeX Warning: Reference `fig:terminal' on page 71 undefined on input line 19.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/terminal.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<../FIG/terminal.pdf, id=1146, 224.84pt x 152.57pt>
+<../FIG/terminal.pdf, id=970, 224.84pt x 152.57pt>
 File: ../FIG/terminal.pdf Graphic file (type pdf)
 <use ../FIG/terminal.pdf>
 Package pdftex.def Info: ../FIG/terminal.pdf  used on input line 23.
 (pdftex.def)             Requested size: 409.72125pt x 278.0573pt.
-[72
+[71
 
 
 
- <../FIG/port.pdf>]) [73 <../FIG/terminal.pdf>]
+ <../FIG/port.pdf>]
+
+LaTeX Warning: Reference `tab:case' on page 72 undefined on input line 32.
+
+) [72 <../FIG/terminal.pdf>]
 \openout2 = `51-semicon.aux'.
 
  (./51-semicon.tex
@@ -1878,27 +2230,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--36
  []
 
 
+LaTeX Warning: Reference `fig:JFETcd' on page 73 undefined on input line 38.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/JFETcd.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
-<../FIG/JFETcd.pdf, id=1178, 406.51875pt x 309.155pt>
+<../FIG/JFETcd.pdf, id=999, 406.51875pt x 309.155pt>
 File: ../FIG/JFETcd.pdf Graphic file (type pdf)
 <use ../FIG/JFETcd.pdf>
 Package pdftex.def Info: ../FIG/JFETcd.pdf  used on input line 44.
 (pdftex.def)             Requested size: 409.72125pt x 311.60252pt.
-[74
+[73
 
 
 ]
 
+LaTeX Warning: Reference `sec:pnp' on page 74 undefined on input line 50.
+
+
+LaTeX Warning: Reference `sec:diode' on page 74 undefined on input line 51.
+
+
+LaTeX Warning: Reference `fig:pnpcc' on page 74 undefined on input line 56.
+
+
+
 pdfTeX warning: pdflatex (file ../FIG/PNPcc.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/PNPcc.pdf, id=1187, 406.51875pt x 309.155pt>
+<../FIG/PNPcc.pdf, id=1004, 406.51875pt x 309.155pt>
 File: ../FIG/PNPcc.pdf Graphic file (type pdf)
 <use ../FIG/PNPcc.pdf>
 Package pdftex.def Info: ../FIG/PNPcc.pdf  used on input line 66.
 (pdftex.def)             Requested size: 512.14963pt x 389.4996pt.
-[75 <../FIG/JFETcd.pdf>]
+[74 <../FIG/JFETcd.pdf>]
+
+LaTeX Warning: Reference `fig:pnpce' on page 75 undefined on input line 77.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 75--87
 
  []
@@ -1907,44 +2276,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--87
 
 pdfTeX warning: pdflatex (file ../FIG/PNPce.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/PNPce.pdf, id=1205, 406.51875pt x 309.155pt>
+<../FIG/PNPce.pdf, id=1021, 406.51875pt x 309.155pt>
 File: ../FIG/PNPce.pdf Graphic file (type pdf)
 <use ../FIG/PNPce.pdf>
 Package pdftex.def Info: ../FIG/PNPce.pdf  used on input line 97.
 (pdftex.def)             Requested size: 512.14963pt x 389.4996pt.
-[76 <../FIG/PNPcc.pdf>]
+[75 <../FIG/PNPcc.pdf>]
+
+LaTeX Warning: Reference `fig:npnce' on page 76 undefined on input line 112.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/NPNce.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/NPNce.pdf, id=1223, 406.51875pt x 309.155pt>
+<../FIG/NPNce.pdf, id=1038, 406.51875pt x 309.155pt>
 File: ../FIG/NPNce.pdf Graphic file (type pdf)
 <use ../FIG/NPNce.pdf>
 Package pdftex.def Info: ../FIG/NPNce.pdf  used on input line 122.
 (pdftex.def)             Requested size: 512.14963pt x 389.4996pt.
-[77 <../FIG/PNPce.pdf>]
-<../PNG/IRFU120gate.png, id=1241, 321.2pt x 234.8775pt>
+[76 <../FIG/PNPce.pdf>]
+
+LaTeX Warning: Reference `fig:eleven' on page 77 undefined on input line 139.
+
+<../PNG/IRFU120gate.png, id=1055, 321.2pt x 234.8775pt>
 File: ../PNG/IRFU120gate.png Graphic file (type png)
 <use ../PNG/IRFU120gate.png>
 Package pdftex.def Info: ../PNG/IRFU120gate.png  used on input line 143.
 (pdftex.def)             Requested size: 409.72125pt x 299.61716pt.
- [78 <../FIG/NPNce.pdf>]
+[77 <../FIG/NPNce.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/CheckSemi1.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/CheckSemi1.pdf, id=1259, 476.78125pt x 668.4975pt>
+<../FIG/CheckSemi1.pdf, id=1073, 476.78125pt x 668.4975pt>
 File: ../FIG/CheckSemi1.pdf Graphic file (type pdf)
 <use ../FIG/CheckSemi1.pdf>
 Package pdftex.def Info: ../FIG/CheckSemi1.pdf  used on input line 152.
 (pdftex.def)             Requested size: 486.54057pt x 682.21544pt.
-[79 <../PNG/IRFU120gate.png>] [80]
+[78 <../PNG/IRFU120gate.png>] [79]
 Overfull \vbox (0.57423pt too high) has occurred while \output is active []
 
 
-[81 <../FIG/CheckSemi1.pdf>]
+[80 <../FIG/CheckSemi1.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/CheckSemi2.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/CheckSemi2.pdf, id=1280, 503.8825pt x 711.65875pt>
+<../FIG/CheckSemi2.pdf, id=1096, 503.8825pt x 711.65875pt>
 File: ../FIG/CheckSemi2.pdf Graphic file (type pdf)
 <use ../FIG/CheckSemi2.pdf>
 Package pdftex.def Info: ../FIG/CheckSemi2.pdf  used on input line 159.
@@ -1953,24 +2329,43 @@ Package pdftex.def Info: ../FIG/CheckSemi2.pdf  used on input line 159.
 
 pdfTeX warning: pdflatex (file ../FIG/CheckSemi3.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/CheckSemi3.pdf, id=1281, 348.30125pt x 419.5675pt>
+<../FIG/CheckSemi3.pdf, id=1097, 348.30125pt x 419.5675pt>
 File: ../FIG/CheckSemi3.pdf Graphic file (type pdf)
 <use ../FIG/CheckSemi3.pdf>
 Package pdftex.def Info: ../FIG/CheckSemi3.pdf  used on input line 166.
 (pdftex.def)             Requested size: 486.54057pt x 586.12288pt.
-[82 <../FIG/CheckSemi2.pdf>] [83 <../FIG/CheckSemi3.pdf>] [84]
+[81 <../FIG/CheckSemi2.pdf>] [82 <../FIG/CheckSemi3.pdf>] [83]
+
+LaTeX Warning: Reference `tab:bipolar' on page 84 undefined on input line 303.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 298--313
 
  []
 
-[85]) [86] [87]
+
+LaTeX Warning: Reference `tab:germanium' on page 84 undefined on input line 314
+.
+
+[84]
+
+LaTeX Warning: Reference `tab:mos' on page 85 undefined on input line 351.
+
+) [85] [86]
 \openout2 = `52-resistors.aux'.
 
  (./52-resistors.tex
 
+LaTeX Warning: Reference `fig:RL1mes' on page 87 undefined on input line 11.
+
+
+LaTeX Warning: Reference `fig:RL2mes' on page 87 undefined on input line 11.
+
+
+
 pdfTeX warning: pdflatex (file ../FIG/ResistormessL1.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ResistormessL1.pdf, id=1331, 406.51875pt x 159.59625pt>
+<../FIG/ResistormessL1.pdf, id=1141, 406.51875pt x 159.59625pt>
 File: ../FIG/ResistormessL1.pdf Graphic file (type pdf)
 <use ../FIG/ResistormessL1.pdf>
 Package pdftex.def Info: ../FIG/ResistormessL1.pdf  used on input line 15.
@@ -1979,26 +2374,35 @@ Package pdftex.def Info: ../FIG/ResistormessL1.pdf  used on input line 15.
 
 pdfTeX warning: pdflatex (file ../FIG/ResistormessL2.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ResistormessL2.pdf, id=1332, 406.51875pt x 159.59625pt>
+<../FIG/ResistormessL2.pdf, id=1142, 406.51875pt x 159.59625pt>
 File: ../FIG/ResistormessL2.pdf Graphic file (type pdf)
 <use ../FIG/ResistormessL2.pdf>
 Package pdftex.def Info: ../FIG/ResistormessL2.pdf  used on input line 22.
 (pdftex.def)             Requested size: 409.72125pt x 160.85973pt.
-<../GNU/RLvtotRU.pdf, id=1334, 361.35pt x 216.81pt>
+
+LaTeX Warning: Reference `fig:RLvtot' on page 87 undefined on input line 38.
+
+<../GNU/RLvtotRU.pdf, id=1143, 361.35pt x 216.81pt>
 File: ../GNU/RLvtotRU.pdf Graphic file (type pdf)
 <use ../GNU/RLvtotRU.pdf>
 Package pdftex.def Info: ../GNU/RLvtotRU.pdf  used on input line 41.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[88
+[87
 
 
  <../FIG/ResistormessL1.pdf> <../FIG/ResistormessL2.pdf>]
-<../GNU/RLvlowRU.pdf, id=1365, 361.35pt x 216.81pt>
+
+LaTeX Warning: Reference `fig:RLvlow' on page 88 undefined on input line 45.
+
+
+LaTeX Warning: Reference `fig:RLvhigh' on page 88 undefined on input line 50.
+
+<../GNU/RLvlowRU.pdf, id=1172, 361.35pt x 216.81pt>
 File: ../GNU/RLvlowRU.pdf Graphic file (type pdf)
 <use ../GNU/RLvlowRU.pdf>
 Package pdftex.def Info: ../GNU/RLvlowRU.pdf  used on input line 72.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/RLvhighRU.pdf, id=1366, 361.35pt x 216.81pt>
+<../GNU/RLvhighRU.pdf, id=1173, 361.35pt x 216.81pt>
 File: ../GNU/RLvhighRU.pdf Graphic file (type pdf)
 <use ../GNU/RLvhighRU.pdf>
 Package pdftex.def Info: ../GNU/RLvhighRU.pdf  used on input line 79.
@@ -2008,11 +2412,21 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 70--83
 [][]   [] 
  []
 
-[89 <../GNU/RLvtotRU.pdf>]
+[88 <../GNU/RLvtotRU.pdf>]
+
+LaTeX Warning: Reference `fig:RH1mes' on page 89 undefined on input line 88.
+
+
+LaTeX Warning: Reference `fig:RH2mes' on page 89 undefined on input line 88.
+
+
+LaTeX Warning: Reference `fig:RHv' on page 89 undefined on input line 94.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/ResistormessH1.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ResistormessH1.pdf, id=1391, 406.51875pt x 159.59625pt>
+<../FIG/ResistormessH1.pdf, id=1194, 406.51875pt x 159.59625pt>
 File: ../FIG/ResistormessH1.pdf Graphic file (type pdf)
 <use ../FIG/ResistormessH1.pdf>
 Package pdftex.def Info: ../FIG/ResistormessH1.pdf  used on input line 105.
@@ -2021,39 +2435,50 @@ Package pdftex.def Info: ../FIG/ResistormessH1.pdf  used on input line 105.
 
 pdfTeX warning: pdflatex (file ../FIG/ResistormessH2.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/ResistormessH2.pdf, id=1392, 406.51875pt x 159.59625pt>
+<../FIG/ResistormessH2.pdf, id=1195, 406.51875pt x 159.59625pt>
 File: ../FIG/ResistormessH2.pdf Graphic file (type pdf)
 <use ../FIG/ResistormessH2.pdf>
 Package pdftex.def Info: ../FIG/ResistormessH2.pdf  used on input line 112.
 (pdftex.def)             Requested size: 409.72125pt x 160.85973pt.
-[90 <../GNU/RLvlowRU.pdf> <../GNU/RLvhighRU.pdf
+[89 <../GNU/RLvlowRU.pdf> <../GNU/RLvhighRU.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/RLvhighRU.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
 > <../FIG/ResistormessH1.pdf>]
-<../GNU/RHvRU.pdf, id=1442, 361.35pt x 216.81pt>
+<../GNU/RHvRU.pdf, id=1243, 361.35pt x 216.81pt>
 File: ../GNU/RHvRU.pdf Graphic file (type pdf)
 <use ../GNU/RHvRU.pdf>
 Package pdftex.def Info: ../GNU/RHvRU.pdf  used on input line 119.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
 
-Underfull \hbox (badness 1092) in paragraph at lines 125--137
-\T2A/cmr/m/n/12 . До-пол-ни-тель-но при-ве-де-ны ре-зуль-та-ты с ори-ги-наль-ны
-м про-грамм-ным обес-пе-че-ни-ем от
- []
 
-<../GNU/Mega8resRU.pdf, id=1447, 361.35pt x 216.81pt>
+LaTeX Warning: Reference `fig:mega8res' on page 90 undefined on input line 125.
+
+
+
+LaTeX Warning: Reference `fig:mega8Ares' on page 90 undefined on input line 127
+.
+
+
+LaTeX Warning: Reference `fig:mega8Lres' on page 90 undefined on input line 127
+.
+
+
+LaTeX Warning: Reference `fig:mega168res' on page 90 undefined on input line 12
+8.
+
+<../GNU/Mega8resRU.pdf, id=1244, 361.35pt x 216.81pt>
 File: ../GNU/Mega8resRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega8resRU.pdf>
 Package pdftex.def Info: ../GNU/Mega8resRU.pdf  used on input line 140.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[91 <../FIG/ResistormessH2.pdf> <../GNU/RHvRU.pdf>]
-<../GNU/Mega8AresRU.pdf, id=1478, 361.35pt x 216.81pt>
+[90 <../FIG/ResistormessH2.pdf> <../GNU/RHvRU.pdf>]
+<../GNU/Mega8AresRU.pdf, id=1275, 361.35pt x 216.81pt>
 File: ../GNU/Mega8AresRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega8AresRU.pdf>
 Package pdftex.def Info: ../GNU/Mega8AresRU.pdf  used on input line 148.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega8LresRU.pdf, id=1479, 361.35pt x 216.81pt>
+<../GNU/Mega8LresRU.pdf, id=1276, 361.35pt x 216.81pt>
 File: ../GNU/Mega8LresRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega8LresRU.pdf>
 Package pdftex.def Info: ../GNU/Mega8LresRU.pdf  used on input line 155.
@@ -2063,12 +2488,12 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 146--159
 [][]   [] 
  []
 
-<../GNU/Mega168resRU.pdf, id=1480, 361.35pt x 216.81pt>
+<../GNU/Mega168resRU.pdf, id=1277, 361.35pt x 216.81pt>
 File: ../GNU/Mega168resRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega168resRU.pdf>
 Package pdftex.def Info: ../GNU/Mega168resRU.pdf  used on input line 165.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[92 <../GNU/Mega8resRU.pdf> <../GNU/Mega8AresRU.pdf
+[91 <../GNU/Mega8resRU.pdf> <../GNU/Mega8AresRU.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega8AresRU.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -2077,12 +2502,32 @@ pdfTeX warning: pdflatex (file ../GNU/Mega8AresRU.pdf): PDF inclusion: multiple
 pdfTeX warning: pdflatex (file ../GNU/Mega8LresRU.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-<../GNU/m168res_allRU.pdf, id=1533, 361.35pt x 216.81pt>
+
+LaTeX Warning: Reference `fig:m168res_all' on page 92 undefined on input line 1
+70.
+
+
+LaTeX Warning: Reference `fig:m168ares_all' on page 92 undefined on input line 
+172.
+
+
+LaTeX Warning: Reference `fig:m168pres_all' on page 92 undefined on input line 
+173.
+
+
+LaTeX Warning: Reference `fig:m328res_all' on page 92 undefined on input line 1
+74.
+
+
+LaTeX Warning: Reference `fig:m328pres_all' on page 92 undefined on input line 
+174.
+
+<../GNU/m168res_allRU.pdf, id=1327, 361.35pt x 216.81pt>
 File: ../GNU/m168res_allRU.pdf Graphic file (type pdf)
 <use ../GNU/m168res_allRU.pdf>
 Package pdftex.def Info: ../GNU/m168res_allRU.pdf  used on input line 188.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/m168ares_allRU.pdf, id=1534, 361.35pt x 216.81pt>
+<../GNU/m168ares_allRU.pdf, id=1328, 361.35pt x 216.81pt>
 File: ../GNU/m168ares_allRU.pdf Graphic file (type pdf)
 <use ../GNU/m168ares_allRU.pdf>
 Package pdftex.def Info: ../GNU/m168ares_allRU.pdf  used on input line 195.
@@ -2092,18 +2537,18 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 186--199
 [][]   [] 
  []
 
-[93 <../GNU/Mega168resRU.pdf>]
-<../GNU/m168pres_allRU.pdf, id=1558, 361.35pt x 216.81pt>
+[92 <../GNU/Mega168resRU.pdf>]
+<../GNU/m168pres_allRU.pdf, id=1350, 361.35pt x 216.81pt>
 File: ../GNU/m168pres_allRU.pdf Graphic file (type pdf)
 <use ../GNU/m168pres_allRU.pdf>
 Package pdftex.def Info: ../GNU/m168pres_allRU.pdf  used on input line 204.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-<../GNU/m328res_allRU.pdf, id=1559, 361.35pt x 216.81pt>
+<../GNU/m328res_allRU.pdf, id=1351, 361.35pt x 216.81pt>
 File: ../GNU/m328res_allRU.pdf Graphic file (type pdf)
 <use ../GNU/m328res_allRU.pdf>
 Package pdftex.def Info: ../GNU/m328res_allRU.pdf  used on input line 212.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/m328pres_allRU.pdf, id=1560, 361.35pt x 216.81pt>
+<../GNU/m328pres_allRU.pdf, id=1352, 361.35pt x 216.81pt>
 File: ../GNU/m328pres_allRU.pdf Graphic file (type pdf)
 <use ../GNU/m328pres_allRU.pdf>
 Package pdftex.def Info: ../GNU/m328pres_allRU.pdf  used on input line 219.
@@ -2113,7 +2558,7 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 210--223
 [][]   [] 
  []
 
-) [94 <../GNU/m168res_allRU.pdf> <../GNU/m168ares_allRU.pdf
+) [93 <../GNU/m168res_allRU.pdf> <../GNU/m168ares_allRU.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/m168ares_allRU.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
@@ -2134,31 +2579,52 @@ ple pdfs with page group included in a single page
 
  (./53-capacitors.tex
 
+LaTeX Warning: Citation `ATmega8' on page 94 undefined on input line 17.
+
+
+LaTeX Warning: Reference `fig:bigcap' on page 94 undefined on input line 30.
+
+
+
 pdfTeX warning: pdflatex (file ../FIG/Bigcap.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
-<../FIG/Bigcap.pdf, id=1638, 406.51875pt x 527.9725pt>
+<../FIG/Bigcap.pdf, id=1431, 406.51875pt x 527.9725pt>
 File: ../FIG/Bigcap.pdf Graphic file (type pdf)
 <use ../FIG/Bigcap.pdf>
 Package pdftex.def Info: ../FIG/Bigcap.pdf  used on input line 37.
 (pdftex.def)             Requested size: 476.2954pt x 618.61958pt.
-[95
+[94
 
 
-] [96 <../FIG/Bigcap.pdf>]
+]
+
+LaTeX Warning: Reference `fig:CapResidV' on page 95 undefined on input line 54.
+
+
+[95 <../FIG/Bigcap.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/Cap_residV.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/Cap_residV.pdf, id=1662, 406.51875pt x 155.58125pt>
+<../FIG/Cap_residV.pdf, id=1452, 406.51875pt x 155.58125pt>
 File: ../FIG/Cap_residV.pdf Graphic file (type pdf)
 <use ../FIG/Cap_residV.pdf>
 Package pdftex.def Info: ../FIG/Cap_residV.pdf  used on input line 61.
 (pdftex.def)             Requested size: 409.72125pt x 156.81294pt.
-<../PNG/charge_229uF.png, id=1666, 321.2pt x 234.8775pt>
+
+LaTeX Warning: Reference `pic:c229' on page 96 undefined on input line 66.
+
+
+LaTeX Warning: Reference `pic:c5mF' on page 96 undefined on input line 68.
+
+
+LaTeX Warning: Reference `pic:c15mF' on page 96 undefined on input line 70.
+
+<../PNG/charge_229uF.png, id=1453, 321.2pt x 234.8775pt>
 File: ../PNG/charge_229uF.png Graphic file (type png)
 <use ../PNG/charge_229uF.png>
 Package pdftex.def Info: ../PNG/charge_229uF.png  used on input line 75.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/charge_5mF.png, id=1667, 321.2pt x 234.8775pt>
+<../PNG/charge_5mF.png, id=1454, 321.2pt x 234.8775pt>
 File: ../PNG/charge_5mF.png Graphic file (type png)
 <use ../PNG/charge_5mF.png>
 Package pdftex.def Info: ../PNG/charge_5mF.png  used on input line 82.
@@ -2168,81 +2634,140 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 73--86
 [][]   [] 
  []
 
-<../PNG/charge_15mF.png, id=1668, 321.2pt x 234.8775pt>
+<../PNG/charge_15mF.png, id=1455, 321.2pt x 234.8775pt>
 File: ../PNG/charge_15mF.png Graphic file (type png)
 <use ../PNG/charge_15mF.png>
 Package pdftex.def Info: ../PNG/charge_15mF.png  used on input line 91.
 (pdftex.def)             Requested size: 409.72125pt x 299.61716pt.
-[97 <../FIG/Cap_residV.pdf> <../PNG/charge_229uF.png> <../PNG/charge_5mF.png>]
-[98 <../PNG/charge_15mF.png>]
+[96 <../FIG/Cap_residV.pdf> <../PNG/charge_229uF.png> <../PNG/charge_5mF.png>]
+
+LaTeX Warning: Reference `fig:comparat' on page 97 undefined on input line 110.
+
+
+[97 <../PNG/charge_15mF.png>]
+
+LaTeX Warning: Citation `ATmega8' on page 98 undefined on input line 133.
+
+
+LaTeX Warning: Citation `ATmega168' on page 98 undefined on input line 133.
+
+
+LaTeX Warning: Reference `pic:c22uF' on page 98 undefined on input line 134.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/Comparat.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<../FIG/Comparat.pdf, id=1700, 375.4025pt x 188.705pt>
+<../FIG/Comparat.pdf, id=1483, 375.4025pt x 188.705pt>
 File: ../FIG/Comparat.pdf Graphic file (type pdf)
 <use ../FIG/Comparat.pdf>
 Package pdftex.def Info: ../FIG/Comparat.pdf  used on input line 140.
 (pdftex.def)             Requested size: 409.72125pt x 205.96942pt.
-<../PNG/charge_22uF.png, id=1701, 321.2pt x 234.8775pt>
+<../PNG/charge_22uF.png, id=1484, 321.2pt x 234.8775pt>
 File: ../PNG/charge_22uF.png Graphic file (type png)
 <use ../PNG/charge_22uF.png>
 Package pdftex.def Info: ../PNG/charge_22uF.png  used on input line 147.
 (pdftex.def)             Requested size: 409.72125pt x 299.61716pt.
-[99 <../FIG/Comparat.pdf>] [100 <../PNG/charge_22uF.png>]
+[98 <../FIG/Comparat.pdf>]
+
+LaTeX Warning: Reference `sec:bigcap' on page 99 undefined on input line 157.
+
+
+LaTeX Warning: Reference `fig:sampling' on page 99 undefined on input line 176.
+
+
+[99 <../PNG/charge_22uF.png>]
 
 pdfTeX warning: pdflatex (file ../FIG/sampling.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<../FIG/sampling.pdf, id=1727, 595.22375pt x 72.27pt>
+<../FIG/sampling.pdf, id=1507, 595.22375pt x 72.27pt>
 File: ../FIG/sampling.pdf Graphic file (type pdf)
 <use ../FIG/sampling.pdf>
 Package pdftex.def Info: ../FIG/sampling.pdf  used on input line 183.
 (pdftex.def)             Requested size: 512.14963pt x 62.18625pt.
 
+LaTeX Warning: Citation `ESR' on page 100 undefined on input line 223.
+
+
+LaTeX Warning: Reference `fig:Cap_equiv' on page 100 undefined on input line 22
+4.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/Cap_equiv.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<../FIG/Cap_equiv.pdf, id=1730, 94.3525pt x 58.2175pt>
+<../FIG/Cap_equiv.pdf, id=1508, 94.3525pt x 58.2175pt>
 File: ../FIG/Cap_equiv.pdf Graphic file (type pdf)
 <use ../FIG/Cap_equiv.pdf>
 Package pdftex.def Info: ../FIG/Cap_equiv.pdf  used on input line 230.
 (pdftex.def)             Requested size: 409.72125pt x 252.82918pt.
-[101 <../FIG/sampling.pdf>]
-<../GNU/Cap_FC_dataRU.pdf, id=1745, 361.35pt x 216.81pt>
+[100 <../FIG/sampling.pdf>]
+
+LaTeX Warning: Reference `fig:Cap_FC_data' on page 101 undefined on input line 
+237.
+
+
+LaTeX Warning: Reference `fig:Cap_FR_data' on page 101 undefined on input line 
+237.
+
+
+LaTeX Warning: Reference `fig:Cap_FC_FR_data' on page 101 undefined on input li
+ne 240.
+
+<../GNU/Cap_FC_dataRU.pdf, id=1519, 361.35pt x 216.81pt>
 File: ../GNU/Cap_FC_dataRU.pdf Graphic file (type pdf)
 <use ../GNU/Cap_FC_dataRU.pdf>
 Package pdftex.def Info: ../GNU/Cap_FC_dataRU.pdf  used on input line 247.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
-<../GNU/Cap_FR_dataRU.pdf, id=1746, 361.35pt x 216.81pt>
+<../GNU/Cap_FR_dataRU.pdf, id=1520, 361.35pt x 216.81pt>
 File: ../GNU/Cap_FR_dataRU.pdf Graphic file (type pdf)
 <use ../GNU/Cap_FR_dataRU.pdf>
 Package pdftex.def Info: ../GNU/Cap_FR_dataRU.pdf  used on input line 254.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
- [102 <../FIG/Cap_equiv.pdf> <../GNU/Cap_FC_dataRU.pdf>]
-<../GNU/Cap_FC_FR_dataRU.pdf, id=1775, 361.35pt x 216.81pt>
+[101 <../FIG/Cap_equiv.pdf> <../GNU/Cap_FC_dataRU.pdf>]
+<../GNU/Cap_FC_FR_dataRU.pdf, id=1547, 361.35pt x 216.81pt>
 File: ../GNU/Cap_FC_FR_dataRU.pdf Graphic file (type pdf)
 <use ../GNU/Cap_FC_FR_dataRU.pdf>
 Package pdftex.def Info: ../GNU/Cap_FC_FR_dataRU.pdf  used on input line 261.
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
- [103 <../GNU/Cap_FR_dataRU.pdf> <../GNU/Cap_FC_FR_dataRU.pdf
+
+
+LaTeX Warning: Reference `tab:capESR' on page 102 undefined on input line 278.
+
+
+LaTeX Warning: Reference `sec:ESR2' on page 102 undefined on input line 281.
+
+[102 <../GNU/Cap_FR_dataRU.pdf> <../GNU/Cap_FC_FR_dataRU.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Cap_FC_FR_dataRU.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
 >]
 
+LaTeX Warning: Reference `fig:Cap_esr' on page 103 undefined on input line 329.
+
+
+
+
 pdfTeX warning: pdflatex (file ../FIG/Cap_esr.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<../FIG/Cap_esr.pdf, id=1813, 406.51875pt x 360.34625pt>
+<../FIG/Cap_esr.pdf, id=1584, 406.51875pt x 360.34625pt>
 File: ../FIG/Cap_esr.pdf Graphic file (type pdf)
 <use ../FIG/Cap_esr.pdf>
 Package pdftex.def Info: ../FIG/Cap_esr.pdf  used on input line 333.
 (pdftex.def)             Requested size: 425.08511pt x 376.81866pt.
-[104]
-<../PNG/ESR_4uF.png, id=1821, 321.2pt x 234.8775pt>
+[103]
+
+LaTeX Warning: Reference `pic:esr4' on page 104 undefined on input line 356.
+
+
+LaTeX Warning: Reference `pic:esr2' on page 104 undefined on input line 363.
+
+<../PNG/ESR_4uF.png, id=1590, 321.2pt x 234.8775pt>
 File: ../PNG/ESR_4uF.png Graphic file (type png)
 <use ../PNG/ESR_4uF.png>
 Package pdftex.def Info: ../PNG/ESR_4uF.png  used on input line 370.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/ESR4uF6R8.png, id=1822, 321.2pt x 234.8775pt>
+<../PNG/ESR4uF6R8.png, id=1591, 321.2pt x 234.8775pt>
 File: ../PNG/ESR4uF6R8.png Graphic file (type png)
 <use ../PNG/ESR4uF6R8.png>
 Package pdftex.def Info: ../PNG/ESR4uF6R8.png  used on input line 376.
@@ -2252,13 +2777,13 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 368--379
 [][]   [] 
  []
 
-[105 <../FIG/Cap_esr.pdf>]
-<../PNG/ESR_2uF_pin2GND.png, id=1841, 321.2pt x 234.8775pt>
+[104 <../FIG/Cap_esr.pdf>]
+<../PNG/ESR_2uF_pin2GND.png, id=1608, 321.2pt x 234.8775pt>
 File: ../PNG/ESR_2uF_pin2GND.png Graphic file (type png)
 <use ../PNG/ESR_2uF_pin2GND.png>
 Package pdftex.def Info: ../PNG/ESR_2uF_pin2GND.png  used on input line 387.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/ESR_2uF_pin2pin.png, id=1842, 321.2pt x 234.8775pt>
+<../PNG/ESR_2uF_pin2pin.png, id=1609, 321.2pt x 234.8775pt>
 File: ../PNG/ESR_2uF_pin2pin.png Graphic file (type png)
 <use ../PNG/ESR_2uF_pin2pin.png>
 Package pdftex.def Info: ../PNG/ESR_2uF_pin2pin.png  used on input line 393.
@@ -2268,18 +2793,29 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 385--396
 [][]   [] 
  []
 
-[106 <../PNG/ESR_4uF.png> <../PNG/ESR4uF6R8.png> <../PNG/ESR_2uF_pin2GND.png> <
+[105 <../PNG/ESR_4uF.png> <../PNG/ESR4uF6R8.png> <../PNG/ESR_2uF_pin2GND.png> <
 ../PNG/ESR_2uF_pin2pin.png>]
-<../GNU/CesrRU.pdf, id=1854, 361.35pt x 216.81pt>
+
+LaTeX Warning: Reference `fig:Cesr' on page 106 undefined on input line 421.
+
+<../GNU/CesrRU.pdf, id=1622, 361.35pt x 216.81pt>
 File: ../GNU/CesrRU.pdf Graphic file (type pdf)
 <use ../GNU/CesrRU.pdf>
 Package pdftex.def Info: ../GNU/CesrRU.pdf  used on input line 432.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
- [107 <../GNU/CesrRU.pdf>]
+
+LaTeX Warning: Reference `fig:Cap_esr2' on page 106 undefined on input line 441
+.
+
+
+LaTeX Warning: Reference `fig:Cap_esr2_timing' on page 106 undefined on input l
+ine 445.
+
+[106 <../GNU/CesrRU.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/Cap_esr2_timing.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<../FIG/Cap_esr2_timing.pdf, id=1881, 683.55376pt x 142.5325pt>
+<../FIG/Cap_esr2_timing.pdf, id=1647, 683.55376pt x 142.5325pt>
 File: ../FIG/Cap_esr2_timing.pdf Graphic file (type pdf)
 <use ../FIG/Cap_esr2_timing.pdf>
 Package pdftex.def Info: ../FIG/Cap_esr2_timing.pdf  used on input line 454.
@@ -2288,18 +2824,23 @@ Package pdftex.def Info: ../FIG/Cap_esr2_timing.pdf  used on input line 454.
 
 pdfTeX warning: pdflatex (file ../FIG/Cap_esr2.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<../FIG/Cap_esr2.pdf, id=1882, 406.51875pt x 664.4825pt>
+<../FIG/Cap_esr2.pdf, id=1648, 406.51875pt x 664.4825pt>
 File: ../FIG/Cap_esr2.pdf Graphic file (type pdf)
 <use ../FIG/Cap_esr2.pdf>
 Package pdftex.def Info: ../FIG/Cap_esr2.pdf  used on input line 461.
 (pdftex.def)             Requested size: 425.08511pt x 694.85782pt.
-[108 <../FIG/Cap_esr2_timing.pdf>] [109 <../FIG/Cap_esr2.pdf>]
-<../PNG/NewEsr10uF0R0.png, id=1910, 321.2pt x 234.8775pt>
+[107 <../FIG/Cap_esr2_timing.pdf>]
+
+LaTeX Warning: Reference `pic:NewEsr10' on page 108 undefined on input line 482
+.
+
+[108 <../FIG/Cap_esr2.pdf>]
+<../PNG/NewEsr10uF0R0.png, id=1676, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr10uF0R0.png Graphic file (type png)
 <use ../PNG/NewEsr10uF0R0.png>
 Package pdftex.def Info: ../PNG/NewEsr10uF0R0.png  used on input line 492.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/NewEsr10uF2R7.png, id=1911, 321.2pt x 234.8775pt>
+<../PNG/NewEsr10uF2R7.png, id=1677, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr10uF2R7.png Graphic file (type png)
 <use ../PNG/NewEsr10uF2R7.png>
 Package pdftex.def Info: ../PNG/NewEsr10uF2R7.png  used on input line 498.
@@ -2309,12 +2850,16 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 490--501
 [][]   [] 
  []
 
-<../PNG/NewEsr2u2F0R0.png, id=1913, 321.2pt x 234.8775pt>
+
+LaTeX Warning: Reference `pic:NewEsr2' on page 109 undefined on input line 507.
+
+
+<../PNG/NewEsr2u2F0R0.png, id=1678, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr2u2F0R0.png Graphic file (type png)
 <use ../PNG/NewEsr2u2F0R0.png>
 Package pdftex.def Info: ../PNG/NewEsr2u2F0R0.png  used on input line 513.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/NewEsr2u2F2R7.png, id=1914, 321.2pt x 234.8775pt>
+<../PNG/NewEsr2u2F2R7.png, id=1679, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr2u2F2R7.png Graphic file (type png)
 <use ../PNG/NewEsr2u2F2R7.png>
 Package pdftex.def Info: ../PNG/NewEsr2u2F2R7.png  used on input line 519.
@@ -2324,13 +2869,21 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 511--522
 [][]   [] 
  []
 
-[110 <../PNG/NewEsr10uF0R0.png> <../PNG/NewEsr10uF2R7.png>]
-<../PNG/NewEsr2u2F0R0zoom.png, id=1925, 321.2pt x 234.8775pt>
+[109 <../PNG/NewEsr10uF0R0.png> <../PNG/NewEsr10uF2R7.png>]
+
+LaTeX Warning: Reference `pic:NewEsr2' on page 110 undefined on input line 526.
+
+
+
+LaTeX Warning: Reference `pic:NewEsr2zoom' on page 110 undefined on input line 
+527.
+
+<../PNG/NewEsr2u2F0R0zoom.png, id=1687, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr2u2F0R0zoom.png Graphic file (type png)
 <use ../PNG/NewEsr2u2F0R0zoom.png>
 Package pdftex.def Info: ../PNG/NewEsr2u2F0R0zoom.png  used on input line 533.
 (pdftex.def)             Requested size: 256.07481pt x 187.26073pt.
-<../PNG/NewEsr2u2F2R7zoom.png, id=1926, 321.2pt x 234.8775pt>
+<../PNG/NewEsr2u2F2R7zoom.png, id=1688, 321.2pt x 234.8775pt>
 File: ../PNG/NewEsr2u2F2R7zoom.png Graphic file (type png)
 <use ../PNG/NewEsr2u2F2R7zoom.png>
 Package pdftex.def Info: ../PNG/NewEsr2u2F2R7zoom.png  used on input line 539.
@@ -2340,34 +2893,53 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 531--542
 [][]   [] 
  []
 
-<../GNU/Cesr2RU.pdf, id=1929, 361.35pt x 216.81pt>
+
+LaTeX Warning: Reference `fig:Cesr2' on page 110 undefined on input line 547.
+
+
+LaTeX Warning: Reference `fig:Cesr' on page 110 undefined on input line 548.
+
+<../GNU/Cesr2RU.pdf, id=1689, 361.35pt x 216.81pt>
 File: ../GNU/Cesr2RU.pdf Graphic file (type pdf)
 <use ../GNU/Cesr2RU.pdf>
 Package pdftex.def Info: ../GNU/Cesr2RU.pdf  used on input line 553.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[111 <../PNG/NewEsr2u2F0R0.png> <../PNG/NewEsr2u2F2R7.png> <../PNG/NewEsr2u2F0R
+[110 <../PNG/NewEsr2u2F0R0.png> <../PNG/NewEsr2u2F2R7.png> <../PNG/NewEsr2u2F0R
 0zoom.png> <../PNG/NewEsr2u2F2R7zoom.png>]
-<../GNU/Elco_esrRU.pdf, id=1941, 361.35pt x 216.81pt>
+
+LaTeX Warning: Reference `fig:ElcoESR' on page 111 undefined on input line 558.
+
+
+<../GNU/Elco_esrRU.pdf, id=1700, 361.35pt x 216.81pt>
 File: ../GNU/Elco_esrRU.pdf Graphic file (type pdf)
 <use ../GNU/Elco_esrRU.pdf>
 Package pdftex.def Info: ../GNU/Elco_esrRU.pdf  used on input line 566.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
- [112 <../GNU/Cesr2RU.pdf> <../GNU/Elco_esrRU.pdf
+
+LaTeX Warning: Reference `fig:res_esr' on page 111 undefined on input line 573.
+
+
+[111 <../GNU/Cesr2RU.pdf> <../GNU/Elco_esrRU.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Elco_esrRU.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
 >]
-<../GNU/res_esrRU.pdf, id=1977, 361.35pt x 216.81pt>
+<../GNU/res_esrRU.pdf, id=1736, 361.35pt x 216.81pt>
 File: ../GNU/res_esrRU.pdf Graphic file (type pdf)
 <use ../GNU/res_esrRU.pdf>
 Package pdftex.def Info: ../GNU/res_esrRU.pdf  used on input line 577.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
-<../GNU/Cesr_22nRU.pdf, id=1979, 361.35pt x 216.81pt>
+
+
+LaTeX Warning: Reference `pic:Cesr_22n' on page 112 undefined on input line 596
+.
+
+<../GNU/Cesr_22nRU.pdf, id=1737, 361.35pt x 216.81pt>
 File: ../GNU/Cesr_22nRU.pdf Graphic file (type pdf)
 <use ../GNU/Cesr_22nRU.pdf>
 Package pdftex.def Info: ../GNU/Cesr_22nRU.pdf  used on input line 607.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Cesr_22n_lowRU.pdf, id=1980, 361.35pt x 216.81pt>
+<../GNU/Cesr_22n_lowRU.pdf, id=1738, 361.35pt x 216.81pt>
 File: ../GNU/Cesr_22n_lowRU.pdf Graphic file (type pdf)
 <use ../GNU/Cesr_22n_lowRU.pdf>
 Package pdftex.def Info: ../GNU/Cesr_22n_lowRU.pdf  used on input line 613.
@@ -2377,23 +2949,43 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 605--616
 [][]   [] 
  []
 
-[113 <../GNU/res_esrRU.pdf>] [114 <../GNU/Cesr_22nRU.pdf> <../GNU/Cesr_22n_lowR
+[112 <../GNU/res_esrRU.pdf>] [113 <../GNU/Cesr_22nRU.pdf> <../GNU/Cesr_22n_lowR
 U.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Cesr_22n_lowRU.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->] [115]
-<../GNU/Mega8capRU.pdf, id=2046, 361.35pt x 216.81pt>
+>]
+
+LaTeX Warning: Reference `sec:ESR2' on page 114 undefined on input line 705.
+
+[114]
+
+LaTeX Warning: Reference `fig:mega8cap' on page 115 undefined on input line 713
+.
+
+
+LaTeX Warning: Reference `fig:mega8Acap' on page 115 undefined on input line 71
+5.
+
+
+LaTeX Warning: Reference `fig:mega8Lcap' on page 115 undefined on input line 71
+5.
+
+
+LaTeX Warning: Reference `fig:mega168cap' on page 115 undefined on input line 7
+16.
+
+<../GNU/Mega8capRU.pdf, id=1799, 361.35pt x 216.81pt>
 File: ../GNU/Mega8capRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega8capRU.pdf>
 Package pdftex.def Info: ../GNU/Mega8capRU.pdf  used on input line 724.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-<../GNU/Mega8AcapRU.pdf, id=2047, 361.35pt x 216.81pt>
+<../GNU/Mega8AcapRU.pdf, id=1800, 361.35pt x 216.81pt>
 File: ../GNU/Mega8AcapRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega8AcapRU.pdf>
 Package pdftex.def Info: ../GNU/Mega8AcapRU.pdf  used on input line 732.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega8LcapRU.pdf, id=2048, 361.35pt x 216.81pt>
+<../GNU/Mega8LcapRU.pdf, id=1801, 361.35pt x 216.81pt>
 File: ../GNU/Mega8LcapRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega8LcapRU.pdf>
 Package pdftex.def Info: ../GNU/Mega8LcapRU.pdf  used on input line 739.
@@ -2403,12 +2995,12 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 730--743
 [][]   [] 
  []
 
-<../GNU/Mega168capRU.pdf, id=2049, 361.35pt x 216.81pt>
+<../GNU/Mega168capRU.pdf, id=1802, 361.35pt x 216.81pt>
 File: ../GNU/Mega168capRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega168capRU.pdf>
 Package pdftex.def Info: ../GNU/Mega168capRU.pdf  used on input line 748.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
-[116 <../GNU/Mega8capRU.pdf> <../GNU/Mega8AcapRU.pdf
+[115 <../GNU/Mega8capRU.pdf> <../GNU/Mega8AcapRU.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega8AcapRU.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -2417,18 +3009,42 @@ pdfTeX warning: pdflatex (file ../GNU/Mega8AcapRU.pdf): PDF inclusion: multiple
 pdfTeX warning: pdflatex (file ../GNU/Mega8LcapRU.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-<../GNU/capcompareRU.pdf, id=2101, 361.35pt x 216.81pt>
+
+LaTeX Warning: Reference `fig:capcompare' on page 116 undefined on input line 7
+53.
+
+<../GNU/capcompareRU.pdf, id=1852, 361.35pt x 216.81pt>
 File: ../GNU/capcompareRU.pdf Graphic file (type pdf)
 <use ../GNU/capcompareRU.pdf>
 Package pdftex.def Info: ../GNU/capcompareRU.pdf  used on input line 763.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
- [117 <../GNU/Mega168capRU.pdf>]
-<../GNU/Mega168allRU.pdf, id=2128, 361.35pt x 216.81pt>
+[116 <../GNU/Mega168capRU.pdf>]
+
+LaTeX Warning: Reference `fig:mega168all' on page 117 undefined on input line 7
+69.
+
+
+LaTeX Warning: Reference `fig:mega168Aall' on page 117 undefined on input line 
+770.
+
+
+LaTeX Warning: Reference `fig:mega168PAall' on page 117 undefined on input line
+ 770.
+
+
+LaTeX Warning: Reference `fig:mega328all' on page 117 undefined on input line 7
+71.
+
+
+LaTeX Warning: Reference `fig:mega328Pall' on page 117 undefined on input line 
+772.
+
+<../GNU/Mega168allRU.pdf, id=1873, 361.35pt x 216.81pt>
 File: ../GNU/Mega168allRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega168allRU.pdf>
 Package pdftex.def Info: ../GNU/Mega168allRU.pdf  used on input line 781.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega168AallRU.pdf, id=2129, 361.35pt x 216.81pt>
+<../GNU/Mega168AallRU.pdf, id=1874, 361.35pt x 216.81pt>
 File: ../GNU/Mega168AallRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega168AallRU.pdf>
 Package pdftex.def Info: ../GNU/Mega168AallRU.pdf  used on input line 788.
@@ -2438,12 +3054,12 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 779--792
 [][]   [] 
  []
 
-<../GNU/Mega168PAallRU.pdf, id=2130, 361.35pt x 216.81pt>
+<../GNU/Mega168PAallRU.pdf, id=1875, 361.35pt x 216.81pt>
 File: ../GNU/Mega168PAallRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega168PAallRU.pdf>
 Package pdftex.def Info: ../GNU/Mega168PAallRU.pdf  used on input line 797.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[118 <../GNU/capcompareRU.pdf> <../GNU/Mega168allRU.pdf
+[117 <../GNU/capcompareRU.pdf> <../GNU/Mega168allRU.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega168allRU.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -2452,12 +3068,12 @@ e pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../GNU/Mega168AallRU.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<../GNU/Mega328allRU.pdf, id=2181, 361.35pt x 216.81pt>
+<../GNU/Mega328allRU.pdf, id=1926, 361.35pt x 216.81pt>
 File: ../GNU/Mega328allRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega328allRU.pdf>
 Package pdftex.def Info: ../GNU/Mega328allRU.pdf  used on input line 805.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega328PallRU.pdf, id=2182, 361.35pt x 216.81pt>
+<../GNU/Mega328PallRU.pdf, id=1927, 361.35pt x 216.81pt>
 File: ../GNU/Mega328PallRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega328PallRU.pdf>
 Package pdftex.def Info: ../GNU/Mega328PallRU.pdf  used on input line 812.
@@ -2467,7 +3083,11 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 803--816
 [][]   [] 
  []
 
-[119 <../GNU/Mega168PAallRU.pdf> <../GNU/Mega328allRU.pdf
+
+LaTeX Warning: Reference `fig:mega168optcap' on page 118 undefined on input lin
+e 828.
+
+[118 <../GNU/Mega168PAallRU.pdf> <../GNU/Mega328allRU.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega328allRU.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -2476,24 +3096,74 @@ e pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../GNU/Mega328PallRU.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<../GNU/Mega168cap_optRU.pdf, id=2232, 361.35pt x 216.81pt>
+<../GNU/Mega168cap_optRU.pdf, id=1977, 361.35pt x 216.81pt>
 File: ../GNU/Mega168cap_optRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega168cap_optRU.pdf>
 Package pdftex.def Info: ../GNU/Mega168cap_optRU.pdf  used on input line 839.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
- [120 <../GNU/Mega168cap_optRU.pdf>]
-<../GNU/ComparatorAdjustRU.pdf, id=2262, 361.35pt x 216.81pt>
+
+
+LaTeX Warning: Reference `fig:mega168all' on page 119 undefined on input line 8
+51.
+
+
+LaTeX Warning: Reference `fig:mega168Aall' on page 119 undefined on input line 
+851.
+
+
+LaTeX Warning: Reference `fig:mega168PAall' on page 119 undefined on input line
+ 851.
+
+
+LaTeX Warning: Reference `fig:CompAdjust' on page 119 undefined on input line 8
+54.
+
+
+LaTeX Warning: Reference `fig:mega168all' on page 119 undefined on input line 8
+60.
+
+
+LaTeX Warning: Reference `fig:mega168Aall' on page 119 undefined on input line 
+860.
+
+
+LaTeX Warning: Reference `fig:mega168PAall' on page 119 undefined on input line
+ 861.
+
+[119 <../GNU/Mega168cap_optRU.pdf>]
+<../GNU/ComparatorAdjustRU.pdf, id=1998, 361.35pt x 216.81pt>
 File: ../GNU/ComparatorAdjustRU.pdf Graphic file (type pdf)
 <use ../GNU/ComparatorAdjustRU.pdf>
 Package pdftex.def Info: ../GNU/ComparatorAdjustRU.pdf  used on input line 873.
 
 (pdftex.def)             Requested size: 409.72125pt x 245.83604pt.
-<../GNU/Mega168calRU.pdf, id=2268, 361.35pt x 216.81pt>
+
+
+LaTeX Warning: Reference `fig:mega168cal' on page 120 undefined on input line 8
+78.
+
+
+LaTeX Warning: Reference `fig:mega168Acal' on page 120 undefined on input line 
+878.
+
+
+LaTeX Warning: Reference `fig:mega168PAcal' on page 120 undefined on input line
+ 878.
+
+
+LaTeX Warning: Reference `fig:mega328cal' on page 120 undefined on input line 8
+78.
+
+
+LaTeX Warning: Reference `fig:mega328Pcal' on page 120 undefined on input line 
+879.
+
+<../GNU/Mega168calRU.pdf, id=1999, 361.35pt x 216.81pt>
 File: ../GNU/Mega168calRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega168calRU.pdf>
 Package pdftex.def Info: ../GNU/Mega168calRU.pdf  used on input line 888.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega168AcalRU.pdf, id=2269, 361.35pt x 216.81pt>
+<../GNU/Mega168AcalRU.pdf, id=2000, 361.35pt x 216.81pt>
 File: ../GNU/Mega168AcalRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega168AcalRU.pdf>
 Package pdftex.def Info: ../GNU/Mega168AcalRU.pdf  used on input line 895.
@@ -2503,12 +3173,12 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 886--899
 [][]   [] 
  []
 
-<../GNU/Mega168PAcalRU.pdf, id=2270, 361.35pt x 216.81pt>
+<../GNU/Mega168PAcalRU.pdf, id=2001, 361.35pt x 216.81pt>
 File: ../GNU/Mega168PAcalRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega168PAcalRU.pdf>
 Package pdftex.def Info: ../GNU/Mega168PAcalRU.pdf  used on input line 904.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[121 <../GNU/ComparatorAdjustRU.pdf> <../GNU/Mega168calRU.pdf
+[120 <../GNU/ComparatorAdjustRU.pdf> <../GNU/Mega168calRU.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega168calRU.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -2517,12 +3187,12 @@ e pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../GNU/Mega168AcalRU.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<../GNU/Mega328calRU.pdf, id=2321, 361.35pt x 216.81pt>
+<../GNU/Mega328calRU.pdf, id=2052, 361.35pt x 216.81pt>
 File: ../GNU/Mega328calRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega328calRU.pdf>
 Package pdftex.def Info: ../GNU/Mega328calRU.pdf  used on input line 912.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/Mega328PcalRU.pdf, id=2322, 361.35pt x 216.81pt>
+<../GNU/Mega328PcalRU.pdf, id=2053, 361.35pt x 216.81pt>
 File: ../GNU/Mega328PcalRU.pdf Graphic file (type pdf)
 <use ../GNU/Mega328PcalRU.pdf>
 Package pdftex.def Info: ../GNU/Mega328PcalRU.pdf  used on input line 919.
@@ -2532,12 +3202,16 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 910--923
 [][]   [] 
  []
 
-<../GNU/MegaAutoRU.pdf, id=2324, 361.35pt x 216.81pt>
+
+LaTeX Warning: Reference `fig:MegaAuto' on page 121 undefined on input line 926
+.
+
+<../GNU/MegaAutoRU.pdf, id=2054, 361.35pt x 216.81pt>
 File: ../GNU/MegaAutoRU.pdf Graphic file (type pdf)
 <use ../GNU/MegaAutoRU.pdf>
 Package pdftex.def Info: ../GNU/MegaAutoRU.pdf  used on input line 936.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-[122 <../GNU/Mega168PAcalRU.pdf> <../GNU/Mega328calRU.pdf
+[121 <../GNU/Mega168PAcalRU.pdf> <../GNU/Mega328calRU.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega328calRU.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -2546,12 +3220,16 @@ e pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../GNU/Mega328PcalRU.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<../GNU/Mega1284RU.pdf, id=2374, 361.35pt x 216.81pt>
+
+LaTeX Warning: Reference `fig:Mega1284' on page 122 undefined on input line 942
+.
+
+<../GNU/Mega1284RU.pdf, id=2105, 361.35pt x 216.81pt>
 File: ../GNU/Mega1284RU.pdf Graphic file (type pdf)
 <use ../GNU/Mega1284RU.pdf>
 Package pdftex.def Info: ../GNU/Mega1284RU.pdf  used on input line 948.
 (pdftex.def)             Requested size: 476.2954pt x 285.77985pt.
-) [123 <../GNU/MegaAutoRU.pdf> <../GNU/Mega1284RU.pdf
+) [122 <../GNU/MegaAutoRU.pdf> <../GNU/Mega1284RU.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/Mega1284RU.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
@@ -2560,81 +3238,149 @@ pdfs with page group included in a single page
 
  (./54-inductors.tex
 
+LaTeX Warning: Reference `fig:Inductance' on page 123 undefined on input line 2
+0.
+
+
+
 pdfTeX warning: pdflatex (file ../FIG/Inductance.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/Inductance.pdf, id=2411, 375.4025pt x 222.8325pt>
+<../FIG/Inductance.pdf, id=2141, 375.4025pt x 222.8325pt>
 File: ../FIG/Inductance.pdf Graphic file (type pdf)
 <use ../FIG/Inductance.pdf>
 Package pdftex.def Info: ../FIG/Inductance.pdf  used on input line 23.
 (pdftex.def)             Requested size: 409.72125pt x 243.21922pt.
-[124
+[123
 
 
  <../FIG/Inductance.pdf>]
-<../GNU/induct328pRU.pdf, id=2427, 361.35pt x 216.81pt>
+
+LaTeX Warning: Reference `fig:Induct328p' on page 124 undefined on input line 5
+2.
+
+<../GNU/induct328pRU.pdf, id=2156, 361.35pt x 216.81pt>
 File: ../GNU/induct328pRU.pdf Graphic file (type pdf)
 <use ../GNU/induct328pRU.pdf>
 Package pdftex.def Info: ../GNU/induct328pRU.pdf  used on input line 58.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
- [125 <../GNU/induct328pRU.pdf>] [126]
-<../GNU/W12compareRU.pdf, id=2456, 361.35pt x 216.81pt>
+[124 <../GNU/induct328pRU.pdf>]
+
+LaTeX Warning: Reference `tab:littleInductors' on page 125 undefined on input l
+ine 119.
+
+[125]
+
+LaTeX Warning: Reference `fig:W12compare' on page 126 undefined on input line 1
+74.
+
+<../GNU/W12compareRU.pdf, id=2181, 361.35pt x 216.81pt>
 File: ../GNU/W12compareRU.pdf Graphic file (type pdf)
 <use ../GNU/W12compareRU.pdf>
 Package pdftex.def Info: ../GNU/W12compareRU.pdf  used on input line 181.
 (pdftex.def)             Requested size: 460.93153pt x 276.55975pt.
-) [127]
-[128 <../GNU/W12compareRU.pdf>]
+) [126] [127 <../GNU/W12compareRU.pdf>]
 \openout2 = `55-selftest.aux'.
 
- (./55-selftest.tex [129
+ (./55-selftest.tex [128
 
 
 ]
 
+LaTeX Warning: Reference `fig:test2' on page 129 undefined on input line 52.
+
+
+
 pdfTeX warning: pdflatex (file ../FIG/Test2.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/Test2.pdf, id=2481, 611.28375pt x 149.55875pt>
+<../FIG/Test2.pdf, id=2208, 611.28375pt x 149.55875pt>
 File: ../FIG/Test2.pdf Graphic file (type pdf)
 <use ../FIG/Test2.pdf>
 Package pdftex.def Info: ../FIG/Test2.pdf  used on input line 58.
 (pdftex.def)             Requested size: 512.14963pt x 125.30899pt.
 
+LaTeX Warning: Reference `fig:test7' on page 129 undefined on input line 101.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/Test7.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/Test7.pdf, id=2483, 386.44376pt x 152.57pt>
+<../FIG/Test7.pdf, id=2209, 386.44376pt x 152.57pt>
 File: ../FIG/Test7.pdf Graphic file (type pdf)
 <use ../FIG/Test7.pdf>
 Package pdftex.def Info: ../FIG/Test7.pdf  used on input line 107.
 (pdftex.def)             Requested size: 460.93153pt x 181.9796pt.
-[130 <../FIG/Test2.pdf>]
+[129 <../FIG/Test2.pdf>]
+
+LaTeX Warning: Reference `fig:test8' on page 130 undefined on input line 119.
+
+
 
 pdfTeX warning: pdflatex (file ../FIG/Test8.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<../FIG/Test8.pdf, id=2508, 384.43625pt x 152.57pt>
+<../FIG/Test8.pdf, id=2232, 384.43625pt x 152.57pt>
 File: ../FIG/Test8.pdf Graphic file (type pdf)
 <use ../FIG/Test8.pdf>
 Package pdftex.def Info: ../FIG/Test8.pdf  used on input line 133.
 (pdftex.def)             Requested size: 460.93153pt x 182.94107pt.
-[131 <../FIG/Test7.pdf> <../FIG/Test8.pdf>]
-<../PNG/Frequency50.png, id=2540, 321.2pt x 234.8775pt>
+[130 <../FIG/Test7.pdf> <../FIG/Test8.pdf>]
+
+LaTeX Warning: Reference `fig:Frequency50' on page 131 undefined on input line 
+197.
+
+<../PNG/Frequency50.png, id=2263, 321.2pt x 234.8775pt>
 File: ../PNG/Frequency50.png Graphic file (type png)
 <use ../PNG/Frequency50.png>
 Package pdftex.def Info: ../PNG/Frequency50.png  used on input line 202.
 (pdftex.def)             Requested size: 409.72125pt x 299.61716pt.
- [132]
-<../GNU/SelfTrefRU.pdf, id=2559, 361.35pt x 216.81pt>
+[131]
+
+LaTeX Warning: Reference `fig:SelfTref' on page 132 undefined on input line 223
+.
+
+
+LaTeX Warning: Reference `fig:SelfTMitL' on page 132 undefined on input line 22
+5.
+
+
+LaTeX Warning: Reference `fig:SelfTMitH' on page 132 undefined on input line 22
+7.
+
+
+LaTeX Warning: Reference `fig:SelfTlowH' on page 132 undefined on input line 22
+9.
+
+
+LaTeX Warning: Reference `fig:SelfTtopH' on page 132 undefined on input line 23
+1.
+
+
+LaTeX Warning: Reference `fig:SelfTRoL' on page 132 undefined on input line 233
+.
+
+
+LaTeX Warning: Reference `fig:SelfTRoH' on page 132 undefined on input line 235
+.
+
+
+LaTeX Warning: Reference `fig:SelfTcap' on page 132 undefined on input line 237
+.
+
+
+LaTeX Warning: Reference `fig:SelfTrefKorr' on page 132 undefined on input line
+ 239.
+
+<../GNU/SelfTrefRU.pdf, id=2271, 361.35pt x 216.81pt>
 File: ../GNU/SelfTrefRU.pdf Graphic file (type pdf)
 <use ../GNU/SelfTrefRU.pdf>
 Package pdftex.def Info: ../GNU/SelfTrefRU.pdf  used on input line 249.
 (pdftex.def)             Requested size: 460.93153pt x 276.55975pt.
- [133 <../PNG/Frequency50.png>]
-<../GNU/SelfTMitLRU.pdf, id=2572, 361.35pt x 216.81pt>
+[132 <../PNG/Frequency50.png>]
+<../GNU/SelfTMitLRU.pdf, id=2280, 361.35pt x 216.81pt>
 File: ../GNU/SelfTMitLRU.pdf Graphic file (type pdf)
 <use ../GNU/SelfTMitLRU.pdf>
 Package pdftex.def Info: ../GNU/SelfTMitLRU.pdf  used on input line 258.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/SelfTMitHRU.pdf, id=2573, 361.35pt x 216.81pt>
+<../GNU/SelfTMitHRU.pdf, id=2281, 361.35pt x 216.81pt>
 File: ../GNU/SelfTMitHRU.pdf Graphic file (type pdf)
 <use ../GNU/SelfTMitHRU.pdf>
 Package pdftex.def Info: ../GNU/SelfTMitHRU.pdf  used on input line 265.
@@ -2644,12 +3390,12 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 256--269
 [][]   [] 
  []
 
-<../GNU/SelfTbottomHRU.pdf, id=2574, 361.35pt x 216.81pt>
+<../GNU/SelfTbottomHRU.pdf, id=2282, 361.35pt x 216.81pt>
 File: ../GNU/SelfTbottomHRU.pdf Graphic file (type pdf)
 <use ../GNU/SelfTbottomHRU.pdf>
 Package pdftex.def Info: ../GNU/SelfTbottomHRU.pdf  used on input line 275.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/SelfTtopHRU.pdf, id=2575, 361.35pt x 216.81pt>
+<../GNU/SelfTtopHRU.pdf, id=2283, 361.35pt x 216.81pt>
 File: ../GNU/SelfTtopHRU.pdf Graphic file (type pdf)
 <use ../GNU/SelfTtopHRU.pdf>
 Package pdftex.def Info: ../GNU/SelfTtopHRU.pdf  used on input line 282.
@@ -2659,12 +3405,12 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 273--286
 [][]   [] 
  []
 
-<../GNU/SelfTRiLoRU.pdf, id=2576, 361.35pt x 216.81pt>
+<../GNU/SelfTRiLoRU.pdf, id=2284, 361.35pt x 216.81pt>
 File: ../GNU/SelfTRiLoRU.pdf Graphic file (type pdf)
 <use ../GNU/SelfTRiLoRU.pdf>
 Package pdftex.def Info: ../GNU/SelfTRiLoRU.pdf  used on input line 292.
 (pdftex.def)             Requested size: 256.07481pt x 153.64503pt.
-<../GNU/SelfTRiHiRU.pdf, id=2577, 361.35pt x 216.81pt>
+<../GNU/SelfTRiHiRU.pdf, id=2285, 361.35pt x 216.81pt>
 File: ../GNU/SelfTRiHiRU.pdf Graphic file (type pdf)
 <use ../GNU/SelfTRiHiRU.pdf>
 Package pdftex.def Info: ../GNU/SelfTRiHiRU.pdf  used on input line 299.
@@ -2674,7 +3420,7 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 290--303
 [][]   [] 
  []
 
-[134 <../GNU/SelfTrefRU.pdf> <../GNU/SelfTMitLRU.pdf
+[133 <../GNU/SelfTrefRU.pdf> <../GNU/SelfTMitLRU.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/SelfTMitLRU.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -2691,17 +3437,17 @@ ple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../GNU/SelfTtopHRU.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-<../GNU/SelfTcap0RU.pdf, id=2653, 361.35pt x 216.81pt>
+<../GNU/SelfTcap0RU.pdf, id=2365, 361.35pt x 216.81pt>
 File: ../GNU/SelfTcap0RU.pdf Graphic file (type pdf)
 <use ../GNU/SelfTcap0RU.pdf>
 Package pdftex.def Info: ../GNU/SelfTcap0RU.pdf  used on input line 308.
 (pdftex.def)             Requested size: 460.93153pt x 276.55975pt.
-<../GNU/SelfTrefKorrRU.pdf, id=2654, 361.35pt x 216.81pt>
+<../GNU/SelfTrefKorrRU.pdf, id=2366, 361.35pt x 216.81pt>
 File: ../GNU/SelfTrefKorrRU.pdf Graphic file (type pdf)
 <use ../GNU/SelfTrefKorrRU.pdf>
 Package pdftex.def Info: ../GNU/SelfTrefKorrRU.pdf  used on input line 315.
 (pdftex.def)             Requested size: 460.93153pt x 276.55975pt.
- [135 <../GNU/SelfTRiLoRU.pdf> <../GNU/SelfTRiHiRU.pdf
+ [134 <../GNU/SelfTRiLoRU.pdf> <../GNU/SelfTRiHiRU.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/SelfTRiHiRU.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -2710,12 +3456,20 @@ pdfTeX warning: pdflatex (file ../GNU/SelfTRiHiRU.pdf): PDF inclusion: multiple
 pdfTeX warning: pdflatex (file ../GNU/SelfTcap0RU.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-<../GNU/SelfTrefDiffRU.pdf, id=2705, 361.35pt x 216.81pt>
+
+LaTeX Warning: Reference `fig:SelfTrefDiff' on page 135 undefined on input line
+ 320.
+
+
+LaTeX Warning: Reference `fig:SelfTrefDiff' on page 135 undefined on input line
+ 322.
+
+<../GNU/SelfTrefDiffRU.pdf, id=2416, 361.35pt x 216.81pt>
 File: ../GNU/SelfTrefDiffRU.pdf Graphic file (type pdf)
 <use ../GNU/SelfTrefDiffRU.pdf>
 Package pdftex.def Info: ../GNU/SelfTrefDiffRU.pdf  used on input line 327.
 (pdftex.def)             Requested size: 460.93153pt x 276.55975pt.
-) [136 <../GNU/SelfTrefKorrRU.pdf> <../GNU/SelfTrefDiffRU.pdf
+) [135 <../GNU/SelfTrefKorrRU.pdf> <../GNU/SelfTrefDiffRU.pdf
 
 pdfTeX warning: pdflatex (file ../GNU/SelfTrefDiffRU.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
@@ -2732,19 +3486,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--33
 
  []
 
-<../GNU/frequency-ppmRU.pdf, id=2741, 361.35pt x 216.81pt>
+
+LaTeX Warning: Reference `fig:freq-ppm' on page 136 undefined on input line 36.
+
+
+<../GNU/frequency-ppmRU.pdf, id=2452, 361.35pt x 216.81pt>
 File: ../GNU/frequency-ppmRU.pdf Graphic file (type pdf)
 <use ../GNU/frequency-ppmRU.pdf>
 Package pdftex.def Info: ../GNU/frequency-ppmRU.pdf  used on input line 41.
 (pdftex.def)             Requested size: 512.14963pt x 307.31987pt.
-[137
+[136
 
 
 ]
 
+LaTeX Warning: Reference `fig:GPS-1PPS' on page 137 undefined on input line 57.
+
+
+
+
 pdfTeX warning: pdflatex (file ../FIG/GPS_UP501.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<../FIG/GPS_UP501.pdf, id=2748, 531.9875pt x 294.09875pt>
+<../FIG/GPS_UP501.pdf, id=2457, 531.9875pt x 294.09875pt>
 File: ../FIG/GPS_UP501.pdf Graphic file (type pdf)
 <use ../FIG/GPS_UP501.pdf>
 Package pdftex.def Info: ../FIG/GPS_UP501.pdf  used on input line 69.
@@ -2753,7 +3516,7 @@ Package pdftex.def Info: ../FIG/GPS_UP501.pdf  used on input line 69.
 
 pdfTeX warning: pdflatex (file ../FIG/GPS_GNS701.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<../FIG/GPS_GNS701.pdf, id=2749, 500.87125pt x 294.09875pt>
+<../FIG/GPS_GNS701.pdf, id=2458, 500.87125pt x 294.09875pt>
 File: ../FIG/GPS_GNS701.pdf Graphic file (type pdf)
 <use ../FIG/GPS_GNS701.pdf>
 Package pdftex.def Info: ../FIG/GPS_GNS701.pdf  used on input line 75.
@@ -2763,32 +3526,35 @@ Overfull \hbox (7.83147pt too wide) in paragraph at lines 67--78
 [][]   [] 
  []
 
-[138 <../GNU/frequency-ppmRU.pdf>]
-<../PNG/DS3231M.jpg, id=2772, 770.88pt x 578.16pt>
+[137 <../GNU/frequency-ppmRU.pdf>]
+
+LaTeX Warning: Reference `fig:DS3231M' on page 138 undefined on input line 94.
+
+<../PNG/DS3231M.jpg, id=2479, 770.88pt x 578.16pt>
 File: ../PNG/DS3231M.jpg Graphic file (type jpg)
 <use ../PNG/DS3231M.jpg>
 Package pdftex.def Info: ../PNG/DS3231M.jpg  used on input line 98.
 (pdftex.def)             Requested size: 307.2929pt x 230.46591pt.
- [139 <../FIG/GPS_UP501.pdf> <../FIG/GPS_GNS701.pdf> <../PNG/DS3231M.jpg>]) [14
-0]
+[138 <../FIG/GPS_UP501.pdf> <../FIG/GPS_GNS701.pdf> <../PNG/DS3231M.jpg>])
+[139]
 \openout2 = `60-generators.aux'.
 
  (./60-generators.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 6.
-) [141
+) [140
 
 
 
-] [142]
+] [141]
 \openout2 = `70-errors.aux'.
 
  (./70-errors.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 7.
-[143
+[142
 
 
 
-]) [144]
+]) [143]
 \openout2 = `80-special.aux'.
 
  (./80-special.tex
@@ -2814,7 +3580,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--36
 
  []
 
-) [145
+) [144
 
 
 
@@ -2823,7 +3589,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--36
 
  (./90-todo.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 9.
-) [146
+) [145
 
 
 
@@ -2845,7 +3611,7 @@ Underfull \hbox (badness 6910) in paragraph at lines 248--252
  Transistortester$[] \T2A/cmr/m/it/12 Крат-кое опи-са-ние
  []
 
-[147
+[146
 
 
 ]
@@ -2854,7 +3620,7 @@ Underfull \hbox (badness 3635) in paragraph at lines 272--276
  page = 5 # 2922341$[] \T2A/cmr/m/it/12 Патч для WinAVR,
  []
 
-[148]
+[147]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
  (./ttester.aux (./00-preface.aux) (./10-features.aux) (./20-hardware.aux) (./3
@@ -2866,13 +3632,20 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
 Package rerunfilecheck Info: File `ttester.out' has not changed.
 (rerunfilecheck)             Checksum: 0B8375A4ADA9DE0492E0E46D6107FC71;22525.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
  ) 
 Here is how much of TeX's memory you used:
- 41006 strings out of 481239
- 873059 string characters out of 5920377
- 1387114 words of memory out of 5000000
- 54889 multiletter control sequences out of 15000+600000
+ 40953 strings out of 481239
+ 872261 string characters out of 5920377
+ 1357690 words of memory out of 5000000
+ 54873 multiletter control sequences out of 15000+600000
  555261 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,87p,1314b,1237s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2900,10 +3673,10 @@ uper/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sftt1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sftt1440.pfb>
-Output written on ttester.pdf (149 pages, 4450331 bytes).
+Output written on ttester.pdf (148 pages, 4437461 bytes).
 PDF statistics:
- 3073 PDF objects out of 3580 (max. 8388607)
- 2374 compressed objects within 24 object streams
- 471 named destinations out of 1000 (max. 500000)
+ 2794 PDF objects out of 2984 (max. 8388607)
+ 2099 compressed objects within 21 object streams
+ 470 named destinations out of 1000 (max. 500000)
  1433 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -322,6 +322,15 @@ Diese Option ist nur sinnvoll, wenn an den Frequenzeingang ein externer Vorteile
 Die bei der Messung angezeigten Frequenzen und Perioden berücksichtigen das eingestellte Teilerverhältnis.\\
 Beispiel: CFLAGS += -DWITH\_FREQUENCY\_DIVIDER
 
+ \item[NO\_FREQUENCY\_SWITCH]
+Mit dieser Option wird die Umschaltung des Frequenzeingangs der ATmega644/ATmega1284 Schaltung nicht unterstützt.
+Die LF- und HF-Quarz Messung wird mit dieser Option nicht unterstützt.\\
+Beispiel: CFLAGS += -DNO\_FREQUENCY\_SWITCH=1
+
+\item[PWM\_SERVO] 
+wählt eine spezielle PWM Erzeugung zum Testen von Modellbau Servos anstelle der allgemeinen PWM Erzeugung.\\
+Beispiel: CFLAGS += -DPWM\_SERVO=1
+
   \item[WITH\_SamplingADC] Mit dieser Funktion wird in bestimmten Fällen die Sampling-Methode für den ADC angewendet.
 Durch Verschieben der Abtastzeit des ADC kann für wiederholbare Signale die Signalform mit einem Zeitabstand
 von einem Prozessortakt oder auch 4 oder 16 Prozessortakte abgetastet werden. Dadurch kann die Ladefunktion von

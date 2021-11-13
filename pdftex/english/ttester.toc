@@ -33,7 +33,7 @@
 \contentsline {section}{\numberline {4.1}Configuring the TransistorTester}{45}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Programming of the microcontroller}{56}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Using of Linux}{56}{subsection.4.2.1}%
-\contentsline {subsubsection}{Operating system Linux}{56}{section*.46}%
+\contentsline {subsubsection}{Operating system Linux}{57}{section*.46}%
 \contentsline {subsubsection}{Tips for the Linux usage}{57}{section*.47}%
 \contentsline {subsubsection}{Installing of Program packages}{57}{section*.48}%
 \contentsline {subsubsection}{Download of sources}{58}{section*.49}%
@@ -44,8 +44,8 @@
 \contentsline {subsubsection}{method with graphical interface}{62}{section*.54}%
 \contentsline {subsubsection}{edit Makefile}{62}{section*.55}%
 \contentsline {subsubsection}{programming testers}{62}{section*.56}%
-\contentsline {subsubsection}{Tips to the terminal}{62}{section*.57}%
-\contentsline {subsubsection}{Possible Makefile calls}{62}{section*.58}%
+\contentsline {subsubsection}{Tips to the terminal}{63}{section*.57}%
+\contentsline {subsubsection}{Possible Makefile calls}{63}{section*.58}%
 \contentsline {subsubsection}{Hints for updates of the transistortester sources}{63}{section*.60}%
 \contentsline {subsection}{\numberline {4.2.2}Building the Software with Windows}{64}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Using the WinAVR package with Windows}{64}{subsection.4.2.3}%
