@@ -63,6 +63,11 @@ Příklad: CFLAGS += -DLCD\_DOGM
 Další parametry, které se jinak zobrazují pouze krátce na 2 řádku, jsou zobrazeny v na řádcích 3 a 4.\\
 Příklad: CFLAGS += -DFOUR\_LINE\_LCD
 
+  \item[LCD\_LINE\_LENGTH]  určuje počet znaků, které lze zobrazit na jednom řádku. 
+U grafických displejů se počet znaků vypočítává ze šířky znaků a šířky displeje.
+U grafických zobrazení se počet řádků určuje z výšky zobrazení a řádkování.\\
+Příklad: CFLAGS += -DLCD\_LINE\_LENGTH=20
+
   \item[DD\_RAM\_OFFSET] U některých textových zobrazení se rozlišují počáteční adresy DD-RAM pro začátek řádku. Normálně začíná první řádek na adrese DD-RAM 0.
 U některých zobrazení jako TC1604 nebo TC1602 začíná 1 řádek, ale na adrese 128 (0x80).
 Tuto možnost lze zvážit.\\
@@ -360,6 +365,14 @@ je možné použít pin PC3 k připojení externího napětí s děličem odporu
 Tak mohou být například testovány Zenerovy diody s vyšším Zenerovým průlomovým napětím
 Toto měření se opakuje při přibližně 3 měření za sekundu, pokud je stisknuto tlačítko start.\\
 Příklad: CFLAGS += -DWITH\_UART
+
+  \item[WITH\_HARDWARE\_SERIAL] se používá pouze k povolení sériového výstupu pro testery sestavené s deskou Arduino UNO.\\
+Příklad:  CFLAGS += -DWITH\_HARDWARE\_SERIAL
+
+  \item[WITH\_HARDWARE\_SERIAL] is only used to enable serial output for testers build with the Arduino UNO board.\\
+Example:  CFLAGS += -DWITH\_HARDWARE\_SERIAL
+  \item[WITH\_HARDWARE\_SERIAL] is only used to enable serial output for testers build with the Arduino UNO board.\\
+Example:  CFLAGS += -DWITH\_HARDWARE\_SERIAL
   \item[TQFP\_ADC6] Při použití ATmega v plášti TQFP nebo QFN, používá tato volba další pin (ADC6),
 místo pinu PC3 (ADC3).
 To umožňuje použití tohoto vstupu nezávisle na sériovém výstupu na pinu PC3.

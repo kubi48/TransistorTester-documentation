@@ -60,8 +60,13 @@ If this fails also, you should reset the EEprom to the initial values with a ISP
 Example: CFLAGS += -DLCD\_DOGM
 
  \item[FOUR\_LINE\_LCD] can be used with a 4x20 character display for better using the additional space.
-Additional parameters, which are shown only short in row 2, will be shown in row 3 and 4 with this option.\\
+Additional parameters, which are shown only short in row 2, will be shown in row 3 and 4 with this option.
+With graphic displays, the number of lines is determined from the display height and the line spacing.\\
 Example: CFLAGS += -DFOUR\_LINE\_LCD
+
+  \item[LCD\_LINE\_LENGTH] specifies the number of characters that can be displayed in one line. 
+With graphic displays, the number of characters is calculated from the character width and the display width.\\
+Example: CFLAGS += -DLCD\_LINE\_LENGTH=20
 
   \item[DD\_RAM\_OFFSET] Somne character displays use different DD-RAN starting addresses for the beginning of each line.
 Usually the DD-RAM starting address for line 1 is 0.
@@ -395,6 +400,9 @@ If the option is not set, the pin PC3 can be used for reading a external voltage
 With this equipment you can check the breakdown voltage of zener diodes, which have more than \(4.5V\) breakdown voltage.
 This measurement will repeat with 3 measurements per second until you release the Start button.\\
 Example: CFLAGS += -DWITH\_UART
+
+  \item[WITH\_HARDWARE\_SERIAL] is only used to enable serial output for testers build with the Arduino UNO board.\\
+Example:  CFLAGS += -DWITH\_HARDWARE\_SERIAL
 
   \item[TQFP\_ADC6] The Option TQFP\_ADC6 uses the additional input ADC6 of the ATmega with TQFP or QFN package instead of
 the PC3 pin (ADC3).

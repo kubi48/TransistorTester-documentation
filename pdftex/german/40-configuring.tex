@@ -63,8 +63,13 @@ Beispiel: CFLAGS += -DLCD\_DOGM
 
   \item[FOUR\_LINE\_LCD] kann bei einem 4x20-Zeichen-Display verwendet werden, um den Platz auf dem Display
 besser auszunutzen. Zusätzliche Parameter, welche sonst nur kurz in Zeile 2 angezeigt werden, werden dann in
-den Zeilen 3 und 4 angezeigt.\\
+den Zeilen 3 und 4 angezeigt.
+Bei grafischen Displays wird die Zahl der Zeilen aus der Displayhöhe und dem Zeilenabstand berechnet.\\
 Beispiel: CFLAGS += -DFOUR\_LINE\_LCD
+
+  \item[LCD\_LINE\_LENGTH] gibt die Anzahl der Zeichen an, die in einer Zeile dargestellt werden können.
+Bei grafischen Displays wird die Anzahl der Zeichen aus der Zeichenbreite und der Displaybreite berechnet.\\
+Beispiel: CFLAGS += -DLCD\_LINE\_LENGTH=20
 
   \item[DD\_RAM\_OFFSET] Bei einigen Text-Displays werden andere DD-RAM Startadressen für den Zeilenanfang
 benutzt. Normalerweise beginnt die erste Zeile bei der DD-RAM Adresse 0. Bei einigen Displays wie TC1604
@@ -403,6 +408,9 @@ benutzt wird, kann der PC3 Pin zum Anschluss einer externen Spannung mit einem 1
 werden. Damit können beispielsweise Zenerdioden mit höherer Durchbruchspannung getestet werden.
 Diese Messung wird so lange mit etwa 3 Messungen pro Sekunde wiederholt, solange der Starttaster gedrückt bleibt.\\
 Beispiel: CFLAGS += -DWITH\_UART
+
+ \item[WITH\_HARDWARE\_SERIAL] wird nur für die serielle Ausgabe bei Testern benutzt, die mit einer Arduino UNO Platine gebaut wurden.\\
+Example:  CFLAGS += -DWITH\_HARDWARE\_SERIAL
 
   \item[TQFP\_ADC6] Die Option TQFP\_ADC6 benutzt anstelle des PC3-Pins (ADC3) den zusätzlichen ADC-Eingang ADC6
 des ATmegas im TQFP-Gehäuse oder QFN-Gehäuse.
