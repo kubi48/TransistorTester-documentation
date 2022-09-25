@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  15 NOV 2021 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  23 SEP 2022 11:12
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1646,7 +1646,7 @@ sion <1.7>, but at most version <1.5> allowed
 <../FIG/JFETcd.pdf, id=1143, 406.51875pt x 309.155pt>
 File: ../FIG/JFETcd.pdf Graphic file (type pdf)
 <use ../FIG/JFETcd.pdf>
-Package pdftex.def Info: ../FIG/JFETcd.pdf  used on input line 42.
+Package pdftex.def Info: ../FIG/JFETcd.pdf  used on input line 40.
 (pdftex.def)             Requested size: 409.72125pt x 311.60252pt.
 [70
 
@@ -1658,10 +1658,10 @@ ion <1.7>, but at most version <1.5> allowed
 <../FIG/PNPcc.pdf, id=1163, 406.51875pt x 309.155pt>
 File: ../FIG/PNPcc.pdf Graphic file (type pdf)
 <use ../FIG/PNPcc.pdf>
-Package pdftex.def Info: ../FIG/PNPcc.pdf  used on input line 65.
+Package pdftex.def Info: ../FIG/PNPcc.pdf  used on input line 63.
 (pdftex.def)             Requested size: 512.14963pt x 389.4996pt.
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 68.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 66.
 [71 <../FIG/PNPcc.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/PNPce.pdf): PDF inclusion: found PDF vers
@@ -1669,7 +1669,7 @@ ion <1.7>, but at most version <1.5> allowed
 <../FIG/PNPce.pdf, id=1183, 406.51875pt x 309.155pt>
 File: ../FIG/PNPce.pdf Graphic file (type pdf)
 <use ../FIG/PNPce.pdf>
-Package pdftex.def Info: ../FIG/PNPce.pdf  used on input line 99.
+Package pdftex.def Info: ../FIG/PNPce.pdf  used on input line 97.
 (pdftex.def)             Requested size: 512.14963pt x 389.4996pt.
 
 
@@ -1678,13 +1678,13 @@ ion <1.7>, but at most version <1.5> allowed
 <../FIG/NPNce.pdf, id=1185, 406.51875pt x 309.155pt>
 File: ../FIG/NPNce.pdf Graphic file (type pdf)
 <use ../FIG/NPNce.pdf>
-Package pdftex.def Info: ../FIG/NPNce.pdf  used on input line 118.
+Package pdftex.def Info: ../FIG/NPNce.pdf  used on input line 116.
 (pdftex.def)             Requested size: 512.14963pt x 389.4996pt.
 [72 <../FIG/PNPce.pdf>]
 <../PNG/IRFU120gate.png, id=1204, 321.2pt x 234.8775pt>
 File: ../PNG/IRFU120gate.png Graphic file (type png)
 <use ../PNG/IRFU120gate.png>
-Package pdftex.def Info: ../PNG/IRFU120gate.png  used on input line 155.
+Package pdftex.def Info: ../PNG/IRFU120gate.png  used on input line 153.
 (pdftex.def)             Requested size: 409.72125pt x 299.61716pt.
  [73 <../FIG/NPNce.pdf>]
 
@@ -1693,7 +1693,7 @@ pdfTeX warning: pdflatex (file ../FIG/CheckSemi1.pdf): PDF inclusion: found PDF
 <../FIG/CheckSemi1.pdf, id=1221, 476.78125pt x 668.4975pt>
 File: ../FIG/CheckSemi1.pdf Graphic file (type pdf)
 <use ../FIG/CheckSemi1.pdf>
-Package pdftex.def Info: ../FIG/CheckSemi1.pdf  used on input line 164.
+Package pdftex.def Info: ../FIG/CheckSemi1.pdf  used on input line 162.
 (pdftex.def)             Requested size: 409.72125pt x 574.49883pt.
 [74 <../PNG/IRFU120gate.png>]
 
@@ -1702,7 +1702,7 @@ pdfTeX warning: pdflatex (file ../FIG/CheckSemi2.pdf): PDF inclusion: found PDF
 <../FIG/CheckSemi2.pdf, id=1227, 503.8825pt x 711.65875pt>
 File: ../FIG/CheckSemi2.pdf Graphic file (type pdf)
 <use ../FIG/CheckSemi2.pdf>
-Package pdftex.def Info: ../FIG/CheckSemi2.pdf  used on input line 171.
+Package pdftex.def Info: ../FIG/CheckSemi2.pdf  used on input line 169.
 (pdftex.def)             Requested size: 409.72125pt x 578.66653pt.
 [75 <../FIG/CheckSemi1.pdf>]
 
@@ -1711,7 +1711,7 @@ pdfTeX warning: pdflatex (file ../FIG/CheckSemi3.pdf): PDF inclusion: found PDF
 <../FIG/CheckSemi3.pdf, id=1239, 348.30125pt x 419.5675pt>
 File: ../FIG/CheckSemi3.pdf Graphic file (type pdf)
 <use ../FIG/CheckSemi3.pdf>
-Package pdftex.def Info: ../FIG/CheckSemi3.pdf  used on input line 178.
+Package pdftex.def Info: ../FIG/CheckSemi3.pdf  used on input line 176.
 (pdftex.def)             Requested size: 409.72125pt x 493.58086pt.
 [76 <../FIG/CheckSemi2.pdf>] [77 <../FIG/CheckSemi3.pdf>] [78] [79]) [80]
 [81]
@@ -2595,7 +2595,7 @@ fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
 1200.pfb>
-Output written on ttester.pdf (141 pages, 4037872 bytes).
+Output written on ttester.pdf (141 pages, 4037797 bytes).
 PDF statistics:
  2804 PDF objects out of 2984 (max. 8388607)
  2183 compressed objects within 22 object streams
