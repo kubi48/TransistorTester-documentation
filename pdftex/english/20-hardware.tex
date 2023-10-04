@@ -6,38 +6,38 @@ The circuit of the TransistorTester in figure~\ref{fig:ttester} is based on the 
  Markus F. released in Abb.~1 of AVR-Transistortester report \cite{Frejek}.
 Changed or moved parts are marked with green color, optional parts are marked with red color.
 
-Some changes are made because the electronical power switch make problems in some implementations.
-Therefore the resistor R7 is reduced to \(3.3k\Omega\). The capacitor C2 is reduced to
-10~nF and R8 is moved so that the PD6 output does not try to switch the C2 capacitor directly.
- Additional blocking capacitors are added and should be placed
-near the power connection of the Atmega and near the Voltage regulator.
+Some changes were made because the electronic power switch was problematic in some implementations.
+Therefore resistor R7 was reduced to \(3.3k\Omega\). The capacitor C2 was reduced to
+10~nF and R8 was moved so that the PD6 output does not try to switch the C2 capacitor directly.
+Additional blocking capacitors were added and should be placed
+near the power connection of the Atmega and near the voltage regulator.
 
-Because the PD7 input and PC6 (RESET) are the only pins, where pull up resistors where
-needed, one extra \(27k\Omega\) resistor is added to the PD7 (pin~13) input. With this modification
-the software can disable all internal pull up resistors of the ATmega.
+Because the PD7 input and PC6 (RESET) are the only pins where pull-up resistors were needed,
+one extra \(27k\Omega\) resistor was added to the PD7 (pin~13) input. 
+With this modification the software can disable all internal pull-up resistors of the ATmega.
 
-The additional crystal with its \(22pF\) capacitors are optional added. 
-The accuracy of a crystal has the benefit of more stable time measurement for getting the
+The additional crystal and its \(22pF\) capacitors are optional. 
+The accuracy of a crystal has the benefit of more stable time measurement for measuring 
 capacitor values.
 
-New software version can use a voltage scale switch of the ADC. The speed of switching is reduced
+Recent software versions can use a voltage scale switch of the ADC. The speed of switching is reduced
 by the external capacitor C1 at the AREF (21) pin of the ATmega. To avoid slowing down the
 measurement speed more than necessary, the value of this capacitor should be reduced to 1nF.
 Removing of the capacitor C1 is also possible.
 For adapting the software to the actual circuit take a look to the Makefile options in the
 configuring chapter~\ref{sec:config} at page~\pageref{sec:config}.
 
-Some different versions of R11 / R12 resistor combinations circulates
-in the internet. I~have adapted my software to the original of Markus F. \cite{Frejek} with \(10k\Omega\) and \(3.3k\Omega\).
-The voltage ration of the divider can be set with Makefile options.
+Some different values of the R11 / R12 resistors circulate in the Internet. 
+I have adapted my software to the original of Markus F. \cite{Frejek} with \(10k\Omega\) and \(3.3k\Omega\).
+The voltage divider ratio can be set with Makefile options.
 
 The additional \(2.5V\) precision voltage reference connected at pin PC4 (ADC4) can be used to
 check and calibrate the VCC voltage, but is not required. You can use a LM4040-AIZ2.5 (0.1\%),
 a LT1004CZ-2.5 (0.8\%) or a LM336-Z2.5 (0.8\%) as voltage reference.
 If you don't install the precision voltage reference and you don't add the relay extension,
-you should install a pull up resistor R16 to PC4 with a higher resistance value (\(47k\Omega\)).
-This helps the software to detect the missing voltage reference.
-A optional ISP connector has been added to easier load new software versions to the tester.
+you should change the PC4 pull-up resistor, R16, to a higher resistance value (\(47k\Omega\)).
+This helps the software to detect the missing precision voltage reference.
+A optional ISP connector was added to make it easier to update the software on the tester.
 
 \begin{figure}[H]
 \centering
@@ -46,10 +46,12 @@ A optional ISP connector has been added to easier load new software versions to 
 \label{fig:ttester}
 \end{figure}
 
-The table~\ref{tab:display-con} show the assignment of the port D for different display versions
+The table~\ref{tab:display-con} show the assignment of Port D for different display versions
 and the assignment of the additional functions.
-For the SPI interface a signal LCD-CE is available at the ATmega port. The controller input CE (Chip Enable) can 
-be also connected to GND instead of connecting this input to the ATmega output LCD-CE.
+For the SPI interface, an active-low signal LCD-CE (LCD Chip Enable) is produced by the ATmega.
+This signal can be sent to the chip enable input on an SPI LCD controller controller.
+Alternatively, if the LCD controller is the only device on the SPI interface, the
+LCD controller's chip enable input can be grounded so the controller is always enabled.
 
 \begin{table}[H] \small
   \begin{center}
@@ -81,17 +83,18 @@ be also connected to GND instead of connecting this input to the ATmega output L
 \end{table}
 
 
-The software can follow to another pin assignment of port D for a simpler connection of the
+The software also supports an alternative pin assignment of port D that simplifies the wiring of the
 LCD display. 
-The following table~\ref{tab:grid-change} shows the modifies assignments for the strip grid layout and
-the alternativ connection of a graphical display for the micocontrollers ATmega328.
-Also the using of port inputs for additional functions is shown.
-With the connections for the graphical display with the strip grid option (STRIP\_GRID\_BOARD=1)
-the frequency counter function can not be used, because the port PD4 (T0) is used.
-But this connection is used by a chinese version with graphical display. 
-In most cases the additional functions like rotary encoder or frequency counter are easier to
-build with the board versions for a character display, because the required data signals are
-routed to the display connector.
+The following table~\ref{tab:grid-change} shows the modified port pin assignments that enable stripboard layout, 
+and the alternative way of wiring a graphical display to the ATmega328.
+Also the use of port inputs for additional functions is shown.
+With the graphical display connected using the stripboard option (STRIP\_GRID\_BOARD=1),
+the frequency counter function cannot be used reliably because port PD4 (T0) is needed for
+frequency measurement but is also used by the display wiring. 
+Nevertheless this connection is used by a Chinese version with graphical display. 
+In most cases, the additional functions like rotary encoder or frequency counter
+are easier to build with the board versions for a character display
+because the required data signals are routed to the display connector.
 
 
 
@@ -127,12 +130,13 @@ routed to the display connector.
 
 \subsection{Protection of the ATmega inputs}
 
-For better protection of the ATmega inputs one of the additional circuits~\ref{fig:relay_addon} 
-can be integrated. The de-energized contacts of the relay protect the ATmega without power.
+For better protection of the ATmega inputs, one of the additional protection circuits~\ref{fig:relay_addon} 
+can be integrated. The de-energized relay protects the ATmega when it is not powered on by shorting the
+three test ports together.
 The contacts will be opened by software only for measurement.
-Also with the additional diode protection the chance of the ATmega will be better to survive the connection
-of a capacitor with higher residual voltage.
-A complete protection is not possible. Therefore capacitors should always be discharged before measuring.
+Also with the addition of diode protection, the ATmega will be more likely to survive the connection
+of a capacitor with significant residual voltage.
+Complete protection is not possible. Therefore capacitors should always be discharged before measuring.
 
 \begin{figure}[H]
   \begin{subfigure}[b]{.5\textwidth}
@@ -154,9 +158,10 @@ A complete protection is not possible. Therefore capacitors should always be dis
   \label{fig:relay_addon}
 \end{figure}
 
-You can get a better protection with a relay with 3 changeover contacts, which is shown in figure~\ref{fig:relay_um_addon}.
+You can get better protection with a relay with 3 changeover contacts (3PDT),
+which is shown in figure~\ref{fig:relay_um_addon}.
 The discharge current is limited with the resistors and the ATmega-inputs are disconnected in the protected mode.
-But you don't forget, that the tester remains unprotected during the measurement sequence.
+But don't forget that the tester remains unprotected during the measurement sequence.
 
 \begin{figure}[H]
 \centering
@@ -171,14 +176,15 @@ But you don't forget, that the tester remains unprotected during the measurement
 
 \subsection{Measurement of zener voltage above 4~Volt}
 
-If the serial output of text is not required, the Pin PC3 of the ATmega can be used as analog
-input for measuring a external voltage. The voltage can be up to \(50V\) with the optional 10:1 resistor
+If the serial output of text is not required, pin PC3 of the ATmega can be used as an analog
+input for measuring an external voltage. The voltage can be up to \(50V\) with the optional 10:1 resistor
 divider and can be used for measuring the breakdown voltage of a zener diode. 
-A current limiting power supply with up to \(50V\) can be switched on with low signal at PD7 pin of the
-ATmega to deliver current for testing the break down voltage of a zener diode.
+A current limiting power supply with up to \(50V\) can be switched on
+with a low signal at the PD7 pin of the ATmega to deliver
+current for testing the break down voltage of a zener diode.
 Figure~\ref{fig:zener} shows a suggestion for this expansion.
 The tester shows the external voltage as long as you hold the key pressed.
-About \(40mA\) more battery current is used by this expansion during key pressing.
+About \(40mA\) more battery current is used by this expansion while the key is pressed.
 
 \begin{figure}[H]
 \centering
@@ -189,42 +195,46 @@ About \(40mA\) more battery current is used by this expansion during key pressin
   \put(8,24){\makebox(0,0)[lb]{Can be placed on Tester board!}}
   \put(42,6){\makebox(0,0)[lb]{Should be placed separate!}}
   \end{overpic}
-\caption{Expansion for measuring of break down voltage of Zener diodes}
+\caption{Expansion for measuring the breakdown voltage of Zener diodes}
 \label{fig:zener}
 \end{figure}
 
-The 10:1 voltage divider can be used with the optional dialog part for the ATmega328 without the 
-activated DC-DC converter for the zener diode measurement.
-Without the pressed key the voltage converter is not powered. For that the external voltage 
-(for example battery voltage) can be measured at the zener diode port.
-You can only measure positiv DC voltages up to \(50V\).
-You have also to respect the correct polarity.
+The software's optional dialog (menu) allows the 10:1 voltage divider to be used
+without activating th DC-DC converter that is used for zener diode measurement.
+Without the key pressed, the voltage converter is not powered.
+In this mode, an external voltage (for example battery voltage) can be measured at the zener diode port.
+You can only measure positive DC voltages up to \(50V\).
+You also have to respect the correct polarity.
 
 \subsection{Frequency generator}
 
-With the dialog part of the ATmega you can also select a frequency generator, which supports
-currently a selection of frequencies from \(1Hz\) up to \(2MHz\).
-The output of the \(5V\) signal is done with a \(680\Omega\) resistor to test port TP2.
+With the dialog component of the software enabled, you can select a frequency generator mode.
+It allows selection of various frequencies from \(1Hz\) up to \(2MHz\).
+The output is a \(5V\) signal sent through a \(680\Omega\) resistor to test port TP2.
 You can use the GND signal from the minus pin of the zener diode extension or the test port TP1.
 The test port TP3 is connected to GND with a \(680\Omega\) resistor.
 Of course you can also connect a driver circuit to the ATmega port PB2 with a separate output
-driver circuit and a additional output terminal. But the input of this circuit should not insert a
-big capacity load for the ATmega output.
+driver circuit and a additional output terminal. The driver circuit should be designed to avoid
+loading the ATmega's output pin with a large capacitance.
 
 \subsection{Frequency measurement}
 \label{sec:frequency_counter}
 
-For using the with the dialog selectable frequency measurement is a little hardware extension
-necessary. The input pin PD4 (T0/PCINT20) of the ATmega is used for the frequency measurement.
+To use the dialog-selectable frequency measurement feature, a little hardware extension is necessary.
+The input pin PD4 (T0/PCINT20) of the ATmega is used for the frequency measurement.
 The same pin is also used for the connection of the LCD. With normal layout, the PD4 pin is connected
-to the LCD-RS signal, with the strip grid design it is connected to LCD-D4.
-For both signals the PD4 pin can be switched to input as long as no output to the LCD is
-required. The LCD respect the input value only, if the LCD-E signal is switched to GND.
-For driving the input pin from external clock source at least one serial resistor of \(270\Omega\) should be used.
+to the LCD-RS signal. With the strip grid design it is connected to LCD-D4.
+For both layouts, the PD4 pin can be switched to input as long as no concurrent output to the LCD is
+required. This is because the LCD accepts input data only when the LCD-E signal is
+brought low.
+For driving the input pin from external clock source at least one series resistor of \(270\Omega\) should be used.
 Better you should use the circuit of figure~\ref{fig:FreqMes} .
-The voltage at the PD4 pin (LCD-RS or LCD-D4) should be adjusted to \(2.4V\) without the assembled ATmega
-or during frequency measurement of the ATmega, to get the best sensivity for the input frequency signal.
-The LCD should always be installed for adjusting, because the pull up resistor of the LCD change the voltage.
+To get the best sensitivity for the input frequency signal, the voltage at the PD4 pin (LCD-RS or LCD-D4) should
+have a baseline of \(2.4V\) when frequency measurement is taking place.
+To accurately adjust this voltage, either remove the ATmega from its socket
+or put it into frequency measurement mode.
+The LCD should be installed when performing this adjustment because the pull-up resistor of the LCD affects
+the baseline voltage when PD4 is used as an input.
 
 \begin{figure}[H]
 \centering
@@ -233,7 +243,7 @@ The LCD should always be installed for adjusting, because the pull up resistor o
 \label{fig:FreqMes}
 \end{figure}
 
-\subsection{Using of a rotary pulse encoder}
+\subsection{Using a rotary encoder}
 
 \begin{wrapfigure}{hb!}{0.3\textwidth}
 \vspace{-4\baselineskip}
@@ -241,17 +251,17 @@ The LCD should always be installed for adjusting, because the pull up resistor o
 \includegraphics[width=0.2\textwidth]{../FIG/rotary_extension.pdf}
 \end{center}
 \vspace{-0.7\baselineskip}
- \caption{Expansion with a rotary pulse encoder}
+ \caption{Expansion with a rotary encoder}
 \label{fig:RotExt}
 \end{wrapfigure}
 
 For easier control of the menu function for the ATmega328 you can expand the circuit 
-by a rotary pulse encoder with a push button.
+by adding a rotary encoder with a push button.
 The circuit~\ref{fig:RotExt} shows a standard expansion for a normal character LCD.
-All signals for the connection of the rotary pulse encoder are available at the plug connector
+All signals for the connection of the rotary encoder are available at the plug connector
 for the LCD. For this reason the expansion can also be easy upgraded for many existing testers.
 In many cases the graphical LCD is assembled on a adapter board with some connection pins
-of the character LCD. Also in this cases the upgrade with a rotary encoder is not very difficult to do.
+of the character LCD. In these cases, as well, the upgrade to a rotary encoder is not very difficult to do.
 \
 \clearpage
 \begin{figure}[t]
@@ -269,14 +279,14 @@ of the character LCD. Also in this cases the upgrade with a rotary encoder is no
   \put(52,43){\makebox(0,0)[cb]{{\large {Version 2}}}}
   \put(52,1){\makebox(0,0)[cb]{{\large {Version 1}}}}
  \end{overpic}
-\caption{Feature of two different rotary pulse encoder}
+\caption{Feature of two different rotary encoders}
 \label{fig:RotEnc}
 \end{figure}
-The figure~\ref{fig:RotEnc} shows the feature of two different rotary pulse encoder.
-The version 1 has twice as much indexed positions (detents) per turn as pulses per turn.
-The version 2 has the same count of detents as pulses per turn.
+The figure~\ref{fig:RotEnc} shows the behavior of two different rotary encoders.
+The version 1 has twice as many indexed positions (detents) per turn as pulses per turn.
+The version 2 has the same number of detents as pulses per turn.
 The slope of one of the two switch signals is sometimes exactly at the detent of the 
-rotary pulse encoder.
+rotary encoder.
 \begin{figure}[H]
 \centering
  \begin{overpic}[width=.87\textwidth]{../FIG/rotary_bouncing.pdf}
@@ -287,28 +297,29 @@ rotary pulse encoder.
   \put(7,20){\makebox(0,0)[rb]{State:}}
   \put(5,12){\makebox(0,0)[lb]{Possible state history from left to right:}}
  \end{overpic}
-\caption{A rotary pulse encoder with bouncing switches}
+\caption{A rotary encoder with bouncing switches}
 \label{fig:RotBounce}
 \end{figure}
-The figure~\ref{fig:RotBounce} shows a rotary pulse encoder, which has not only
-bouncing contacts, but also has a unstable state of one of the switches at the indexed
+The figure~\ref{fig:RotBounce} shows a rotary encoder which has not only
+bouncing contacts but also has an unstable state of one of the switches at the indexed
 position (detent). Every change of the state of the switches is detected by the program
 and saved in a cyclic buffer. Therefore the last three states of the switches can be checked
 after every status change.
-For every cycle of switch states a total of four sequences of state can be defined for every direction of rotation.
+For every cycle of switch states,
+a total of four sequences of state can be defined for every direction of rotation.
 If there is only one indexed position (detent) for every cycle of switch states, only
 one of the state sequence pair must be monitored (WITH\_ROTARY\_SWITCH=2 or 3) for correct counting.
 If there are two indexed positions for every cycle of the switch states, as shown in figure~\ref{fig:RotBounce},
 you must monitor two pairs of switch state sequences (WITH\_ROTARY\_SWITCH=1).
-You can choise any resolution for the WITH\_ROTARY\_SWITCH for a rotary pulse encoder without
+You can choose any resolution for the WITH\_ROTARY\_SWITCH for a rotary encoder without
 indexed positions. A value of 2 or 3 selects the lowest resolution, 1 selects a middle resolution
 and 5 selects the highest resulution.
 A oscillation of the selection (counter up, counter down) can be avoided with the type of monitoring,
 but sometimes a count can be missed with a bad placement of the indexed position.
-In place of the two switches of a rotary switch encoder you can also install two seperate
-key buttons for Up and Down movement, if no rotation switch encoder is present or favored.
-In this case the option WITH\_ROTARY\_SWITCH must be set to 4 for a correct handling of
-the program.
+
+An alternative to a rotary encoder is a pair of buttons for Up and Down menu movement.
+In this case the option WITH\_ROTARY\_SWITCH must be set to 4 for correct handling of
+the signals.
 
 \subsection{Connection of a graphical display}
 
@@ -733,14 +744,14 @@ I can recommend the replacement.
 Actually the price for ATmega328 is so cheap, that there is no reason to take
 a ATmega168 type.
 With a ATmega168/328 you get the following advantages:
- \begin{itemize} \setlength{\itemsep}{-1.5em}
- \item Self test with automatic calibration.\\
- \item Improvement of measurement quality by automatic switching of ADC scale.\\
- \item Measurement of inductors with resistance  below \(2100\Omega\).\\
- \item Measurement of ESR value of capacitors with value of above  \(20nF\).\\
- \item The resolution of resistor measurement below \(10\Omega\) is \(0.01\Omega\).\\
- \item Using of pin PC4 as serial output.\\
- \item Using of a precision voltage reference.\\
+ \begin{itemize}
+ \item Self test with automatic calibration.
+ \item Improvement of measurement quality by automatic switching of ADC scale.
+ \item Measurement of inductors with resistance  below \(2100\Omega\).
+ \item Measurement of ESR value of capacitors with value of above  \(20nF\).
+ \item The resolution of resistor measurement below \(10\Omega\) is \(0.01\Omega\).
+ \item Using of pin PC4 as serial output.
+ \item Using of a precision voltage reference.
  \end{itemize}
 Usually the software should detect the missing voltage reference with the unconnected pin PC4.
 In this case no VCC=x.xV message should appear in row 2 of the LCD on power on.

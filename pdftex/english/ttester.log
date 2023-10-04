@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.1)  26 SEP 2023 14:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.1)  4 OCT 2023 10:16
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1008,7 +1008,7 @@ Package pdftex.def Info: ../FIG/ttester.pdf  used on input line 44.
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 56.
+(Font)              <10.95> on input line 58.
  [10 <../FIG/ttester.pdf>]
 
 pdfTeX warning: pdflatex (file ../FIG/relay_addon.pdf): PDF inclusion: found PD
@@ -1016,7 +1016,7 @@ F version <1.7>, but at most version <1.5> allowed
 <../FIG/relay_addon.pdf, id=539, 241.90375pt x 128.48pt>
 File: ../FIG/relay_addon.pdf Graphic file (type pdf)
 <use ../FIG/relay_addon.pdf>
-Package pdftex.def Info: ../FIG/relay_addon.pdf  used on input line 140.
+Package pdftex.def Info: ../FIG/relay_addon.pdf  used on input line 144.
 (pdftex.def)             Requested size: 199.73804pt x 106.08943pt.
 
 
@@ -1025,10 +1025,10 @@ F version <1.7>, but at most version <1.5> allowed
 <../FIG/diode_addon.pdf, id=540, 232.87pt x 124.465pt>
 File: ../FIG/diode_addon.pdf Graphic file (type pdf)
 <use ../FIG/diode_addon.pdf>
-Package pdftex.def Info: ../FIG/diode_addon.pdf  used on input line 150.
+Package pdftex.def Info: ../FIG/diode_addon.pdf  used on input line 154.
 (pdftex.def)             Requested size: 199.73804pt x 106.76053pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 138--153
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 142--157
 [][]   [] 
  []
 
@@ -1039,7 +1039,7 @@ pdfTeX warning: pdflatex (file ../FIG/relay_um_addon.pdf): PDF inclusion: found
 <../FIG/relay_um_addon.pdf, id=542, 270.00874pt x 169.63374pt>
 File: ../FIG/relay_um_addon.pdf Graphic file (type pdf)
 <use ../FIG/relay_um_addon.pdf>
-Package pdftex.def Info: ../FIG/relay_um_addon.pdf  used on input line 163.
+Package pdftex.def Info: ../FIG/relay_um_addon.pdf  used on input line 168.
 (pdftex.def)             Requested size: 284.52756pt x 178.76001pt.
 [11 <../FIG/relay_addon.pdf> <../FIG/diode_addon.pdf>]
 
@@ -1048,7 +1048,7 @@ version <1.7>, but at most version <1.5> allowed
 <../FIG/zener_exp.pdf, id=570, 593.21625pt x 161.60374pt>
 File: ../FIG/zener_exp.pdf Graphic file (type pdf)
 <use ../FIG/zener_exp.pdf>
-Package pdftex.def Info: ../FIG/zener_exp.pdf  used on input line 185.
+Package pdftex.def Info: ../FIG/zener_exp.pdf  used on input line 191.
 (pdftex.def)             Requested size: 512.14963pt x 139.52393pt.
 [12 <../FIG/relay_um_addon.pdf> <../FIG/zener_exp.pdf>]
 
@@ -1057,12 +1057,12 @@ d PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/Frequency_addon.pdf, id=592, 175.65625pt x 131.49126pt>
 File: ../FIG/Frequency_addon.pdf Graphic file (type pdf)
 <use ../FIG/Frequency_addon.pdf>
-Package pdftex.def Info: ../FIG/Frequency_addon.pdf  used on input line 231.
+Package pdftex.def Info: ../FIG/Frequency_addon.pdf  used on input line 241.
 (pdftex.def)             Requested size: 204.85672pt x 153.3626pt.
 <../FIG/rotary_extension.pdf, id=593, 126.4725pt x 195.73125pt>
 File: ../FIG/rotary_extension.pdf Graphic file (type pdf)
 <use ../FIG/rotary_extension.pdf>
-Package pdftex.def Info: ../FIG/rotary_extension.pdf  used on input line 241.
+Package pdftex.def Info: ../FIG/rotary_extension.pdf  used on input line 251.
 (pdftex.def)             Requested size: 102.42836pt x 158.52351pt.
 [13 <../FIG/Frequency_addon.pdf> <../FIG/rotary_extension.pdf>]
 
@@ -1071,7 +1071,7 @@ pdfTeX warning: pdflatex (file ../FIG/rotary_encoder.pdf): PDF inclusion: found
 <../FIG/rotary_encoder.pdf, id=618, 466.74374pt x 364.36125pt>
 File: ../FIG/rotary_encoder.pdf Graphic file (type pdf)
 <use ../FIG/rotary_encoder.pdf>
-Package pdftex.def Info: ../FIG/rotary_encoder.pdf  used on input line 259.
+Package pdftex.def Info: ../FIG/rotary_encoder.pdf  used on input line 269.
 (pdftex.def)             Requested size: 445.56767pt x 347.84248pt.
 
 
@@ -1080,12 +1080,12 @@ d PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/rotary_bouncing.pdf, id=620, 506.89375pt x 230.8625pt>
 File: ../FIG/rotary_bouncing.pdf Graphic file (type pdf)
 <use ../FIG/rotary_bouncing.pdf>
-Package pdftex.def Info: ../FIG/rotary_bouncing.pdf  used on input line 282.
+Package pdftex.def Info: ../FIG/rotary_bouncing.pdf  used on input line 292.
 (pdftex.def)             Requested size: 445.56767pt x 202.93768pt.
 [14
 
  <../FIG/rotary_encoder.pdf> <../FIG/rotary_bouncing.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 315--330
+Underfull \hbox (badness 10000) in paragraph at lines 326--341
 
  []
 
@@ -1096,7 +1096,7 @@ version <1.7>, but at most version <1.5> allowed
 <../FIG/ST7565lcd.pdf, id=641, 485.815pt x 394.47375pt>
 File: ../FIG/ST7565lcd.pdf Graphic file (type pdf)
 <use ../FIG/ST7565lcd.pdf>
-Package pdftex.def Info: ../FIG/ST7565lcd.pdf  used on input line 333.
+Package pdftex.def Info: ../FIG/ST7565lcd.pdf  used on input line 344.
 (pdftex.def)             Requested size: 416.88742pt x 338.50647pt.
 [15] [16 <../FIG/ST7565lcd.pdf>]
 
@@ -1105,7 +1105,7 @@ F version <1.7>, but at most version <1.5> allowed
 <../FIG/SSD1306_I2C.pdf, id=664, 632.3625pt x 188.705pt>
 File: ../FIG/SSD1306_I2C.pdf Graphic file (type pdf)
 <use ../FIG/SSD1306_I2C.pdf>
-Package pdftex.def Info: ../FIG/SSD1306_I2C.pdf  used on input line 395.
+Package pdftex.def Info: ../FIG/SSD1306_I2C.pdf  used on input line 406.
 (pdftex.def)             Requested size: 416.88742pt x 124.40746pt.
 
 
@@ -1114,10 +1114,10 @@ d PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/ST7920interface.pdf, id=666, 537.00626pt x 367.3725pt>
 File: ../FIG/ST7920interface.pdf Graphic file (type pdf)
 <use ../FIG/ST7920interface.pdf>
-Package pdftex.def Info: ../FIG/ST7920interface.pdf  used on input line 414.
+Package pdftex.def Info: ../FIG/ST7920interface.pdf  used on input line 425.
 (pdftex.def)             Requested size: 357.47943pt x 244.5575pt.
 [17 <../FIG/SSD1306_I2C.pdf> <../FIG/ST7920interface.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 450--452
+Underfull \hbox (badness 10000) in paragraph at lines 461--463
 
  []
 
@@ -1128,7 +1128,7 @@ d PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/ST7108serial164.pdf, id=687, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial164.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial164.pdf>
-Package pdftex.def Info: ../FIG/ST7108serial164.pdf  used on input line 461.
+Package pdftex.def Info: ../FIG/ST7108serial164.pdf  used on input line 472.
 (pdftex.def)             Requested size: 230.46576pt x 175.13551pt.
 
 
@@ -1137,10 +1137,10 @@ d PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/ST7108serial595.pdf, id=688, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial595.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial595.pdf>
-Package pdftex.def Info: ../FIG/ST7108serial595.pdf  used on input line 467.
+Package pdftex.def Info: ../FIG/ST7108serial595.pdf  used on input line 478.
 (pdftex.def)             Requested size: 230.46576pt x 175.13551pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 459--470
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 470--481
 [][]   [] 
  []
 
@@ -1148,60 +1148,25 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 459--470
 <../PNG/Color_ILI9163_ST7735.jpg, id=721, 185.0112pt x 225.0006pt>
 File: ../PNG/Color_ILI9163_ST7735.jpg Graphic file (type jpg)
 <use ../PNG/Color_ILI9163_ST7735.jpg>
-Package pdftex.def Info: ../PNG/Color_ILI9163_ST7735.jpg  used on input line 60
-0.
+Package pdftex.def Info: ../PNG/Color_ILI9163_ST7735.jpg  used on input line 61
+1.
 (pdftex.def)             Requested size: 235.59225pt x 286.53033pt.
 <../PNG/Color_PNP_ILI9163.jpg, id=723, 154.176pt x 158.994pt>
 File: ../PNG/Color_PNP_ILI9163.jpg Graphic file (type jpg)
 <use ../PNG/Color_PNP_ILI9163.jpg>
-Package pdftex.def Info: ../PNG/Color_PNP_ILI9163.jpg  used on input line 620.
+Package pdftex.def Info: ../PNG/Color_PNP_ILI9163.jpg  used on input line 631.
 (pdftex.def)             Requested size: 235.59225pt x 242.95918pt.
  [20 <../PNG/Color_ILI9163_ST7735.jpg>] [21 <../PNG/Color_PNP_ILI9163.jpg>]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 6
-83.
+94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 683.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 694.
  [22]
-Underfull \hbox (badness 10000) in paragraph at lines 737--738
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 738--739
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 739--740
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 740--741
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 741--742
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 742--743
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 743--744
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 755--763
+Underfull \hbox (badness 10000) in paragraph at lines 766--774
 
  []
 
@@ -1212,7 +1177,7 @@ found PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/ST7108serial164_644.pdf, id=754, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial164_644.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial164_644.pdf>
-Package pdftex.def Info: ../FIG/ST7108serial164_644.pdf  used on input line 812
+Package pdftex.def Info: ../FIG/ST7108serial164_644.pdf  used on input line 823
 .
 (pdftex.def)             Requested size: 230.46576pt x 175.13551pt.
 
@@ -1222,11 +1187,11 @@ found PDF version <1.7>, but at most version <1.5> allowed
 <../FIG/ST7108serial595_644.pdf, id=755, 405.515pt x 308.15125pt>
 File: ../FIG/ST7108serial595_644.pdf Graphic file (type pdf)
 <use ../FIG/ST7108serial595_644.pdf>
-Package pdftex.def Info: ../FIG/ST7108serial595_644.pdf  used on input line 818
+Package pdftex.def Info: ../FIG/ST7108serial595_644.pdf  used on input line 829
 .
 (pdftex.def)             Requested size: 230.46576pt x 175.13551pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 810--821
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 821--832
 [][]   [] 
  []
 
@@ -1237,7 +1202,7 @@ pdfTeX warning: pdflatex (file ../FIG/t644tester.pdf): PDF inclusion: found PDF
 <../FIG/t644tester.pdf, id=756, 827.09pt x 964.60374pt>
 File: ../FIG/t644tester.pdf Graphic file (type pdf)
 <use ../FIG/t644tester.pdf>
-Package pdftex.def Info: ../FIG/t644tester.pdf  used on input line 828.
+Package pdftex.def Info: ../FIG/t644tester.pdf  used on input line 839.
 (pdftex.def)             Requested size: 512.14963pt x 597.31221pt.
 [24 <../FIG/ST7108serial164_644.pdf> <../FIG/ST7108serial595_644.pdf>] [25 <../
 FIG/t644tester.pdf>]
@@ -1247,10 +1212,10 @@ F version <1.7>, but at most version <1.5> allowed
 <../FIG/t1280tester.pdf, id=795, 571.13374pt x 489.83pt>
 File: ../FIG/t1280tester.pdf Graphic file (type pdf)
 <use ../FIG/t1280tester.pdf>
-Package pdftex.def Info: ../FIG/t1280tester.pdf  used on input line 858.
+Package pdftex.def Info: ../FIG/t1280tester.pdf  used on input line 869.
 (pdftex.def)             Requested size: 512.14963pt x 439.24344pt.
 [26 <../FIG/t1280tester.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 897--907
+Underfull \hbox (badness 10000) in paragraph at lines 908--918
 
  []
 
@@ -1261,78 +1226,78 @@ ersion <1.7>, but at most version <1.5> allowed
 <../FIG/Fish8840.pdf, id=817, 397.485pt x 202.7575pt>
 File: ../FIG/Fish8840.pdf Graphic file (type pdf)
 <use ../FIG/Fish8840.pdf>
-Package pdftex.def Info: ../FIG/Fish8840.pdf  used on input line 944.
+Package pdftex.def Info: ../FIG/Fish8840.pdf  used on input line 955.
 (pdftex.def)             Requested size: 357.47943pt x 182.35631pt.
 <../PNG/Fish8840patch.jpg, id=819, 143.81488pt x 107.80074pt>
 File: ../PNG/Fish8840patch.jpg Graphic file (type jpg)
 <use ../PNG/Fish8840patch.jpg>
-Package pdftex.def Info: ../PNG/Fish8840patch.jpg  used on input line 960.
+Package pdftex.def Info: ../PNG/Fish8840patch.jpg  used on input line 971.
 (pdftex.def)             Requested size: 357.47943pt x 267.96152pt.
 [28 <../FIG/Fish8840.pdf> <../PNG/Fish8840patch.jpg>]
 <../PNG/Fish8840Adapt1.jpg, id=835, 185.62996pt x 139.22247pt>
 File: ../PNG/Fish8840Adapt1.jpg Graphic file (type jpg)
 <use ../PNG/Fish8840Adapt1.jpg>
-Package pdftex.def Info: ../PNG/Fish8840Adapt1.jpg  used on input line 980.
+Package pdftex.def Info: ../PNG/Fish8840Adapt1.jpg  used on input line 991.
 (pdftex.def)             Requested size: 256.07481pt x 192.05922pt.
 <../PNG/Fish8840Adapt2.jpg, id=836, 185.62996pt x 139.22247pt>
 File: ../PNG/Fish8840Adapt2.jpg Graphic file (type jpg)
 <use ../PNG/Fish8840Adapt2.jpg>
-Package pdftex.def Info: ../PNG/Fish8840Adapt2.jpg  used on input line 986.
+Package pdftex.def Info: ../PNG/Fish8840Adapt2.jpg  used on input line 997.
 (pdftex.def)             Requested size: 256.07481pt x 192.05922pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 978--989
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 989--1000
 [][]   [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--1010
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1021
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1011--1015
+Underfull \hbox (badness 10000) in paragraph at lines 1022--1026
 
  []
 
 <../PNG/WEI_M8.JPG, id=838, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8.JPG>
-Package pdftex.def Info: ../PNG/WEI_M8.JPG  used on input line 1023.
+Package pdftex.def Info: ../PNG/WEI_M8.JPG  used on input line 1034.
 (pdftex.def)             Requested size: 357.47943pt x 268.12386pt.
 [29 <../PNG/Fish8840Adapt1.jpg> <../PNG/Fish8840Adapt2.jpg>]
 <../PNG/WEI_M8_D.JPG, id=846, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8_D.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8_D.JPG>
-Package pdftex.def Info: ../PNG/WEI_M8_D.JPG  used on input line 1036.
+Package pdftex.def Info: ../PNG/WEI_M8_D.JPG  used on input line 1047.
 (pdftex.def)             Requested size: 256.07481pt x 192.06693pt.
 <../PNG/WEI_M8_L.JPG, id=847, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8_L.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8_L.JPG>
-Package pdftex.def Info: ../PNG/WEI_M8_L.JPG  used on input line 1042.
+Package pdftex.def Info: ../PNG/WEI_M8_L.JPG  used on input line 1053.
 (pdftex.def)             Requested size: 256.07481pt x 192.06693pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1034--1045
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1045--1056
 [][]   [] 
  []
 
 <../PNG/WEI_M8_modified.JPG, id=849, 185.0112pt x 138.7584pt>
 File: ../PNG/WEI_M8_modified.JPG Graphic file (type jpg)
 <use ../PNG/WEI_M8_modified.JPG>
-Package pdftex.def Info: ../PNG/WEI_M8_modified.JPG  used on input line 1066.
+Package pdftex.def Info: ../PNG/WEI_M8_modified.JPG  used on input line 1077.
 (pdftex.def)             Requested size: 357.47943pt x 268.12386pt.
 [30 <../PNG/WEI_M8.JPG> <../PNG/WEI_M8_D.JPG> <../PNG/WEI_M8_L.JPG>]
 <../PNG/T4_front.JPG, id=858, 770.88pt x 578.16pt>
 File: ../PNG/T4_front.JPG Graphic file (type jpg)
 <use ../PNG/T4_front.JPG>
-Package pdftex.def Info: ../PNG/T4_front.JPG  used on input line 1087.
+Package pdftex.def Info: ../PNG/T4_front.JPG  used on input line 1098.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 <../PNG/T4_front_noLCD.JPG, id=859, 770.88pt x 578.16pt>
 File: ../PNG/T4_front_noLCD.JPG Graphic file (type jpg)
 <use ../PNG/T4_front_noLCD.JPG>
-Package pdftex.def Info: ../PNG/T4_front_noLCD.JPG  used on input line 1093.
+Package pdftex.def Info: ../PNG/T4_front_noLCD.JPG  used on input line 1104.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1085--1096
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1096--1107
 [][]   [] 
  []
 
@@ -1341,30 +1306,30 @@ PG>]
 <../PNG/T4_back.JPG, id=867, 770.88pt x 578.16pt>
 File: ../PNG/T4_back.JPG Graphic file (type jpg)
 <use ../PNG/T4_back.JPG>
-Package pdftex.def Info: ../PNG/T4_back.JPG  used on input line 1112.
+Package pdftex.def Info: ../PNG/T4_back.JPG  used on input line 1123.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 <../PNG/T4_back_clips.JPG, id=868, 770.88pt x 578.16pt>
 File: ../PNG/T4_back_clips.JPG Graphic file (type jpg)
 <use ../PNG/T4_back_clips.JPG>
-Package pdftex.def Info: ../PNG/T4_back_clips.JPG  used on input line 1118.
+Package pdftex.def Info: ../PNG/T4_back_clips.JPG  used on input line 1129.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1110--1121
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1121--1132
 [][]   [] 
  []
 
 <../PNG/Kit_ST7565a.jpg, id=870, 770.88pt x 578.16pt>
 File: ../PNG/Kit_ST7565a.jpg Graphic file (type jpg)
 <use ../PNG/Kit_ST7565a.jpg>
-Package pdftex.def Info: ../PNG/Kit_ST7565a.jpg  used on input line 1151.
+Package pdftex.def Info: ../PNG/Kit_ST7565a.jpg  used on input line 1162.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 <../PNG/Kit_ST7565b.jpg, id=871, 770.88pt x 578.16pt>
 File: ../PNG/Kit_ST7565b.jpg Graphic file (type jpg)
 <use ../PNG/Kit_ST7565b.jpg>
-Package pdftex.def Info: ../PNG/Kit_ST7565b.jpg  used on input line 1157.
+Package pdftex.def Info: ../PNG/Kit_ST7565b.jpg  used on input line 1168.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1149--1160
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1160--1171
 [][]   [] 
  []
 
@@ -1372,15 +1337,15 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 1149--1160
 <../PNG/Kit_Color_a.jpg, id=878, 770.88pt x 578.16pt>
 File: ../PNG/Kit_Color_a.jpg Graphic file (type jpg)
 <use ../PNG/Kit_Color_a.jpg>
-Package pdftex.def Info: ../PNG/Kit_Color_a.jpg  used on input line 1176.
+Package pdftex.def Info: ../PNG/Kit_Color_a.jpg  used on input line 1187.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 <../PNG/Kit_Color_b.jpg, id=879, 770.88pt x 578.16pt>
 File: ../PNG/Kit_Color_b.jpg Graphic file (type jpg)
 <use ../PNG/Kit_Color_b.jpg>
-Package pdftex.def Info: ../PNG/Kit_Color_b.jpg  used on input line 1182.
+Package pdftex.def Info: ../PNG/Kit_Color_b.jpg  used on input line 1193.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1174--1185
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1185--1196
 [][]   [] 
  []
 
@@ -1392,30 +1357,30 @@ DF version <1.6>, but at most version <1.5> allowed
 <../FIG/Kabel_Hiland.pdf, id=889, 361.80069pt x 369.99632pt>
 File: ../FIG/Kabel_Hiland.pdf Graphic file (type pdf)
 <use ../FIG/Kabel_Hiland.pdf>
-Package pdftex.def Info: ../FIG/Kabel_Hiland.pdf  used on input line 1240.
+Package pdftex.def Info: ../FIG/Kabel_Hiland.pdf  used on input line 1251.
 (pdftex.def)             Requested size: 307.2929pt x 314.26688pt.
 <../PNG/Hi_u.jpg, id=890, 1453.43pt x 1680.2775pt>
 File: ../PNG/Hi_u.jpg Graphic file (type jpg)
 <use ../PNG/Hi_u.jpg>
-Package pdftex.def Info: ../PNG/Hi_u.jpg  used on input line 1257.
+Package pdftex.def Info: ../PNG/Hi_u.jpg  used on input line 1268.
 (pdftex.def)             Requested size: 224.06546pt x 259.03018pt.
 <../PNG/Hi_o.jpg, id=891, 1236.62pt x 1481.535pt>
 File: ../PNG/Hi_o.jpg Graphic file (type jpg)
 <use ../PNG/Hi_o.jpg>
-Package pdftex.def Info: ../PNG/Hi_o.jpg  used on input line 1263.
+Package pdftex.def Info: ../PNG/Hi_o.jpg  used on input line 1274.
 (pdftex.def)             Requested size: 193.5917pt x 231.9188pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1255--1267
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1266--1278
 [][]   []
  []
 
 [34 <../FIG/Kabel_Hiland.pdf, page is rotated 90 degrees>]
-Underfull \hbox (badness 10000) in paragraph at lines 1274--1276
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1287
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1282--1285
+Underfull \hbox (badness 10000) in paragraph at lines 1293--1296
 
  []
 
@@ -2571,12 +2536,12 @@ Underfull \hbox (badness 5147) in paragraph at lines 209--214
 (./56-frequency.aux) (./60-generators.aux) (./70-errors.aux) (./80-special.aux)
 (./90-todo.aux))
 Package rerunfilecheck Info: File `ttester.out' has not changed.
-(rerunfilecheck)             Checksum: 0759AB33D707179901052CDF6E327AB0;17585.
+(rerunfilecheck)             Checksum: F4D036C3C8D08E9213B666C222495A35;17534.
  ) 
 Here is how much of TeX's memory you used:
  43187 strings out of 480247
  996790 string characters out of 5896152
- 1599592 words of memory out of 5000000
+ 1599575 words of memory out of 5000000
  59839 multiletter control sequences out of 15000+600000
  480775 words of font info for 66 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -2599,7 +2564,7 @@ fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
 1200.pfb>
-Output written on ttester.pdf (141 pages, 4053087 bytes).
+Output written on ttester.pdf (141 pages, 4053381 bytes).
 PDF statistics:
  2822 PDF objects out of 2984 (max. 8388607)
  2183 compressed objects within 22 object streams
