@@ -2,7 +2,7 @@
 
 \section{Circuit of the TransistorTester}
 \label{sec:hardware}
-The circuit of the TransistorTester in figure~\ref{fig:ttester} is based on the circuit of
+The circuit of the TransistorTester in Figure~\ref{fig:ttester} is based on the circuit of
  Markus F. released in Abb.~1 of AVR-Transistortester report \cite{Frejek}.
 Changed or moved parts are marked with green color, optional parts are marked with red color.
 
@@ -46,7 +46,7 @@ A optional ISP connector was added to make it easier to update the software on t
 \label{fig:ttester}
 \end{figure}
 
-The table~\ref{tab:display-con} show the assignment of Port D for different display versions
+Table~\ref{tab:display-con} shows the assignment of Port D for different display versions
 and the assignment of the additional functions.
 For the SPI interface, an active-low signal LCD-CE (LCD Chip Enable) is produced by the ATmega.
 This signal can be sent to the chip enable input on an SPI LCD controller controller.
@@ -85,7 +85,7 @@ LCD controller's chip enable input can be grounded so the controller is always e
 
 The software also supports an alternative pin assignment of port D that simplifies the wiring of the
 LCD display. 
-The following table~\ref{tab:grid-change} shows the modified port pin assignments that enable stripboard layout, 
+Table~\ref{tab:grid-change} shows the modified port pin assignments that enable stripboard layout, 
 and the alternative way of wiring a graphical display to the ATmega328.
 Also the use of port inputs for additional functions is shown.
 With the graphical display connected using the stripboard option (STRIP\_GRID\_BOARD=1),
@@ -159,7 +159,7 @@ Complete protection is not possible. Therefore capacitors should always be disch
 \end{figure}
 
 You can get better protection with a relay with 3 changeover contacts (3PDT),
-which is shown in figure~\ref{fig:relay_um_addon}.
+which is shown in Figure~\ref{fig:relay_um_addon}.
 The discharge current is limited with the resistors and the ATmega-inputs are disconnected in the protected mode.
 But don't forget that the tester remains unprotected during the measurement sequence.
 
@@ -228,7 +228,7 @@ For both layouts, the PD4 pin can be switched to input as long as no concurrent 
 required. This is because the LCD accepts input data only when the LCD-E signal is
 brought low.
 For driving the input pin from external clock source at least one series resistor of \(270\Omega\) should be used.
-Better you should use the circuit of figure~\ref{fig:FreqMes} .
+Better you should use the circuit of Figure~\ref{fig:FreqMes} .
 To get the best sensitivity for the input frequency signal, the voltage at the PD4 pin (LCD-RS or LCD-D4) should
 have a baseline of \(2.4V\) when frequency measurement is taking place.
 To accurately adjust this voltage, either remove the ATmega from its socket
@@ -282,7 +282,7 @@ of the character LCD. In these cases, as well, the upgrade to a rotary encoder i
 \caption{Feature of two different rotary encoders}
 \label{fig:RotEnc}
 \end{figure}
-The figure~\ref{fig:RotEnc} shows the behavior of two different rotary encoders.
+Figure~\ref{fig:RotEnc} shows the behavior of two different rotary encoders.
 The version 1 has twice as many indexed positions (detents) per turn as pulses per turn.
 The version 2 has the same number of detents as pulses per turn.
 The slope of one of the two switch signals is sometimes exactly at the detent of the 
@@ -300,7 +300,7 @@ rotary encoder.
 \caption{A rotary encoder with bouncing switches}
 \label{fig:RotBounce}
 \end{figure}
-The figure~\ref{fig:RotBounce} shows a rotary encoder which has not only
+Figure~\ref{fig:RotBounce} shows a rotary encoder which not only has
 bouncing contacts but also has an unstable state of one of the switches at the indexed
 position (detent). Every change of the state of the switches is detected by the program
 and saved in a cyclic buffer. Therefore the last three states of the switches can be checked
@@ -309,7 +309,7 @@ For every cycle of switch states,
 a total of four sequences of state can be defined for every direction of rotation.
 If there is only one indexed position (detent) for every cycle of switch states, only
 one of the state sequence pair must be monitored (WITH\_ROTARY\_SWITCH=2 or 3) for correct counting.
-If there are two indexed positions for every cycle of the switch states, as shown in figure~\ref{fig:RotBounce},
+If there are two indexed positions for every cycle of the switch states, as shown in Figure~\ref{fig:RotBounce},
 you must monitor two pairs of switch state sequences (WITH\_ROTARY\_SWITCH=1).
 You can choose any resolution for the WITH\_ROTARY\_SWITCH for a rotary encoder without
 indexed positions. A value of 2 or 3 selects the lowest resolution, 1 selects a middle resolution
@@ -323,21 +323,23 @@ the signals.
 
 \subsection{Connection of a graphical display}
 
-Many thanks to Wolfgang Sch. for his work to support a chinese version with ST7565 controller.
-By now you can also connect a graphical 128x64 pixel LCD with a ST7565 controller.
-Because the ST7565 controller is connected with a serial interface, only four signal
-lines are required. Two port D pins of the ATmega can be used otherwise.
+Many thanks to Wolfgang Sch. for his work to support a Chinese version with an ST7565 controller.
+Now you can also connect a graphical 128x64 pixel LCD with an ST7565 controller.
+Because the ST7565 controller is connected by a serial interface, only four signal
+lines are required. Two port D pins of the ATmega can be used for other purposes.
 The ATmega processor should have at least 32k flash memory for the support of a graphical display.
 The ST7565 controller works with a operating voltage of \(3.3V\) .
-Therefore a additional \(3.3V\) voltage regulator is required.
+Therefore an additional \(3.3V\) voltage regulator is required.
 The data sheet of the ST7565 controller does not allow the direct connection of input pins to
-\(5V\) signal level. So the extension of figure~\ref{fig:ST7565lcd} uses a additional 74HC4050 CMOS
-device for the conversion of the voltage level.
-You can try to exchange the four 74HC4050 gates with four resistors of about \(2.7k\Omega\).
-With the voltage drop at the resistors you will prevent the increase of the \(3.3V\) controller power voltage 
-across the diodes of the controller inputs from the \(5V\) ATmega outputs signals.
-You have to try, if the signal form with the resistors can be accepted from the ST7565 controller inputs.
-The signal form at the controller inputs will be more simular to the output shape of the ATmega with the 74HC4050 gates in any case.\\
+\(5V\) signal level. So the extension of Figure~\ref{fig:ST7565lcd} adds a 74HC4050 
+high-to-low level shifter. Using a level shifter preserves signal integrity and should be considered the clean way.
+Alternatively, to avoid the cost of a level shifter, you can insert \(2.7k\Omega\) series resistors
+in each of the four signal lines from the ATmega to the \(3.3V\) LCD controller.
+This will prevent excessive current from flowing from the ATmega, into the input protection diodes of the
+LCD controller, which could raise the controller's power voltage.
+With the series resistor approach, it is important to experiment with the resistor value to select a resistance 
+that is high enough to avoid perturbing the power voltage on the LCD controller, yet low enough that the signals
+that reach the LCD controller have adequate swing to maintain signal integrity.
 
 \begin{figure}[H]
 \centering
@@ -350,11 +352,12 @@ The signal form at the controller inputs will be more simular to the output shap
 \label{fig:ST7565lcd}
 \end{figure}
 
-The table~\ref{tab:spi-processor} shows more alternativs to connect a 
-ATmega328 or other prozessors with the SPI (LCD\_INTERFACE\_MODE=4) or the
+Table~\ref{tab:spi-processor} shows alternatives for connecting an 
+ATmega328 or other processor with the SPI (LCD\_INTERFACE\_MODE=4) or the
 3LINE (LCD\_INTERFACE\_MODE=3) interface.
-The different connector lists for one processor type
-can be selected with the Makefile Option STRIP\_GRID\_BOARD.
+Some processor types can be connected to the display in a variety of different ways.
+The different connection lists for a given processor type
+can be selected with the Makefile option STRIP\_GRID\_BOARD.
 The connector pin list is defined in the file config.h.
 If you need a different wiring list, you should choose a new code number
 for the option STRIP\_GRID\_BOARD and supplement the setting in the config.h file.
@@ -385,21 +388,32 @@ Signal:     &       &       &        &      &      &      &      \\
 \end{table}
 
 Normally the ST7565 or SSD1306 controller is connected with a 4-wire SPI interface.
-But with the SSD1306 controller you can also use a I\textsuperscript{2}C interface with PD2 as SDA and PD5 as SCL signal.
+But with the SSD1306 controller you can also use an I\textsuperscript{2}C interface
+with PD2 as SDA and PD5 as SCL signal.
 The SDA and SCL signals must be equipped with pull-up resistors of about \(4.7k\Omega\) to \(3.3V\).
-A solution for connecting the OLED display shows the figure~\ref{fig:ssd1306i2c}.
-The outputs of the ATmega is only switched to \(0V\) for the I\textsuperscript{2}C signals.
-Before connecting the pull-up resistors to \(5V\) you must check, if your display module can tolerate
-a \(5V\) signal level. Normally the data inputs of the controller are protected with diodes to \(3.3V\).
-You should make sure, that you have loaded a program with the I\textsuperscript{2}C support to the ATmega 
-before the Display is connected. If you have loaded a program with another interface, 
-the output are also switched to the \(5V\) side.
-Because I have determined a influence to the tester results across the VCC connection of a OLED module,
-a additional decoupling with a serial resistor of \(68\Omega\) with a additional \(10\mu F\) blocking capacitor
-is recommended. Instead of the \(68\Omega\) resistor you can also use a inductor with about \(1mH\).
-Without the additional filter my tester has reported collector residual currents with bipolar transistors and a
+A solution for connecting the OLED display is shown in Figure~\ref{fig:ssd1306i2c}.
+In the I\textsuperscript{2}C system of communication, devices use the open-drain style.
+The SDA and SCL wires are either forced to \(0V\) by the output circuit or are allowed to float.
+I\textsuperscript{2}C devices don't force the wires high.
+On the ATmega, the open-drain style is implemented by changing the direction of the port pin
+to output when it should be forced low, and input when it should be allowed to float.
+
+Before connecting the pull-up resistors to \(5V\) you should check whether your display module can tolerate that.
+Normally the data inputs of the controller are protected with diodes to the \(3.3V\) supply rail.
+This keeps voltage at the inputs of the controller in the safe range for the display module,
+while the current into the display module's input pins is limited by the pull-up resistors.
+You should make sure that you have loaded a program with I\textsuperscript{2}C support to the ATmega 
+before the display is connected. If you have loaded a program with another interface, 
+the ATmega outputs may force the I\textsuperscript{2}C wires high,
+which could cause a harmful amount of current to flow.
+
+I have determined that the OLED module interferes with the tester through the VCC connection.
+Therefore, adding power supply decoupling to the OLED module is recommended.
+This can be accomplished with a series resistor of \(68\Omega\) and a \(10\mu F\) blocking capacitor.
+Instead of the \(68\Omega\) resistor you can use an inductor with about \(1mH\).
+Without the additional filter, my tester has reported collector residual currents with bipolar transistors and a
 OLED display.
-Also you should check the pin sequence of your OLED module, some moduls have a different location of GND and VCC.
+Be sure to check the pin sequence of your OLED module as some modules have a different location of GND and VCC.
  
 \begin{figure}[H]
 \centering
@@ -408,17 +422,17 @@ Also you should check the pin sequence of your OLED module, some moduls have a d
 \label{fig:ssd1306i2c}
 \end{figure}
 
-For connection to the ATmega644 series of processors the pins PB3 (SCL) and PB4 (SDA) instead of PD5 and PD2 are used.
+For connection to the ATmega644 series of processors, the pins PB3 (SCL) and PB4 (SDA) instead of PD5 and PD2 are used.
 For the ATmega1280 processor series the pins PA5 (SCL) and PA4 (SDA) are used.
-The exchange of a text display to a graphical display is possible with a adapter printed board because
-all required data signals and power signals are available at the LCD connector.
+The exchange of a text display to a graphical display is possible with an adapter printed board because
+all required data signals and power lines are available at the LCD connector.
 
-
-A little simpler is the connection of a graphical display with a ST7920 controller because
-the controller can operate with \(5V\) power voltage.
-For that the display should offer 128x64 visible pixels.
+Interfacing a graphical display based on an ST7920 controller
+is relatively straightforward because no level shifters are needed.
+When an ST7920 operates on a \(5V\) power voltage, the data signals are \(5V\) logic.
+It offers 128x64 visible pixels.
 The display module with the ST7920 controller can be connected with the 4-bit parallel interface or with a
-special serial interface., as shown in figure~\ref{fig:ST7920lcd}.
+special serial interface as shown in Figure~\ref{fig:ST7920lcd}.
  
 \begin{figure}[H]
 \centering
@@ -427,15 +441,15 @@ special serial interface., as shown in figure~\ref{fig:ST7920lcd}.
   \put(20,1){\makebox(0,0)[cb]{serial mode}}
   \put(80,1){\makebox(0,0)[cb]{4-bit parallel mode}}
  \end{overpic}
-\caption{Connection of a display with ST7920 controller}
+\caption{Connection of a display with an ST7920 controller}
 \label{fig:ST7920lcd}
 \end{figure}
 
-For both connection types the software must be configured in a special way.
-The Makefile option \inquotes{WITH\_LCD\_ST7565 = 7920} must be set in any case, for the serial
-connection type you must set also the option \inquotes{CFLAGS += -DLCD\_INTERFACE\_MODE=5}.
-The table~\ref{tab:ser-processor} shows the connection of the serial signals with
-the INTERFACE\_MODE 5 (ST7920) and 7 (SSD1803) for different processors.
+For either connection type, serial or 4-bit parallel, the software must be configured appropriately.
+The Makefile option \inquotes{WITH\_LCD\_ST7565 = 7920} must be set in either case.
+For the serial connection type you must also set the option \inquotes{CFLAGS += -DLCD\_INTERFACE\_MODE=5}.
+Table~\ref{tab:ser-processor} shows the connection of the serial signals with
+INTERFACE\_MODE 5 (ST7920) and 7 (SSD1803) for different processors.
 
 \begin{table}[H]
   \begin{center}
@@ -461,10 +475,11 @@ Signal:     &       &       &        &         \\
 The orientation of the presentation can be changed with the options LCD\_ST7565\_H\_FLIP and 
 LCD\_ST7565\_V\_FLIP in the same way as with the other graphical displays.\\
 
-A special case is the connection of displays with a NT7108 (KS0108, S6B0108) controller. Because these displays can only use 
-the 8-bit parallel interface, you must use a serial to parallel converter.
+A special case is the connection of displays with an NT7108 (KS0108, S6B0108) controller.
+Because these displays can only use the 8-bit parallel interface,
+you must use a serial to parallel converter.
 The simplest way seems to be the use of a 74HCT164 or a 74HCT595 chip.
-A suitable suggestion of a connection circuit shows the figure~\ref{fig:NT7108lcd} .
+A suitable suggestion of a connection circuit is shown in Figure~\ref{fig:NT7108lcd} .
 
 \begin{figure}[H]
   \begin{subfigure}[b]{.5\textwidth}
@@ -482,8 +497,9 @@ A suitable suggestion of a connection circuit shows the figure~\ref{fig:NT7108lc
   \label{fig:NT7108lcd}
 \end{figure}
 
-You must check the pin layout of your LCD module, some moduls have different signal sequence.
-Some different pin layouts found in data sheets for the ABG128064 series are shown in table~\ref{tab:NT7108types}.
+You must check the pin layout of your LCD module.
+Some modules have different signal sequence.
+Some different pin layouts found in data sheets for the ABG128064 series are shown in Table~\ref{tab:NT7108types}.
 
 \begin{table}[H]
   \begin{center}
@@ -521,11 +537,11 @@ Some different pin layouts found in data sheets for the ABG128064 series are sho
     \hline
     \end{tabular}
   \end{center}
-  \caption{Pin layout of different NT7108 moduls}
+  \caption{Pin layout of different NT7108 modules}
   \label{tab:NT7108types}
 \end{table}
 
-The table~\ref{tab:7108-processor} shows the connection of a serial NT7108 controller
+Table~\ref{tab:7108-processor} shows the connection of a serial NT7108 controller
 for different processor series.
 \begin{table}[H]
   \begin{center}
@@ -554,18 +570,20 @@ Signal:     &       &        &         \\
   \label{tab:7108-processor}
 \end{table}
 
-You can also use a display with a PCF8814 controller, which is usualy used in a Nokia 1100 handy for example.
-You must check, which interface of the controller is used in your display module.
+You can also use a display with a PCF8814 controller.
+The PCF8814 is usualy used in a Nokia 1100 mobile phone, for example.
+You must check which interface of the controller is used in your display module.
 The PCF8814 controller can support the SPI-interface with 3 lines and 4 lines,
-the I\textsuperscript{2}C-interface and a special 3-line interface, which receice
-the data/instruction signal as first serial bit before the 8 data bits.
-Because the display support only 96x65 pixels, the big icons for transistors are not
-used with this controller. The output is simular to the character display.
-As with the most graphical displays this controller also operated with 3.3~Volt.
+the I\textsuperscript{2}C-interface and a special 3-line interface where 
+the data/instruction bit is the first serial bit before the 8 data bits.
+See section \(9.2.1\) in the PCF8814 data sheet for details.
+Because the display supports only 96x65 pixels, the big icons for transistors are not
+used with this controller. The output is similar to the character display.
+As with the most graphical displays, this controller also operated with 3.3~Volt.
 Therefore a signal conversion for the \(5V\) outputs of the ATmega is required.
 For the SPI interface and the 3-line interface you can use the outputs of the ATmega
 like \inquotes{open collector} outputs with the Makefile option LCD\_SPI\_OPEN\_COL.
-You must use \inquotes{Pull-Up} resistors with this option or you should not set
+You must use pull-up resistors with this option or you should not set
 the option PULLUP\_DISABLE in the Makefile.
 Currently only the 3-line interface is tested with the PCF8814 controller.
 
@@ -600,44 +618,45 @@ but not yet tested.
 
 \subsection{Connection of a graphical color display}
 
-Some Chinese salesmen offer cheap color display modules with a SPI interface.
-The picture~\ref{fig:Color_both} shows the backsides of two supported modules with 128x128 pixel
-and 128x160 pixel. 
-The moduls are very small, so the shown text and symbols are very little.
+Some Chinese sellers offer cheap color display modules with a SPI interface.
+Figure~\ref{fig:Color_both} shows the back sides of two supported modules with 128x128 pixel
+and 128x160 pixel resolution.
+The modules are very small, so the shown text and symbols are very little.
 But the appearance is sharp and clear.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=.46\textwidth]{../PNG/Color_ILI9163_ST7735.jpg}
-\caption{Back side of two Color-LCD's}
+\caption{Back side of two color LCDs}
 \label{fig:Color_both}
 \end{figure}
 
-The 128x128 pixel modul uses a ILI9163 controller.
-The 128x160 pixel modul uses a very simular ST7735 controller.
-The modules are tested with a adapter board, which connects the
+The 128x128 pixel module uses an ILI9163 controller.
+The 128x160 pixel module uses a very similar ST7735 controller.
+The modules are tested with an adapter board, which connects the
 SPI signals and the power to the terminal for the normal character display.
-The adaption of the \(5V\) output signals of the ATmega to the \(3.3V\) inputs of the controller
-is ensured with serial \(10k\Omega\) resistors.
-The background light (LED) is required for this modules because nothing is readable without it.
-Because of the high count of pixels in vertical direction you can display more text lines for this modules.
-For the 128x128 pixel display you can display 8 lines of text with a 12x8 font,
-for the 128x160 pixel display you can evel show 10 lines of text.
-At the picture~\ref{fig:Color_PNP} you can see the result of the measurement of a Germanium transistor
-at a 128x128 pixel display.
+The interfacing of the \(5V\) output signals of the ATmega to the \(3.3V\) inputs of the controller
+is done with \(10k\Omega\) series resistors.
+The background light (LED) is required for these modules because nothing is readable without it.
+Because of the high count of pixels in vertical direction, you can display more text lines with these modules.
+With the 128x128 pixel display you can display 8 lines of text with a 12x8 font.
+With the 128x160 pixel display you can even show 10 lines of text.
+In Figure~\ref{fig:Color_PNP} you can see the result of the measurement of a germanium transistor
+with a 128x128 pixel display.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=.46\textwidth]{../PNG/Color_PNP_ILI9163.jpg}
-\caption{Measurement of a bipolar PNP transistors}
+\caption{Measurement of a PNP transistor}
 \label{fig:Color_PNP}
 \end{figure}
 
 The color feature of the modules is currently not used.
-Simply the background color and the foreground color can be changed in the file lcd\_defines.h or
+The background color and the foreground color can be changed in the file lcd\_defines.h or
 in the Makefile.
-The 16-bit color model of the controller is used by the software, the foreground color can be changed
-with the constant LCD\_FG\_COLOR and the background color with the constant LCD\_BG\_COLOR .
+The 16-bit color model of the controller is used by the software.
+The foreground color can be changed with the constant LCD\_FG\_COLOR and
+the background color can be changed with the constant LCD\_BG\_COLOR .
 
 
 \section{Hints for building the TransistorTester}
